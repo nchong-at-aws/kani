@@ -3,6 +3,7 @@
 
 // Example from Firecracker virtio block device
 // We test the parse function against an arbitrary guest memory
+// And check that the parse never reads the same descriptor twice
 
 #![allow(dead_code)]
 #![allow(unused_variables)]
@@ -240,17 +241,32 @@ pub enum Error {
     DescriptorChainTooShort,
     /// Guest gave us a descriptor that was too short to use.
     DescriptorLengthTooSmall,
-    /// Getting a block's metadata fails for any reason.
-    //TODO: Issue Padstone-4795
-    //GetFileMetadata(std::io::Error),
-    /// Guest gave us bad memory addresses.
-    GuestMemory,
+    // Kani change: simplify error types
+    // /// Getting a block's metadata fails for any reason.
+    // GetFileMetadata(std::io::Error),
+    // /// Guest gave us bad memory addresses.
+    // GuestMemory(GuestMemoryError),
+    /// The data length is invalid.
+    InvalidDataLength,
     /// The requested operation would cause a seek beyond disk end.
     InvalidOffset,
     /// Guest gave us a read only descriptor that protocol says to write to.
     UnexpectedReadOnlyDescriptor,
     /// Guest gave us a write only descriptor that protocol says to read from.
     UnexpectedWriteOnlyDescriptor,
+    // Kani change: simplify error types
+    // // Error coming from the IO engine.
+    // FileEngine(io::Error),
+    // // Error manipulating the backing file.
+    // BackingFile(std::io::Error),
+    // // Error opening eventfd.
+    // EventFd(std::io::Error),
+    // // Error creating an irqfd.
+    // IrqTrigger(std::io::Error),
+    // // Error coming from the rate limiter.
+    // RateLimiter(std::io::Error),
+    // // Persistence error.
+    // Persist(crate::virtio::persist::Error),
 }
 
 unsafe impl kani::Invariant for Error {
@@ -259,7 +275,7 @@ unsafe impl kani::Invariant for Error {
             *self,
             Error::DescriptorChainTooShort
                 | Error::DescriptorLengthTooSmall
-                | Error::GuestMemory
+                | Error::InvalidDataLength
                 | Error::InvalidOffset
                 | Error::UnexpectedReadOnlyDescriptor
                 | Error::UnexpectedWriteOnlyDescriptor
@@ -267,8 +283,12 @@ unsafe impl kani::Invariant for Error {
     }
 }
 
+pub const SECTOR_SHIFT: u8 = 9;
+pub const SECTOR_SIZE: u64 = (0x01_u64) << SECTOR_SHIFT;
+pub const VIRTIO_BLK_ID_BYTES: u32 = 20;
+
 pub struct Request {
-    pub request_type: RequestType,
+    pub r#type: RequestType,
     pub data_len: u32,
     pub status_addr: GuestAddress,
     sector: u64,
@@ -276,7 +296,11 @@ pub struct Request {
 }
 
 impl Request {
-    pub fn parse(avail_desc: &DescriptorChain, mem: &GuestMemoryMmap) -> Result<Request, Error> {
+    pub fn parse(
+        avail_desc: &DescriptorChain,
+        mem: &GuestMemoryMmap,
+        num_disk_sectors: u64,
+    ) -> Result<Request, Error> {
         // The head contains the request type which MUST be readable.
         if avail_desc.is_write_only() {
             return Err(Error::UnexpectedWriteOnlyDescriptor);
@@ -284,21 +308,23 @@ impl Request {
 
         let request_header = RequestHeader::read_from(mem, avail_desc.addr)?;
         let mut req = Request {
-            request_type: RequestType::from(request_header.request_type),
+            r#type: RequestType::from(request_header.request_type),
             sector: request_header.sector,
             data_addr: GuestAddress(0),
             data_len: 0,
             status_addr: GuestAddress(0),
         };
 
-        let data_desc: DescriptorChain;
-        let status_desc: DescriptorChain;
-        let desc = avail_desc.next_descriptor().ok_or(Error::DescriptorChainTooShort)?;
+        let data_desc;
+        let status_desc;
+        let desc = avail_desc
+            .next_descriptor()
+            .ok_or(Error::DescriptorChainTooShort)?;
 
         if !desc.has_next() {
             status_desc = desc;
             // Only flush requests are allowed to skip the data descriptor.
-            if req.request_type != RequestType::Flush {
+            if req.r#type != RequestType::Flush {
                 return Err(Error::DescriptorChainTooShort);
             }
         } else {
@@ -307,25 +333,45 @@ impl Request {
             if data_desc.next == avail_desc.index {
                 return Err(Error::DescriptorChainTooShort);
             }
-            status_desc = data_desc.next_descriptor().ok_or(Error::DescriptorChainTooShort)?;
+            status_desc = data_desc
+                .next_descriptor()
+                .ok_or(Error::DescriptorChainTooShort)?;
 
-            if data_desc.is_write_only() && req.request_type == RequestType::Out {
+            if data_desc.is_write_only() && req.r#type == RequestType::Out {
                 return Err(Error::UnexpectedWriteOnlyDescriptor);
             }
-            if !data_desc.is_write_only() && req.request_type == RequestType::In {
+            if !data_desc.is_write_only() && req.r#type == RequestType::In {
                 return Err(Error::UnexpectedReadOnlyDescriptor);
             }
-            if !data_desc.is_write_only() && req.request_type == RequestType::GetDeviceID {
+            if !data_desc.is_write_only() && req.r#type == RequestType::GetDeviceID {
                 return Err(Error::UnexpectedReadOnlyDescriptor);
             }
-
-            // Check that the address of the data descriptor is valid in guest memory.
-            let _ = mem
-                .checked_offset(data_desc.addr, data_desc.len as usize)
-                .ok_or(Error::GuestMemory)?;
 
             req.data_addr = data_desc.addr;
             req.data_len = data_desc.len;
+        }
+
+        // check request validity
+        match req.r#type {
+            RequestType::In | RequestType::Out => {
+                // Check that the data length is a multiple of 512 as specified in the virtio standard.
+                if u64::from(req.data_len) % SECTOR_SIZE != 0 {
+                    return Err(Error::InvalidDataLength);
+                }
+                let top_sector = req
+                    .sector
+                    .checked_add(u64::from(req.data_len) >> SECTOR_SHIFT)
+                    .ok_or(Error::InvalidOffset)?;
+                if top_sector > num_disk_sectors {
+                    return Err(Error::InvalidOffset);
+                }
+            }
+            RequestType::GetDeviceID => {
+                if req.data_len < VIRTIO_BLK_ID_BYTES {
+                    return Err(Error::InvalidDataLength);
+                }
+            }
+            _ => {}
         }
 
         // The status MUST always be writable.
@@ -336,12 +382,6 @@ impl Request {
         if status_desc.len < 1 {
             return Err(Error::DescriptorLengthTooSmall);
         }
-
-        // Check that the address of the status descriptor is valid in guest memory.
-        // We will write an u32 status here after executing the request.
-        let _ = mem
-            .checked_offset(status_desc.addr, std::mem::size_of::<u32>())
-            .ok_or(Error::GuestMemory)?;
 
         req.status_addr = status_desc.addr;
 
@@ -375,7 +415,7 @@ fn main() {
             if x.has_next() {
                 assert!(x.next < queue_size);
             }
-            let req = Request::parse(&x, &mem);
+            let req = Request::parse(&x, &mem, kani::any::<u64>());
             if let Ok(req) = req {
                 unsafe {
                     assert!(!TRACK_CHECKED_OFFSET_NONE);
