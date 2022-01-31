@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Pipeline tests/bookrunner/books/Rust by Example/Std misc/Path/15.rs
+  </title>
+<style>
+#title{
+  background-color: #ec407a;
+  color: white;
+  padding: 2em;
+}
+h1 {
+  margin-bottom: 0em;
+}
+#subtitle {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+}
+.run-info ul {
+  list-style: none;
+}
+.run-info ul li {
+  display: inline;
+  margin-right: 6em;
+  margin-left: -3em;
+  text-transform: uppercase;
+  font-size: small;
+  color: #ec407a;
+}
+#content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  color: #263238;
+  font-family: Helvetica, sans-serif;
+}
+p {
+  margin: 0;
+}
+.command-table {
+  background-color: #eceff1;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  margin-bottom: 4em;
+}
+.command-table .fail-ignored {
+  background-color: #e65100cc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .success {
+  background-color: #1a237ecc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .in-progress {
+  background-color: black;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .non-started {
+  background-color: #26323844;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .fail {
+  background-color: #f44336cc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-content {
+  background-color: #eceff1;
+  padding: 1em;
+}
+.command-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.command-id-link{
+  flex-grow: 0;
+}
+.command-id-link a {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+  text-decoration: none;
+  margin-left: 0.2em;
+}
+.command-id-link a:link {
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+}
+.command-id-link a:visited {
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+}
+.command-id-link a:visited:hover {
+  color: #ec407a;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+               0px 0px 10px #fff,
+               0px 0px 5px #ec407a,
+               0px 0px 5px #ec407a;
+}
+.command-id-link a:hover {
+  color: #ec407a;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb
+               0px 0px 10px #fff,
+               0px 0px 5px #ec407a,
+               0px 0px 5px #ec407a;
+}
+.command-id-link a:active {
+  color: #ffeb3b;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+}
+.command-id-link a:visited:active {
+  color: #ffeb3b;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+}
+.command-description {
+  color: #26323899;
+  font-size: smaller;
+  text-align: center;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.command-invocation {
+  padding: 1em;
+  color: #fff;
+  background-color: #005662;
+  font-size: small;
+  font-family: monospace;
+  border-radius: 0.5em;
+  text-shadow: 0 0 2px #ffccbccc;
+}
+.command-stats-table {
+  margin-top: 0.2em;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  padding-top: 0.4em;
+  display: flex;
+  flex-direction: column;
+  background-color: #eae3998a;
+  color: #263238cc;
+  margin-bottom: 0.2em;
+}
+.command-stats-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  font-size: small;
+  text-transform: uppercase;
+}
+.command-stats-row p .value {
+  color: #00251aaa;
+  text-shadow: 0 0 2px #82ada944;
+  font-weight: bold;
+}
+.output-box {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  color: #000a12;
+  background-color: #cfd8dc;
+  font-size: small;
+  font-family: monospace;
+  border-radius: 0.5em;
+  max-height: 20em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.output-box xmp{
+  white-space: pre;
+}
+.stage-name p {
+  margin-left: 0.5em;
+  color: #546e7a;
+  text-shadow:  -1px  0px 0px #fff
+               ,-2px  0px 0px #ffffff99
+               ,-1px  1px 0px #ffffff99
+               ;
+  font-size: 48pt;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-style: italic;
+}
+.stage-name .underline {
+  width: 100%;
+  height: 1.1em;
+  background-color: #546e7a;
+  margin-top: -1.6em;
+}
+.stage-name {
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+.outcome-table-info-box {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  color: #000a12;
+  background-color: #ffee58;
+  border-radius: 0.5em;
+}
+.outcome-table-info-box .outcome{
+  font-weight: bold;
+}
+#toc {
+  margin-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  margin-right: 3em;
+}
+.toc-title {
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  margin-bottom: -1em;
+}
+.toc-section{
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+.toc-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.toc-row-icon {
+  padding-right: 8px;
+}
+.status-icon-cross {
+  fill: #f44336;
+    width: 16px;
+    height: 16px;
+}
+.status-icon-tick {
+  fill: #3f51b5;
+  stroke: #ffffff77;
+  stroke-width: 1px;
+  width: 16px;
+  height: 16px;
+}
+
+.status-icon-in-progress {
+  fill: #333;
+  width: 16px;
+  height: 16px;
+}
+
+.status-icon-in-progress circle {
+  stroke: #333;
+  stroke-width: 2px;
+  fill: none
+}
+a:link {
+  color: #1e88e5;
+}
+a:visited {
+  color: #1e88e5;
+}
+a:visited:hover {
+  background-color: #1e88e5;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #1e88e5;
+  color: #fff;
+  text-decoration: none;
+}
+a:active {
+  background-color: #ec407a;
+  color: #fff;
+  text-decoration: none;
+}
+a:visited:active {
+  background-color: #ec407a;
+  color: #fff;
+  text-decoration: none;
+}
+
+#contents-container {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+#depgraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  flex-shrink: 7;
+}
+
+#depgraph-title p {
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+#depgraph-preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#depgraph-preview {
+  padding: 1em;
+}
+
+.memory-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  align-items: center;
+}
+.memory-preview {
+  width: 75%;
+}
+.memory-preview svg {
+  margin-left: -1em;
+  margin-right: -2em;
+}
+.memory-table {
+}
+.memory-title {
+  text-align: center;
+  font-style: bold;
+}
+.memory-subtitle {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  text-align: center;
+  opacity: 0.8;
+}
+.memory-pad {
+  width: 1.5em;
+}
+.memory-value {
+  text-align: center;
+  margin-right: 2em;
+}
+.rss {
+  color: #ab47bc;
+}
+.vsz {
+  color: #4caf50;
+}
+
+
+@media (prefers-color-scheme: dark){
+  a:link {
+    color: #29b6f6;
+  }
+  a:visited {
+    color: #29b6f6;
+  }
+  a:visited:hover {
+    color: #263238;
+    background-color: #29b6f6;
+  }
+  a:hover {
+    color: #263238;
+    background-color: #29b6f6;
+  }
+  a:active {
+    color: #263238;
+    background-color: #ec407a;
+  }
+  a:visited:active {
+    color: #263238;
+    background-color: #ec407a;
+  }
+  .command-id-link a:link {
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb;
+  }
+  .command-id-link a:visited {
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb;
+  }
+  .command-id-link a:visited:hover {
+    color: #ec407a;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb.
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ec407a,
+                 0px 0px 5px #ec407a;
+  }
+  .command-id-link a:hover {
+    color: #ec407a;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ec407a,
+                 0px 0px 5px #ec407a;
+  }
+  .command-id-link a:active {
+    color: #ffeb3b;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+  }
+  .command-id-link a:visited:active {
+    color: #ffeb3b;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+  }
+  body {
+    color: #babdbe;
+    background-color: #263238;
+  }
+  .outcome-table-info-box p{
+    color: #000a12;
+  }
+  p {
+    color: #babdbe;
+  }
+  #subtitle {
+    color: #fff;
+  }
+  .command-table {
+    background-color: #37474f;
+  }
+  .command-content {
+    background-color: #37474f;
+  }
+  .command-invocation p {
+    color: #fff;
+  }
+  .command-stats-table {
+    background-color: #eae399d0;
+    color: #263238;
+  }
+  .command-stats-table p {
+    color: #263238;
+  }
+  .output-box {
+    color: #cfd8dccc;
+    background-color: #102027;
+  }
+  .stage-name p {
+    text-shadow: -1px  0px 0px #263238,
+                 -2px  0px 0px #26323899,
+                 -1px  1px 0px #26323899;
+  }
+  .status-icon-in-progress { fill: #ddd; }
+  .status-icon-in-progress circle { stroke: #ddd; }
+
+  /* SVG graphs */
+  g text {
+    fill: #eceff1;
+    stroke: #fff0;
+  }
+}
+</style>
+</head>
+<body>
+<div id="content">
+
+  <div id="title">
+    <h1>
+      Book Runner pipeline &lsquo;tests/bookrunner/books/Rust by Example/Std misc/Path/15.rs&rsquo;
+    </h1>
+    <p id="subtitle">
+      Litani CI Dashboard
+    </p>
+  </div><!-- id="title" -->
+
+  <div class=run-info>
+    <ul>
+      <li>Pipeline status: fail</li>
+      <li>2022-01-31T18:11:30Z</li>
+      <li>60c2986e-3ac9-4f71-a1b2-48b1295d4a7c</li>
+    </ul>
+  </div><!-- class=run-info -->
+
+  <div id="contents-container">
+
+    <div id="toc">
+      <div class="toc-title">
+        <p>Summary of jobs for this pipeline</p>
+      </div><!-- class="toc-title" -->
+
+      
+        <div class="toc-section">
+          <p>check</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-471fa9d1-0a99-4782-be9c-74a01594cd62">
+              
+              Is this valid Rust code?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+        <div class="toc-section">
+          <p>codegen</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-fbb7ce3a-758e-4ae4-8d5b-6b2f8a2d7cdc">
+              
+              Does Kani support all the Rust features used in it?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+        <div class="toc-section">
+          <p>verification</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-dd4f60b8-8527-430b-8763-113e47480615">
+              
+              Ca Kani reason about it?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+    </div><!-- id="toc" -->
+
+
+    
+
+  </div><!-- id="contents-container" -->
+
+
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>check</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-471fa9d1-0a99-4782-be9c-74a01594cd62">
+      
+      <div class="success">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-471fa9d1-0a99-4782-be9c-74a01594cd62">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Is this valid Rust code?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "kani-rustc" "--edition" "2015" "-Z" "no-codegen" "tests/bookrunner/books/Rust by Example/Std misc/Path/15.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                5
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-31T18:16:02Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                01s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-31T18:16:03Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+             
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>codegen</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-fbb7ce3a-758e-4ae4-8d5b-6b2f8a2d7cdc">
+      
+      <div class="success">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-fbb7ce3a-758e-4ae4-8d5b-6b2f8a2d7cdc">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Does Kani support all the Rust features used in it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "kani-rustc" "--edition" "2015" "--out-dir" "build/tmp" "tests/bookrunner/books/Rust by Example/Std misc/Path/15.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                10
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-31T18:16:03Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                00s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-31T18:16:03Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+             
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>verification</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-dd4f60b8-8527-430b-8763-113e47480615">
+      
+      <div class="fail">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-dd4f60b8-8527-430b-8763-113e47480615">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Ca Kani reason about it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            RUSTFLAGS="--edition 2015" "kani" "tests/bookrunner/books/Rust by Example/Std misc/Path/15.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                10
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                60
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-31T18:16:15Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                04s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-31T18:16:19Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              no
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+             
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+          <div class="output-box"><xmp>stdout:
+            
+CBMC version 5.48.0 (cbmc-5.48.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/Rust by Example/Std misc/Path/15.goto
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 16 object bits, 48 offset bits (user-specified)
+Starting Bounded Model Checking
+Unwinding loop _RNvMs_NtCsh5TcIzg7XyT_5alloc7raw_vecINtB4_6RawVechE14current_memoryCshQSYD7tvfWo_2_15.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeINtNtCsh5TcIzg7XyT_5alloc3vec3VechEECshQSYD7tvfWo_2_15.0 iteration 1  thread 0
+aborting path on assume(false) at file /home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Std misc/Path/15.rs line 17 column 11 function main thread 0
+aborting path on assume(false) at file <builtin-library-abort> line 6 function abort thread 0
+Unwinding loop _RNvMs_NtCsh5TcIzg7XyT_5alloc7raw_vecINtB4_6RawVechE14current_memoryCshQSYD7tvfWo_2_15.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeINtNtCsh5TcIzg7XyT_5alloc3vec3VechEECshQSYD7tvfWo_2_15.0 iteration 1  thread 0
+Runtime Symex: 0.236402s
+size of program expression: 2726 steps
+simple slicing removed 91 assignments
+Generated 182 VCC(s), 65 remaining after simplification
+Runtime Postprocess Equation: 0.000413103s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.0807511s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 0.00292291s
+Solving with MiniSAT 2.2.1 with simplifier
+63789 variables, 51178 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.203243s
+Runtime decision procedure: 0.284419s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+63789 variables, 8483 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.00106941s
+Runtime decision procedure: 0.00112801s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+63789 variables, 8468 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.00109991s
+Runtime decision procedure: 0.00117121s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+63789 variables, 8456 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.000676704s
+Runtime decision procedure: 0.000718404s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+63789 variables, 8457 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.00444712s
+Runtime decision procedure: 0.00449502s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+63789 variables, 8457 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.00110821s
+Runtime decision procedure: 0.00117381s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+63789 variables, 8410 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.00164361s
+Runtime decision procedure: 0.00168341s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+63789 variables, 8366 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.010656s
+Runtime decision procedure: 0.0107036s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+63789 variables, 8351 clauses
+SAT checker inconsistent: instance is UNSATISFIABLE
+Runtime Solver: 1.03e-05s
+Runtime decision procedure: 4.0201e-05s
+
+** Results:
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_11445255537496544650") (MIR type Adt(std::rt::begin_panic::PanicPayload, [&str])). Please report failures:
+https://github.com/model-checking/kani/issues/new?template=bug_report.md: SUCCESS
+[assertion.2] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_4317141983261250885") (MIR type Closure(DefId(1:9147 ~ std[2f3c]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
+https://github.com/model-checking/kani/issues/new?template=bug_report.md: SUCCESS
+[assertion.3] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-str") (MIR type Ref(ReErased, str, Not)). Please report failures:
+https://github.com/model-checking/kani/issues/new?template=bug_report.md: SUCCESS
+[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+[pointer_primitives.2] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+[pointer_primitives.3] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+function _ZN3std2io5stdio6_print17hbd655a505d65b63eE
+[_ZN3std2io5stdio6_print17hbd655a505d65b63eE.assertion.1] assertion false: FAILURE
+
+function _ZN3std3sys4unix6os_str5Slice6to_str17hfff1bbaada9540b4E
+[_ZN3std3sys4unix6os_str5Slice6to_str17hfff1bbaada9540b4E.assertion.1] assertion false: FAILURE
+
+function _ZN3std4path4Path5_join17h3753cfe9b99a5da9E
+[_ZN3std4path4Path5_join17h3753cfe9b99a5da9E.assertion.1] assertion false: FAILURE
+
+/home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Std misc/Path/15.rs function main
+[main.assertion.1] line 17 unreachable code: SUCCESS
+[main.pointer_arithmetic.1] line 17 pointer arithmetic: dead object in (unsigned char *)&var_12 + 0: SUCCESS
+[main.pointer_dereference.1] line 17 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_12 + 0)): SUCCESS
+[main.assertion.2] line 18 new path is not a valid UTF-8 sequence: FAILURE
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/alloc.rs function std::alloc::dealloc
+[std::alloc::dealloc.overflow.1] line 105 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.1] line 105 pointer invalid in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.2] line 105 deallocated dynamic object in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.3] line 105 dead object in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.4] line 105 pointer outside object bounds in OBJECT_SIZE((void *)var_3): FAILURE
+[std::alloc::dealloc.precondition_instance.1] line 105 free argument must be NULL or valid pointer: FAILURE
+[std::alloc::dealloc.precondition_instance.2] line 105 free argument must be dynamic object: FAILURE
+[std::alloc::dealloc.precondition_instance.3] line 105 free argument has offset zero: FAILURE
+[std::alloc::dealloc.precondition_instance.4] line 105 double free: FAILURE
+[std::alloc::dealloc.precondition_instance.5] line 105 free called for new[] object: SUCCESS
+[std::alloc::dealloc.precondition_instance.6] line 105 free called for stack-allocated object: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/raw_vec.rs function <alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 478 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 478 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::current_memory
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.1] line 241 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.2] line 241 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.3] line 241 dereference failure: deallocated dynamic object in self->cap: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.4] line 241 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.5] line 241 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.6] line 241 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_arithmetic.1] line 242 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.7] line 242 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.8] line 248 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.9] line 248 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.10] line 248 dereference failure: deallocated dynamic object in self->cap: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.11] line 248 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.12] line 248 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.13] line 248 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.14] line 250 dereference failure: pointer NULL in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.15] line 250 dereference failure: pointer invalid in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.16] line 250 dereference failure: deallocated dynamic object in self->ptr: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.17] line 250 dereference failure: dead object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.18] line 250 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.19] line 250 dereference failure: invalid integer address in self->ptr: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::ptr
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.1] line 224 dereference failure: pointer NULL in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.2] line 224 dereference failure: pointer invalid in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.3] line 224 dereference failure: deallocated dynamic object in self->ptr: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.4] line 224 dereference failure: dead object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.5] line 224 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.6] line 224 dereference failure: invalid integer address in self->ptr: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Deref>::deref
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.1] line 2432 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.2] line 2432 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.3] line 2432 dereference failure: deallocated dynamic object in self->len: FAILURE
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.4] line 2432 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.5] line 2432 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Deref>::deref.pointer_dereference.6] line 2432 dereference failure: invalid integer address in self->len: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Drop>::drop
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2816 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2816 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2816 dereference failure: deallocated dynamic object in self->len: FAILURE
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2816 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2816 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2816 dereference failure: invalid integer address in self->len: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_mut_ptr
+[std::vec::Vec::<T, A>::as_mut_ptr.assertion.1] line 1172 assumption failed: FAILURE
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_ptr
+[std::vec::Vec::<T, A>::as_ptr.assertion.1] line 1136 assumption failed: FAILURE
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/alloc/layout.rs function std::alloc::Layout::align
+[std::alloc::Layout::align.pointer_dereference.1] line 120 dereference failure: pointer NULL in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.2] line 120 dereference failure: pointer invalid in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.3] line 120 dereference failure: deallocated dynamic object in self->align_: FAILURE
+[std::alloc::Layout::align.pointer_dereference.4] line 120 dereference failure: dead object in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.5] line 120 dereference failure: pointer outside object bounds in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.6] line 120 dereference failure: invalid integer address in self->align_: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/alloc/layout.rs function std::alloc::Layout::size
+[std::alloc::Layout::size.pointer_dereference.1] line 110 dereference failure: pointer NULL in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.2] line 110 dereference failure: pointer invalid in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.3] line 110 dereference failure: deallocated dynamic object in self->size_: FAILURE
+[std::alloc::Layout::size.pointer_dereference.4] line 110 dereference failure: dead object in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.5] line 110 dereference failure: pointer outside object bounds in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.6] line 110 dereference failure: invalid integer address in self->size_: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/convert/mod.rs function <&T as std::convert::AsRef<U>>::as_ref
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.1] line 490 dereference failure: pointer NULL in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.2] line 490 dereference failure: pointer invalid in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.3] line 490 dereference failure: deallocated dynamic object in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.4] line 490 dereference failure: dead object in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.5] line 490 dereference failure: pointer outside object bounds in *self: SUCCESS
+[<&T as std::convert::AsRef<U>>::as_ref.pointer_dereference.6] line 490 dereference failure: invalid integer address in *self: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
+[std::fmt::Arguments::<'a>::new_v1.assertion.1] line 363 This is a placeholder message; Kani doesn't support message formatted at runtime: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_24 + 0: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_24 + 0)): SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/std/src/path.rs function std::path::Path::join
+[std::path::Path::join.assertion.1] line 2417 resume instruction: SUCCESS
+
+<builtin-library-malloc> function malloc
+[malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
+[malloc.assertion.2] line 31 max allocation may fail: SUCCESS
+
+** 19 of 90 failed (9 iterations)
+VERIFICATION FAILED
+
+            </xmp>
+          </div><!-- class="output-box" -->
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+
+
+</div><!-- id="content" -->
+</body>
+</html>

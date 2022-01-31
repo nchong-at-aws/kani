@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Pipeline tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Method call expressions/10.rs
+  </title>
+<style>
+#title{
+  background-color: #ec407a;
+  color: white;
+  padding: 2em;
+}
+h1 {
+  margin-bottom: 0em;
+}
+#subtitle {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+}
+.run-info ul {
+  list-style: none;
+}
+.run-info ul li {
+  display: inline;
+  margin-right: 6em;
+  margin-left: -3em;
+  text-transform: uppercase;
+  font-size: small;
+  color: #ec407a;
+}
+#content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  color: #263238;
+  font-family: Helvetica, sans-serif;
+}
+p {
+  margin: 0;
+}
+.command-table {
+  background-color: #eceff1;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  margin-bottom: 4em;
+}
+.command-table .fail-ignored {
+  background-color: #e65100cc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .success {
+  background-color: #1a237ecc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .in-progress {
+  background-color: black;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .non-started {
+  background-color: #26323844;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .fail {
+  background-color: #f44336cc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-content {
+  background-color: #eceff1;
+  padding: 1em;
+}
+.command-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.command-id-link{
+  flex-grow: 0;
+}
+.command-id-link a {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+  text-decoration: none;
+  margin-left: 0.2em;
+}
+.command-id-link a:link {
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+}
+.command-id-link a:visited {
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+}
+.command-id-link a:visited:hover {
+  color: #ec407a;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+               0px 0px 10px #fff,
+               0px 0px 5px #ec407a,
+               0px 0px 5px #ec407a;
+}
+.command-id-link a:hover {
+  color: #ec407a;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb
+               0px 0px 10px #fff,
+               0px 0px 5px #ec407a,
+               0px 0px 5px #ec407a;
+}
+.command-id-link a:active {
+  color: #ffeb3b;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+}
+.command-id-link a:visited:active {
+  color: #ffeb3b;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+}
+.command-description {
+  color: #26323899;
+  font-size: smaller;
+  text-align: center;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.command-invocation {
+  padding: 1em;
+  color: #fff;
+  background-color: #005662;
+  font-size: small;
+  font-family: monospace;
+  border-radius: 0.5em;
+  text-shadow: 0 0 2px #ffccbccc;
+}
+.command-stats-table {
+  margin-top: 0.2em;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  padding-top: 0.4em;
+  display: flex;
+  flex-direction: column;
+  background-color: #eae3998a;
+  color: #263238cc;
+  margin-bottom: 0.2em;
+}
+.command-stats-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  font-size: small;
+  text-transform: uppercase;
+}
+.command-stats-row p .value {
+  color: #00251aaa;
+  text-shadow: 0 0 2px #82ada944;
+  font-weight: bold;
+}
+.output-box {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  color: #000a12;
+  background-color: #cfd8dc;
+  font-size: small;
+  font-family: monospace;
+  border-radius: 0.5em;
+  max-height: 20em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.output-box xmp{
+  white-space: pre;
+}
+.stage-name p {
+  margin-left: 0.5em;
+  color: #546e7a;
+  text-shadow:  -1px  0px 0px #fff
+               ,-2px  0px 0px #ffffff99
+               ,-1px  1px 0px #ffffff99
+               ;
+  font-size: 48pt;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-style: italic;
+}
+.stage-name .underline {
+  width: 100%;
+  height: 1.1em;
+  background-color: #546e7a;
+  margin-top: -1.6em;
+}
+.stage-name {
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+.outcome-table-info-box {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  color: #000a12;
+  background-color: #ffee58;
+  border-radius: 0.5em;
+}
+.outcome-table-info-box .outcome{
+  font-weight: bold;
+}
+#toc {
+  margin-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  margin-right: 3em;
+}
+.toc-title {
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  margin-bottom: -1em;
+}
+.toc-section{
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+.toc-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.toc-row-icon {
+  padding-right: 8px;
+}
+.status-icon-cross {
+  fill: #f44336;
+    width: 16px;
+    height: 16px;
+}
+.status-icon-tick {
+  fill: #3f51b5;
+  stroke: #ffffff77;
+  stroke-width: 1px;
+  width: 16px;
+  height: 16px;
+}
+
+.status-icon-in-progress {
+  fill: #333;
+  width: 16px;
+  height: 16px;
+}
+
+.status-icon-in-progress circle {
+  stroke: #333;
+  stroke-width: 2px;
+  fill: none
+}
+a:link {
+  color: #1e88e5;
+}
+a:visited {
+  color: #1e88e5;
+}
+a:visited:hover {
+  background-color: #1e88e5;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #1e88e5;
+  color: #fff;
+  text-decoration: none;
+}
+a:active {
+  background-color: #ec407a;
+  color: #fff;
+  text-decoration: none;
+}
+a:visited:active {
+  background-color: #ec407a;
+  color: #fff;
+  text-decoration: none;
+}
+
+#contents-container {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+#depgraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  flex-shrink: 7;
+}
+
+#depgraph-title p {
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+#depgraph-preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#depgraph-preview {
+  padding: 1em;
+}
+
+.memory-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  align-items: center;
+}
+.memory-preview {
+  width: 75%;
+}
+.memory-preview svg {
+  margin-left: -1em;
+  margin-right: -2em;
+}
+.memory-table {
+}
+.memory-title {
+  text-align: center;
+  font-style: bold;
+}
+.memory-subtitle {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  text-align: center;
+  opacity: 0.8;
+}
+.memory-pad {
+  width: 1.5em;
+}
+.memory-value {
+  text-align: center;
+  margin-right: 2em;
+}
+.rss {
+  color: #ab47bc;
+}
+.vsz {
+  color: #4caf50;
+}
+
+
+@media (prefers-color-scheme: dark){
+  a:link {
+    color: #29b6f6;
+  }
+  a:visited {
+    color: #29b6f6;
+  }
+  a:visited:hover {
+    color: #263238;
+    background-color: #29b6f6;
+  }
+  a:hover {
+    color: #263238;
+    background-color: #29b6f6;
+  }
+  a:active {
+    color: #263238;
+    background-color: #ec407a;
+  }
+  a:visited:active {
+    color: #263238;
+    background-color: #ec407a;
+  }
+  .command-id-link a:link {
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb;
+  }
+  .command-id-link a:visited {
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb;
+  }
+  .command-id-link a:visited:hover {
+    color: #ec407a;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb.
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ec407a,
+                 0px 0px 5px #ec407a;
+  }
+  .command-id-link a:hover {
+    color: #ec407a;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ec407a,
+                 0px 0px 5px #ec407a;
+  }
+  .command-id-link a:active {
+    color: #ffeb3b;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+  }
+  .command-id-link a:visited:active {
+    color: #ffeb3b;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+  }
+  body {
+    color: #babdbe;
+    background-color: #263238;
+  }
+  .outcome-table-info-box p{
+    color: #000a12;
+  }
+  p {
+    color: #babdbe;
+  }
+  #subtitle {
+    color: #fff;
+  }
+  .command-table {
+    background-color: #37474f;
+  }
+  .command-content {
+    background-color: #37474f;
+  }
+  .command-invocation p {
+    color: #fff;
+  }
+  .command-stats-table {
+    background-color: #eae399d0;
+    color: #263238;
+  }
+  .command-stats-table p {
+    color: #263238;
+  }
+  .output-box {
+    color: #cfd8dccc;
+    background-color: #102027;
+  }
+  .stage-name p {
+    text-shadow: -1px  0px 0px #263238,
+                 -2px  0px 0px #26323899,
+                 -1px  1px 0px #26323899;
+  }
+  .status-icon-in-progress { fill: #ddd; }
+  .status-icon-in-progress circle { stroke: #ddd; }
+
+  /* SVG graphs */
+  g text {
+    fill: #eceff1;
+    stroke: #fff0;
+  }
+}
+</style>
+</head>
+<body>
+<div id="content">
+
+  <div id="title">
+    <h1>
+      Book Runner pipeline &lsquo;tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Method call expressions/10.rs&rsquo;
+    </h1>
+    <p id="subtitle">
+      Litani CI Dashboard
+    </p>
+  </div><!-- id="title" -->
+
+  <div class=run-info>
+    <ul>
+      <li>Pipeline status: fail</li>
+      <li>2022-01-31T18:11:30Z</li>
+      <li>60c2986e-3ac9-4f71-a1b2-48b1295d4a7c</li>
+    </ul>
+  </div><!-- class=run-info -->
+
+  <div id="contents-container">
+
+    <div id="toc">
+      <div class="toc-title">
+        <p>Summary of jobs for this pipeline</p>
+      </div><!-- class="toc-title" -->
+
+      
+        <div class="toc-section">
+          <p>check</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-59e29e97-0f50-4c91-ba23-3cc127a2af4a">
+              
+              Is this valid Rust code?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+        <div class="toc-section">
+          <p>codegen</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-07bf2b01-0b40-4a91-a083-4e028b1024c2">
+              
+              Does Kani support all the Rust features used in it?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+        <div class="toc-section">
+          <p>verification</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-54589a22-c5de-46a7-99c2-ee5fba0e40ec">
+              
+              Ca Kani reason about it?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+    </div><!-- id="toc" -->
+
+
+    
+
+  </div><!-- id="contents-container" -->
+
+
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>check</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-59e29e97-0f50-4c91-ba23-3cc127a2af4a">
+      
+      <div class="success">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-59e29e97-0f50-4c91-ba23-3cc127a2af4a">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Is this valid Rust code?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "kani-rustc" "--edition" "2021" "-Z" "no-codegen" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Method call expressions/10.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                5
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-31T18:18:35Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                00s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-31T18:18:35Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+             
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>codegen</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-07bf2b01-0b40-4a91-a083-4e028b1024c2">
+      
+      <div class="success">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-07bf2b01-0b40-4a91-a083-4e028b1024c2">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Does Kani support all the Rust features used in it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "kani-rustc" "--edition" "2021" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Method call expressions/10.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                10
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-31T18:25:04Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                00s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-31T18:25:04Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+             
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>verification</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-54589a22-c5de-46a7-99c2-ee5fba0e40ec">
+      
+      <div class="fail">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-54589a22-c5de-46a7-99c2-ee5fba0e40ec">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Ca Kani reason about it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            RUSTFLAGS="--edition 2021" "kani" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Method call expressions/10.rs" "--cbmc-args" "--unwind" "0"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                10
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                60
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-31T18:27:25Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                03s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-31T18:27:28Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              no
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+             
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+          <div class="output-box"><xmp>stdout:
+            
+CBMC version 5.48.0 (cbmc-5.48.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Method call expressions/10.goto
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 16 object bits, 48 offset bits (user-specified)
+Starting Bounded Model Checking
+aborting path on assume(false) at file /rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/mod.rs line 237 column 21 function core::num::dec2flt::dec2flt thread 0
+Not unwinding loop _RINvMNtNtNtCs8q7AaUDrtM0_4core3num7dec2flt6numberNtB3_6Number12is_fast_pathfECscayMOfC8RvK_2_10.2 iteration 1  thread 0
+Not unwinding loop _RINvMNtNtNtCs8q7AaUDrtM0_4core3num7dec2flt6numberNtB3_6Number12is_fast_pathfECscayMOfC8RvK_2_10.3 iteration 1  thread 0
+Not unwinding loop _RINvNtCs8q7AaUDrtM0_4core3cmp6min_byjNvYjNtB2_3Ord3cmpECscayMOfC8RvK_2_10.1 iteration 1  thread 0
+Runtime Symex: 0.0825931s
+size of program expression: 1363 steps
+simple slicing removed 15 assignments
+Generated 113 VCC(s), 27 remaining after simplification
+Runtime Postprocess Equation: 0.000204302s
+Passing problem to propositional reduction
+converting SSA
+Runtime Convert SSA: 0.0156797s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 3.48e-05s
+Solving with MiniSAT 2.2.1 with simplifier
+35354 variables, 5899 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.00918417s
+Runtime decision procedure: 0.0251538s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+35354 variables, 318 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.000233702s
+Runtime decision procedure: 0.000276502s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+35354 variables, 318 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.000910707s
+Runtime decision procedure: 0.000951708s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+35354 variables, 189 clauses
+SAT checker inconsistent: instance is UNSATISFIABLE
+Runtime Solver: 1.03e-05s
+Runtime decision procedure: 7.42e-05s
+
+** Results:
+[.unwind.1] unwinding assertion loop 1: FAILURE
+[.unwind.2] unwinding assertion loop 2: FAILURE
+[.unwind.3] unwinding assertion loop 3: FAILURE
+[array_bounds.1] array 'd'.digits.0 upper bound in d.digits.0[var_34]: SUCCESS
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_4317141983261250885") (MIR type Closure(DefId(1:9147 ~ std[2f3c]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
+https://github.com/model-checking/kani/issues/new?template=bug_report.md: SUCCESS
+[division-by-zero.1] division by zero in var_20 / var_21: SUCCESS
+[pointer_arithmetic.1] pointer arithmetic: pointer NULL in var_4 + var_6: SUCCESS
+[pointer_arithmetic.2] pointer arithmetic: pointer invalid in var_4 + var_6: SUCCESS
+[pointer_arithmetic.3] pointer arithmetic: deallocated dynamic object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.4] pointer arithmetic: dead object in var_4 + var_6: SUCCESS
+[pointer_arithmetic.5] pointer arithmetic: pointer outside object bounds in var_4 + var_6: SUCCESS
+[pointer_arithmetic.6] pointer arithmetic: invalid integer address in var_4 + var_6: SUCCESS
+[pointer_arithmetic.7] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
+[pointer_arithmetic.8] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
+[pointer_arithmetic.9] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.10] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.11] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
+[pointer_arithmetic.12] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
+[pointer_arithmetic.13] pointer arithmetic: pointer NULL in var_3 + var_4: SUCCESS
+[pointer_arithmetic.14] pointer arithmetic: pointer invalid in var_3 + var_4: SUCCESS
+[pointer_arithmetic.15] pointer arithmetic: deallocated dynamic object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.16] pointer arithmetic: dead object in var_3 + var_4: SUCCESS
+[pointer_arithmetic.17] pointer arithmetic: pointer outside object bounds in var_3 + var_4: SUCCESS
+[pointer_arithmetic.18] pointer arithmetic: invalid integer address in var_3 + var_4: SUCCESS
+[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+function _ZN4core3num7dec2flt11pfe_invalid17h91f24a0f1316fabbE
+[_ZN4core3num7dec2flt11pfe_invalid17h91f24a0f1316fabbE.assertion.1] assertion false: SUCCESS
+
+function _ZN4core3num7dec2flt5parse12parse_number17hcefc37498c6fd5bdE
+[_ZN4core3num7dec2flt5parse12parse_number17hcefc37498c6fd5bdE.assertion.1] assertion false: FAILURE
+
+function _ZN4core3num7dec2flt5parse21parse_partial_inf_nan14parse_inf_rest17h6dbf1f8292bd46d8E
+[_ZN4core3num7dec2flt5parse21parse_partial_inf_nan14parse_inf_rest17h6dbf1f8292bd46d8E.assertion.1] assertion false: SUCCESS
+
+function _ZN4core3num7dec2flt6common8BiasedFp9zero_pow217h729af7d1f8224d47E
+[_ZN4core3num7dec2flt6common8BiasedFp9zero_pow217h729af7d1f8224d47E.assertion.1] assertion false: SUCCESS
+
+function _ZN4core3num7dec2flt6lemire22compute_product_approx17ha0fea485cae4fcebE
+[_ZN4core3num7dec2flt6lemire22compute_product_approx17ha0fea485cae4fcebE.assertion.1] assertion false: SUCCESS
+
+function _ZN4core3num7dec2flt6lemire5power17h4391749f1c83a438E
+[_ZN4core3num7dec2flt6lemire5power17h4391749f1c83a438E.assertion.1] assertion false: SUCCESS
+
+function _ZN4core3num7dec2flt7decimal13parse_decimal17h18240769aa099b02E
+[_ZN4core3num7dec2flt7decimal13parse_decimal17h18240769aa099b02E.assertion.1] assertion false: SUCCESS
+
+function _ZN4core3num7dec2flt7decimal7Decimal10left_shift17h91ad36a0a6a9cf28E
+[_ZN4core3num7dec2flt7decimal7Decimal10left_shift17h91ad36a0a6a9cf28E.assertion.1] assertion false: SUCCESS
+
+function _ZN4core3num7dec2flt7decimal7Decimal11right_shift17hb0ebb31011cc2746E
+[_ZN4core3num7dec2flt7decimal7Decimal11right_shift17hb0ebb31011cc2746E.assertion.1] assertion false: SUCCESS
+
+function _ZN4core3num7dec2flt7decimal7Decimal5round17h76e567dae24d302dE
+[_ZN4core3num7dec2flt7decimal7Decimal5round17h76e567dae24d302dE.assertion.1] assertion false: SUCCESS
+
+function _ZN4core3num7dec2flt9pfe_empty17h3d21aecf1dc0d3f9E
+[_ZN4core3num7dec2flt9pfe_empty17h3d21aecf1dc0d3f9E.assertion.1] assertion false: SUCCESS
+
+function _ZN59_$LT$f32$u20$as$u20$core..num..dec2flt..float..RawFloat$GT$13from_u64_bits17hdb6d5db592db0436E
+[_ZN59_$LT$f32$u20$as$u20$core..num..dec2flt..float..RawFloat$GT$13from_u64_bits17hdb6d5db592db0436E.assertion.1] assertion false: SUCCESS
+
+function _ZN59_$LT$f32$u20$as$u20$core..num..dec2flt..float..RawFloat$GT$15pow10_fast_path17h0f70b05d3cca2800E
+[_ZN59_$LT$f32$u20$as$u20$core..num..dec2flt..float..RawFloat$GT$15pow10_fast_path17h0f70b05d3cca2800E.assertion.1] assertion false: SUCCESS
+
+function _ZN59_$LT$f32$u20$as$u20$core..num..dec2flt..float..RawFloat$GT$8from_u6417h6beac2a123330c27E
+[_ZN59_$LT$f32$u20$as$u20$core..num..dec2flt..float..RawFloat$GT$8from_u6417h6beac2a123330c27E.assertion.1] assertion false: SUCCESS
+
+/home/runner/work/kani/kani/tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Method call expressions/10.rs function main
+[main.assertion.1] line 7 assertion failed: 1.14 < log_pi && log_pi < 1.15: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/cmp.rs function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.1] line 1393 dereference failure: pointer NULL in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.2] line 1393 dereference failure: pointer invalid in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.3] line 1393 dereference failure: deallocated dynamic object in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.4] line 1393 dereference failure: dead object in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.5] line 1393 dereference failure: pointer outside object bounds in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.6] line 1393 dereference failure: invalid integer address in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.7] line 1393 dereference failure: pointer NULL in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.8] line 1393 dereference failure: pointer invalid in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.9] line 1393 dereference failure: deallocated dynamic object in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.10] line 1393 dereference failure: dead object in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.11] line 1393 dereference failure: pointer outside object bounds in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.12] line 1393 dereference failure: invalid integer address in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.13] line 1394 dereference failure: pointer NULL in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.14] line 1394 dereference failure: pointer invalid in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.15] line 1394 dereference failure: deallocated dynamic object in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.16] line 1394 dereference failure: dead object in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.17] line 1394 dereference failure: pointer outside object bounds in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.18] line 1394 dereference failure: invalid integer address in *self: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.19] line 1394 dereference failure: pointer NULL in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.20] line 1394 dereference failure: pointer invalid in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.21] line 1394 dereference failure: deallocated dynamic object in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.22] line 1394 dereference failure: dead object in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.23] line 1394 dereference failure: pointer outside object bounds in *other: SUCCESS
+[std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.24] line 1394 dereference failure: invalid integer address in *other: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/cmp.rs function std::cmp::min_by
+[std::cmp::min_by.assertion.2] line 1195 resume instruction: SUCCESS
+[std::cmp::min_by.assertion.1] line 1196 unreachable code: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/iter/adapters/zip.rs function <std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::new
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::new.assertion.1] line 263 resume instruction: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/iter/adapters/zip.rs function <std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.assertion.1] line 270 resume instruction: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.1] line 271 dereference failure: pointer NULL in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.2] line 271 dereference failure: pointer invalid in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.3] line 271 dereference failure: deallocated dynamic object in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.4] line 271 dereference failure: dead object in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.5] line 271 dereference failure: pointer outside object bounds in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.6] line 271 dereference failure: invalid integer address in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.7] line 271 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.8] line 271 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.9] line 271 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.10] line 271 dereference failure: dead object in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.11] line 271 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.12] line 271 dereference failure: invalid integer address in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.13] line 272 dereference failure: pointer NULL in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.14] line 272 dereference failure: pointer invalid in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.15] line 272 dereference failure: deallocated dynamic object in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.16] line 272 dereference failure: dead object in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.17] line 272 dereference failure: pointer outside object bounds in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.18] line 272 dereference failure: invalid integer address in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.19] line 280 dereference failure: pointer NULL in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.20] line 280 dereference failure: pointer invalid in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.21] line 280 dereference failure: deallocated dynamic object in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.22] line 280 dereference failure: dead object in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.23] line 280 dereference failure: pointer outside object bounds in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.24] line 280 dereference failure: invalid integer address in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.25] line 280 dereference failure: pointer NULL in self->a_len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.26] line 280 dereference failure: pointer invalid in self->a_len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.27] line 280 dereference failure: deallocated dynamic object in self->a_len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.28] line 280 dereference failure: dead object in self->a_len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.29] line 280 dereference failure: pointer outside object bounds in self->a_len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.30] line 280 dereference failure: invalid integer address in self->a_len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.31] line 281 dereference failure: pointer NULL in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.32] line 281 dereference failure: pointer invalid in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.33] line 281 dereference failure: deallocated dynamic object in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.34] line 281 dereference failure: dead object in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.35] line 281 dereference failure: pointer outside object bounds in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.36] line 281 dereference failure: invalid integer address in self->index: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.37] line 284 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.38] line 284 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.39] line 284 dereference failure: deallocated dynamic object in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.40] line 284 dereference failure: dead object in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.41] line 284 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.42] line 284 dereference failure: invalid integer address in self->len: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_arithmetic.1] line 290 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.43] line 290 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_arithmetic.2] line 292 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[<std::iter::Zip<A, B> as std::iter::adapters::zip::ZipImpl<A, B>>::next.pointer_dereference.44] line 292 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/iter/traits/iterator.rs function std::iter::Iterator::fold
+[std::iter::Iterator::fold.assertion.1] line 2160 resume instruction: SUCCESS
+[std::iter::Iterator::fold.pointer_arithmetic.1] line 2166 pointer arithmetic: dead object in (unsigned char *)&var_4 + 0: SUCCESS
+[std::iter::Iterator::fold.pointer_dereference.1] line 2166 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_4 + 0)): SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/iter/traits/iterator.rs function std::iter::Iterator::zip
+[std::iter::Iterator::zip.assertion.1] line 522 resume instruction: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/common.rs function <core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.1] line 189 dereference failure: pointer NULL in *__self_0_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.2] line 189 dereference failure: pointer invalid in *__self_0_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.3] line 189 dereference failure: deallocated dynamic object in *__self_0_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.4] line 189 dereference failure: dead object in *__self_0_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.5] line 189 dereference failure: pointer outside object bounds in *__self_0_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.6] line 189 dereference failure: invalid integer address in *__self_0_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.7] line 189 dereference failure: pointer NULL in *__self_1_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.8] line 189 dereference failure: pointer invalid in *__self_1_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.9] line 189 dereference failure: deallocated dynamic object in *__self_1_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.10] line 189 dereference failure: dead object in *__self_1_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.11] line 189 dereference failure: pointer outside object bounds in *__self_1_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.12] line 189 dereference failure: invalid integer address in *__self_1_0: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.13] line 191 dereference failure: pointer NULL in *__self_0_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.14] line 191 dereference failure: pointer invalid in *__self_0_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.15] line 191 dereference failure: deallocated dynamic object in *__self_0_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.16] line 191 dereference failure: dead object in *__self_0_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.17] line 191 dereference failure: pointer outside object bounds in *__self_0_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.18] line 191 dereference failure: invalid integer address in *__self_0_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.19] line 191 dereference failure: pointer NULL in *__self_1_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.20] line 191 dereference failure: pointer invalid in *__self_1_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.21] line 191 dereference failure: deallocated dynamic object in *__self_1_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.22] line 191 dereference failure: dead object in *__self_1_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.23] line 191 dereference failure: pointer outside object bounds in *__self_1_1: SUCCESS
+[<core::num::dec2flt::common::BiasedFp as std::cmp::PartialEq>::ne.pointer_dereference.24] line 191 dereference failure: invalid integer address in *__self_1_1: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/common.rs function core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.1] line 42 dereference failure: pointer NULL in *var_3.0: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.2] line 42 dereference failure: pointer invalid in *var_3.0: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.3] line 42 dereference failure: deallocated dynamic object in *var_3.0: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.4] line 42 dereference failure: dead object in *var_3.0: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.5] line 42 dereference failure: pointer outside object bounds in *var_3.0: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.6] line 42 dereference failure: invalid integer address in *var_3.0: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.7] line 42 dereference failure: pointer NULL in *var_3.1: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.8] line 42 dereference failure: pointer invalid in *var_3.1: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.9] line 42 dereference failure: deallocated dynamic object in *var_3.1: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.10] line 42 dereference failure: dead object in *var_3.1: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.11] line 42 dereference failure: pointer outside object bounds in *var_3.1: SUCCESS
+[core::num::dec2flt::common::ByteSlice::eq_ignore_case::{closure#0}.pointer_dereference.12] line 42 dereference failure: invalid integer address in *var_3.1: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/lemire.rs function core::num::dec2flt::lemire::compute_float
+[core::num::dec2flt::lemire::compute_float.undefined-shift.1] line 40 shift distance too large in w << var_16: SUCCESS
+[core::num::dec2flt::lemire::compute_float.overflow.1] line 63 arithmetic overflow on unsigned to signed type conversion in (int)var_32: SUCCESS
+[core::num::dec2flt::lemire::compute_float.undefined-shift.2] line 64 shift distance is negative in var_35 >> var_36: SUCCESS
+[core::num::dec2flt::lemire::compute_float.undefined-shift.3] line 64 shift distance too large in var_35 >> var_36: SUCCESS
+[core::num::dec2flt::lemire::compute_float.overflow.2] line 65 arithmetic overflow on signed type conversion in (int)var_46: SUCCESS
+[core::num::dec2flt::lemire::compute_float.overflow.3] line 65 arithmetic overflow on unsigned to signed type conversion in (int)var_49: SUCCESS
+[core::num::dec2flt::lemire::compute_float.undefined-shift.4] line 72 shift distance is negative in mantissa >> var_56: SUCCESS
+[core::num::dec2flt::lemire::compute_float.undefined-shift.5] line 72 shift distance too large in mantissa >> var_56: SUCCESS
+[core::num::dec2flt::lemire::compute_float.undefined-shift.6] line 93 shift distance is negative in var_83 << var_84: SUCCESS
+[core::num::dec2flt::lemire::compute_float.undefined-shift.7] line 93 shift distance too large in var_83 << var_84: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/mod.rs function core::num::dec2flt::biased_fp_to_float
+[core::num::dec2flt::biased_fp_to_float.overflow.1] line 217 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)var_5: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/mod.rs function core::num::dec2flt::dec2flt
+[core::num::dec2flt::dec2flt.pointer_arithmetic.1] line 224 pointer arithmetic: dead object in (unsigned char *)&var_5 + 0: SUCCESS
+[core::num::dec2flt::dec2flt.pointer_dereference.1] line 224 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_5 + 0)): SUCCESS
+[core::num::dec2flt::dec2flt.pointer_dereference.2] line 224 dereference failure: pointer NULL in *var_5.0: SUCCESS
+[core::num::dec2flt::dec2flt.pointer_dereference.3] line 224 dereference failure: pointer invalid in *var_5.0: SUCCESS
+[core::num::dec2flt::dec2flt.pointer_dereference.4] line 224 dereference failure: deallocated dynamic object in *var_5.0: SUCCESS
+[core::num::dec2flt::dec2flt.pointer_dereference.5] line 224 dereference failure: dead object in *var_5.0: SUCCESS
+[core::num::dec2flt::dec2flt.pointer_dereference.6] line 224 dereference failure: pointer outside object bounds in *var_5.0: SUCCESS
+[core::num::dec2flt::dec2flt.pointer_dereference.7] line 224 dereference failure: invalid integer address in *var_5.0: SUCCESS
+[core::num::dec2flt::dec2flt.assertion.1] line 237 unreachable code: SUCCESS
+[core::num::dec2flt::dec2flt.pointer_arithmetic.2] line 237 pointer arithmetic: dead object in (unsigned char *)&var_23 + 16: SUCCESS
+[core::num::dec2flt::dec2flt.pointer_dereference.8] line 237 dereference failure: dead object in ((unsigned char *)&var_23)[16]: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/number.rs function core::num::dec2flt::number::Number::is_fast_path
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.1] line 37 dereference failure: pointer NULL in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.2] line 37 dereference failure: pointer invalid in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.3] line 37 dereference failure: deallocated dynamic object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.4] line 37 dereference failure: dead object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.5] line 37 dereference failure: pointer outside object bounds in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.6] line 37 dereference failure: invalid integer address in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.19] line 38 dereference failure: pointer NULL in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.20] line 38 dereference failure: pointer invalid in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.21] line 38 dereference failure: deallocated dynamic object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.22] line 38 dereference failure: dead object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.23] line 38 dereference failure: pointer outside object bounds in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.24] line 38 dereference failure: invalid integer address in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.13] line 39 dereference failure: pointer NULL in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.14] line 39 dereference failure: pointer invalid in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.15] line 39 dereference failure: deallocated dynamic object in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.16] line 39 dereference failure: dead object in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.17] line 39 dereference failure: pointer outside object bounds in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.18] line 39 dereference failure: invalid integer address in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.7] line 40 dereference failure: pointer NULL in self->many_digits: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.8] line 40 dereference failure: pointer invalid in self->many_digits: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.9] line 40 dereference failure: deallocated dynamic object in self->many_digits: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.10] line 40 dereference failure: dead object in self->many_digits: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.11] line 40 dereference failure: pointer outside object bounds in self->many_digits: SUCCESS
+[core::num::dec2flt::number::Number::is_fast_path.pointer_dereference.12] line 40 dereference failure: invalid integer address in self->many_digits: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/number.rs function core::num::dec2flt::number::Number::try_fast_path
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.1] line 61 dereference failure: pointer NULL in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.2] line 61 dereference failure: pointer invalid in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.3] line 61 dereference failure: deallocated dynamic object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.4] line 61 dereference failure: dead object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.5] line 61 dereference failure: pointer outside object bounds in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.6] line 61 dereference failure: invalid integer address in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.7] line 63 dereference failure: pointer NULL in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.8] line 63 dereference failure: pointer invalid in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.9] line 63 dereference failure: deallocated dynamic object in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.10] line 63 dereference failure: dead object in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.11] line 63 dereference failure: pointer outside object bounds in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.12] line 63 dereference failure: invalid integer address in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.13] line 64 dereference failure: pointer NULL in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.14] line 64 dereference failure: pointer invalid in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.15] line 64 dereference failure: deallocated dynamic object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.16] line 64 dereference failure: dead object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.17] line 64 dereference failure: pointer outside object bounds in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.18] line 64 dereference failure: invalid integer address in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.overflow.1] line 65 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)var_16: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.19] line 65 dereference failure: pointer NULL in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.20] line 65 dereference failure: pointer invalid in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.21] line 65 dereference failure: deallocated dynamic object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.22] line 65 dereference failure: dead object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.23] line 65 dereference failure: pointer outside object bounds in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.24] line 65 dereference failure: invalid integer address in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.overflow.2] line 67 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)var_22: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.25] line 67 dereference failure: pointer NULL in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.26] line 67 dereference failure: pointer invalid in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.27] line 67 dereference failure: deallocated dynamic object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.28] line 67 dereference failure: dead object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.29] line 67 dereference failure: pointer outside object bounds in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.30] line 67 dereference failure: invalid integer address in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.31] line 71 dereference failure: pointer NULL in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.32] line 71 dereference failure: pointer invalid in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.33] line 71 dereference failure: deallocated dynamic object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.34] line 71 dereference failure: dead object in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.35] line 71 dereference failure: pointer outside object bounds in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.36] line 71 dereference failure: invalid integer address in self->exponent: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.array_bounds.1] line 72 array 'var_30'.0 upper bound in var_30.0[var_31]: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.assertion.1] line 72 index out of bounds: the length is move _33 but the index is _31: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.assertion.2] line 72 unreachable code: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.overflow.3] line 72 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)var_32: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.overflow.4] line 72 arithmetic overflow on unsigned to signed type conversion in (long int)var_26.case: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.37] line 72 dereference failure: pointer NULL in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.38] line 72 dereference failure: pointer invalid in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.39] line 72 dereference failure: deallocated dynamic object in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.40] line 72 dereference failure: dead object in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.41] line 72 dereference failure: pointer outside object bounds in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.42] line 72 dereference failure: invalid integer address in self->mantissa: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.43] line 78 dereference failure: pointer NULL in self->negative: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.44] line 78 dereference failure: pointer invalid in self->negative: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.45] line 78 dereference failure: deallocated dynamic object in self->negative: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.46] line 78 dereference failure: dead object in self->negative: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.47] line 78 dereference failure: pointer outside object bounds in self->negative: SUCCESS
+[core::num::dec2flt::number::Number::try_fast_path.pointer_dereference.48] line 78 dereference failure: invalid integer address in self->negative: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/parse.rs function core::num::dec2flt::parse::parse_inf_nan
+[core::num::dec2flt::parse::parse_inf_nan.overflow.1] line 224 arithmetic overflow on unsigned to signed type conversion in (long int)var_3.case: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/slow.rs function core::num::dec2flt::slow::parse_long_mantissa
+[core::num::dec2flt::slow::parse_long_mantissa.overflow.1] line 50 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)var_17: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.overflow.2] line 56 arithmetic overflow on unsigned to signed type conversion in (int)var_29: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.array_bounds.1] line 62 array 'd'.digits.0 upper bound in d.digits.0[var_34]: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.pointer_dereference.1] line 62 dereference failure: pointer NULL in *digit: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.pointer_dereference.2] line 62 dereference failure: pointer invalid in *digit: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.pointer_dereference.3] line 62 dereference failure: deallocated dynamic object in *digit: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.pointer_dereference.4] line 62 dereference failure: dead object in *digit: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.pointer_dereference.5] line 62 dereference failure: pointer outside object bounds in *digit: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.pointer_dereference.6] line 62 dereference failure: invalid integer address in *digit: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.overflow.3] line 67 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)var_43: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.overflow.4] line 73 arithmetic overflow on unsigned to signed type conversion in (int)var_51: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.overflow.5] line 78 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)var_56: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.overflow.6] line 83 arithmetic overflow on unsigned to signed type conversion in (int)var_65: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa.undefined-shift.1] line 92 shift distance too large in 1 << var_77: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/dec2flt/slow.rs function core::num::dec2flt::slow::parse_long_mantissa::{closure#0}
+[core::num::dec2flt::slow::parse_long_mantissa::{closure#0}.array_bounds.1] line 33 array 'var_6'.0 upper bound in var_6.0[var_7]: SUCCESS
+[core::num::dec2flt::slow::parse_long_mantissa::{closure#0}.assertion.1] line 33 index out of bounds: the length is move _8 but the index is _7: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/num/uint_macros.rs function core::num::<impl u64>::leading_zeros
+[core::num::<impl u64>::leading_zeros.overflow.1] line 126 arithmetic overflow on unsigned to unsigned type conversion in (unsigned int)var_2: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ops/arith.rs function <f32 as std::ops::Div>::div
+[<f32 as std::ops::Div>::div.NaN.1] line 495 NaN on / in var_3 / var_4: SUCCESS
+[<f32 as std::ops::Div>::div.division-by-zero.1] line 495 division by zero in var_3 / var_4: SUCCESS
+[<f32 as std::ops::Div>::div.overflow.1] line 495 arithmetic overflow on floating-point division in var_3 / var_4: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ops/arith.rs function <f32 as std::ops::Mul>::mul
+[<f32 as std::ops::Mul>::mul.NaN.1] line 337 NaN on * in var_3 * var_4: SUCCESS
+[<f32 as std::ops::Mul>::mul.overflow.1] line 337 arithmetic overflow on floating-point multiplication in var_3 * var_4: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/option.rs function <std::option::Option<T> as std::ops::Try>::branch
+[<std::option::Option<T> as std::ops::Try>::branch.assertion.1] line 2230 unreachable code: SUCCESS
+[<std::option::Option<T> as std::ops::Try>::branch.overflow.1] line 2230 arithmetic overflow on unsigned to signed type conversion in (long int)self.case: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/const_ptr.rs function std::ptr::const_ptr::<impl *const T>::add
+[std::ptr::const_ptr::<impl *const T>::add.overflow.1] line 576 arithmetic overflow on unsigned to signed type conversion in (long int)var_5: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/const_ptr.rs function std::ptr::const_ptr::<impl *const T>::offset
+[std::ptr::const_ptr::<impl *const T>::offset.assertion.1] line 295 attempt to compute offset which would overflow: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/const_ptr.rs function std::ptr::const_ptr::<impl *const T>::wrapping_add
+[std::ptr::const_ptr::<impl *const T>::wrapping_add.overflow.1] line 702 arithmetic overflow on unsigned to signed type conversion in (long int)var_5: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/mut_ptr.rs function std::ptr::mut_ptr::<impl *mut T>::add
+[std::ptr::mut_ptr::<impl *mut T>::add.overflow.1] line 690 arithmetic overflow on unsigned to signed type conversion in (long int)var_5: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/mut_ptr.rs function std::ptr::mut_ptr::<impl *mut T>::offset
+[std::ptr::mut_ptr::<impl *mut T>::offset.assertion.1] line 307 attempt to compute offset which would overflow: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/result.rs function std::result::Result::<T, E>::unwrap_or
+[std::result::Result::<T, E>::unwrap_or.assertion.2] line 1344 resume instruction: SUCCESS
+[std::result::Result::<T, E>::unwrap_or.assertion.1] line 1345 unreachable code: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/slice/index.rs function <std::ops::RangeFrom<usize> as std::slice::SliceIndex<[T]>>::index
+[<std::ops::RangeFrom<usize> as std::slice::SliceIndex<[T]>>::index.assertion.1] line 329 a panicking function core::slice::index::slice_start_index_len_fail is invoked: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/slice/iter.rs function std::slice::Iter::<'a, T>::new
+[std::slice::Iter::<'a, T>::new.assertion.1] line 91 assumption failed: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/slice/iter/macros.rs function <std::slice::Iter<'a, T> as std::iter::Iterator>::__iterator_get_unchecked
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::__iterator_get_unchecked.pointer_dereference.1] line 340 dereference failure: pointer NULL in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::__iterator_get_unchecked.pointer_dereference.2] line 340 dereference failure: pointer invalid in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::__iterator_get_unchecked.pointer_dereference.3] line 340 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::__iterator_get_unchecked.pointer_dereference.4] line 340 dereference failure: dead object in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::__iterator_get_unchecked.pointer_dereference.5] line 340 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::__iterator_get_unchecked.pointer_dereference.6] line 340 dereference failure: invalid integer address in self->ptr: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/slice/iter/macros.rs function <std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.1] line 18 dereference failure: pointer NULL in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.2] line 18 dereference failure: pointer invalid in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.3] line 18 dereference failure: deallocated dynamic object in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.4] line 18 dereference failure: dead object in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.5] line 18 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.6] line 18 dereference failure: invalid integer address in self->ptr: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.7] line 23 dereference failure: pointer NULL in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.8] line 23 dereference failure: pointer invalid in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.9] line 23 dereference failure: deallocated dynamic object in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.10] line 23 dereference failure: dead object in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.11] line 23 dereference failure: pointer outside object bounds in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.12] line 23 dereference failure: invalid integer address in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.assertion.1] line 29 attempt to compute unchecked_sub which would overflow: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.13] line 29 dereference failure: pointer NULL in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.14] line 29 dereference failure: pointer invalid in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.15] line 29 dereference failure: deallocated dynamic object in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.16] line 29 dereference failure: dead object in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.17] line 29 dereference failure: pointer outside object bounds in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.pointer_dereference.18] line 29 dereference failure: invalid integer address in self->end: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.assertion.2] line 35 exact_div arguments divide exactly: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.assertion.3] line 35 exact_div divisor is nonzero: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.assertion.4] line 35 exact_div division does not overflow: SUCCESS
+[<std::slice::Iter<'a, T> as std::iter::Iterator>::size_hint.division-by-zero.1] line 35 division by zero in var_20 % var_21: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/slice/mod.rs function core::slice::<impl [T]>::first
+[core::slice::<impl [T]>::first.pointer_arithmetic.1] line 167 pointer arithmetic: pointer NULL in self.data + 0: SUCCESS
+[core::slice::<impl [T]>::first.pointer_arithmetic.2] line 167 pointer arithmetic: pointer invalid in self.data + 0: SUCCESS
+[core::slice::<impl [T]>::first.pointer_arithmetic.3] line 167 pointer arithmetic: deallocated dynamic object in self.data + 0: SUCCESS
+[core::slice::<impl [T]>::first.pointer_arithmetic.4] line 167 pointer arithmetic: dead object in self.data + 0: SUCCESS
+[core::slice::<impl [T]>::first.pointer_arithmetic.5] line 167 pointer arithmetic: pointer outside object bounds in self.data + 0: SUCCESS
+[core::slice::<impl [T]>::first.pointer_arithmetic.6] line 167 pointer arithmetic: invalid integer address in self.data + 0: SUCCESS
+[core::slice::<impl [T]>::first.pointer_arithmetic.7] line 167 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[core::slice::<impl [T]>::first.pointer_dereference.1] line 167 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/std/src/f32.rs function std::f32::<impl f32>::log
+[std::f32::<impl f32>::log.NaN.1] line 430 NaN on / in var_3 / var_5: SUCCESS
+[std::f32::<impl f32>::log.division-by-zero.1] line 430 division by zero in var_3 / var_5: SUCCESS
+[std::f32::<impl f32>::log.overflow.1] line 430 arithmetic overflow on floating-point division in var_3 / var_5: SUCCESS
+
+<builtin-library-logf> function logf
+[logf.assertion.1] assertion false: SUCCESS
+
+** 4 of 330 failed (4 iterations)
+VERIFICATION FAILED
+[Kani] info: Verification output shows one or more unwinding failures.
+[Kani] tip: Consider increasing the unwinding value or disabling `--unwinding-assertions`.
+
+            </xmp>
+          </div><!-- class="output-box" -->
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+
+
+</div><!-- id="content" -->
+</body>
+</html>

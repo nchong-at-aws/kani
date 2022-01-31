@@ -3,14 +3,14 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Comparison with other tools - The Rust Model Checker</title>
+        <title>Comparison with other tools - The Kani Rust Verifier</title>
                 
 
         <!-- Custom HTML head -->
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Documentation for the Rust Model Checker (RMC)">
+        <meta name="description" content="Documentation for the Kani Rust Verifier">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with RMC</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html" class="active"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.3.</strong> RMC on a single file</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.</strong> RMC on a crate</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li></ol></li><li class="chapter-item expanded "><a href="rmc-tutorial.html"><strong aria-hidden="true">2.</strong> RMC tutorial</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> RMC developer documentation</div></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with Kani</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html" class="active"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.3.</strong> Kani on a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.4.</strong> Kani on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Kani tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with Kani</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> Kani developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kani-testing.html"><strong aria-hidden="true">3.1.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.2.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -111,16 +111,16 @@
                         </button>
                                             </div>
 
-                    <h1 class="menu-title">The Rust Model Checker</h1>
+                    <h1 class="menu-title">The Kani Rust Verifier</h1>
 
                     <div class="right-buttons">
                                                 <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc" title="Git repository" aria-label="Git repository">
+                                                                        <a href="https://github.com/model-checking/kani" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-                                                                        <a href="https://github.com/model-checking/rmc/edit/main/rmc-docs/src/tool-comparison.md" title="Suggest an edit" aria-label="Suggest an edit">
+                                                                        <a href="https://github.com/model-checking/kani/edit/main/docs/src/tool-comparison.md" title="Suggest an edit" aria-label="Suggest an edit">
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         
@@ -162,7 +162,7 @@ Tests in this style do actually state properties: &quot;forall inputs (of some c
 Property testing is often quite effective, but the engine can't fully prove the property, it can only sample randomly a few of those values to test (though property testing libraries frequently give interesting &quot;edge cases&quot; higher probability, making them more effective at bug-finding).</p>
 <p><strong>Model checking</strong> is similar to these techniques in how you use them, but model checking is non-random and exhaustive (though often only up to some bound on input or problem size).
 Thus, properties checked with a model checker are effectively proofs.
-Instead of naively trying all possible <em>concrete</em> inputs (which could be infeasible and blow up exponentially), model checkers like RMC will cleverly encode program traces as <em>symbolic</em> &quot;<a href="https://en.wikipedia.org/wiki/Boolean_satisfiability_problem">SAT</a>/<a href="https://en.wikipedia.org/wiki/Satisfiability_modulo_theories">SMT</a>&quot; problems, and hand them off to SAT/SMT solvers.
+Instead of naively trying all possible <em>concrete</em> inputs (which could be infeasible and blow up exponentially), model checkers like Kani will cleverly encode program traces as <em>symbolic</em> &quot;<a href="https://en.wikipedia.org/wiki/Boolean_satisfiability_problem">SAT</a>/<a href="https://en.wikipedia.org/wiki/Satisfiability_modulo_theories">SMT</a>&quot; problems, and hand them off to SAT/SMT solvers.
 Again, SAT/SMT solving is an <a href="https://en.wikipedia.org/wiki/NP-completeness">NP-complete</a> problem, but most practical programs can be model checked within milliseconds to seconds (with notable exceptions: you can easily try to reverse a cryptographic hash with a model checker, but good luck getting it to terminate!)</p>
 <p>Model checking allows you to prove non-trivial properties about programs, and check those proofs in roughly the same amount of time as a traditional test suite would take to run.
 The downside is many types of properties can quickly become &quot;too large&quot; to practically model check, and so writing &quot;proof harnesses&quot; (very similar to property tests and fuzzer harnesses) requires some skill to understand why the solver is not terminating and fix the structure of the problem you're giving it so that it does.
@@ -176,7 +176,7 @@ This process basically boils down to &quot;debugging&quot; the proof.</p>
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-                                                    <a rel="next" href="rmc-tutorial.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="kani-single-file.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -190,7 +190,7 @@ This process basically boils down to &quot;debugging&quot; the proof.</p>
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-                                    <a rel="next" href="rmc-tutorial.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="kani-single-file.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>

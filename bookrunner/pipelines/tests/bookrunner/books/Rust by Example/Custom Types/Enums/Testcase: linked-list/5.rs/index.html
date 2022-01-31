@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Pipeline tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs
+  </title>
+<style>
+#title{
+  background-color: #ec407a;
+  color: white;
+  padding: 2em;
+}
+h1 {
+  margin-bottom: 0em;
+}
+#subtitle {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+}
+.run-info ul {
+  list-style: none;
+}
+.run-info ul li {
+  display: inline;
+  margin-right: 6em;
+  margin-left: -3em;
+  text-transform: uppercase;
+  font-size: small;
+  color: #ec407a;
+}
+#content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2em;
+  color: #263238;
+  font-family: Helvetica, sans-serif;
+}
+p {
+  margin: 0;
+}
+.command-table {
+  background-color: #eceff1;
+  padding: 0.3em;
+  border-radius: 0.3em;
+  margin-bottom: 4em;
+}
+.command-table .fail-ignored {
+  background-color: #e65100cc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .success {
+  background-color: #1a237ecc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .in-progress {
+  background-color: black;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .non-started {
+  background-color: #26323844;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-table .fail {
+  background-color: #f44336cc;
+  padding: 0.3em;
+  border-radius: 0.3em;
+}
+.command-content {
+  background-color: #eceff1;
+  padding: 1em;
+}
+.command-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.command-id-link{
+  flex-grow: 0;
+}
+.command-id-link a {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+  text-decoration: none;
+  margin-left: 0.2em;
+}
+.command-id-link a:link {
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+}
+.command-id-link a:visited {
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb;
+}
+.command-id-link a:visited:hover {
+  color: #ec407a;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+               0px 0px 10px #fff,
+               0px 0px 5px #ec407a,
+               0px 0px 5px #ec407a;
+}
+.command-id-link a:hover {
+  color: #ec407a;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb
+               0px 0px 10px #fff,
+               0px 0px 5px #ec407a,
+               0px 0px 5px #ec407a;
+}
+.command-id-link a:active {
+  color: #ffeb3b;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+}
+.command-id-link a:visited:active {
+  color: #ffeb3b;
+  background-color: #00000000;
+  text-shadow: 1px  1px 0px #000000bb,
+              -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+}
+.command-description {
+  color: #26323899;
+  font-size: smaller;
+  text-align: center;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.command-invocation {
+  padding: 1em;
+  color: #fff;
+  background-color: #005662;
+  font-size: small;
+  font-family: monospace;
+  border-radius: 0.5em;
+  text-shadow: 0 0 2px #ffccbccc;
+}
+.command-stats-table {
+  margin-top: 0.2em;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  padding-top: 0.4em;
+  display: flex;
+  flex-direction: column;
+  background-color: #eae3998a;
+  color: #263238cc;
+  margin-bottom: 0.2em;
+}
+.command-stats-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  font-size: small;
+  text-transform: uppercase;
+}
+.command-stats-row p .value {
+  color: #00251aaa;
+  text-shadow: 0 0 2px #82ada944;
+  font-weight: bold;
+}
+.output-box {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  color: #000a12;
+  background-color: #cfd8dc;
+  font-size: small;
+  font-family: monospace;
+  border-radius: 0.5em;
+  max-height: 20em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.output-box xmp{
+  white-space: pre;
+}
+.stage-name p {
+  margin-left: 0.5em;
+  color: #546e7a;
+  text-shadow:  -1px  0px 0px #fff
+               ,-2px  0px 0px #ffffff99
+               ,-1px  1px 0px #ffffff99
+               ;
+  font-size: 48pt;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-style: italic;
+}
+.stage-name .underline {
+  width: 100%;
+  height: 1.1em;
+  background-color: #546e7a;
+  margin-top: -1.6em;
+}
+.stage-name {
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+.outcome-table-info-box {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  color: #000a12;
+  background-color: #ffee58;
+  border-radius: 0.5em;
+}
+.outcome-table-info-box .outcome{
+  font-weight: bold;
+}
+#toc {
+  margin-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  margin-right: 3em;
+}
+.toc-title {
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  margin-bottom: -1em;
+}
+.toc-section{
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+.toc-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.toc-row-icon {
+  padding-right: 8px;
+}
+.status-icon-cross {
+  fill: #f44336;
+    width: 16px;
+    height: 16px;
+}
+.status-icon-tick {
+  fill: #3f51b5;
+  stroke: #ffffff77;
+  stroke-width: 1px;
+  width: 16px;
+  height: 16px;
+}
+
+.status-icon-in-progress {
+  fill: #333;
+  width: 16px;
+  height: 16px;
+}
+
+.status-icon-in-progress circle {
+  stroke: #333;
+  stroke-width: 2px;
+  fill: none
+}
+a:link {
+  color: #1e88e5;
+}
+a:visited {
+  color: #1e88e5;
+}
+a:visited:hover {
+  background-color: #1e88e5;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #1e88e5;
+  color: #fff;
+  text-decoration: none;
+}
+a:active {
+  background-color: #ec407a;
+  color: #fff;
+  text-decoration: none;
+}
+a:visited:active {
+  background-color: #ec407a;
+  color: #fff;
+  text-decoration: none;
+}
+
+#contents-container {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+#depgraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: flex-start;
+  flex-shrink: 7;
+}
+
+#depgraph-title p {
+  text-align: center;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+#depgraph-preview img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#depgraph-preview {
+  padding: 1em;
+}
+
+.memory-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  align-items: center;
+}
+.memory-preview {
+  width: 75%;
+}
+.memory-preview svg {
+  margin-left: -1em;
+  margin-right: -2em;
+}
+.memory-table {
+}
+.memory-title {
+  text-align: center;
+  font-style: bold;
+}
+.memory-subtitle {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  text-align: center;
+  opacity: 0.8;
+}
+.memory-pad {
+  width: 1.5em;
+}
+.memory-value {
+  text-align: center;
+  margin-right: 2em;
+}
+.rss {
+  color: #ab47bc;
+}
+.vsz {
+  color: #4caf50;
+}
+
+
+@media (prefers-color-scheme: dark){
+  a:link {
+    color: #29b6f6;
+  }
+  a:visited {
+    color: #29b6f6;
+  }
+  a:visited:hover {
+    color: #263238;
+    background-color: #29b6f6;
+  }
+  a:hover {
+    color: #263238;
+    background-color: #29b6f6;
+  }
+  a:active {
+    color: #263238;
+    background-color: #ec407a;
+  }
+  a:visited:active {
+    color: #263238;
+    background-color: #ec407a;
+  }
+  .command-id-link a:link {
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb;
+  }
+  .command-id-link a:visited {
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb;
+  }
+  .command-id-link a:visited:hover {
+    color: #ec407a;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb.
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ec407a,
+                 0px 0px 5px #ec407a;
+  }
+  .command-id-link a:hover {
+    color: #ec407a;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ec407a,
+                 0px 0px 5px #ec407a;
+  }
+  .command-id-link a:active {
+    color: #ffeb3b;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+  }
+  .command-id-link a:visited:active {
+    color: #ffeb3b;
+    background-color: #00000000;
+    text-shadow: 1px  1px 0px #000000bb,
+                -1px -1px 0px #ffffffbb,
+                 0px 0px 10px #fff,
+                 0px 0px 5px #ffeb3b,
+                 0px 0px 5px #ffeb3b;
+  }
+  body {
+    color: #babdbe;
+    background-color: #263238;
+  }
+  .outcome-table-info-box p{
+    color: #000a12;
+  }
+  p {
+    color: #babdbe;
+  }
+  #subtitle {
+    color: #fff;
+  }
+  .command-table {
+    background-color: #37474f;
+  }
+  .command-content {
+    background-color: #37474f;
+  }
+  .command-invocation p {
+    color: #fff;
+  }
+  .command-stats-table {
+    background-color: #eae399d0;
+    color: #263238;
+  }
+  .command-stats-table p {
+    color: #263238;
+  }
+  .output-box {
+    color: #cfd8dccc;
+    background-color: #102027;
+  }
+  .stage-name p {
+    text-shadow: -1px  0px 0px #263238,
+                 -2px  0px 0px #26323899,
+                 -1px  1px 0px #26323899;
+  }
+  .status-icon-in-progress { fill: #ddd; }
+  .status-icon-in-progress circle { stroke: #ddd; }
+
+  /* SVG graphs */
+  g text {
+    fill: #eceff1;
+    stroke: #fff0;
+  }
+}
+</style>
+</head>
+<body>
+<div id="content">
+
+  <div id="title">
+    <h1>
+      Book Runner pipeline &lsquo;tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs&rsquo;
+    </h1>
+    <p id="subtitle">
+      Litani CI Dashboard
+    </p>
+  </div><!-- id="title" -->
+
+  <div class=run-info>
+    <ul>
+      <li>Pipeline status: fail</li>
+      <li>2022-01-31T18:11:30Z</li>
+      <li>60c2986e-3ac9-4f71-a1b2-48b1295d4a7c</li>
+    </ul>
+  </div><!-- class=run-info -->
+
+  <div id="contents-container">
+
+    <div id="toc">
+      <div class="toc-title">
+        <p>Summary of jobs for this pipeline</p>
+      </div><!-- class="toc-title" -->
+
+      
+        <div class="toc-section">
+          <p>check</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-c2a2d7d9-e019-4695-bb2e-59285a5d6531">
+              
+              Is this valid Rust code?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+        <div class="toc-section">
+          <p>codegen</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-5716594f-9899-4dce-b8f7-8b510b679bab">
+              
+              Does Kani support all the Rust features used in it?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+        <div class="toc-section">
+          <p>verification</p>
+        </div><!-- class="toc-section" -->
+        
+          <div class="toc-row">
+
+            <div class="toc-row-icon">
+              
+                <svg height="16px" width="16px" class="status-icon-cross">
+                  <polygon points="
+                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
+                  </polygon>
+                </svg>
+              
+            </div><!-- class="toc-row-icon" -->
+
+            <div class="toc-row-job-name">
+              <p>
+              <a href="#job-30da3777-be73-4b86-b4d9-f295834c583f">
+              
+              Ca Kani reason about it?
+              
+              </a>
+              </p>
+            </div><!-- class="toc-row-job-name" -->
+
+          </div><!-- class="toc-row" -->
+
+        
+      
+    </div><!-- id="toc" -->
+
+
+    
+
+  </div><!-- id="contents-container" -->
+
+
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>check</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-c2a2d7d9-e019-4695-bb2e-59285a5d6531">
+      
+      <div class="success">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-c2a2d7d9-e019-4695-bb2e-59285a5d6531">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Is this valid Rust code?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "kani-rustc" "--edition" "2015" "-Z" "no-codegen" "tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                5
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-31T18:14:53Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                00s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-31T18:14:53Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+             
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>codegen</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-5716594f-9899-4dce-b8f7-8b510b679bab">
+      
+      <div class="success">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-5716594f-9899-4dce-b8f7-8b510b679bab">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Does Kani support all the Rust features used in it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            "kani-rustc" "--edition" "2015" "--out-dir" "build/tmp" "tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                0
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                10
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-31T18:23:02Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                01s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-31T18:23:03Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              yes
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+             
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+  <div class="stage">
+    <div class="stage-name">
+      <p>verification</p>
+      <div class="underline"></div>
+    </div><!-- class="stage-name" -->
+
+    
+    <div class="command-table" id="job-30da3777-be73-4b86-b4d9-f295834c583f">
+      
+      <div class="fail">
+      
+        <div class="command-content">
+          <div class="command-header">
+            <div class="command-id-link">
+              <p>
+                <a href="#job-30da3777-be73-4b86-b4d9-f295834c583f">#</a>
+              </p>
+            </div><!-- class="command-id-link" -->
+            <div class="command-description">
+              
+              <p>
+                Ca Kani reason about it?
+              </p>
+              
+            </div><!-- class="command-description" -->
+          </div><!-- class="command-header" -->
+          <div class="command-invocation">
+            <p>
+            RUSTFLAGS="--edition 2015" "kani" "tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs" "--cbmc-args" "--unwind" "3"
+            </p>
+          </div><!-- class="command-invocation" -->
+
+          
+          <div class="command-stats-table">
+            
+            <div class="command-stats-row">
+              <p>Command return code:
+              <span class="value">
+                10
+              </span></p>
+              <p>OK returns:
+              <span class="value">
+                ['0']
+              </span></p>
+              <p>Ignored returns:
+              <span class="value">
+                None
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Timeout:
+              <span class="value">
+                60
+              </span></p>
+              <p>Timeout ok:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout ignored:
+              <span class="value">
+                False
+              </span></p>
+              <p>Timeout reached:
+              <span class="value">
+                False
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Start time:
+              <span class="value">
+                2022-01-31T18:25:35Z
+              </span></p>
+              <p>Duration:
+              <span class="value">
+                05s
+              </span></p>
+              <p>End time:
+              <span class="value">
+                2022-01-31T18:25:40Z
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+            <div class="command-stats-row">
+              <p>Command successful:
+              <span class="value">
+              
+              no
+              
+              </span></p>
+            </div><!-- class="command-stats-row" -->
+             
+          </div><!-- class="command-stats-table" -->
+          
+
+          
+
+
+          
+
+
+          
+          <div class="output-box"><xmp>stdout:
+            
+CBMC version 5.48.0 (cbmc-5.48.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.goto
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Generic Property Instrumentation
+Running with 16 object bits, 48 offset bits (user-specified)
+Starting Bounded Model Checking
+Unwinding recursion List::len iteration 1
+aborting path on assume(false) at file /home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs line 36 column 15 function List::len thread 0
+Unwinding recursion List::len iteration 2
+aborting path on assume(false) at file /home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs line 36 column 15 function List::len thread 0
+Unwinding recursion List::len iteration 3
+aborting path on assume(false) at file /home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs line 36 column 15 function List::len thread 0
+Not unwinding recursion List::len iteration 4
+Unwinding recursion List::stringify iteration 1
+aborting path on assume(false) at file /home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs line 47 column 15 function List::stringify thread 0
+Unwinding recursion List::stringify iteration 2
+aborting path on assume(false) at file /home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs line 47 column 15 function List::stringify thread 0
+Unwinding recursion List::stringify iteration 3
+aborting path on assume(false) at file /home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs line 47 column 15 function List::stringify thread 0
+Not unwinding recursion List::stringify iteration 4
+Unwinding loop _RNvMs_NtCsh5TcIzg7XyT_5alloc7raw_vecINtB4_6RawVechE14current_memoryCshoUTEec2aYp_1_5.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeINtNtCsh5TcIzg7XyT_5alloc3vec3VechEECshoUTEec2aYp_1_5.0 iteration 1  thread 0
+Unwinding loop _RNvMs_NtCsh5TcIzg7XyT_5alloc7raw_vecINtB4_6RawVechE14current_memoryCshoUTEec2aYp_1_5.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeINtNtCsh5TcIzg7XyT_5alloc3vec3VechEECshoUTEec2aYp_1_5.0 iteration 1  thread 0
+Unwinding loop _RNvMs_NtCsh5TcIzg7XyT_5alloc7raw_vecINtB4_6RawVechE14current_memoryCshoUTEec2aYp_1_5.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeINtNtCsh5TcIzg7XyT_5alloc3vec3VechEECshoUTEec2aYp_1_5.0 iteration 1  thread 0
+Unwinding loop _RNvMs_NtCsh5TcIzg7XyT_5alloc7raw_vecINtB4_6RawVechE14current_memoryCshoUTEec2aYp_1_5.1 iteration 1  thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeINtNtCsh5TcIzg7XyT_5alloc3vec3VechEECshoUTEec2aYp_1_5.0 iteration 1  thread 0
+Unwinding recursion std::ptr::drop_in_place iteration 1
+Unwinding recursion std::ptr::drop_in_place iteration 1
+Unwinding recursion std::ptr::drop_in_place iteration 2
+Unwinding recursion std::ptr::drop_in_place iteration 2
+Unwinding recursion std::ptr::drop_in_place iteration 3
+Unwinding recursion std::ptr::drop_in_place iteration 3
+Not unwinding recursion std::ptr::drop_in_place iteration 4
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeINtNtCsh5TcIzg7XyT_5alloc5boxed3BoxNtCshoUTEec2aYp_1_54ListEEB1h_.0 iteration 1 file /rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeNtCshoUTEec2aYp_1_54ListEBI_.0 iteration 1  thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeINtNtCsh5TcIzg7XyT_5alloc5boxed3BoxNtCshoUTEec2aYp_1_54ListEEB1h_.0 iteration 1 file /rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeNtCshoUTEec2aYp_1_54ListEBI_.0 iteration 1  thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeINtNtCsh5TcIzg7XyT_5alloc5boxed3BoxNtCshoUTEec2aYp_1_54ListEEB1h_.0 iteration 1 file /rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
+Unwinding loop _RINvNtCs8q7AaUDrtM0_4core3ptr13drop_in_placeNtCshoUTEec2aYp_1_54ListEBI_.0 iteration 1  thread 0
+Runtime Symex: 0.579575s
+size of program expression: 6504 steps
+simple slicing removed 52 assignments
+Generated 638 VCC(s), 341 remaining after simplification
+Runtime Postprocess Equation: 0.0012803s
+Passing problem to propositional reduction
+converting SSA
+warning: ignoring byte_extract_little_endian
+* type: struct_tag
+* identifier: tag-_15160618672367081323
+0: symbol
+* type: union_tag
+* identifier: tag-_11452585814601094340-union
+* identifier: main::1::var_1::list!0@1#5..cases
+* expression: member
+* type: union_tag
+* identifier: tag-_11452585814601094340-union
+* component_name: cases
+0: symbol
+* type: struct_tag
+* identifier: tag-_11452585814601094340
+* identifier: main::1::var_1::list
+* #SSA_symbol: 1
+* L0: 0
+* L1: 1
+* L2: 5
+* L1_object_identifier: main::1::var_1::list!0@1..cases
+1: constant
+* type: signedbv
+* width: 64
+* #c_type: signed_long_int
+* value: 4
+Runtime Convert SSA: 0.213493s
+Running propositional reduction
+Post-processing
+Runtime Post-process: 0.105993s
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 155840 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.93739s
+Runtime decision procedure: 1.15311s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 25396 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.0021866s
+Runtime decision procedure: 0.002303s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 25388 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.0037647s
+Runtime decision procedure: 0.0038945s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 25388 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.0054921s
+Runtime decision procedure: 0.0056064s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 25388 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.0031653s
+Runtime decision procedure: 0.0032793s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 25388 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.011287s
+Runtime decision procedure: 0.0114436s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 25377 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.0024597s
+Runtime decision procedure: 0.0025532s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 25377 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.0066465s
+Runtime decision procedure: 0.0067545s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 25349 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.0056786s
+Runtime decision procedure: 0.0058428s
+Running propositional reduction
+Solving with MiniSAT 2.2.1 with simplifier
+160109 variables, 25323 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime Solver: 0.0010025s
+Runtime decision procedure: 0.0010727s
+
+** Results:
+[.recursion] recursion unwinding assertion: SUCCESS
+[assertion.1] Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_4317141983261250885") (MIR type Closure(DefId(1:9147 ~ std[2f3c]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
+https://github.com/model-checking/kani/issues/new?template=bug_report.md: SUCCESS
+[pointer_dereference.1] dereference failure: pointer NULL in var_1->0: SUCCESS
+[pointer_dereference.2] dereference failure: pointer invalid in var_1->0: SUCCESS
+[pointer_dereference.3] dereference failure: deallocated dynamic object in var_1->0: FAILURE
+[pointer_dereference.4] dereference failure: dead object in var_1->0: SUCCESS
+[pointer_dereference.5] dereference failure: pointer outside object bounds in var_1->0: SUCCESS
+[pointer_dereference.6] dereference failure: invalid integer address in var_1->0: SUCCESS
+[pointer_primitives.1] dead object in OBJECT_SIZE(&temp_0): SUCCESS
+function _ZN3std2io5stdio6_print17hbd655a505d65b63eE
+[_ZN3std2io5stdio6_print17hbd655a505d65b63eE.assertion.1] assertion false: FAILURE
+
+function _ZN5alloc3fmt6format17h69789690ef44616eE
+[_ZN5alloc3fmt6format17h69789690ef44616eE.assertion.1] assertion false: FAILURE
+
+/home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs function List::len
+[List::len.assertion.1] line 36 unreachable code: SUCCESS
+[List::len.pointer_dereference.1] line 36 dereference failure: pointer NULL in self->case: SUCCESS
+[List::len.pointer_dereference.2] line 36 dereference failure: pointer invalid in self->case: SUCCESS
+[List::len.pointer_dereference.3] line 36 dereference failure: deallocated dynamic object in self->case: SUCCESS
+[List::len.pointer_dereference.4] line 36 dereference failure: dead object in self->case: SUCCESS
+[List::len.pointer_dereference.5] line 36 dereference failure: pointer outside object bounds in self->case: SUCCESS
+[List::len.pointer_dereference.6] line 36 dereference failure: invalid integer address in self->case: SUCCESS
+[List::len.recursion] line 39 recursion unwinding assertion: SUCCESS
+[List::len.assertion.2] line 39 attempt to compute `const 1_u32 + move _4`, which would overflow: SUCCESS
+[List::len.pointer_dereference.7] line 39 dereference failure: pointer NULL in tail->0: SUCCESS
+[List::len.pointer_dereference.8] line 39 dereference failure: pointer invalid in tail->0: SUCCESS
+[List::len.pointer_dereference.9] line 39 dereference failure: deallocated dynamic object in tail->0: SUCCESS
+[List::len.pointer_dereference.10] line 39 dereference failure: dead object in tail->0: SUCCESS
+[List::len.pointer_dereference.11] line 39 dereference failure: pointer outside object bounds in tail->0: SUCCESS
+[List::len.pointer_dereference.12] line 39 dereference failure: invalid integer address in tail->0: SUCCESS
+
+/home/runner/work/kani/kani/tests/bookrunner/books/Rust by Example/Custom Types/Enums/Testcase: linked-list/5.rs function List::stringify
+[List::stringify.assertion.1] line 47 unreachable code: SUCCESS
+[List::stringify.pointer_dereference.1] line 47 dereference failure: pointer NULL in self->case: SUCCESS
+[List::stringify.pointer_dereference.2] line 47 dereference failure: pointer invalid in self->case: SUCCESS
+[List::stringify.pointer_dereference.3] line 47 dereference failure: deallocated dynamic object in self->case: SUCCESS
+[List::stringify.pointer_dereference.4] line 47 dereference failure: dead object in self->case: SUCCESS
+[List::stringify.pointer_dereference.5] line 47 dereference failure: pointer outside object bounds in self->case: SUCCESS
+[List::stringify.pointer_dereference.6] line 47 dereference failure: invalid integer address in self->case: SUCCESS
+[List::stringify.pointer_dereference.7] line 48 dereference failure: pointer NULL in self->cases: SUCCESS
+[List::stringify.pointer_dereference.8] line 48 dereference failure: pointer invalid in self->cases: SUCCESS
+[List::stringify.pointer_dereference.9] line 48 dereference failure: deallocated dynamic object in self->cases: SUCCESS
+[List::stringify.pointer_dereference.10] line 48 dereference failure: dead object in self->cases: SUCCESS
+[List::stringify.pointer_dereference.11] line 48 dereference failure: pointer outside object bounds in self->cases: SUCCESS
+[List::stringify.pointer_dereference.12] line 48 dereference failure: invalid integer address in self->cases: SUCCESS
+[List::stringify.recursion] line 51 recursion unwinding assertion: SUCCESS
+[List::stringify.pointer_dereference.13] line 51 dereference failure: pointer NULL in tail->0: SUCCESS
+[List::stringify.pointer_dereference.14] line 51 dereference failure: pointer invalid in tail->0: SUCCESS
+[List::stringify.pointer_dereference.15] line 51 dereference failure: deallocated dynamic object in tail->0: SUCCESS
+[List::stringify.pointer_dereference.16] line 51 dereference failure: dead object in tail->0: SUCCESS
+[List::stringify.pointer_dereference.17] line 51 dereference failure: pointer outside object bounds in tail->0: SUCCESS
+[List::stringify.pointer_dereference.18] line 51 dereference failure: invalid integer address in tail->0: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/alloc.rs function alloc::alloc::box_free
+[alloc::alloc::box_free.assertion.1] line 332 resume instruction: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/alloc.rs function std::alloc::dealloc
+[std::alloc::dealloc.overflow.1] line 105 arithmetic overflow on signed to unsigned type conversion in (unsigned long int)POINTER_OFFSET((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.1] line 105 pointer invalid in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.2] line 105 deallocated dynamic object in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.3] line 105 dead object in OBJECT_SIZE((void *)var_3): SUCCESS
+[std::alloc::dealloc.pointer_primitives.4] line 105 pointer outside object bounds in OBJECT_SIZE((void *)var_3): FAILURE
+[std::alloc::dealloc.precondition_instance.1] line 105 free argument must be NULL or valid pointer: FAILURE
+[std::alloc::dealloc.precondition_instance.2] line 105 free argument must be dynamic object: FAILURE
+[std::alloc::dealloc.precondition_instance.3] line 105 free argument has offset zero: FAILURE
+[std::alloc::dealloc.precondition_instance.4] line 105 double free: FAILURE
+[std::alloc::dealloc.precondition_instance.5] line 105 free called for new[] object: SUCCESS
+[std::alloc::dealloc.precondition_instance.6] line 105 free called for stack-allocated object: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/boxed.rs function std::boxed::Box::<T>::new
+[std::boxed::Box::<T>::new.assertion.1] line 194 resume instruction: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.1] line 195 dereference failure: pointer NULL in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.2] line 195 dereference failure: pointer invalid in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.3] line 195 dereference failure: deallocated dynamic object in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.4] line 195 dereference failure: dead object in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.5] line 195 dereference failure: pointer outside object bounds in *var_0.0.pointer: SUCCESS
+[std::boxed::Box::<T>::new.pointer_dereference.6] line 195 dereference failure: invalid integer address in *var_0.0.pointer: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/raw_vec.rs function <alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_arithmetic.1] line 478 pointer arithmetic: dead object in (unsigned char *)&var_2 + 0: SUCCESS
+[<alloc::raw_vec::RawVec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 478 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_2 + 0)): SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::current_memory
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.1] line 241 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.2] line 241 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.3] line 241 dereference failure: deallocated dynamic object in self->cap: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.4] line 241 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.5] line 241 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.6] line 241 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_arithmetic.1] line 242 pointer arithmetic: dead object in (unsigned char *)&var_0 + 0: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.7] line 242 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0)): SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.8] line 248 dereference failure: pointer NULL in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.9] line 248 dereference failure: pointer invalid in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.10] line 248 dereference failure: deallocated dynamic object in self->cap: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.11] line 248 dereference failure: dead object in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.12] line 248 dereference failure: pointer outside object bounds in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.13] line 248 dereference failure: invalid integer address in self->cap: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.14] line 250 dereference failure: pointer NULL in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.15] line 250 dereference failure: pointer invalid in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.16] line 250 dereference failure: deallocated dynamic object in self->ptr: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.17] line 250 dereference failure: dead object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.18] line 250 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::current_memory.pointer_dereference.19] line 250 dereference failure: invalid integer address in self->ptr: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/raw_vec.rs function alloc::raw_vec::RawVec::<T, A>::ptr
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.1] line 224 dereference failure: pointer NULL in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.2] line 224 dereference failure: pointer invalid in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.3] line 224 dereference failure: deallocated dynamic object in self->ptr: FAILURE
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.4] line 224 dereference failure: dead object in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.5] line 224 dereference failure: pointer outside object bounds in self->ptr: SUCCESS
+[alloc::raw_vec::RawVec::<T, A>::ptr.pointer_dereference.6] line 224 dereference failure: invalid integer address in self->ptr: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/vec/mod.rs function <std::vec::Vec<T, A> as std::ops::Drop>::drop
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.1] line 2816 dereference failure: pointer NULL in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.2] line 2816 dereference failure: pointer invalid in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.3] line 2816 dereference failure: deallocated dynamic object in self->len: FAILURE
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.4] line 2816 dereference failure: dead object in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.5] line 2816 dereference failure: pointer outside object bounds in self->len: SUCCESS
+[<std::vec::Vec<T, A> as std::ops::Drop>::drop.pointer_dereference.6] line 2816 dereference failure: invalid integer address in self->len: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/alloc/src/vec/mod.rs function std::vec::Vec::<T, A>::as_mut_ptr
+[std::vec::Vec::<T, A>::as_mut_ptr.assertion.1] line 1172 assumption failed: FAILURE
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/alloc/layout.rs function std::alloc::Layout::align
+[std::alloc::Layout::align.pointer_dereference.1] line 120 dereference failure: pointer NULL in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.2] line 120 dereference failure: pointer invalid in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.3] line 120 dereference failure: deallocated dynamic object in self->align_: FAILURE
+[std::alloc::Layout::align.pointer_dereference.4] line 120 dereference failure: dead object in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.5] line 120 dereference failure: pointer outside object bounds in self->align_: SUCCESS
+[std::alloc::Layout::align.pointer_dereference.6] line 120 dereference failure: invalid integer address in self->align_: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/alloc/layout.rs function std::alloc::Layout::size
+[std::alloc::Layout::size.pointer_dereference.1] line 110 dereference failure: pointer NULL in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.2] line 110 dereference failure: pointer invalid in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.3] line 110 dereference failure: deallocated dynamic object in self->size_: FAILURE
+[std::alloc::Layout::size.pointer_dereference.4] line 110 dereference failure: dead object in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.5] line 110 dereference failure: pointer outside object bounds in self->size_: SUCCESS
+[std::alloc::Layout::size.pointer_dereference.6] line 110 dereference failure: invalid integer address in self->size_: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/fmt/mod.rs function std::fmt::Arguments::<'a>::new_v1
+[std::fmt::Arguments::<'a>::new_v1.assertion.1] line 363 This is a placeholder message; Kani doesn't support message formatted at runtime: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1] line 365 pointer arithmetic: dead object in (unsigned char *)&var_24 + 0: SUCCESS
+[std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1] line 365 dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_24 + 0)): SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/mod.rs function std::ptr::drop_in_place
+[std::ptr::drop_in_place.pointer_dereference.1] line 188 dereference failure: pointer NULL in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.2] line 188 dereference failure: pointer invalid in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.3] line 188 dereference failure: deallocated dynamic object in var_1->case: FAILURE
+[std::ptr::drop_in_place.pointer_dereference.4] line 188 dereference failure: dead object in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.5] line 188 dereference failure: pointer outside object bounds in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.6] line 188 dereference failure: invalid integer address in var_1->case: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.7] line 188 dereference failure: pointer NULL in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.8] line 188 dereference failure: pointer invalid in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.9] line 188 dereference failure: deallocated dynamic object in var_1->0: FAILURE
+[std::ptr::drop_in_place.pointer_dereference.10] line 188 dereference failure: dead object in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.11] line 188 dereference failure: pointer outside object bounds in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.12] line 188 dereference failure: invalid integer address in var_1->0: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.13] line 188 dereference failure: pointer NULL in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.14] line 188 dereference failure: pointer invalid in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.15] line 188 dereference failure: deallocated dynamic object in var_1->1: FAILURE
+[std::ptr::drop_in_place.pointer_dereference.16] line 188 dereference failure: dead object in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.17] line 188 dereference failure: pointer outside object bounds in var_1->1: SUCCESS
+[std::ptr::drop_in_place.pointer_dereference.18] line 188 dereference failure: invalid integer address in var_1->1: SUCCESS
+
+/rustc/9ad5d82f822b3cb67637f11be2e65c5662b66ec0/library/core/src/ptr/unique.rs function std::ptr::Unique::<T>::as_ref
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.1] line 121 dereference failure: pointer NULL in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.2] line 121 dereference failure: pointer invalid in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.3] line 121 dereference failure: deallocated dynamic object in *self: FAILURE
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.4] line 121 dereference failure: dead object in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.5] line 121 dereference failure: pointer outside object bounds in *self: SUCCESS
+[std::ptr::Unique::<T>::as_ref.pointer_dereference.6] line 121 dereference failure: invalid integer address in *self: SUCCESS
+
+<builtin-library-malloc> function malloc
+[malloc.assertion.1] line 26 max allocation size exceeded: SUCCESS
+[malloc.assertion.2] line 31 max allocation may fail: SUCCESS
+
+** 20 of 141 failed (10 iterations)
+VERIFICATION FAILED
+
+            </xmp>
+          </div><!-- class="output-box" -->
+          
+
+          
+
+        </div><!-- class="command-content" -->
+      </div><!-- class="fail" -->
+    </div><!-- id="command-table" -->
+    
+
+  </div><!-- class="stage" -->
+  
+
+
+</div><!-- id="content" -->
+</body>
+</html>
