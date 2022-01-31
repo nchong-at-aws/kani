@@ -11,14 +11,6 @@ macro_rules! error {
     ( $( $x:expr ),* ) => {};
 }
 
-struct MyError {}
-
-unsafe impl kani::Invariant for MyError {
-    fn is_valid(&self) -> bool {
-        true
-    }
-}
-
 #[derive(Default, Clone, Copy)]
 pub struct GuestAddress(pub u64);
 
@@ -49,22 +41,14 @@ impl GuestMemoryMmap {
         return retval;
     }
 
-    fn read_obj<T: kani::Invariant>(&self, addr: GuestAddress) -> Result<T, MyError> {
-        // This assertion means that no descriptor is read more than once
-        unsafe {
-            if let Some(prev_addr) = TRACK_READ_OBJ {
-                assert!(prev_addr.0 != addr.0);
-            }
-            if kani::any() && TRACK_READ_OBJ.is_none() {
-                TRACK_READ_OBJ = Some(addr);
-            }
-        }
-        if kani::any() { Ok(kani::any::<T>()) } else { Err(kani::any::<MyError>()) }
+    fn read_obj<T: kani::Invariant + ReadObjExtraVerification>(&self, addr: GuestAddress) -> Result<T, Error> {
+        T::extra_checks(addr);
+        if kani::any() { Ok(kani::any::<T>()) } else { Err(kani::any::<Error>()) }
     }
+}
 
-    fn read_obj_request_header(&self, addr: GuestAddress) -> Result<RequestHeader, Error> {
-        if kani::any() { Ok(kani::any::<RequestHeader>()) } else { Err(kani::any::<Error>()) }
-    }
+trait ReadObjExtraVerification {
+    fn extra_checks(addr: GuestAddress);
 }
 
 pub const VIRTQ_DESC_F_NEXT: u16 = 0x1;
@@ -78,6 +62,20 @@ struct Descriptor {
     len: u32,
     flags: u16,
     next: u16,
+}
+
+impl ReadObjExtraVerification for Descriptor {
+    fn extra_checks(addr: GuestAddress) {
+        // This assertion means that no descriptor is read more than once
+        unsafe {
+            if let Some(prev_addr) = TRACK_READ_OBJ {
+                assert!(prev_addr.0 != addr.0);
+            }
+            if kani::any() && TRACK_READ_OBJ.is_none() {
+                TRACK_READ_OBJ = Some(addr);
+            }
+        }
+    }
 }
 
 unsafe impl kani::Invariant for Descriptor {
@@ -205,8 +203,12 @@ impl RequestHeader {
         RequestHeader { request_type, _reserved: 0, sector }
     }
     fn read_from(memory: &GuestMemoryMmap, addr: GuestAddress) -> Result<Self, Error> {
-        memory.read_obj_request_header(addr)
+        memory.read_obj(addr)
     }
+}
+
+impl ReadObjExtraVerification for RequestHeader {
+    fn extra_checks(_addr: GuestAddress) {}
 }
 
 #[derive(Clone, Copy, Debug, PartialEq)]
@@ -389,18 +391,11 @@ impl Request {
     }
 }
 
-fn is_nonzero_pow2(x: u16) -> bool {
-    unsafe { (x != 0) && ((x & (x - 1)) == 0) }
-}
-
 fn main() {
     let mem = GuestMemoryMmap {};
+    let desc_table: GuestAddress = kani::any();
     let queue_size: u16 = kani::any();
-    if !is_nonzero_pow2(queue_size) {
-        return;
-    }
     let index: u16 = kani::any();
-    let desc_table = GuestAddress(kani::any::<u64>() & 0xffff_ffff_ffff_fff0);
     let desc = DescriptorChain::checked_new(&mem, desc_table, queue_size, index);
     match desc {
         Some(x) => {
