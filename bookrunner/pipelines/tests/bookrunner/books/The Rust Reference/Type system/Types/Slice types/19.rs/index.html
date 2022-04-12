@@ -180,6 +180,14 @@ p {
   text-shadow: 0 0 2px #82ada944;
   font-weight: bold;
 }
+.literal-stdout {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 .output-box {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -511,8 +519,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2022-02-24T16:13:15Z</li>
-      <li>1a641c21-d9e7-47fb-96f7-8f6903dbb89a</li>
+      <li>2022-04-12T20:15:29Z</li>
+      <li>639e69b9-13e2-4ace-8e8f-4f5cbde80ce4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -540,7 +548,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-8a25d8b1-473e-4829-b4ae-cda8b61f0aad">
+              <a href="#job-1551c57a-21fe-496d-80c2-8b80ffcb98d8">
               
               Is this valid Rust code?
               
@@ -568,7 +576,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-08491911-2eb3-4f03-bbc9-d5bfb7db0b93">
+              <a href="#job-8905225c-07ea-4e99-9cb3-0a536638845d">
               
               Does Kani support all the Rust features used in it?
               
@@ -596,7 +604,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-60f16514-2762-4358-9abe-9bc871e17c5c">
+              <a href="#job-aef4a917-4113-4eaa-9e2f-2aff43d0aea8">
               
               Ca Kani reason about it?
               
@@ -624,7 +632,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-8a25d8b1-473e-4829-b4ae-cda8b61f0aad">
+    <div class="command-table" id="job-1551c57a-21fe-496d-80c2-8b80ffcb98d8">
       
       <div class="success">
       
@@ -632,7 +640,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-8a25d8b1-473e-4829-b4ae-cda8b61f0aad">#</a>
+                <a href="#job-1551c57a-21fe-496d-80c2-8b80ffcb98d8">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -645,7 +653,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2021" "-Z" "no-codegen" "tests/bookrunner/books/The Rust Reference/Type system/Types/Slice types/19.rs"
+            "kani-compiler" "--edition" "2021" "-Z" "no-codegen" "tests/bookrunner/books/The Rust Reference/Type system/Types/Slice types/19.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -687,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:23:21Z
+                2022-04-12T20:20:28Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -695,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:23:21Z
+                2022-04-12T20:20:28Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -734,7 +742,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-08491911-2eb3-4f03-bbc9-d5bfb7db0b93">
+    <div class="command-table" id="job-8905225c-07ea-4e99-9cb3-0a536638845d">
       
       <div class="success">
       
@@ -742,7 +750,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-08491911-2eb3-4f03-bbc9-d5bfb7db0b93">#</a>
+                <a href="#job-8905225c-07ea-4e99-9cb3-0a536638845d">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -755,7 +763,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2021" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rust Reference/Type system/Types/Slice types/19.rs"
+            "kani-compiler" "--edition" "2021" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rust Reference/Type system/Types/Slice types/19.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -797,15 +805,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:23:22Z
+                2022-04-12T20:20:28Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:23:22Z
+                2022-04-12T20:20:29Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -844,7 +852,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-60f16514-2762-4358-9abe-9bc871e17c5c">
+    <div class="command-table" id="job-aef4a917-4113-4eaa-9e2f-2aff43d0aea8">
       
       <div class="success">
       
@@ -852,7 +860,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-60f16514-2762-4358-9abe-9bc871e17c5c">#</a>
+                <a href="#job-aef4a917-4113-4eaa-9e2f-2aff43d0aea8">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -865,7 +873,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2021" "kani" "tests/bookrunner/books/The Rust Reference/Type system/Types/Slice types/19.rs"
+            RUSTFLAGS="--edition 2021" "kani" "tests/bookrunner/books/The Rust Reference/Type system/Types/Slice types/19.rs" "--function" "main"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -907,15 +915,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:25:42Z
+                2022-04-12T20:20:29Z
               </span></p>
               <p>Duration:
               <span class="value">
-                02s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:25:44Z
+                2022-04-12T20:20:30Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -937,259 +945,336 @@ a:visited:active {
 
 
           
-          <div class="output-box"><xmp>stdout:
             
-CBMC 5.50.0 (cbmc-5.50.0)
-CBMC version 5.50.0 (cbmc-5.50.0) 64-bit x86_64 linux
-Reading GOTO program from file tests/bookrunner/books/The Rust Reference/Type system/Types/Slice types/19.goto
+            <div class="output-box"><xmp>stdout:
+              
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RINvNtCs5Ucdn1vYc9q_5alloc5alloc8box_freeSlNtB2_6GlobalECsaejmk9eVMyT_2_19::1::var_5" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RINvNtCs5Ucdn1vYc9q_5alloc5alloc8box_freeSlNtB2_6GlobalECsaejmk9eVMyT_2_19::1::var_9" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Member { lhs: Expr { value: Symbol { identifier: "main::1::var_1::boxed_array" }, typ: StructTag("tag-_13789178513076464262"), location: None }, field: "0" }, typ: StructTag("tag-_7781404690107834667"), location: None }, field: "pointer" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvMs1_NtNtCsfBSZGGNiBQi_4core3ptr6uniqueINtB5_6UniqueSlE6as_refCsaejmk9eVMyT_2_19::1::var_2" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+Checking harness main...
+CBMC 5.54.0 (cbmc-5.54.0)
+CBMC version 5.54.0 (cbmc-5.54.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/The Rust Reference/Type system/Types/Slice types/19.out.for-main
 Generating GOTO Program
 Adding CPROVER library (x86_64)
 Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
-Unwinding loop _RINvNtCskAW7cNmttvW_4core3ptr13drop_in_placeINtNtCs8oY9JjR1zv8_5alloc5boxed3BoxSlEECs7yMFmMutiVi_2_19.0 iteration 1 file /rustc/0c292c9667f1b202a9150d58bdd2e89e3e803996/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
-Runtime Symex: 0.0474641s
+Unwinding loop _RINvNtCsfBSZGGNiBQi_4core3ptr13drop_in_placeINtNtCs5Ucdn1vYc9q_5alloc5boxed3BoxSlEECsaejmk9eVMyT_2_19.0 iteration 1 file /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs line 188 column 1 function std::ptr::drop_in_place thread 0
+Runtime Symex: 0.0178434s
 size of program expression: 554 steps
 simple slicing removed 37 assignments
 Generated 61 VCC(s), 9 remaining after simplification
-Runtime Postprocess Equation: 8.7607e-05s
+Runtime Postprocess Equation: 6.5101e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.00469073s
+Runtime Convert SSA: 0.00371615s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 4.1203e-05s
+Runtime Post-process: 3.0101e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 9920 variables, 2233 clauses
 SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 9.3707e-05s
-Runtime decision procedure: 0.00741032s
+Runtime Solver: 6.0201e-05s
+Runtime decision procedure: 0.00386085s
 VERIFICATION SUCCESSFUL
 
 RESULTS:
-Check 1: malloc.assertion.1
-- Status: [32mSUCCESS[0m
+Check 1: 1
+- Status: SUCCESS
+- Description: "assertion"
+
+Check 2: malloc.assertion.1
+- Status: SUCCESS
 - Description: "max allocation size exceeded"
+- Location: <builtin-library-malloc>:26 in function malloc
 
-Check 2: malloc.assertion.2
-- Status: [32mSUCCESS[0m
+Check 3: malloc.assertion.2
+- Status: SUCCESS
 - Description: "max allocation may fail"
-
-Check 3: assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13892494147292364991") (MIR type Closure(DefId(2:9427 ~ std[3d6e]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/kani/issues/new?template=bug_report.md"
+- Location: <builtin-library-malloc>:31 in function malloc
 
 Check 4: std::boxed::Box::<T>::new.assertion.1
-- Status: [32mSUCCESS[0m
+- Status: SUCCESS
 - Description: "resume instruction"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:194:5 in function std::boxed::Box::<T>::new
 
 Check 5: alloc::alloc::box_free.assertion.1
-- Status: [32mSUCCESS[0m
+- Status: SUCCESS
 - Description: "resume instruction"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:332:1 in function alloc::alloc::box_free
 
 Check 6: std::alloc::Layout::size.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->size_"
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
 
 Check 7: std::alloc::Layout::size.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->size_"
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
 
 Check 8: std::alloc::Layout::size.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->size_"
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
 
 Check 9: std::alloc::Layout::size.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->size_"
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
 
 Check 10: std::alloc::Layout::size.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->size_"
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
 
 Check 11: std::alloc::Layout::size.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->size_"
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
 
-Check 12: std::alloc::dealloc.pointer_primitives.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer invalid in OBJECT_SIZE((void *)var_3)"
+Check 12: std::ptr::drop_in_place.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
 
-Check 13: std::alloc::dealloc.pointer_primitives.2
-- Status: [32mSUCCESS[0m
-- Description: "deallocated dynamic object in OBJECT_SIZE((void *)var_3)"
+Check 13: std::ptr::drop_in_place.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
 
-Check 14: std::alloc::dealloc.pointer_primitives.3
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE((void *)var_3)"
+Check 14: std::ptr::drop_in_place.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
 
-Check 15: std::alloc::dealloc.pointer_primitives.4
-- Status: [32mSUCCESS[0m
-- Description: "pointer outside object bounds in OBJECT_SIZE((void *)var_3)"
+Check 15: std::ptr::drop_in_place.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
 
-Check 16: std::alloc::dealloc.overflow.1
-- Status: [32mSUCCESS[0m
-- Description: "arithmetic overflow on signed to unsigned type conversion in (unsigned long int)POINTER_OFFSET((void *)var_3)"
+Check 16: std::ptr::drop_in_place.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
 
-Check 17: std::alloc::dealloc.precondition_instance.1
-- Status: [32mSUCCESS[0m
+Check 17: std::ptr::drop_in_place.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
+
+Check 18: std::ptr::drop_in_place.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
+
+Check 19: std::ptr::drop_in_place.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
+
+Check 20: std::ptr::drop_in_place.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
+
+Check 21: std::ptr::drop_in_place.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
+
+Check 22: std::ptr::drop_in_place.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
+
+Check 23: std::ptr::drop_in_place.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/mod.rs:188:1 in function std::ptr::drop_in_place
+
+Check 24: std::ptr::Unique::<T>::as_ref.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
+
+Check 25: std::ptr::Unique::<T>::as_ref.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
+
+Check 26: std::ptr::Unique::<T>::as_ref.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
+
+Check 27: std::ptr::Unique::<T>::as_ref.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
+
+Check 28: std::ptr::Unique::<T>::as_ref.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
+
+Check 29: std::ptr::Unique::<T>::as_ref.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
+
+Check 30: std::alloc::dealloc.pointer_primitives.1
+- Status: SUCCESS
+- Description: "pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 31: std::alloc::dealloc.pointer_primitives.2
+- Status: SUCCESS
+- Description: "pointer to deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 32: std::alloc::dealloc.pointer_primitives.3
+- Status: SUCCESS
+- Description: "pointer to dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 33: std::alloc::dealloc.pointer_primitives.4
+- Status: SUCCESS
+- Description: "pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 34: std::alloc::dealloc.overflow.1
+- Status: SUCCESS
+- Description: "arithmetic overflow on signed to unsigned type conversion"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 35: std::alloc::dealloc.precondition_instance.1
+- Status: SUCCESS
 - Description: "free argument must be NULL or valid pointer"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
 
-Check 18: std::alloc::dealloc.precondition_instance.2
-- Status: [32mSUCCESS[0m
+Check 36: std::alloc::dealloc.precondition_instance.2
+- Status: SUCCESS
 - Description: "free argument must be dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
 
-Check 19: std::alloc::dealloc.precondition_instance.3
-- Status: [32mSUCCESS[0m
+Check 37: std::alloc::dealloc.precondition_instance.3
+- Status: SUCCESS
 - Description: "free argument has offset zero"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
 
-Check 20: std::alloc::dealloc.precondition_instance.4
-- Status: [32mSUCCESS[0m
+Check 38: std::alloc::dealloc.precondition_instance.4
+- Status: SUCCESS
 - Description: "double free"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
 
-Check 21: std::alloc::dealloc.precondition_instance.5
-- Status: [32mSUCCESS[0m
+Check 39: std::alloc::dealloc.precondition_instance.5
+- Status: SUCCESS
 - Description: "free called for new[] object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
 
-Check 22: std::alloc::dealloc.precondition_instance.6
-- Status: [32mSUCCESS[0m
+Check 40: std::alloc::dealloc.precondition_instance.6
+- Status: SUCCESS
 - Description: "free called for stack-allocated object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
 
-Check 23: std::alloc::Layout::align.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->align_"
+Check 41: std::boxed::Box::<T>::new.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:195:13 in function std::boxed::Box::<T>::new
 
-Check 24: std::alloc::Layout::align.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->align_"
+Check 42: std::boxed::Box::<T>::new.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:195:13 in function std::boxed::Box::<T>::new
 
-Check 25: std::alloc::Layout::align.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->align_"
+Check 43: std::boxed::Box::<T>::new.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:195:13 in function std::boxed::Box::<T>::new
 
-Check 26: std::alloc::Layout::align.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->align_"
+Check 44: std::boxed::Box::<T>::new.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:195:13 in function std::boxed::Box::<T>::new
 
-Check 27: std::alloc::Layout::align.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->align_"
+Check 45: std::boxed::Box::<T>::new.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:195:13 in function std::boxed::Box::<T>::new
 
-Check 28: std::alloc::Layout::align.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->align_"
+Check 46: std::boxed::Box::<T>::new.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:195:13 in function std::boxed::Box::<T>::new
 
-Check 29: pointer_primitives.1
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE(&temp_0)"
+Check 47: std::alloc::Layout::align.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
 
-Check 30: std::ptr::drop_in_place.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_1->0"
+Check 48: std::alloc::Layout::align.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
 
-Check 31: std::ptr::drop_in_place.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_1->0"
+Check 49: std::alloc::Layout::align.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
 
-Check 32: std::ptr::drop_in_place.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_1->0"
+Check 50: std::alloc::Layout::align.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
 
-Check 33: std::ptr::drop_in_place.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_1->0"
+Check 51: std::alloc::Layout::align.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
 
-Check 34: std::ptr::drop_in_place.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_1->0"
+Check 52: std::alloc::Layout::align.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
 
-Check 35: std::ptr::drop_in_place.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_1->0"
-
-Check 36: std::ptr::drop_in_place.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_1->1"
-
-Check 37: std::ptr::drop_in_place.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_1->1"
-
-Check 38: std::ptr::drop_in_place.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_1->1"
-
-Check 39: std::ptr::drop_in_place.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_1->1"
-
-Check 40: std::ptr::drop_in_place.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_1->1"
-
-Check 41: std::ptr::drop_in_place.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_1->1"
-
-Check 42: std::boxed::Box::<T>::new.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_0.0.pointer"
-
-Check 43: std::boxed::Box::<T>::new.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_0.0.pointer"
-
-Check 44: std::boxed::Box::<T>::new.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_0.0.pointer"
-
-Check 45: std::boxed::Box::<T>::new.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_0.0.pointer"
-
-Check 46: std::boxed::Box::<T>::new.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_0.0.pointer"
-
-Check 47: std::boxed::Box::<T>::new.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_0.0.pointer"
-
-Check 48: std::ptr::Unique::<T>::as_ref.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 49: std::ptr::Unique::<T>::as_ref.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 50: std::ptr::Unique::<T>::as_ref.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 51: std::ptr::Unique::<T>::as_ref.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 52: std::ptr::Unique::<T>::as_ref.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 53: std::ptr::Unique::<T>::as_ref.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
+Check 53: pointer_primitives.1
+- Status: SUCCESS
+- Description: "pointer to dead object"
 
 
 SUMMARY:
 ** 0 of 53 failed
 
-VERIFICATION:- [32mSUCCESSFUL[0m
+VERIFICATION:- SUCCESSFUL
 
 
-            </xmp>
-          </div><!-- class="output-box" -->
+              </xmp>
+            </div><!-- class="output-box" -->
+            
           
 
           

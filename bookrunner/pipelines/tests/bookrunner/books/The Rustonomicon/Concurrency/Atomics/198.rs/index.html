@@ -180,6 +180,14 @@ p {
   text-shadow: 0 0 2px #82ada944;
   font-weight: bold;
 }
+.literal-stdout {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 .output-box {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -511,8 +519,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2022-02-24T16:13:15Z</li>
-      <li>1a641c21-d9e7-47fb-96f7-8f6903dbb89a</li>
+      <li>2022-04-12T20:15:29Z</li>
+      <li>639e69b9-13e2-4ace-8e8f-4f5cbde80ce4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -540,7 +548,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-5dd3b635-ede8-4c38-ac60-7c19da2045bf">
+              <a href="#job-f92c97dc-38b2-4260-b2c0-af63e9d2c274">
               
               Is this valid Rust code?
               
@@ -568,7 +576,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-9f8741ba-14b1-4904-beb0-f5ff4258a0f8">
+              <a href="#job-93b1104e-4478-4cd3-a591-7795106c16d9">
               
               Does Kani support all the Rust features used in it?
               
@@ -596,7 +604,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-f849c694-c5d4-4d77-a164-f8c47ad913c2">
+              <a href="#job-b49e505d-ed43-4cf5-9b42-14740100bf97">
               
               Ca Kani reason about it?
               
@@ -624,7 +632,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-5dd3b635-ede8-4c38-ac60-7c19da2045bf">
+    <div class="command-table" id="job-f92c97dc-38b2-4260-b2c0-af63e9d2c274">
       
       <div class="success">
       
@@ -632,7 +640,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-5dd3b635-ede8-4c38-ac60-7c19da2045bf">#</a>
+                <a href="#job-f92c97dc-38b2-4260-b2c0-af63e9d2c274">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -645,7 +653,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2018" "-Z" "no-codegen" "tests/bookrunner/books/The Rustonomicon/Concurrency/Atomics/198.rs"
+            "kani-compiler" "--edition" "2018" "-Z" "no-codegen" "tests/bookrunner/books/The Rustonomicon/Concurrency/Atomics/198.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -687,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:20:23Z
+                2022-04-12T20:23:14Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -695,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:20:23Z
+                2022-04-12T20:23:14Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -749,7 +757,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-9f8741ba-14b1-4904-beb0-f5ff4258a0f8">
+    <div class="command-table" id="job-93b1104e-4478-4cd3-a591-7795106c16d9">
       
       <div class="success">
       
@@ -757,7 +765,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-9f8741ba-14b1-4904-beb0-f5ff4258a0f8">#</a>
+                <a href="#job-93b1104e-4478-4cd3-a591-7795106c16d9">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -770,7 +778,7 @@ warning: 1 warning emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2018" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rustonomicon/Concurrency/Atomics/198.rs"
+            "kani-compiler" "--edition" "2018" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rustonomicon/Concurrency/Atomics/198.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -812,15 +820,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:20:24Z
+                2022-04-12T20:23:53Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:20:24Z
+                2022-04-12T20:23:54Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -874,7 +882,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-f849c694-c5d4-4d77-a164-f8c47ad913c2">
+    <div class="command-table" id="job-b49e505d-ed43-4cf5-9b42-14740100bf97">
       
       <div class="success">
       
@@ -882,7 +890,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-f849c694-c5d4-4d77-a164-f8c47ad913c2">#</a>
+                <a href="#job-b49e505d-ed43-4cf5-9b42-14740100bf97">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -895,7 +903,7 @@ warning: 1 warning emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2018" "kani" "tests/bookrunner/books/The Rustonomicon/Concurrency/Atomics/198.rs"
+            RUSTFLAGS="--edition 2018" "kani" "tests/bookrunner/books/The Rustonomicon/Concurrency/Atomics/198.rs" "--function" "main"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -937,15 +945,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:25:35Z
+                2022-04-12T20:24:16Z
               </span></p>
               <p>Duration:
               <span class="value">
-                03s
+                02s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:25:38Z
+                2022-04-12T20:24:18Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -967,936 +975,1193 @@ warning: 1 warning emitted
 
 
           
-          <div class="output-box"><xmp>stdout:
             
-CBMC 5.50.0 (cbmc-5.50.0)
-CBMC version 5.50.0 (cbmc-5.50.0) 64-bit x86_64 linux
-Reading GOTO program from file tests/bookrunner/books/The Rustonomicon/Concurrency/Atomics/198.goto
+            <div class="output-box"><xmp>stdout:
+              
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_xsub` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2620 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_xsub_acq` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2616 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_xsub_rel` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2617 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_xsub_acqrel` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2618 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_xsub_relaxed` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2619 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_store_rel` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2555 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_store_relaxed` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2556 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_store` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2557 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_cxchg_acq` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2637 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_cxchg_rel` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2638 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_cxchg_acqrel` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2639 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_cxchg_relaxed` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2640 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_cxchg` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2641 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_cxchg_acq_failrelaxed` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2642 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_cxchg_acqrel_failrelaxed` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2643 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_cxchg_failrelaxed` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2644 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_cxchg_failacq` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2645 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_fence_acq` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2888 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_fence_rel` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2889 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_fence_acqrel` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2890 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::intrinsic Kani does not support concurrency for now. `atomic_fence` in /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2891 treated as a sequential operation.
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvMs2_NtCsfBSZGGNiBQi_4core3fmtNtB5_9Arguments6new_v1CskaXZMbtudDY_3_198::1::var_6" }, typ: StructTag("tag-_7469936087067620587"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvMs2_NtCsfBSZGGNiBQi_4core3fmtNtB5_9Arguments6new_v1CskaXZMbtudDY_3_198::1::var_8" }, typ: StructTag("tag-_10070582446577610877"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_8651173090210028844") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_8651173090210028844") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_8651173090210028844") }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvMs2_NtCsfBSZGGNiBQi_4core3fmtNtB5_9Arguments6new_v1CskaXZMbtudDY_3_198::1::var_11" }, typ: StructTag("tag-_7469936087067620587"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-str") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-str") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-str") }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvMs2_NtCsfBSZGGNiBQi_4core3fmtNtB5_9Arguments6new_v1CskaXZMbtudDY_3_198::1::var_14" }, typ: StructTag("tag-_10070582446577610877"), location: None }, field: "data" }, typ: Pointer { typ: StructTag("tag-_8651173090210028844") }, location: None }
+Expr type
+Pointer { typ: StructTag("tag-_8651173090210028844") }
+Type from MIR
+FlexibleArray { typ: StructTag("tag-_8651173090210028844") }
+Checking harness main...
+CBMC 5.54.0 (cbmc-5.54.0)
+CBMC version 5.54.0 (cbmc-5.54.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/The Rustonomicon/Concurrency/Atomics/198.out.for-main
 Generating GOTO Program
 Adding CPROVER library (x86_64)
 Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
-Runtime Symex: 0.256137s
-size of program expression: 3860 steps
+Runtime Symex: 0.207603s
+size of program expression: 3861 steps
 simple slicing removed 231 assignments
 Generated 137 VCC(s), 30 remaining after simplification
-Runtime Postprocess Equation: 0.000531337s
+Runtime Postprocess Equation: 0.000504406s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0293042s
+Runtime Convert SSA: 0.0343315s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 0.000597942s
+Runtime Post-process: 0.00865592s
 Solving with MiniSAT 2.2.1 with simplifier
 35001 variables, 4812 clauses
 SAT checker: instance is UNSATISFIABLE
-Runtime Solver: 0.00677718s
-Runtime decision procedure: 0.0364528s
+Runtime Solver: 0.0143535s
+Runtime decision procedure: 0.0490375s
 VERIFICATION SUCCESSFUL
 
 RESULTS:
-Check 1: std::fmt::Arguments::<'a>::new_v1.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
+Check 1: 1
+- Status: SUCCESS
+- Description: "assertion"
 
-Check 2: alloc::alloc::box_free.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "resume instruction"
-
-Check 3: malloc.assertion.1
-- Status: [32mSUCCESS[0m
+Check 2: malloc.assertion.1
+- Status: SUCCESS
 - Description: "max allocation size exceeded"
+- Location: <builtin-library-malloc>:26 in function malloc
 
-Check 4: malloc.assertion.2
-- Status: [32mSUCCESS[0m
+Check 3: malloc.assertion.2
+- Status: SUCCESS
 - Description: "max allocation may fail"
+- Location: <builtin-library-malloc>:31 in function malloc
 
-Check 5: std::sync::atomic::atomic_store.assertion.1
-- Status: [32mSUCCESS[0m
+Check 4: std::sync::atomic::fence.assertion.1
+- Status: SUCCESS
 - Description: "unreachable code"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2887:15 in function std::sync::atomic::fence
 
-Check 6: std::sync::atomic::atomic_store.assertion.2
-- Status: [32mSUCCESS[0m
+Check 5: std::sync::atomic::fence.assertion.2
+- Status: SUCCESS
 - Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2892:24 in function std::sync::atomic::fence
 
-Check 7: std::sync::atomic::atomic_store.assertion.3
-- Status: [32mSUCCESS[0m
+Check 6: std::sync::atomic::AtomicBool::compare_and_swap.assertion.1
+- Status: SUCCESS
+- Description: "unreachable code"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:558:15 in function std::sync::atomic::AtomicBool::compare_and_swap
+
+Check 7: std::sync::atomic::atomic_compare_exchange.assertion.1
+- Status: SUCCESS
 - Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2646:28 in function std::sync::atomic::atomic_compare_exchange
 
-Check 8: std::sync::atomic::AtomicBool::compare_exchange.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "unreachable code"
-
-Check 9: std::sync::atomic::AtomicBool::compare_and_swap.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "unreachable code"
-
-Check 10: std::sync::atomic::atomic_sub.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "unreachable code"
-
-Check 11: std::sync::atomic::fence.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "unreachable code"
-
-Check 12: std::sync::atomic::fence.assertion.2
-- Status: [32mSUCCESS[0m
+Check 8: std::sync::atomic::atomic_compare_exchange.assertion.2
+- Status: SUCCESS
 - Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2647:29 in function std::sync::atomic::atomic_compare_exchange
 
-Check 13: std::sync::Arc::<T>::new.assertion.1
-- Status: [32mSUCCESS[0m
+Check 9: std::sync::atomic::atomic_compare_exchange.assertion.3
+- Status: SUCCESS
+- Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2648:18 in function std::sync::atomic::atomic_compare_exchange
+
+Check 10: std::sync::atomic::atomic_compare_exchange.assertion.4
+- Status: SUCCESS
+- Description: "unreachable code"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2636:9 in function std::sync::atomic::atomic_compare_exchange
+
+Check 11: std::sync::atomic::AtomicBool::compare_exchange.assertion.1
+- Status: SUCCESS
+- Description: "unreachable code"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:613:15 in function std::sync::atomic::AtomicBool::compare_exchange
+
+Check 12: alloc::alloc::box_free.assertion.1
+- Status: SUCCESS
 - Description: "resume instruction"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:332:1 in function alloc::alloc::box_free
 
-Check 14: assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13892494147292364991") (MIR type Closure(DefId(2:9427 ~ std[3d6e]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/kani/issues/new?template=bug_report.md"
-
-Check 15: std::sync::atomic::atomic_compare_exchange.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
-
-Check 16: std::sync::atomic::atomic_compare_exchange.assertion.2
-- Status: [32mSUCCESS[0m
-- Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
-
-Check 17: std::sync::atomic::atomic_compare_exchange.assertion.3
-- Status: [32mSUCCESS[0m
-- Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
-
-Check 18: std::sync::atomic::strongest_failure_ordering.assertion.1
-- Status: [32mSUCCESS[0m
+Check 13: std::sync::atomic::atomic_sub.assertion.1
+- Status: SUCCESS
 - Description: "unreachable code"
-
-Check 19: std::sync::atomic::atomic_compare_exchange.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_19"
-
-Check 20: std::sync::atomic::atomic_compare_exchange.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_19"
-
-Check 21: std::sync::atomic::atomic_compare_exchange.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_19"
-
-Check 22: std::sync::atomic::atomic_compare_exchange.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_19"
-
-Check 23: std::sync::atomic::atomic_compare_exchange.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_19"
-
-Check 24: std::sync::atomic::atomic_compare_exchange.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_19"
-
-Check 25: std::sync::atomic::atomic_compare_exchange.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_22"
-
-Check 26: std::sync::atomic::atomic_compare_exchange.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_22"
-
-Check 27: std::sync::atomic::atomic_compare_exchange.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_22"
-
-Check 28: std::sync::atomic::atomic_compare_exchange.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_22"
-
-Check 29: std::sync::atomic::atomic_compare_exchange.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_22"
-
-Check 30: std::sync::atomic::atomic_compare_exchange.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_22"
-
-Check 31: std::sync::atomic::atomic_compare_exchange.pointer_dereference.13
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_25"
-
-Check 32: std::sync::atomic::atomic_compare_exchange.pointer_dereference.14
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_25"
-
-Check 33: std::sync::atomic::atomic_compare_exchange.pointer_dereference.15
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_25"
-
-Check 34: std::sync::atomic::atomic_compare_exchange.pointer_dereference.16
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_25"
-
-Check 35: std::sync::atomic::atomic_compare_exchange.pointer_dereference.17
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_25"
-
-Check 36: std::sync::atomic::atomic_compare_exchange.pointer_dereference.18
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_25"
-
-Check 37: std::sync::atomic::atomic_compare_exchange.pointer_dereference.19
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_28"
-
-Check 38: std::sync::atomic::atomic_compare_exchange.pointer_dereference.20
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_28"
-
-Check 39: std::sync::atomic::atomic_compare_exchange.pointer_dereference.21
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_28"
-
-Check 40: std::sync::atomic::atomic_compare_exchange.pointer_dereference.22
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_28"
-
-Check 41: std::sync::atomic::atomic_compare_exchange.pointer_dereference.23
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_28"
-
-Check 42: std::sync::atomic::atomic_compare_exchange.pointer_dereference.24
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_28"
-
-Check 43: std::sync::atomic::atomic_compare_exchange.pointer_dereference.25
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_31"
-
-Check 44: std::sync::atomic::atomic_compare_exchange.pointer_dereference.26
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_31"
-
-Check 45: std::sync::atomic::atomic_compare_exchange.pointer_dereference.27
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_31"
-
-Check 46: std::sync::atomic::atomic_compare_exchange.pointer_dereference.28
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_31"
-
-Check 47: std::sync::atomic::atomic_compare_exchange.pointer_dereference.29
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_31"
-
-Check 48: std::sync::atomic::atomic_compare_exchange.pointer_dereference.30
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_31"
-
-Check 49: std::sync::atomic::atomic_compare_exchange.pointer_dereference.31
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_34"
-
-Check 50: std::sync::atomic::atomic_compare_exchange.pointer_dereference.32
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_34"
-
-Check 51: std::sync::atomic::atomic_compare_exchange.pointer_dereference.33
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_34"
-
-Check 52: std::sync::atomic::atomic_compare_exchange.pointer_dereference.34
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_34"
-
-Check 53: std::sync::atomic::atomic_compare_exchange.pointer_dereference.35
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_34"
-
-Check 54: std::sync::atomic::atomic_compare_exchange.pointer_dereference.36
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_34"
-
-Check 55: std::sync::atomic::atomic_compare_exchange.pointer_dereference.37
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_37"
-
-Check 56: std::sync::atomic::atomic_compare_exchange.pointer_dereference.38
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_37"
-
-Check 57: std::sync::atomic::atomic_compare_exchange.pointer_dereference.39
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_37"
-
-Check 58: std::sync::atomic::atomic_compare_exchange.pointer_dereference.40
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_37"
-
-Check 59: std::sync::atomic::atomic_compare_exchange.pointer_dereference.41
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_37"
-
-Check 60: std::sync::atomic::atomic_compare_exchange.pointer_dereference.42
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_37"
-
-Check 61: std::sync::atomic::atomic_compare_exchange.pointer_dereference.43
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_40"
-
-Check 62: std::sync::atomic::atomic_compare_exchange.pointer_dereference.44
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_40"
-
-Check 63: std::sync::atomic::atomic_compare_exchange.pointer_dereference.45
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_40"
-
-Check 64: std::sync::atomic::atomic_compare_exchange.pointer_dereference.46
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_40"
-
-Check 65: std::sync::atomic::atomic_compare_exchange.pointer_dereference.47
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_40"
-
-Check 66: std::sync::atomic::atomic_compare_exchange.pointer_dereference.48
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_40"
-
-Check 67: std::sync::atomic::atomic_compare_exchange.pointer_dereference.49
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_43"
-
-Check 68: std::sync::atomic::atomic_compare_exchange.pointer_dereference.50
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_43"
-
-Check 69: std::sync::atomic::atomic_compare_exchange.pointer_dereference.51
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_43"
-
-Check 70: std::sync::atomic::atomic_compare_exchange.pointer_dereference.52
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_43"
-
-Check 71: std::sync::atomic::atomic_compare_exchange.pointer_dereference.53
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_43"
-
-Check 72: std::sync::atomic::atomic_compare_exchange.pointer_dereference.54
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_43"
-
-Check 73: pointer_primitives.1
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE(&temp_0)"
-
-Check 74: std::sync::Arc::<T>::new.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_6.0.pointer->strong"
-
-Check 75: std::sync::Arc::<T>::new.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_6.0.pointer->strong"
-
-Check 76: std::sync::Arc::<T>::new.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_6.0.pointer->strong"
-
-Check 77: std::sync::Arc::<T>::new.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_6.0.pointer->strong"
-
-Check 78: std::sync::Arc::<T>::new.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_6.0.pointer->strong"
-
-Check 79: std::sync::Arc::<T>::new.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_6.0.pointer->strong"
-
-Check 80: std::sync::Arc::<T>::new.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_6.0.pointer->weak"
-
-Check 81: std::sync::Arc::<T>::new.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_6.0.pointer->weak"
-
-Check 82: std::sync::Arc::<T>::new.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_6.0.pointer->weak"
-
-Check 83: std::sync::Arc::<T>::new.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_6.0.pointer->weak"
-
-Check 84: std::sync::Arc::<T>::new.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_6.0.pointer->weak"
-
-Check 85: std::sync::Arc::<T>::new.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_6.0.pointer->weak"
-
-Check 86: std::sync::Arc::<T>::new.pointer_dereference.13
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_6.0.pointer->data"
-
-Check 87: std::sync::Arc::<T>::new.pointer_dereference.14
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_6.0.pointer->data"
-
-Check 88: std::sync::Arc::<T>::new.pointer_dereference.15
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_6.0.pointer->data"
-
-Check 89: std::sync::Arc::<T>::new.pointer_dereference.16
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_6.0.pointer->data"
-
-Check 90: std::sync::Arc::<T>::new.pointer_dereference.17
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_6.0.pointer->data"
-
-Check 91: std::sync::Arc::<T>::new.pointer_dereference.18
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_6.0.pointer->data"
-
-Check 92: std::sync::atomic::atomic_sub.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_13"
-
-Check 93: std::sync::atomic::atomic_sub.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_13"
-
-Check 94: std::sync::atomic::atomic_sub.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_13"
-
-Check 95: std::sync::atomic::atomic_sub.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_13"
-
-Check 96: std::sync::atomic::atomic_sub.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_13"
-
-Check 97: std::sync::atomic::atomic_sub.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_13"
-
-Check 98: std::sync::atomic::atomic_sub.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_5"
-
-Check 99: std::sync::atomic::atomic_sub.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_5"
-
-Check 100: std::sync::atomic::atomic_sub.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_5"
-
-Check 101: std::sync::atomic::atomic_sub.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_5"
-
-Check 102: std::sync::atomic::atomic_sub.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_5"
-
-Check 103: std::sync::atomic::atomic_sub.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_5"
-
-Check 104: std::sync::atomic::atomic_sub.pointer_dereference.13
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_7"
-
-Check 105: std::sync::atomic::atomic_sub.pointer_dereference.14
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_7"
-
-Check 106: std::sync::atomic::atomic_sub.pointer_dereference.15
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_7"
-
-Check 107: std::sync::atomic::atomic_sub.pointer_dereference.16
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_7"
-
-Check 108: std::sync::atomic::atomic_sub.pointer_dereference.17
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_7"
-
-Check 109: std::sync::atomic::atomic_sub.pointer_dereference.18
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_7"
-
-Check 110: std::sync::atomic::atomic_sub.pointer_dereference.19
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_9"
-
-Check 111: std::sync::atomic::atomic_sub.pointer_dereference.20
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_9"
-
-Check 112: std::sync::atomic::atomic_sub.pointer_dereference.21
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_9"
-
-Check 113: std::sync::atomic::atomic_sub.pointer_dereference.22
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_9"
-
-Check 114: std::sync::atomic::atomic_sub.pointer_dereference.23
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_9"
-
-Check 115: std::sync::atomic::atomic_sub.pointer_dereference.24
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_9"
-
-Check 116: std::sync::atomic::atomic_sub.pointer_dereference.25
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_11"
-
-Check 117: std::sync::atomic::atomic_sub.pointer_dereference.26
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_11"
-
-Check 118: std::sync::atomic::atomic_sub.pointer_dereference.27
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_11"
-
-Check 119: std::sync::atomic::atomic_sub.pointer_dereference.28
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_11"
-
-Check 120: std::sync::atomic::atomic_sub.pointer_dereference.29
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_11"
-
-Check 121: std::sync::atomic::atomic_sub.pointer_dereference.30
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_11"
-
-Check 122: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in this->ptr"
-
-Check 123: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in this->ptr"
-
-Check 124: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in this->ptr"
-
-Check 125: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in this->ptr"
-
-Check 126: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in this->ptr"
-
-Check 127: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in this->ptr"
-
-Check 128: std::sync::Weak::<T>::inner.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->ptr"
-
-Check 129: std::sync::Weak::<T>::inner.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->ptr"
-
-Check 130: std::sync::Weak::<T>::inner.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->ptr"
-
-Check 131: std::sync::Weak::<T>::inner.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->ptr"
-
-Check 132: std::sync::Weak::<T>::inner.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->ptr"
-
-Check 133: std::sync::Weak::<T>::inner.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->ptr"
-
-Check 134: std::sync::Weak::<T>::inner.pointer_arithmetic.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in (unsigned char *)&var_0 + 0"
-
-Check 135: std::sync::Weak::<T>::inner.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_0 + 0))"
-
-Check 136: std::sync::Weak::<T>::inner.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->ptr"
-
-Check 137: std::sync::Weak::<T>::inner.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->ptr"
-
-Check 138: std::sync::Weak::<T>::inner.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->ptr"
-
-Check 139: std::sync::Weak::<T>::inner.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->ptr"
-
-Check 140: std::sync::Weak::<T>::inner.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->ptr"
-
-Check 141: std::sync::Weak::<T>::inner.pointer_dereference.13
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->ptr"
-
-Check 142: std::ptr::Unique::<T>::as_ref.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 143: std::ptr::Unique::<T>::as_ref.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 144: std::ptr::Unique::<T>::as_ref.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 145: std::ptr::Unique::<T>::as_ref.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 146: std::ptr::Unique::<T>::as_ref.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 147: std::ptr::Unique::<T>::as_ref.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
-
-Check 148: std::alloc::Layout::align.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->align_"
-
-Check 149: std::alloc::Layout::align.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->align_"
-
-Check 150: std::alloc::Layout::align.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->align_"
-
-Check 151: std::alloc::Layout::align.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->align_"
-
-Check 152: std::alloc::Layout::align.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->align_"
-
-Check 153: std::alloc::Layout::align.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->align_"
-
-Check 154: std::alloc::Layout::size.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->size_"
-
-Check 155: std::alloc::Layout::size.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->size_"
-
-Check 156: std::alloc::Layout::size.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->size_"
-
-Check 157: std::alloc::Layout::size.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->size_"
-
-Check 158: std::alloc::Layout::size.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->size_"
-
-Check 159: std::alloc::Layout::size.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->size_"
-
-Check 160: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_arithmetic.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in (unsigned char *)&var_3 + 0"
-
-Check 161: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_3 + 0))"
-
-Check 162: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->ptr"
-
-Check 163: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->ptr"
-
-Check 164: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->ptr"
-
-Check 165: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->ptr"
-
-Check 166: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->ptr"
-
-Check 167: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->ptr"
-
-Check 168: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->ptr"
-
-Check 169: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->ptr"
-
-Check 170: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->ptr"
-
-Check 171: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->ptr"
-
-Check 172: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->ptr"
-
-Check 173: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.13
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->ptr"
-
-Check 174: std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in (unsigned char *)&var_23 + 0"
-
-Check 175: std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *((unsigned char **)((unsigned char *)&var_23 + 0))"
-
-Check 176: std::sync::atomic::atomic_store.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_5"
-
-Check 177: std::sync::atomic::atomic_store.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_5"
-
-Check 178: std::sync::atomic::atomic_store.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_5"
-
-Check 179: std::sync::atomic::atomic_store.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_5"
-
-Check 180: std::sync::atomic::atomic_store.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_5"
-
-Check 181: std::sync::atomic::atomic_store.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_5"
-
-Check 182: std::sync::atomic::atomic_store.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_7"
-
-Check 183: std::sync::atomic::atomic_store.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_7"
-
-Check 184: std::sync::atomic::atomic_store.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_7"
-
-Check 185: std::sync::atomic::atomic_store.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_7"
-
-Check 186: std::sync::atomic::atomic_store.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_7"
-
-Check 187: std::sync::atomic::atomic_store.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_7"
-
-Check 188: std::sync::atomic::atomic_store.pointer_dereference.13
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_9"
-
-Check 189: std::sync::atomic::atomic_store.pointer_dereference.14
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_9"
-
-Check 190: std::sync::atomic::atomic_store.pointer_dereference.15
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_9"
-
-Check 191: std::sync::atomic::atomic_store.pointer_dereference.16
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_9"
-
-Check 192: std::sync::atomic::atomic_store.pointer_dereference.17
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_9"
-
-Check 193: std::sync::atomic::atomic_store.pointer_dereference.18
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_9"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2615:15 in function std::sync::atomic::atomic_sub
+
+Check 14: std::sync::Arc::<T>::new.assertion.1
+- Status: SUCCESS
+- Description: "resume instruction"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:343:5 in function std::sync::Arc::<T>::new
+
+Check 15: std::sync::atomic::strongest_failure_ordering.assertion.1
+- Status: SUCCESS
+- Description: "unreachable code"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2541:11 in function std::sync::atomic::strongest_failure_ordering
+
+Check 16: std::sync::atomic::atomic_store.assertion.1
+- Status: SUCCESS
+- Description: "unreachable code"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2554:15 in function std::sync::atomic::atomic_store
+
+Check 17: std::sync::atomic::atomic_store.assertion.2
+- Status: SUCCESS
+- Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2558:24 in function std::sync::atomic::atomic_store
+
+Check 18: std::sync::atomic::atomic_store.assertion.3
+- Status: SUCCESS
+- Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2559:23 in function std::sync::atomic::atomic_store
+
+Check 19: std::fmt::Arguments::<'a>::new_v1.assertion.1
+- Status: SUCCESS
+- Description: "This is a placeholder message; Kani doesn't support message formatted at runtime"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/fmt/mod.rs:385:13 in function std::fmt::Arguments::<'a>::new_v1
+
+Check 20: std::fmt::Arguments::<'a>::new_v1.pointer_arithmetic.1
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/fmt/mod.rs:387:34 in function std::fmt::Arguments::<'a>::new_v1
+
+Check 21: std::fmt::Arguments::<'a>::new_v1.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/fmt/mod.rs:387:34 in function std::fmt::Arguments::<'a>::new_v1
+
+Check 22: std::sync::Weak::<T>::inner.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2004:24 in function std::sync::Weak::<T>::inner
+
+Check 23: std::sync::Weak::<T>::inner.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2004:24 in function std::sync::Weak::<T>::inner
+
+Check 24: std::sync::Weak::<T>::inner.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2004:24 in function std::sync::Weak::<T>::inner
+
+Check 25: std::sync::Weak::<T>::inner.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2004:24 in function std::sync::Weak::<T>::inner
+
+Check 26: std::sync::Weak::<T>::inner.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2004:24 in function std::sync::Weak::<T>::inner
+
+Check 27: std::sync::Weak::<T>::inner.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2004:24 in function std::sync::Weak::<T>::inner
+
+Check 28: std::sync::Weak::<T>::inner.pointer_arithmetic.1
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2005:13 in function std::sync::Weak::<T>::inner
+
+Check 29: std::sync::Weak::<T>::inner.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2005:13 in function std::sync::Weak::<T>::inner
+
+Check 30: std::sync::Weak::<T>::inner.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2011:27 in function std::sync::Weak::<T>::inner
+
+Check 31: std::sync::Weak::<T>::inner.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2011:27 in function std::sync::Weak::<T>::inner
+
+Check 32: std::sync::Weak::<T>::inner.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2011:27 in function std::sync::Weak::<T>::inner
+
+Check 33: std::sync::Weak::<T>::inner.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2011:27 in function std::sync::Weak::<T>::inner
+
+Check 34: std::sync::Weak::<T>::inner.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2011:27 in function std::sync::Weak::<T>::inner
+
+Check 35: std::sync::Weak::<T>::inner.pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2011:27 in function std::sync::Weak::<T>::inner
+
+Check 36: std::sync::Arc::<T>::drop_slow.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1095:26 in function std::sync::Arc::<T>::drop_slow
+
+Check 37: std::sync::Arc::<T>::drop_slow.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1095:26 in function std::sync::Arc::<T>::drop_slow
+
+Check 38: std::sync::Arc::<T>::drop_slow.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1095:26 in function std::sync::Arc::<T>::drop_slow
+
+Check 39: std::sync::Arc::<T>::drop_slow.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1095:26 in function std::sync::Arc::<T>::drop_slow
+
+Check 40: std::sync::Arc::<T>::drop_slow.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1095:26 in function std::sync::Arc::<T>::drop_slow
+
+Check 41: std::sync::Arc::<T>::drop_slow.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1095:26 in function std::sync::Arc::<T>::drop_slow
+
+Check 42: std::alloc::dealloc.pointer_primitives.1
+- Status: SUCCESS
+- Description: "pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 43: std::alloc::dealloc.pointer_primitives.2
+- Status: SUCCESS
+- Description: "pointer to deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 44: std::alloc::dealloc.pointer_primitives.3
+- Status: SUCCESS
+- Description: "pointer to dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 45: std::alloc::dealloc.pointer_primitives.4
+- Status: SUCCESS
+- Description: "pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 46: std::alloc::dealloc.overflow.1
+- Status: SUCCESS
+- Description: "arithmetic overflow on signed to unsigned type conversion"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 47: std::alloc::dealloc.precondition_instance.1
+- Status: SUCCESS
+- Description: "free argument must be NULL or valid pointer"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 48: std::alloc::dealloc.precondition_instance.2
+- Status: SUCCESS
+- Description: "free argument must be dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 49: std::alloc::dealloc.precondition_instance.3
+- Status: SUCCESS
+- Description: "free argument has offset zero"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 50: std::alloc::dealloc.precondition_instance.4
+- Status: SUCCESS
+- Description: "double free"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 51: std::alloc::dealloc.precondition_instance.5
+- Status: SUCCESS
+- Description: "free called for new[] object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 52: std::alloc::dealloc.precondition_instance.6
+- Status: SUCCESS
+- Description: "free called for stack-allocated object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/alloc.rs:105:14 in function std::alloc::dealloc
+
+Check 53: std::sync::atomic::atomic_store.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2555:24 in function std::sync::atomic::atomic_store
+
+Check 54: std::sync::atomic::atomic_store.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2555:24 in function std::sync::atomic::atomic_store
+
+Check 55: std::sync::atomic::atomic_store.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2555:24 in function std::sync::atomic::atomic_store
+
+Check 56: std::sync::atomic::atomic_store.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2555:24 in function std::sync::atomic::atomic_store
+
+Check 57: std::sync::atomic::atomic_store.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2555:24 in function std::sync::atomic::atomic_store
+
+Check 58: std::sync::atomic::atomic_store.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2555:24 in function std::sync::atomic::atomic_store
+
+Check 59: std::sync::atomic::atomic_store.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2556:24 in function std::sync::atomic::atomic_store
+
+Check 60: std::sync::atomic::atomic_store.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2556:24 in function std::sync::atomic::atomic_store
+
+Check 61: std::sync::atomic::atomic_store.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2556:24 in function std::sync::atomic::atomic_store
+
+Check 62: std::sync::atomic::atomic_store.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2556:24 in function std::sync::atomic::atomic_store
+
+Check 63: std::sync::atomic::atomic_store.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2556:24 in function std::sync::atomic::atomic_store
+
+Check 64: std::sync::atomic::atomic_store.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2556:24 in function std::sync::atomic::atomic_store
+
+Check 65: std::sync::atomic::atomic_store.pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2557:23 in function std::sync::atomic::atomic_store
+
+Check 66: std::sync::atomic::atomic_store.pointer_dereference.14
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2557:23 in function std::sync::atomic::atomic_store
+
+Check 67: std::sync::atomic::atomic_store.pointer_dereference.15
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2557:23 in function std::sync::atomic::atomic_store
+
+Check 68: std::sync::atomic::atomic_store.pointer_dereference.16
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2557:23 in function std::sync::atomic::atomic_store
+
+Check 69: std::sync::atomic::atomic_store.pointer_dereference.17
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2557:23 in function std::sync::atomic::atomic_store
+
+Check 70: std::sync::atomic::atomic_store.pointer_dereference.18
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2557:23 in function std::sync::atomic::atomic_store
+
+Check 71: std::boxed::Box::<T, A>::leak.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:1151:24 in function std::boxed::Box::<T, A>::leak
+
+Check 72: std::boxed::Box::<T, A>::leak.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:1151:24 in function std::boxed::Box::<T, A>::leak
+
+Check 73: std::boxed::Box::<T, A>::leak.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:1151:24 in function std::boxed::Box::<T, A>::leak
+
+Check 74: std::boxed::Box::<T, A>::leak.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:1151:24 in function std::boxed::Box::<T, A>::leak
+
+Check 75: std::boxed::Box::<T, A>::leak.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:1151:24 in function std::boxed::Box::<T, A>::leak
+
+Check 76: std::boxed::Box::<T, A>::leak.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/boxed.rs:1151:24 in function std::boxed::Box::<T, A>::leak
+
+Check 77: std::sync::atomic::atomic_compare_exchange.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2637:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 78: std::sync::atomic::atomic_compare_exchange.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2637:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 79: std::sync::atomic::atomic_compare_exchange.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2637:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 80: std::sync::atomic::atomic_compare_exchange.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2637:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 81: std::sync::atomic::atomic_compare_exchange.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2637:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 82: std::sync::atomic::atomic_compare_exchange.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2637:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 83: std::sync::atomic::atomic_compare_exchange.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2638:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 84: std::sync::atomic::atomic_compare_exchange.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2638:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 85: std::sync::atomic::atomic_compare_exchange.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2638:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 86: std::sync::atomic::atomic_compare_exchange.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2638:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 87: std::sync::atomic::atomic_compare_exchange.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2638:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 88: std::sync::atomic::atomic_compare_exchange.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2638:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 89: std::sync::atomic::atomic_compare_exchange.pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2639:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 90: std::sync::atomic::atomic_compare_exchange.pointer_dereference.14
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2639:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 91: std::sync::atomic::atomic_compare_exchange.pointer_dereference.15
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2639:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 92: std::sync::atomic::atomic_compare_exchange.pointer_dereference.16
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2639:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 93: std::sync::atomic::atomic_compare_exchange.pointer_dereference.17
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2639:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 94: std::sync::atomic::atomic_compare_exchange.pointer_dereference.18
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2639:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 95: std::sync::atomic::atomic_compare_exchange.pointer_dereference.19
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2640:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 96: std::sync::atomic::atomic_compare_exchange.pointer_dereference.20
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2640:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 97: std::sync::atomic::atomic_compare_exchange.pointer_dereference.21
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2640:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 98: std::sync::atomic::atomic_compare_exchange.pointer_dereference.22
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2640:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 99: std::sync::atomic::atomic_compare_exchange.pointer_dereference.23
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2640:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 100: std::sync::atomic::atomic_compare_exchange.pointer_dereference.24
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2640:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 101: std::sync::atomic::atomic_compare_exchange.pointer_dereference.25
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2641:33 in function std::sync::atomic::atomic_compare_exchange
+
+Check 102: std::sync::atomic::atomic_compare_exchange.pointer_dereference.26
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2641:33 in function std::sync::atomic::atomic_compare_exchange
+
+Check 103: std::sync::atomic::atomic_compare_exchange.pointer_dereference.27
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2641:33 in function std::sync::atomic::atomic_compare_exchange
+
+Check 104: std::sync::atomic::atomic_compare_exchange.pointer_dereference.28
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2641:33 in function std::sync::atomic::atomic_compare_exchange
+
+Check 105: std::sync::atomic::atomic_compare_exchange.pointer_dereference.29
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2641:33 in function std::sync::atomic::atomic_compare_exchange
+
+Check 106: std::sync::atomic::atomic_compare_exchange.pointer_dereference.30
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2641:33 in function std::sync::atomic::atomic_compare_exchange
+
+Check 107: std::sync::atomic::atomic_compare_exchange.pointer_dereference.31
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2642:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 108: std::sync::atomic::atomic_compare_exchange.pointer_dereference.32
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2642:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 109: std::sync::atomic::atomic_compare_exchange.pointer_dereference.33
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2642:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 110: std::sync::atomic::atomic_compare_exchange.pointer_dereference.34
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2642:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 111: std::sync::atomic::atomic_compare_exchange.pointer_dereference.35
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2642:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 112: std::sync::atomic::atomic_compare_exchange.pointer_dereference.36
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2642:35 in function std::sync::atomic::atomic_compare_exchange
+
+Check 113: std::sync::atomic::atomic_compare_exchange.pointer_dereference.37
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2643:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 114: std::sync::atomic::atomic_compare_exchange.pointer_dereference.38
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2643:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 115: std::sync::atomic::atomic_compare_exchange.pointer_dereference.39
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2643:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 116: std::sync::atomic::atomic_compare_exchange.pointer_dereference.40
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2643:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 117: std::sync::atomic::atomic_compare_exchange.pointer_dereference.41
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2643:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 118: std::sync::atomic::atomic_compare_exchange.pointer_dereference.42
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2643:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 119: std::sync::atomic::atomic_compare_exchange.pointer_dereference.43
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2644:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 120: std::sync::atomic::atomic_compare_exchange.pointer_dereference.44
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2644:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 121: std::sync::atomic::atomic_compare_exchange.pointer_dereference.45
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2644:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 122: std::sync::atomic::atomic_compare_exchange.pointer_dereference.46
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2644:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 123: std::sync::atomic::atomic_compare_exchange.pointer_dereference.47
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2644:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 124: std::sync::atomic::atomic_compare_exchange.pointer_dereference.48
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2644:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 125: std::sync::atomic::atomic_compare_exchange.pointer_dereference.49
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2645:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 126: std::sync::atomic::atomic_compare_exchange.pointer_dereference.50
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2645:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 127: std::sync::atomic::atomic_compare_exchange.pointer_dereference.51
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2645:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 128: std::sync::atomic::atomic_compare_exchange.pointer_dereference.52
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2645:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 129: std::sync::atomic::atomic_compare_exchange.pointer_dereference.53
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2645:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 130: std::sync::atomic::atomic_compare_exchange.pointer_dereference.54
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/sync/atomic.rs:2645:34 in function std::sync::atomic::atomic_compare_exchange
+
+Check 131: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_arithmetic.1
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2157:28 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 132: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2157:28 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 133: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:40 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 134: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:40 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 135: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:40 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 136: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:40 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 137: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:40 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 138: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:40 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 139: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:79 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 140: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:79 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 141: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:79 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 142: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:79 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 143: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:79 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 144: <std::sync::Weak<T> as std::ops::Drop>::drop.pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:2161:79 in function <std::sync::Weak<T> as std::ops::Drop>::drop
+
+Check 145: std::alloc::Layout::size.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
+
+Check 146: std::alloc::Layout::size.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
+
+Check 147: std::alloc::Layout::size.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
+
+Check 148: std::alloc::Layout::size.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
+
+Check 149: std::alloc::Layout::size.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
+
+Check 150: std::alloc::Layout::size.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:110:9 in function std::alloc::Layout::size
+
+Check 151: pointer_primitives.1
+- Status: SUCCESS
+- Description: "pointer to dead object"
+
+Check 152: std::alloc::Layout::align.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
+
+Check 153: std::alloc::Layout::align.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
+
+Check 154: std::alloc::Layout::align.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
+
+Check 155: std::alloc::Layout::align.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
+
+Check 156: std::alloc::Layout::align.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
+
+Check 157: std::alloc::Layout::align.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/alloc/layout.rs:120:9 in function std::alloc::Layout::align
+
+Check 158: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1589:25 in function std::sync::Arc::<T>::get_mut_unchecked
+
+Check 159: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1589:25 in function std::sync::Arc::<T>::get_mut_unchecked
+
+Check 160: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1589:25 in function std::sync::Arc::<T>::get_mut_unchecked
+
+Check 161: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1589:25 in function std::sync::Arc::<T>::get_mut_unchecked
+
+Check 162: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1589:25 in function std::sync::Arc::<T>::get_mut_unchecked
+
+Check 163: std::sync::Arc::<T>::get_mut_unchecked.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:1589:25 in function std::sync::Arc::<T>::get_mut_unchecked
+
+Check 164: pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+
+Check 165: pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+
+Check 166: pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+
+Check 167: pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+
+Check 168: pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+
+Check 169: pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+
+Check 170: pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+
+Check 171: pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+
+Check 172: pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+
+Check 173: pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+
+Check 174: pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+
+Check 175: pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+
+Check 176: pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+
+Check 177: pointer_dereference.14
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+
+Check 178: pointer_dereference.15
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+
+Check 179: pointer_dereference.16
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+
+Check 180: pointer_dereference.17
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+
+Check 181: pointer_dereference.18
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+
+Check 182: pointer_dereference.19
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+
+Check 183: pointer_dereference.20
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+
+Check 184: pointer_dereference.21
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+
+Check 185: pointer_dereference.22
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+
+Check 186: pointer_dereference.23
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+
+Check 187: pointer_dereference.24
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+
+Check 188: pointer_dereference.25
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+
+Check 189: pointer_dereference.26
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+
+Check 190: pointer_dereference.27
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+
+Check 191: pointer_dereference.28
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+
+Check 192: pointer_dereference.29
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+
+Check 193: pointer_dereference.30
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
 
 Check 194: std::ptr::NonNull::<T>::as_ref.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/non_null.rs:328:20 in function std::ptr::NonNull::<T>::as_ref
 
 Check 195: std::ptr::NonNull::<T>::as_ref.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/non_null.rs:328:20 in function std::ptr::NonNull::<T>::as_ref
 
 Check 196: std::ptr::NonNull::<T>::as_ref.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/non_null.rs:328:20 in function std::ptr::NonNull::<T>::as_ref
 
 Check 197: std::ptr::NonNull::<T>::as_ref.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/non_null.rs:328:20 in function std::ptr::NonNull::<T>::as_ref
 
 Check 198: std::ptr::NonNull::<T>::as_ref.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/non_null.rs:328:20 in function std::ptr::NonNull::<T>::as_ref
 
 Check 199: std::ptr::NonNull::<T>::as_ref.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/non_null.rs:328:20 in function std::ptr::NonNull::<T>::as_ref
 
-Check 200: std::alloc::dealloc.pointer_primitives.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer invalid in OBJECT_SIZE((void *)var_3)"
+Check 200: std::sync::Arc::<T>::new.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 201: std::alloc::dealloc.pointer_primitives.2
-- Status: [32mSUCCESS[0m
-- Description: "deallocated dynamic object in OBJECT_SIZE((void *)var_3)"
+Check 201: std::sync::Arc::<T>::new.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 202: std::alloc::dealloc.pointer_primitives.3
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE((void *)var_3)"
+Check 202: std::sync::Arc::<T>::new.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 203: std::alloc::dealloc.pointer_primitives.4
-- Status: [32mSUCCESS[0m
-- Description: "pointer outside object bounds in OBJECT_SIZE((void *)var_3)"
+Check 203: std::sync::Arc::<T>::new.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 204: std::alloc::dealloc.overflow.1
-- Status: [32mSUCCESS[0m
-- Description: "arithmetic overflow on signed to unsigned type conversion in (unsigned long int)POINTER_OFFSET((void *)var_3)"
+Check 204: std::sync::Arc::<T>::new.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 205: std::alloc::dealloc.precondition_instance.1
-- Status: [32mSUCCESS[0m
-- Description: "free argument must be NULL or valid pointer"
+Check 205: std::sync::Arc::<T>::new.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 206: std::alloc::dealloc.precondition_instance.2
-- Status: [32mSUCCESS[0m
-- Description: "free argument must be dynamic object"
+Check 206: std::sync::Arc::<T>::new.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 207: std::alloc::dealloc.precondition_instance.3
-- Status: [32mSUCCESS[0m
-- Description: "free argument has offset zero"
+Check 207: std::sync::Arc::<T>::new.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 208: std::alloc::dealloc.precondition_instance.4
-- Status: [32mSUCCESS[0m
-- Description: "double free"
+Check 208: std::sync::Arc::<T>::new.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 209: std::alloc::dealloc.precondition_instance.5
-- Status: [32mSUCCESS[0m
-- Description: "free called for new[] object"
+Check 209: std::sync::Arc::<T>::new.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 210: std::alloc::dealloc.precondition_instance.6
-- Status: [32mSUCCESS[0m
-- Description: "free called for stack-allocated object"
+Check 210: std::sync::Arc::<T>::new.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 211: std::sync::Arc::<T>::drop_slow.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->ptr"
+Check 211: std::sync::Arc::<T>::new.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 212: std::sync::Arc::<T>::drop_slow.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->ptr"
+Check 212: std::sync::Arc::<T>::new.pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 213: std::sync::Arc::<T>::drop_slow.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->ptr"
+Check 213: std::sync::Arc::<T>::new.pointer_dereference.14
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 214: std::sync::Arc::<T>::drop_slow.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->ptr"
+Check 214: std::sync::Arc::<T>::new.pointer_dereference.15
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 215: std::sync::Arc::<T>::drop_slow.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->ptr"
+Check 215: std::sync::Arc::<T>::new.pointer_dereference.16
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 216: std::sync::Arc::<T>::drop_slow.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->ptr"
+Check 216: std::sync::Arc::<T>::new.pointer_dereference.17
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 217: std::boxed::Box::<T, A>::leak.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_7->0"
+Check 217: std::sync::Arc::<T>::new.pointer_dereference.18
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc/src/sync.rs:346:29 in function std::sync::Arc::<T>::new
 
-Check 218: std::boxed::Box::<T, A>::leak.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_7->0"
+Check 218: std::ptr::Unique::<T>::as_ref.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
 
-Check 219: std::boxed::Box::<T, A>::leak.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_7->0"
+Check 219: std::ptr::Unique::<T>::as_ref.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
 
-Check 220: std::boxed::Box::<T, A>::leak.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_7->0"
+Check 220: std::ptr::Unique::<T>::as_ref.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
 
-Check 221: std::boxed::Box::<T, A>::leak.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_7->0"
+Check 221: std::ptr::Unique::<T>::as_ref.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
 
-Check 222: std::boxed::Box::<T, A>::leak.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_7->0"
+Check 222: std::ptr::Unique::<T>::as_ref.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
+
+Check 223: std::ptr::Unique::<T>::as_ref.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/unique.rs:121:20 in function std::ptr::Unique::<T>::as_ref
 
 
 SUMMARY:
-** 0 of 222 failed
+** 0 of 223 failed
 
-VERIFICATION:- [32mSUCCESSFUL[0m
+VERIFICATION:- SUCCESSFUL
 
+
+              </xmp>
+            </div><!-- class="output-box" -->
+            
+          
+
+          
+          <div class="output-box"><xmp>stderr:
+            
+warning: use of deprecated associated function `std::sync::atomic::AtomicBool::compare_and_swap`: Use `compare_exchange` or `compare_exchange_weak` instead
+--> 198.rs:13:16
+|
+13 |     while lock.compare_and_swap(false, true, Ordering::Acquire) { }
+|                ^^^^^^^^^^^^^^^^
+|
+= note: `#[warn(deprecated)]` on by default
+
+warning: 1 warning emitted
 
             </xmp>
           </div><!-- class="output-box" -->
-          
-
           
 
         </div><!-- class="command-content" -->

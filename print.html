@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with Kani</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.3.</strong> Kani on a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.4.</strong> Kani on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Kani tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with Kani</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> Kani developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rustc-hacks.html"><strong aria-hidden="true">3.1.</strong> Working with RUSTC</a></li><li class="chapter-item expanded "><a href="kani-testing.html"><strong aria-hidden="true">3.2.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.3.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="usage.html"><strong aria-hidden="true">1.2.</strong> Usage</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.2.1.</strong> On a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.2.2.</strong> On a package</a></li></ol></li><li class="chapter-item expanded "><a href="verification-results.html"><strong aria-hidden="true">1.3.</strong> Verification results</a></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loop-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loop unwinding</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Nondeterministic variables</a></li></ol></li><li class="chapter-item expanded "><a href="application.html"><strong aria-hidden="true">3.</strong> Application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">3.1.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">3.2.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">4.</strong> Developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="workarounds.html"><strong aria-hidden="true">4.1.</strong> Workarounds</a></li><li class="chapter-item expanded "><a href="cheat-sheets.html"><strong aria-hidden="true">4.2.</strong> Command cheat sheets</a></li><li class="chapter-item expanded "><a href="rustc-hacks.html"><strong aria-hidden="true">4.3.</strong> Working with rustc</a></li><li class="chapter-item expanded "><a href="testing.html"><strong aria-hidden="true">4.4.</strong> Testing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="regression-testing.html"><strong aria-hidden="true">4.4.1.</strong> Regression testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">4.4.2.</strong> Book runner</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">5.</strong> Limitations</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> Guarantees</div></li><li class="chapter-item expanded "><a href="rust-feature-support.html"><strong aria-hidden="true">5.2.</strong> Rust feature support</a></li><li class="chapter-item expanded "><a href="overrides.html"><strong aria-hidden="true">5.3.</strong> Overrides</a></li></ol></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -147,208 +147,290 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="getting-started-with-kani"><a class="header" href="#getting-started-with-kani">Getting started with Kani</a></h1>
-<p>Kani is a Rust verification tool based on <em>model checking</em>.
-With Kani, you can ensure that broad classes of problems are absent from your Rust code by writing <em>proof harnesses</em>, which are broadly similar to tests (especially property tests).
-Kani is especially useful for verifying unsafe code in Rust, where many of the language's usual guarantees can no longer be checked by the compiler.
-But Kani is also useful for finding panics in safe Rust, and it can check user-defined assertions.</p>
+                        <h1 id="getting-started"><a class="header" href="#getting-started">Getting started</a></h1>
+<p>Kani is a Rust verification tool based on <em>model checking</em>. With Kani, you can
+ensure that wide classes of problems are absent from your Rust code by writing
+<em>proof harnesses</em>, which are broadly similar to tests (especially property
+tests).</p>
+<p>Kani is particularly useful for verifying unsafe code in Rust, where
+many of the language's usual guarantees can no longer be checked by the
+compiler. But it's also useful for finding panics and check user-defined
+assertions in safe Rust.</p>
 <h2 id="project-status"><a class="header" href="#project-status">Project Status</a></h2>
-<p>Kani is currently in the initial development phase, and has not yet made an official release.
-It is under active development, but it does not yet support all Rust language features.
-(The <a href="./bookrunner.html">Book runner</a> can help you understand our current progress.)
+<p>Kani is currently under active development and has not made an official release yet.
+There is support for a fair amount of the Rust language features, but not all of them.
 If you encounter issues when using Kani we encourage you to <a href="https://github.com/model-checking/kani/issues/new/choose">report them to us</a>.</p>
-<p>Kani usually syncs with the main branch of Rust every week, and so is generally up-to-date with the latest Rust language features.</p>
-<h2 id="getting-started"><a class="header" href="#getting-started">Getting started</a></h2>
-<ol>
-<li><a href="./install-guide.html">Begin with the Kani installation guide.</a> Currently, this means checking out and building Kani.</li>
-<li><a href="./tool-comparison.html">Understand how Kani compares to other potential tools for verifying Rust code.</a></li>
-<li><a href="./kani-tutorial.html">Try following the Kani tutorial to get a feel for how Kani can be applied.</a></li>
-</ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="kani-installation-guide"><a class="header" href="#kani-installation-guide">Kani Installation Guide</a></h1>
+<p>Kani usually synchronizes with the main branch of Rust every two weeks, and so
+is generally up-to-date with the latest Rust language features.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
 <p>Kani must currently be built from source.</p>
-<p>In general, the following dependencies are required. Note: These dependencies may be installed by running the CI scripts shown below and there is no need to install them separately, for their respective OS.</p>
+<p>In general, the following dependencies are required.</p>
+<blockquote>
+<p><strong>NOTE</strong>: These dependencies may be installed by running the CI scripts shown
+below and there's no need to install them separately, for their respective
+OS.</p>
+</blockquote>
 <ol>
-<li>Cargo installed via rustup</li>
-<li><a href="https://github.com/diffblue/cbmc">CBMC</a> (&gt;= 5.50.0)</li>
-<li><a href="https://github.com/awslabs/aws-viewer-for-cbmc">CBMC Viewer</a> (&gt;= 2.6)</li>
+<li>Cargo installed via <a href="https://rustup.rs/">rustup</a></li>
+<li><a href="https://github.com/diffblue/cbmc">CBMC</a> (&gt;= 5.54.0)</li>
+<li><a href="https://github.com/awslabs/aws-viewer-for-cbmc">CBMC Viewer</a> (&gt;= 2.10)</li>
 </ol>
-<h2 id="installing-on-ubuntu-2004"><a class="header" href="#installing-on-ubuntu-2004">Installing on Ubuntu 20.04</a></h2>
-<p>The simplest way to install (especially if you're using a fresh VM) is following our CI scripts:</p>
+<p>Kani has been tested in <a href="install-guide.html#install-dependencies-on-ubuntu">Ubuntu</a> and <a href="install-guide.html##install-dependencies-on-macos">macOS</a> platforms.</p>
+<h2 id="install-dependencies-on-ubuntu"><a class="header" href="#install-dependencies-on-ubuntu">Install dependencies on Ubuntu</a></h2>
+<p>Support is available for Ubuntu 18.04 and 20.04.
+The simplest way to install dependencies (especially if you're using a fresh VM)
+is following our CI scripts:</p>
 <pre><code># git clone git@github.com:model-checking/kani.git
 git clone https://github.com/model-checking/kani.git
 cd kani
 git submodule update --init
-./scripts/setup/ubuntu-20.04/install_deps.sh
-./scripts/setup/ubuntu-20.04/install_cbmc.sh
-./scripts/setup/install_viewer.sh 2.6
+./scripts/setup/ubuntu/install_deps.sh
+./scripts/setup/ubuntu/install_cbmc.sh
+./scripts/setup/install_viewer.sh 2.10
 ./scripts/setup/install_rustup.sh
 source $HOME/.cargo/env
 </code></pre>
-<h2 id="installing-on-mac-os"><a class="header" href="#installing-on-mac-os">Installing on Mac OS</a></h2>
-<p>You need to have <a href="https://brew.sh/">Homebrew</a> installed already.</p>
+<h2 id="install-dependencies-on-macos"><a class="header" href="#install-dependencies-on-macos">Install dependencies on macOS</a></h2>
+<p>Support is available for macOS 10.15. You need to have <a href="https://brew.sh/">Homebrew</a> installed already.</p>
 <pre><code># git clone git@github.com:model-checking/kani.git
 git clone https://github.com/model-checking/kani.git
 cd kani
 git submodule update --init
 ./scripts/setup/macos-10.15/install_deps.sh
 ./scripts/setup/macos-10.15/install_cbmc.sh
-./scripts/setup/install_viewer.sh 2.6
+./scripts/setup/install_viewer.sh 2.10
 ./scripts/setup/install_rustup.sh
 source $HOME/.cargo/env
 </code></pre>
-<h2 id="building-and-testing-kani"><a class="header" href="#building-and-testing-kani">Building and testing Kani</a></h2>
-<p>Build Kani's packages:</p>
+<h2 id="build-and-test-kani"><a class="header" href="#build-and-test-kani">Build and test Kani</a></h2>
+<p>Build the Kani package:</p>
 <pre><code>cargo build
 </code></pre>
 <p>Then, optionally, run the regression tests:</p>
 <pre><code>./scripts/kani-regression.sh
 </code></pre>
-<p>This script has a lot of noisy output, but on a successful run you will see:</p>
+<p>This script has a lot of noisy output, but on a successful run you'll see:</p>
 <pre><code>All Kani regression tests completed successfully.
 </code></pre>
 <h2 id="try-running-kani"><a class="header" href="#try-running-kani">Try running Kani</a></h2>
-<p>Get the Kani script in your path:</p>
+<p>Add the Kani script to your path:</p>
 <pre><code class="language-bash">export PATH=$(pwd)/scripts:$PATH
 </code></pre>
 <p>Create a test file:</p>
-<pre><pre class="playground"><code class="language-rust">// File: test.rs
+<pre><code class="language-rust noplaypen">// File: test.rs
+#[kani::proof]
 fn main() {
     assert!(1 == 2);
 }
-</code></pre></pre>
+</code></pre>
 <p>Run Kani on the single file:</p>
 <pre><code>kani test.rs
 </code></pre>
 <p>You should get a result like this one:</p>
-<pre><code>[snipped output]
-** Results:
-test.rs function main
-[main.assertion.1] line 2 assertion failed: 1 == 2: FAILURE
-
-** 1 of 1 failed (2 iterations)
-VERIFICATION FAILED
+<pre><code>[...]
+RESULTS:
+Check 1: main.assertion.1
+         - Status: FAILURE
+         - Description: &quot;assertion failed: 1 == 2&quot;
+[...]
+VERIFICATION:- FAILED
 </code></pre>
-<p>Fix the test and you should see <code>kani</code> succeed.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="comparison-with-other-tools"><a class="header" href="#comparison-with-other-tools">Comparison with other tools</a></h1>
-<p><strong>Fuzzing</strong> (for example, with <a href="https://github.com/rust-fuzz/cargo-fuzz"><code>cargo-fuzz</code></a>) is a unguided approach to random testing.
-A fuzzer generally provides an input of random bytes, and then examines fairly generic properties (&quot;doesn't crash or commit undefined behavior&quot;) about the behavior of the resulting program.
-Fuzzers generally get their power through a kind of evolutionary algorithm that rewards new mutant inputs that &quot;discover&quot; new branches of the program under test.
-Fuzzers are excellent for testing security boundaries, precisely because they make no validity assumptions (hence &quot;unguided&quot;) when generating the input.</p>
-<p><strong>Property testing</strong> (for example, with <a href="https://github.com/AltSysrq/proptest"><code>proptest</code></a>) is a guided approach to random testing.
-&quot;Guided&quot; in the sense that the test generally provides a strategy (for generating random values) that constrains their range.
-The purpose of this is to either focus on interesting values, or because the assertions in the test will only hold for a constrained set of inputs.
-This generator is sampled several times, and the test's assertions are checked for each sample.
-Tests in this style do actually state properties: &quot;forall inputs (of some constrained kind), this condition should hold.&quot;
-Property testing is often quite effective, but the engine can't fully prove the property, it can only sample randomly a few of those values to test (though property testing libraries frequently give interesting &quot;edge cases&quot; higher probability, making them more effective at bug-finding).</p>
-<p><strong>Model checking</strong> is similar to these techniques in how you use them, but model checking is non-random and exhaustive (though often only up to some bound on input or problem size).
-Thus, properties checked with a model checker are effectively proofs.
-Instead of naively trying all possible <em>concrete</em> inputs (which could be infeasible and blow up exponentially), model checkers like Kani will cleverly encode program traces as <em>symbolic</em> &quot;<a href="https://en.wikipedia.org/wiki/Boolean_satisfiability_problem">SAT</a>/<a href="https://en.wikipedia.org/wiki/Satisfiability_modulo_theories">SMT</a>&quot; problems, and hand them off to SAT/SMT solvers.
-Again, SAT/SMT solving is an <a href="https://en.wikipedia.org/wiki/NP-completeness">NP-complete</a> problem, but most practical programs can be model checked within milliseconds to seconds (with notable exceptions: you can easily try to reverse a cryptographic hash with a model checker, but good luck getting it to terminate!)</p>
-<p>Model checking allows you to prove non-trivial properties about programs, and check those proofs in roughly the same amount of time as a traditional test suite would take to run.
-The downside is many types of properties can quickly become &quot;too large&quot; to practically model check, and so writing &quot;proof harnesses&quot; (very similar to property tests and fuzzer harnesses) requires some skill to understand why the solver is not terminating and fix the structure of the problem you're giving it so that it does.
-This process basically boils down to &quot;debugging&quot; the proof.</p>
-<h2 id="looking-for-concurrency"><a class="header" href="#looking-for-concurrency">Looking for concurrency?</a></h2>
-<p>Kani does not yet support verifying concurrent Rust code.
-Two tools of immediate interest are <a href="https://github.com/tokio-rs/loom">Loom</a> and <a href="https://github.com/awslabs/shuttle">Shuttle</a>.
-Loom attempts to check all possible interleavings, while Shuttle chooses interleavings randomly.
-The former is sound (like Kani), but the latter is more scalable to large problem spaces (like property testing).</p>
-<h2 id="other-tools"><a class="header" href="#other-tools">Other tools</a></h2>
-<p>The Rust Formal Methods Interest Group maintains <a href="https://rust-formal-methods.github.io/tools.html">a list of interesting Rust verification tools</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="kani-on-a-single-file"><a class="header" href="#kani-on-a-single-file">Kani on a single file</a></h1>
-<p>For small examples, or initial learning, it's very common to run Kani on just one source file.
-The command line format for invoking Kani directly has a few common formats:</p>
-<pre><code>kani filename.rs
-# or
-kani filename.rs [--kani-flags]
-# or
-kani filename.rs [--kani-flags] --cbmc-args [--cbmc-flags]
+<p>Fix the test and you should see a result like this one:</p>
+<pre><code>[...]
+VERIFICATION:- SUCCESSFUL
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="usage"><a class="header" href="#usage">Usage</a></h1>
+<p>At present, Kani can used in two ways:</p>
+<ul>
+<li><a href="./kani-single-file.html">On a single file</a> with the <code>kani</code> command.</li>
+<li><a href="./cargo-kani.html">On a package</a> with the <code>cargo-kani</code> command.</li>
+</ul>
+<p>Running <a href="./kani-single-file.html">Kani on a single file</a> is quite useful for small
+examples or projects that don't use <code>cargo</code>.</p>
+<p>However, if you plan to integrate Kani in your projects, the recommended
+approach is to use <a href="./cargo-kani.html">Kani on a package</a> because of its ability
+to handle external dependencies.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="usage-on-a-single-file"><a class="header" href="#usage-on-a-single-file">Usage on a single file</a></h1>
+<p>For small examples or initial learning, it's very common to run Kani on just one source file.</p>
+<p>The command line format for invoking Kani directly is the following:</p>
+<pre><code>kani filename.rs [&lt;kani-args&gt;]*
 </code></pre>
 <p>For example,</p>
-<pre><code>kani filenames.rs --visualize --cbmc-args --object-bits 11 --unwind 15
+<pre><code>kani example.rs
 </code></pre>
-<h2 id="common-kani-arguments"><a class="header" href="#common-kani-arguments">Common Kani arguments</a></h2>
-<p><strong><code>--visualize</code></strong> will generate a report in the local directory accessible through <code>report/html/index.html</code>.
-This report will shows coverage information, as well as give traces for each failure Kani finds.</p>
-<p><strong><code>--function &lt;name&gt;</code></strong> Kani defaults to assuming the starting function is called <code>main</code>.
-You can change it to a different function with this argument.
-Note that to &quot;find&quot; the function given, it needs to be given the <code>#[no_mangle]</code> annotation.</p>
-<p><strong><code>--gen-c</code></strong> will generate a C file that roughly corresponds to the input Rust file.
-This can sometimes be helpful when trying to debug a problem with Kani.</p>
-<p><strong><code>--keep-temps</code></strong> will preserve generated files that Kani generates.
-In particular, this will include a <code>.json</code> file which is the &quot;CBMC symbol table&quot;.
-This can be helpful in trying to diagnose bugs in Kani, and may sometimes be requested in Kani bug reports.</p>
-<h2 id="common-cbmc-arguments"><a class="header" href="#common-cbmc-arguments">Common CBMC arguments</a></h2>
-<p>Kani invokes CBMC to do the underlying solving.
-(CBMC is the &quot;C Bounded Model Checker&quot; but is actually a framework that supports model checking multiple languages.)
-CBMC arguments are sometimes necessary to get good results.</p>
-<p>To give arguments to CBMC, you pass <code>--cbmc-args</code> to Kani.
-This &quot;switches modes&quot; from Kani arguments to CBMC arguments.
-Everything else given on the command line will be assumed to be a CBMC argument, and so all Kani arguments should be provided before this flag.</p>
-<p><strong><code>--unwind &lt;n&gt;</code></strong> Give a global upper bound on all loops.
-This can force termination when CBMC tries to unwind loops indefinitely.</p>
-<p><strong><code>--object-bits &lt;n&gt;</code></strong> CBMC, by default, assumes there are only going to be 256 objects allocated on the heap in a single trace.
-This corresponds to a default of <code>--object-bits 8</code>.
-Rust programs often will use more than this, and so need to raise this limit.
-However, very large traces with many allocations often prove intractable to solve.
-If you run into this issue, a good first start is to raise the limit to 2048, i.e. <code>--object-bits 11</code>.</p>
-<p><strong><code>--unwindset label_1:bound_1,label_2:bound_2,...</code></strong> Give specific unwinding bounds on specific loops.
-The labels for each loop can be discovered by running with the following CBMC flag:</p>
-<p><strong><code>--show-loops</code></strong> Print the labels of each loop in the program.
-Useful for <code>--unwindset</code>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="kani-on-a-package"><a class="header" href="#kani-on-a-package">Kani on a package</a></h1>
-<p>Kani currently ships with a <code>cargo-kani</code> script, but this support is limited. If you find any issue, please <a href="https://github.com/model-checking/kani/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">filed a bug report</a>.</p>
-<p>To run <code>cargo-kani</code> in your crate, execute from the crate directory:</p>
-<pre><code>cargo kani [KANI_ARGUMENTS]* [--cbmc-args [CBMC_ARGUMENTS]*]
+<p>runs Kani on all the proof harnesses from file <code>example.rs</code>.
+A proof harness is simply a function with the <code>#[kani::proof]</code> annotation.</p>
+<h2 id="common-arguments"><a class="header" href="#common-arguments">Common arguments</a></h2>
+<p>The most common <code>kani</code> arguments are the following:</p>
+<ul>
+<li>
+<p><code>--harness &lt;name&gt;</code>: By default, Kani checks all proof harnesses it finds. You
+can switch to checking a single harness using this flag.</p>
+</li>
+<li>
+<p><code>--unwind &lt;n&gt;</code>: Set a global upper <a href="./tutorial-loop-unwinding.html">loop
+unwinding</a> bound on all loops. This can force
+termination when CBMC tries to unwind loops indefinitely.</p>
+</li>
+<li>
+<p><code>--output-format &lt;regular|terse|old&gt;</code>: By default (<code>regular</code>), Kani
+post-processes CBMC's output to produce more comprehensible results. In
+contrast, <code>terse</code> outputs only a summary of these results, and <code>old</code> forces
+Kani to emit the original output from CBMC.</p>
+</li>
+<li>
+<p><code>--visualize</code>: Generates an HTML report in the local directory accessible
+through <code>report/html/index.html</code>. This report shows coverage information and
+provides traces (i.e., counterexamples) for each failure found by Kani.</p>
+</li>
+</ul>
+<p>Run <code>kani --help</code> to see a complete list of arguments.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="usage-on-a-package"><a class="header" href="#usage-on-a-package">Usage on a package</a></h1>
+<p>Kani is also integrated with <code>cargo</code> and can be invoked from a crate directory as follows:</p>
+<pre><code class="language-bash">cargo kani [&lt;kani-args&gt;]*
 </code></pre>
-<p>To list all the arguments supported by cargo kani, execute:</p>
-<pre><code>cargo kani --help
-</code></pre>
-<h1 id="common-cargo-kani-arguments"><a class="header" href="#common-cargo-kani-arguments">Common cargo-kani arguments</a></h1>
-<p>Cargo kani supports the kani standalone arguments described in the <a href="./kani-single-file.html">Kani single file section</a>. Additionally, it also accepts the following arguments:</p>
-<p><strong><code>--config-toml</code></strong> Location of a configuration file in toml format for your project. This defaults to the crate's Cargo.toml.</p>
-<p><strong><code>--no-config-toml</code></strong> Do not use any configuration TOML file.</p>
-<p><strong><code>--build-target</code></strong> Build for the target triple.</p>
-<h1 id="package-configuration"><a class="header" href="#package-configuration">Package configuration</a></h1>
-<p>Users may want to add default configurations for their crate's or workspace's harnesses, and they can do it by adding configurations to their <code>Cargo.toml</code> or any other TOML file.</p>
-<p>For example, in order to configure a maximum loop unwind threshold for harnesses in a package, you can add the following line to your package <code>Cargo.toml</code>:</p>
+<p><code>cargo kani</code> supports all <code>kani</code> arguments.</p>
+<p><code>cargo kani</code> is the recommended approach for using Kani on a project, due to its
+ability to handle external dependencies and the option add configurations via the <code>Cargo.toml</code> file.</p>
+<h2 id="configuration"><a class="header" href="#configuration">Configuration</a></h2>
+<p>Users can add a default configuration to the <code>Cargo.toml</code> file for running harnesses in a package.
+Kani will extract any arguments from these sections:</p>
+<ul>
+<li><code>[kani]</code></li>
+<li><code>[workspace.metadata.kani]</code></li>
+<li><code>[package.metadata.kani]</code></li>
+</ul>
+<p>For example, say you want to set a loop unwinding bound of <code>5</code> for all the harnesses in a package.
+You can achieve this by adding the following lines to the package's <code>Cargo.toml</code>:</p>
 <pre><code class="language-toml">[package.metadata.kani]
-flags= { unwind = &quot;5&quot; }
+flags = { unwind = &quot;5&quot; }
 </code></pre>
-<p>Note that Kani will extract any extra configuration from sections <code>[kani]</code>, <code>[workspace.metadata.kani]</code>, and <code>[package.metadata.kani]</code> in the TOML file.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="kani-tutorial"><a class="header" href="#kani-tutorial">Kani tutorial</a></h1>
-<p>If you're interested in applying Kani, then you're probably in this situation:</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="verification-results"><a class="header" href="#verification-results">Verification results</a></h1>
+<p>Running Kani on a harness produces an output that includes a set of checks as
+follows:</p>
+<pre><code>RESULTS:
+Check 1: example.assertion.1
+         - Status: &lt;status&gt;
+         - Description: &lt;description&gt;
+         - Location: &lt;location&gt;
+[...]
+</code></pre>
+<p>Kani determines the verification result for the harness based on the
+result (i.e., <code>&lt;status&gt;</code>) of each individual check (also known as &quot;properties&quot;). If all
+checks are successful then the overall verification result of the harness is successful. Otherwise the
+verification fails, which indicates issues with the code under verification.</p>
+<h2 id="check-results"><a class="header" href="#check-results">Check results</a></h2>
+<p>The result (or <code>Status</code>) of a check in Kani can be one of the following:</p>
 <ol>
-<li>You're working on a moderately important project in Rust.</li>
-<li>You've already invested heavily in testing to ensure correctness, and possibly fuzzing to ensure the absence of shallow security issues.</li>
-<li>You want to invest further, to gain a much higher degree of assurance.</li>
+<li><code>SUCCESS</code>: This indicates that the check passed (i.e., the property holds).
+Note that in some cases, the property may hold <em>vacuously</em>. This can occur
+because the property is unreachable, or because the harness is
+<em>over-constrained</em>.</li>
 </ol>
+<p>Example:</p>
+<pre><code class="language-rust noplaypen">fn success_example() {
+    let mut sum = 0;
+    for i in 1..4 {
+        sum += i;
+    }
+    assert_eq!(sum, 6);
+}
+</code></pre>
+<p>The output from Kani indicates that the assertion holds:</p>
+<pre><code>Check 4: success_example.assertion.4
+         - Status: SUCCESS
+         - Description: &quot;assertion failed: sum == 6&quot;
+</code></pre>
+<ol start="2">
+<li><code>FAILURE</code>: This indicates that the check failed (i.e., the property doesn't
+hold). In this case, you can examine a trace by re-running with the
+<code>--visualize</code> option.  This generates an HTML report with the trace
+information.</li>
+</ol>
+<p>Example:</p>
+<pre><code class="language-rust noplaypen">fn failure_example() {
+    let arr = [1, 2, 3];
+    assert_ne!(arr.len(), 3);
+}
+</code></pre>
+<p>The assertion doesn't hold as Kani's output indicates:</p>
+<pre><code>Check 2: failure_example.assertion.2
+         - Status: FAILURE
+         - Description: &quot;assertion failed: arr.len() != 3&quot;
+</code></pre>
+<ol start="3">
+<li><code>UNREACHABLE</code>: This indicates that the check is unreachable (i.e., the
+property holds <em>vacuously</em>). This occurs when there is no possible execution
+trace that can reach the check's line of code.
+This may be because the function that contains the check is unused, or because
+the harness does not trigger the condition under which the check is invoked.
+Kani currently checks reachability for the following assertion types:
+<ol>
+<li>Assert macros (e.g. <code>assert</code>, <code>assert_eq</code>, etc.)</li>
+<li>Arithmetic overflow checks</li>
+<li>Negation overflow checks</li>
+<li>Index out-of-bounds checks</li>
+<li>Divide/remainder-by-zero checks</li>
+</ol>
+</li>
+</ol>
+<p>Example:</p>
+<pre><code class="language-rust noplaypen">fn unreachable_example() {
+    let x = 5;
+    let y = x + 2;
+    if x &gt; y {
+        assert!(x &lt; 8);
+    }
+}
+</code></pre>
+<p>The output from Kani indicates that the assertion is unreachable:</p>
+<pre><code>Check 2: unreachable_example.assertion.2
+         - Status: UNREACHABLE
+         - Description: &quot;assertion failed: x &lt; 8&quot;
+</code></pre>
+<ol start="4">
+<li><code>UNDETERMINED</code>: This indicates that Kani was not able to conclude whether the
+property holds or not. This can occur when the Rust program contains a construct
+that is not currently supported by Kani. See
+<a href="./rust-feature-support.html">Rust feature support</a> for Kani's current support of the
+Rust language features.</li>
+</ol>
+<p>Example:</p>
+<pre><code class="language-rust noplaypen">fn undetermined_example() {
+    let mut x = 0;
+    unsupp(&amp;mut x);
+    assert!(x == 0);
+}
+
+#[feature(asm)]
+fn unsupp(x: &amp;mut u8) {
+    unsafe {
+        std::arch::asm!(&quot;nop&quot;);
+    }
+}
+
+</code></pre>
+<p>The output from Kani indicates that the assertion is undetermined due to the
+missing support for inline assembly in Kani:</p>
+<pre><code>Check 2: undetermined_example.assertion.2
+         - Status: UNDETERMINED
+         - Description: &quot;assertion failed: x == 0&quot;
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tutorial"><a class="header" href="#tutorial">Tutorial</a></h1>
 <blockquote>
-<p>If you haven't already, we recommend techniques like property testing (e.g. with <a href="https://github.com/AltSysrq/proptest"><code>proptest</code></a>) before attempting model checking.
-These yield good results, are very cheap to apply, and are often easier to adopt and debug.
-Refactoring work to make your code more property-testable will generally also make the code more model-checkable as well.
-Kani is a next step: a tool that can be applied once cheaper tactics are no longer yielding results, or once the easier to detect issues have already been dealt with.</p>
+<p><strong>NOTE</strong>: This tutorial expects you to have followed the Kani <a href="./install-guide.html">installation instructions</a> first.</p>
 </blockquote>
 <p>This tutorial will step you through a progression from simple to moderately complex tasks with Kani.
 It's meant to ensure you can get started, and see at least some simple examples of how typical proofs are structured.
 It will also teach you the basics of &quot;debugging&quot; proof harnesses, which mainly consists of diagnosing and resolving non-termination issues with the solver.</p>
-<ol>
-<li><a href="./install-guide.html">Begin with Kani installation.</a> This will take through to running <code>kani</code> on your first Rust program.</li>
-<li>Consider reading our <a href="./tool-comparison.html">tool comparison</a> to understand what Kani is.</li>
-<li><a href="./tutorial-first-steps.html">Work through the tutorial.</a></li>
-<li>Consider returning to the <a href="./tool-comparison.html">tool comparison</a> after trying the tutorial to see if any of the abstract ideas have become more concrete.</li>
-</ol>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="first-steps-with-kani"><a class="header" href="#first-steps-with-kani">First steps with Kani</a></h1>
-<blockquote>
-<p>This tutorial expects you to have followed the Kani <a href="./install-guide.html">installation instructions</a> first.</p>
-</blockquote>
+<p>You may also want to read the <a href="./application.html">Application</a> section to better
+understand what Kani is and how it can be applied on real code.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="first-steps"><a class="header" href="#first-steps">First steps</a></h1>
 <p>Kani is unlike the testing tools you may already be familiar with.
 Much of testing is concerned with thinking of new corner cases that need to be covered.
 With Kani, all the corner cases are covered from the start, and the new concern is narrowing down the scope to something manageable for the checker.</p>
-<p>Consider this first program (which can be found under <a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/kani-first-steps/"><code>docs/src/tutorial/kani-first-steps</code></a>):</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>fn estimate_size(x: u32) -&gt; u32 {
+<p>Consider this first program (which can be found under <a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/kani-first-steps/"><code>kani-first-steps</code></a>):</p>
+<pre><code class="language-rust noplaypen">fn estimate_size(x: u32) -&gt; u32 {
     if x &lt; 256 {
         if x &lt; 128 {
             return 1;
@@ -369,61 +451,55 @@ With Kani, all the corner cases are covered from the start, and the new concern 
         }
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>Think about the test harness you would need to write to test this function.
 You would need figure out a whole set of arguments to call the function with that would exercise each branch.
-You would need to keep that test harness up-to-date with the code, in case some of the branches change.
+You would also need to keep that test harness up-to-date with the code, in case some of the branches change.
 And if this function was more complicated—for example, if some of the branches depended on global state—the test harness would be even more onerous to write.</p>
 <p>We can try to property test a function like this, but if we're naive about it (and consider all possible <code>u32</code> inputs), then it's unlikely we'll ever find the bug.</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    proptest! {
+<pre><code class="language-rust noplaypen">    proptest! {
         #![proptest_config(ProptestConfig::with_cases(10000))]
         #[test]
         fn doesnt_crash(x: u32) {
             estimate_size(x);
         }
     }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <pre><code># cargo test
 [...]
 test tests::doesnt_crash ... ok
 </code></pre>
 <p>There's only 1 in 4 billion inputs that fail, so it's vanishingly unlikely the property test will find it, even with a million samples.</p>
-<p>With Kani, however:</p>
-<pre><pre class="playground"><code class="language-rust">#[cfg(kani)]
-#[no_mangle]
+<p>With Kani, however, we can use <code>kani::any()</code> to represent all possible <code>u32</code> values:</p>
+<pre><code class="language-rust noplaypen">#[cfg(kani)]
+#[kani::proof]
 fn main() {
     let x: u32 = kani::any();
     estimate_size(x);
 }
-</code></pre></pre>
+</code></pre>
 <pre><code># cargo kani
 [...]
 Runtime decision procedure: 0.00116886s
 
-** Results:
-./src/lib.rs function estimate_size
-[estimate_size.assertion.1] line 9 Oh no, a failing corner case!: FAILURE
-
-** 1 of 1 failed (2 iterations)
-VERIFICATION FAILED
+RESULTS:
+Check 3: estimate_size.assertion.1
+         - Status: FAILURE
+         - Description: &quot;Oh no, a failing corner case!&quot;
+[...]
+VERIFICATION:- FAILED
 </code></pre>
 <p>Kani has immediately found a failure.
-Notably, we haven't had to write explicit assertions in our &quot;proof harness&quot;: by default, Kani will find a host of erroneous conditions which include a reachable call to <code>panic</code> or a failing <code>assert</code>.</p>
+Notably, we haven't had to write explicit assertions in our proof harness: by default, Kani will find a host of erroneous conditions which include a reachable call to <code>panic</code> or a failing <code>assert</code>.</p>
 <h3 id="getting-a-trace"><a class="header" href="#getting-a-trace">Getting a trace</a></h3>
 <p>By default, Kani only reports failures, not how the failure happened.
 This is because, in its full generality, understanding how a failure happened requires exploring a full (potentially large) execution trace.
 Here, we've just got some nondeterministic inputs up front, but that's something of a special case that has a &quot;simpler&quot; explanation (just the choice of nondeterministic input).</p>
 <p>To see traces, run:</p>
 <pre><code>kani --visualize src/lib.rs
-open report/html/index.html
 </code></pre>
-<p>The first command runs Kani and generates the html-based report in <code>report/</code>.
-The second command opens that report in your default browser (on mac, on linux desktops try <code>xdg-open</code>).
+<p>This command runs Kani and generates the HTML report in <code>report/html/index.html</code>.
+Open the report with your preferred browser.
 From this report, we can find the trace of the failure and filter through it to find the relevant line (at present time, an unfortunate amount of generated code is present in the trace):</p>
 <pre><code>let x: u32 = kani::any();
 x = 1023u
@@ -435,12 +511,8 @@ To find more, we'd presumably fix this issue and then re-run Kani.</p>
 <p>We put an explicit panic in this function, but it's not the only kind of failure Kani will find.
 Try a few other types of errors.</p>
 <p>For example, instead of panicking we could try explicitly dereferencing a null pointer:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>unsafe { return *(0 as *const u32) };
-<span class="boring">}
-</span></code></pre></pre>
+<pre><code class="language-rust noplaypen">unsafe { return *(0 as *const u32) };
+</code></pre>
 <p>Notably, however, the Rust compiler emits a warning here:</p>
 <pre><code>warning: dereferencing a null pointer
   --&gt; src/lib.rs:10:29
@@ -450,37 +522,40 @@ Try a few other types of errors.</p>
    |
    = note: `#[warn(deref_nullptr)]` on by default
 </code></pre>
-<p>Still, it is just a warning, and we can run the code without test failures just as before.
+<p>Still, it's just a warning, and we can run the code without test failures just as before.
 But Kani still catches the issue:</p>
-<pre><code>** Results:
-./src/lib.rs function estimate_size
-[estimate_size.pointer_dereference.1] line 10 dereference failure: pointer NULL in *var_10: FAILURE
-
-** 1 of 1 failed (2 iterations)
-VERIFICATION FAILED
+<pre><code>[...]
+RESULTS:
+[...]
+Check 2: foo.pointer_dereference.1
+         - Status: FAILURE
+         - Description: &quot;dereference failure: pointer NULL&quot;
+[...]
+VERIFICATION:- FAILED
 </code></pre>
 <p><strong>Can you find an example where the Rust compiler will not complain, and Kani will?</strong></p>
 <details>
 <summary>Click to show one possible answer</summary>
 <pre><code>return 1 &lt;&lt; x;
 </code></pre>
-<p>Overflow (addition, multiplication, etc, and this case, <a href="https://github.com/rust-lang/rust/issues/10183">bitshifting by too much</a>) is also caught by Kani:</p>
-<pre><code>** Results:
-./src/lib.rs function estimate_size
-[estimate_size.assertion.1] line 10 attempt to shift left by `move _10`, which would overflow: FAILURE
-[estimate_size.undefined-shift.1] line 10 shift distance too large in 1 &lt;&lt; var_10: FAILURE
+<p>Overflow (in addition, multiplication or, in this case, <a href="https://github.com/rust-lang/rust/issues/10183">bit-shifting by too much</a>) is also caught by Kani:</p>
+<pre><code>RESULTS:
+[...]
+Check 3: foo.assertion.1
+         - Status: FAILURE
+         - Description: &quot;attempt to shift left with overflow&quot;
 
-** 2 of 2 failed (2 iterations)
-VERIFICATION FAILED
+Check 4: foo.undefined-shift.1
+         - Status: FAILURE
+         - Description: &quot;shift distance too large&quot;
+[...]
+VERIFICATION:- FAILED
 </code></pre>
 </details>
 <h2 id="assertions-assumptions-and-harnesses"><a class="header" href="#assertions-assumptions-and-harnesses">Assertions, Assumptions, and Harnesses</a></h2>
-<p>It seems a bit odd that we can take billions of inputs, but our function clearly only handles up to a few thousand.
-Let's codify this fact about our function by asserting some reasonable bound on our input, after we've fixed our bug:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>fn estimate_size(x: u32) -&gt; u32 {
+<p>It seems a bit odd that we can take billions of inputs when our function only handles up to a few thousand.
+Let's encode this fact about our function by asserting some reasonable bound on our input, after we've fixed our bug:</p>
+<pre><code class="language-rust noplaypen">fn estimate_size(x: u32) -&gt; u32 {
     assert!(x &lt; 4096);
 
     if x &lt; 256 {
@@ -503,27 +578,25 @@ Let's codify this fact about our function by asserting some reasonable bound on 
         }
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
-<p>Now we have stated our previously implicit expectation: this function should never be called with inputs that are too big.
+</code></pre>
+<p>Now we've stated our previously implicit expectation: this function should never be called with inputs that are too big.
 But if we attempt to verify this, we get a problem:</p>
-<pre><code>** Results:
-./src/final_form.rs function estimate_size
-[estimate_size.assertion.1] line 3 assertion failed: x &lt; 4096: FAILURE
-
-** 1 of 1 failed (2 iterations)
-VERIFICATION FAILED
+<pre><code>[...]
+RESULTS:
+[...]
+Check 3: final_form::estimate_size.assertion.1
+         - Status: FAILURE
+         - Description: &quot;assertion failed: x &lt; 4096&quot;
+[...]
+VERIFICATION:- FAILED
 </code></pre>
 <p>We intended this to be a precondition of calling the function, but Kani is treating it like a failure.
 If we call this function with too large of a value, it will crash with an assertion failure.
 But we know that, that was our intention.</p>
 <p>This is the purpose of <em>proof harnesses</em>.
-Much like property testing (which would also find this assertion failure as a bug), we need to set up our preconditions, call the function in question, then assert our post conditions.
+Much like property testing (which would also fail in this assertion), we need to set up our preconditions, call the function in question, then assert our postconditions.
 Here's a revised example of the proof harness, one that now succeeds:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>#[cfg(kani)]
+<pre><code class="language-rust noplaypen">#[cfg(kani)]
 #[kani::proof]
 fn verify_success() {
     let x: u32 = kani::any();
@@ -531,13 +604,12 @@ fn verify_success() {
     let y = estimate_size(x);
     assert!(y &lt; 10);
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>But now we must wonder if we've really fully tested our function.
 What if we revise the function, but forget to update the assumption in our proof harness to cover the new range of inputs?</p>
 <p>Fortunately, Kani is able to report a coverage metric for each proof harness.
 Try running:</p>
-<pre><code>kani --visualize src/final_form.rs --function verify_success
+<pre><code>kani --visualize src/final_form.rs --harness verify_success
 open report/html/index.html
 </code></pre>
 <p>The beginning of the report includes coverage information.
@@ -548,64 +620,41 @@ Lines not covered by our proof harness will show in red.</p>
 <li>Rerun <code>kani --visualize</code> on the file</li>
 <li>Look at the report: you'll see we no longer have 100% coverage of the function.</li>
 </ol>
-<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
-<p>In this section:</p>
-<ol>
-<li>We saw Kani find panics, assertion failures, and even some other failures like unsafe dereferencing of null pointers.</li>
-<li>We saw how to get a failing trace using <code>kani --visualize</code></li>
-<li>We saw how proof harnesses are used to set up preconditions and assert postconditions.</li>
-<li>We saw how to obtain coverage metrics and use them to ensure our proofs are covering as much as they should be.</li>
-</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="failures-that-kani-can-spot"><a class="header" href="#failures-that-kani-can-spot">Failures that Kani can spot</a></h1>
-<p>In the <a href="./tutorial-first-steps.html">last section</a> we saw Kani spot two major kinds of failures: assertions and panics.
-If the proof harness allows some program trace that results in a panic, then Kani will report that as a failure.
-We additionally saw very briefly a couple of other kinds of failures, like null pointer dereferences and overflow.
+<p>In the <a href="./tutorial-first-steps.html">last section</a> we saw Kani spot two major kinds of failures: Assertions and panics.
+If the proof harness allows some program execution that results in a panic, then Kani will report that as a failure.
+In addition, we saw very briefly a couple of other kinds of failures: Null pointer dereferences and overflows.
 In this section, we're going to expand on these additional checks, to give you an idea of what other problems Kani will find.</p>
 <h2 id="bounds-checking-and-pointers"><a class="header" href="#bounds-checking-and-pointers">Bounds checking and pointers</a></h2>
 <p>Rust is safe by default, and so includes dynamic (run-time) bounds checking where needed.
-Consider this Rust code (which can be found under <a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/kinds-of-failure/"><code>docs/src/tutorial/kinds-of-failure</code></a>):</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>/// Wrap &quot;too-large&quot; indexes back into a valid range for the array
+Consider this Rust code (available <a href="https://github.com/model-checking/kani/blob/main/docs/src/tutorial/kinds-of-failure/src/bounds_check.rs">here</a>):</p>
+<pre><code class="language-rust noplaypen">/// Wrap &quot;too-large&quot; indexes back into a valid range for the array
 fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
     if a.len() == 0 {
         return 0;
     }
     return a[i % a.len() + 1];
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>We can again write a simple property test against this code:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    proptest! {
+<pre><code class="language-rust noplaypen">    proptest! {
         #[test]
         fn doesnt_crash(i: usize, a: Vec&lt;u32&gt;) {
             get_wrapped(i, &amp;a);
         }
     }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>This property test will immediately find the failing case because of this dynamic check.</p>
-<p>But what if we change this function to use unsafe Rust:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>return unsafe { *a.get_unchecked(i % a.len() + 1) };
-<span class="boring">}
-</span></code></pre></pre>
+<p>But what if we change this function to use unsafe Rust?</p>
+<pre><code class="language-rust noplaypen">return unsafe { *a.get_unchecked(i % a.len() + 1) };
+</code></pre>
 <p>Now the error becomes invisible to this test:</p>
 <pre><code># cargo test
 [...]
-test tests::doesnt_crash ... ok
+test bounds_check::tests::doesnt_crash ... ok
 </code></pre>
-<p>But we're able to check this unsafe code with Kani:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>#[cfg(kani)]
+<p>But we're able to write a harness for this unsafe code:</p>
+<pre><code class="language-rust noplaypen">#[cfg(kani)]
 #[kani::proof]
 fn bound_check() {
     let size: usize = kani::any();
@@ -614,20 +663,16 @@ fn bound_check() {
     let array: Vec&lt;u32&gt; = vec![0; size];
     get_wrapped(index, &amp;array);
 }
-<span class="boring">}
-</span></code></pre></pre>
-<pre><code># kani src/bounds_check.rs
-[...]
-** 1 of 468 failed (2 iterations)
-VERIFICATION FAILED
 </code></pre>
-<p>Notice there were a <em>lot</em> of verification conditions being checked: in the above output, 468! (It may change for you.)
+<p>If we run it with Kani:</p>
+<pre><code class="language-bash">kani src/bounds_check.rs --harness bound_check
+</code></pre>
+<p>One of the checks fails. Also, notice there were many checks in the verification output.
 This is a result of using the standard library <code>Vec</code> implementation, which means our harness actually used quite a bit of code, short as it looks.
 Kani is inserting a lot more checks than appear as asserts in our code, so the output can be large.
 Let's narrow that output down a bit:</p>
-<pre><code># kani src/bounds_check.rs | grep FAIL
-[get_wrapped.pointer_dereference.5] line 10 dereference failure: pointer outside object bounds in *var_5: FAILURE
-VERIFICATION FAILED
+<pre><code># kani src/bounds_check.rs --harness bound_check | grep Failed
+Failed Checks: dereference failure: pointer outside object bounds
 </code></pre>
 <p>Notice that, for Kani, this has gone from a simple bounds-checking problem to a pointer-checking problem.
 Kani will check operations on pointers to ensure they're not potentially invalid memory accesses.
@@ -642,11 +687,10 @@ Any unsafe code that manipulates pointers will, as we see here, raise failures i
 </ol>
 <details>
 <summary>Click to see explanation for exercise 1</summary>
-<p>Having switched back to the safe indexing operation, Kani reports two failures instead of just one:</p>
-<pre><code># kani src/bounds_check.rs | grep FAIL
-[get_wrapped.assertion.3] line 9 index out of bounds: the length is move _12 but the index is _5: FAILURE
-[get_wrapped.pointer_dereference.5] line 9 dereference failure: pointer outside object bounds in a.data[var_5]: FAILURE
-VERIFICATION FAILED
+<p>Having switched back to the safe indexing operation, Kani reports two failures:</p>
+<pre><code># kani src/bounds_check.rs --harness bound_check | grep Failed
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: dereference failure: pointer outside object bounds
 </code></pre>
 <p>The first is Rust's implicit assertion for the safe indexing operation.
 The second is Kani's check to ensure the pointer operation is actually safe.
@@ -656,13 +700,13 @@ This pattern (two checks for similar issues in safe Rust code) is common, and we
 <summary>Click to see explanation for exercise 2</summary>
 <p>Having run <code>kani --visualize</code> and clicked on one of the failures to see a trace, there are three things to immediately notice:</p>
 <ol>
-<li>This trace is huge. The standard library <code>Vec</code> is involved, there's a lot going on.</li>
+<li>This trace is huge. Because the standard library <code>Vec</code> is involved, there's a lot going on.</li>
 <li>The top of the trace file contains some &quot;trace navigation tips&quot; that might be helpful in navigating the trace.</li>
 <li>There's a lot of generated code and it's really hard to just read the trace itself.</li>
 </ol>
 <p>To navigate this trace to find the information you need, we recommend searching for things you expect to be somewhere in the trace:</p>
 <ol>
-<li>Search the document for <code>kani::any</code> or <code>variable_of_interest =</code> such as <code>size =</code>.
+<li>Search the document for <code>kani::any</code> or <code>&lt;variable_of_interest&gt; =</code> such as <code>size =</code>.
 We can use this to find out what example values lead to a problem.
 In this case, where we just have a couple of <code>kani::any</code> values in our proof harness, we can learn a lot just by seeing what these are.
 In this trace we find (and the values you get may be different):</li>
@@ -684,71 +728,53 @@ let index: usize = kani::any();
 index = 2463ul
 </code></pre>
 <p>Try not to be fooled by the first assignments: we're seeing zero-initialization there.
-They get overridden by the later assignments.
+Their values are overwritten by the later assignments.
 You may see different values here, as it depends on the solver's behavior.</p>
 <ol start="2">
 <li>Try searching for &quot;failure:&quot;. This will be near the end of the document.
 Now you can try reverse-searching for assignments to the variables involved.
 For example, search upwards from the failure for <code>i =</code>.</li>
 </ol>
-<p>These two techniques should help you find both the nondeterministic inputs, and see what values were involved in the failing assertion.</p>
+<p>These two techniques should help you find both the nondeterministic inputs, and the values that were involved in the failing assertion.</p>
 </details>
 <h2 id="overflow-and-math-errors"><a class="header" href="#overflow-and-math-errors">Overflow and math errors</a></h2>
-<p>Consider a different variant on the above function:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
+<p>Consider a different variant on the function above:</p>
+<pre><code class="language-rust noplaypen">fn get_wrapped(i: usize, a: &amp;[u32]) -&gt; u32 {
     return a[i % a.len()];
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>We've corrected the out-of-bounds access, but now we've omitted the &quot;base case&quot;: what to return on an empty list.
 Kani will spot this not as a bound error, but as a mathematical error: on an empty list the modulus operator (<code>%</code>) will cause a division by zero.</p>
 <ol>
 <li>Exercise: Try to run Kani on the above, to see what this kind of failure looks like.</li>
 </ol>
 <p>Rust also performs runtime safety checks for integer overflows, much like it does for bounds checks.
-Consider this code (from <code>src/overflow.rs</code>):</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>fn simple_addition(a: u32, b: u32) -&gt; u32 {
+Consider this code (available <a href="https://github.com/model-checking/kani/blob/main/docs/src/tutorial/kinds-of-failure/src/overflow.rs">here</a>):</p>
+<pre><code class="language-rust noplaypen">fn simple_addition(a: u32, b: u32) -&gt; u32 {
     return a + b;
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>A trivial function, but if we write a property test for it, we immediately find inputs where it fails, thanks to Rust's dynamic checks.
 Kani will find these failures as well.
 Here's the output from Kani:</p>
-<pre><code># kani src/overflow.rs
+<pre><code># kani src/overflow.rs --harness add_overflow
 [...]
-** Results:
-./src/overflow.rs function simple_addition
-[simple_addition.assertion.1] line 6 attempt to compute `move _3 + move _4`, which would overflow: FAILURE
-[simple_addition.overflow.1] line 6 arithmetic overflow on unsigned + in var_3 + var_4: FAILURE
-
-** 2 of 2 failed (2 iterations)
-VERIFICATION FAILED
+RESULTS:
+Check 1: simple_addition.assertion.1
+         - Status: FAILURE
+         - Description: &quot;attempt to add with overflow&quot;
+[...]
+VERIFICATION:- FAILED
 </code></pre>
-<p>Notice the two failures: the Rust-inserted overflow check (<code>simple_addition.assertion.1</code>) and Kani's explicit overflow check (<code>simple_addition.overflow.1</code>).</p>
-<blockquote>
-<p><strong>NOTE:</strong> You could attempt to fix this issue by using Rust's alternative mathematical functions with explicit overflow behavior.
+<p>This issue can be fixed using Rust's alternative mathematical functions with explicit overflow behavior.
 For instance, instead of <code>a + b</code> write <code>a.wrapping_add(b)</code>.</p>
-<p>However, <a href="https://github.com/model-checking/kani/issues/480">at the present time</a>, while this disables the dynamic assertion that Rust inserts, it does not disable the additional Kani overflow check.
-As a result, this currently still fails in Kani.</p>
-</blockquote>
 <h3 id="exercise-classic-overflow-failure"><a class="header" href="#exercise-classic-overflow-failure">Exercise: Classic overflow failure</a></h3>
 <p>One of the classic subtle bugs that persisted in many implementations for a very long time is finding the midpoint in quick sort.
-This often naively looks like this (from <code>src/overflow_quicksort.rs</code>):</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>fn find_midpoint(low: u32, high: u32) -&gt; u32 {
+This often naively looks like this (code available <a href="https://github.com/model-checking/kani/blob/main/docs/src/tutorial/kinds-of-failure/src/overflow_quicksort.rs">here</a>):</p>
+<pre><code class="language-rust noplaypen">fn find_midpoint(low: u32, high: u32) -&gt; u32 {
     return (low + high) / 2;
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>Kani immediately spots the bug in the above code.</p>
 <ol>
 <li>Exercise: Fix this function so it no longer overflows.
@@ -759,12 +785,8 @@ Don't add that right away, see what happens if you don't. Just keep it in mind.)
 <details>
 <summary>Click to see solutions for these exercises</summary>
 <p>A very common approach for resolving the overflow issue looks like this:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>return low + (high - low) / 2;
-<span class="boring">}
-</span></code></pre></pre>
+<pre><code class="language-rust noplaypen">return low + (high - low) / 2;
+</code></pre>
 <p>But if you naively try this (try it!), you'll find a new underflow error: <code>high - low</code> might result in a negative number, but has type <code>u32</code>.
 Hence, the need to add an assumption that would make that impossible.
 (Adding an assumption, though, means there's a new way to &quot;use it wrong.&quot; Perhaps we'd like to avoid that!)</p>
@@ -772,49 +794,17 @@ Hence, the need to add an assumption that would make that impossible.
 After all, what does &quot;correct&quot; even mean?
 Often we're using a good approximation of correct, such as the equivalence of two implementations (often one much &quot;simpler&quot; than the other somehow).
 Here's one possible assertion to make that obvious:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>assert!(result as u64 == (a as u64 + b as u64) / 2);
-<span class="boring">}
-</span></code></pre></pre>
+<pre><code class="language-rust noplaypen">assert!(result as u64 == (a as u64 + b as u64) / 2);
+</code></pre>
 <p>Since this implementation is just the original one, but cast to a wider unsigned integer type, it should have the same result but without overflowing.
 When Kani tells us both of these methods yield the same exact result, that gives us additional confidence that we haven't overlooked something.</p>
 </details>
-<h2 id="future-work"><a class="header" href="#future-work">Future work</a></h2>
-<p>Kani notably does not currently check the following:</p>
-<ol>
-<li>
-<p>Concurrency bugs, deadlocks, or data races.
-It's possible Kani may be extended in the future to find such issues.</p>
-</li>
-<li>
-<p>Rust type invariants.
-For example, it's undefined behavior in Rust to produce a value of type <code>bool</code> that isn't <code>0</code> or <code>1</code>.
-Kani will not spot this error (in presumably unsafe code), yet.</p>
-</li>
-<li>
-<p>Fully generic functions.
-To write a proof harness and call functions, they must be fully &quot;monomorphized.&quot;
-This means we can't currently check a generic function (<code>foo&lt;T&gt;</code>) generically.
-Proof harnesses have to be written specializing type parameters (<code>T</code>) to concrete types (e.g. <code>u32</code>), and check those instead.</p>
-</li>
-</ol>
-<h2 id="summary-1"><a class="header" href="#summary-1">Summary</a></h2>
-<p>In this section:</p>
-<ol>
-<li>We saw Kani spot potential bounds check errors.</li>
-<li>We saw Kani spot actually-unsafe dereferencing of a raw pointer to invalid memory.</li>
-<li>We saw Kani spot a division by zero error.</li>
-<li>We saw Kani spot overflowing addition.</li>
-<li>As an exercise, we tried proving an assertion (finding the midpoint) that was not completely trivial.</li>
-</ol>
+<h2 id="failures-that-kani-cannot-spot"><a class="header" href="#failures-that-kani-cannot-spot">Failures that Kani cannot spot</a></h2>
+<p>Check out <a href="./limitations.html">Limitations</a> for information on the checks that
+Kani doesn't perform.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="loops-unwinding-and-bounds"><a class="header" href="#loops-unwinding-and-bounds">Loops, unwinding, and bounds</a></h1>
-<p>Consider code like this:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>fn initialize_prefix(length: usize, buffer: &amp;mut [u8]) {
+<p>Consider code like this (available <a href="https://github.com/model-checking/kani/blob/main/docs/src/tutorial/loops-unwinding/src/lib.rs">here</a>):</p>
+<pre><code class="language-rust noplaypen">fn initialize_prefix(length: usize, buffer: &amp;mut [u8]) {
     // Let's just ignore invalid calls
     if length &gt; buffer.len() {
         return;
@@ -824,12 +814,11 @@ Proof harnesses have to be written specializing type parameters (<code>T</code>)
         buffer[i] = 0;
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>This code has an off-by-one error that only occurs on the last iteration of the loop (when called with an input that will trigger it).
 We can try to find this bug with a proof harness like this:</p>
-<pre><pre class="playground"><code class="language-rust">#[cfg(kani)]
-#[no_mangle]
+<pre><code class="language-rust noplaypen">#[cfg(kani)]
+#[kani::proof]
 fn main() {
     const LIMIT: usize = 10;
     let mut buffer: [u8; LIMIT] = [1; LIMIT];
@@ -839,121 +828,77 @@ fn main() {
 
     initialize_prefix(length, &amp;mut buffer);
 }
-</code></pre></pre>
+</code></pre>
 <p>When we run Kani on this, we run into an unfortunate result: non-termination.
-This non-termination is caused by the model checker trying to unroll the loop an unbounded number of times.</p>
+This non-termination is caused by CBMC trying to unwind the loop an unlimited number of times.</p>
 <blockquote>
-<p><strong>NOTE:</strong> Presently, <a href="https://github.com/model-checking/kani/issues/493">due to a bug</a>, this is especially bad: we don't see any output at all.
-You are supposed to see some log lines that might give some clue that an infinite loop is occurring.
-If Kani doesn't terminate, it's almost always the problem that this section is covering, however.</p>
+<p><strong>NOTE</strong>: Presently, <a href="https://github.com/model-checking/kani/issues/493">due to a bug</a>, this is especially bad: we don't see any output at all.
+Kani is supposed to emit some log lines that might give some clue that an infinite loop is occurring.
+If Kani doesn't terminate, it's almost always the problem that this section covers.</p>
 </blockquote>
-<p>To verify programs like this, we really need to do two things:</p>
+<p>To verify programs like this, we need to do two things:</p>
 <ol>
-<li>Create an upper bound on the size of the problem.
+<li>Set an upper bound on the size of the problem.
 We've actually already done part of this: our proof harness seems to be trying to set an upper limit of 10.</li>
-<li>Tell Kani about this limit, if it's not able to figure it out on its own.</li>
+<li>Tell Kani about this limit if it's not able to figure it out on its own.</li>
 </ol>
-<blockquote>
-<p><strong>NOTE:</strong> In the future, Kani may eventually support specifying <em>loop invariants</em>, which allow us to do away with fixed upper bounds like this.
-That support is not ready yet, however.</p>
-</blockquote>
 <p>Bounding proofs like this means we may no longer be proving as much as we originally hoped.
 Who's to say, if we prove everything works up to size 10, that there isn't a novel bug lurking, expressible only with problems of size 11+?
-But, let's get back to the practical issue at hand.</p>
+But, let's get back to the issue at hand.</p>
 <p>We can &quot;make progress&quot; in our work by giving Kani a global bound on the problem size using the <code>--unwind &lt;bound&gt;</code> flag.
-This flag puts a fixed upper bound on loop unrolling.
+This flag puts a fixed upper bound on loop unwinding.
 Kani will automatically generate verification conditions that help us understand if that bound isn't enough.
-Let's start with the &quot;sledge hammer&quot; by dropping all the way down to size 1:</p>
-<pre><code># kani src/lib.rs --cbmc-args --unwind 1
-[.unwind.0] unwinding assertion loop 0: FAILURE
-VERIFICATION FAILED
+Let's start with a small unwinding value:</p>
+<pre><code># kani src/lib.rs --unwind 1
+Check 69: .unwind.0
+         - Status: FAILURE
+         - Description: &quot;unwinding assertion loop 0&quot;
+[...]
+VERIFICATION:- FAILED
 </code></pre>
-<blockquote>
-<p><strong>NOTE:</strong> <code>--unwind</code> is a flag to the underlying model checker, CBMC, and so it needs to appear after <code>--cbmc-args</code>.
-This flag <code>--cbmc-args</code> &quot;switches modes&quot; in the command line from Kani flags to CBMC flags, so we place all Kani flags and arguments before it.</p>
-</blockquote>
 <p>This output is showing us two things:</p>
 <ol>
 <li>Kani tells us we haven't unwound enough. This is the failure of the &quot;unwinding assertion.&quot;</li>
-<li>We aren't seeing other failures if we only unroll the loop once.
+<li>We aren't seeing other failures if we only unwind the loop once.
 The execution can't progress far enough to reveal the bug we're interested in (which actually only happens in the last iteration of the loop).</li>
 </ol>
-<p>Doing an initial <code>--unwind 1</code> is generally enough to force termination, but often too little to do any practical verification.</p>
-<p>We were clearly aiming at a size limit of 10 in our proof harness, so let's try a few things here:</p>
-<pre><code># kani src/lib.rs --cbmc-args --unwind 10 | grep FAIL
-[.unwind.0] unwinding assertion loop 0: FAILURE
-VERIFICATION FAILED
+<p>Doing an initial <code>--unwind 1</code> is generally enough to force termination, but often too little for verification.</p>
+<p>We were clearly aiming at a size limit of 10 in our proof harness, so let's try a few things:</p>
+<pre><code># kani src/lib.rs --unwind 10 | grep Failed
+Failed Checks: unwinding assertion loop 0
 </code></pre>
 <p>A bound of 10 still isn't enough because we generally need to unwind one greater than the number of executed loop iterations:</p>
-<pre><code># kani src/lib.rs --cbmc-args --unwind 11 | grep FAIL
-[initialize_prefix.unwind.0] line 11 unwinding assertion loop 0: FAILURE
-[initialize_prefix.assertion.2] line 12 index out of bounds: the length is move _20 but the index is _19: FAILURE
-[initialize_prefix.pointer_dereference.5] line 12 dereference failure: pointer outside object bounds in buffer.data[var_19]: FAILURE
-VERIFICATION FAILED
+<pre><code># kani src/lib.rs --unwind 11 | grep Failed
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: dereference failure: pointer outside object bounds
+Failed Checks: unwinding assertion loop 0
 </code></pre>
 <p>We're still not seeing the unwinding assertion failure go away!
-This is because our error is really an off by one problem, we loop one too many times, so let's add one more:</p>
-<pre><code># kani src/lib.rs --cbmc-args --unwind 12 | grep FAIL
-[initialize_prefix.assertion.2] line 12 index out of bounds: the length is move _20 but the index is _19: FAILURE
-[initialize_prefix.pointer_dereference.5] line 12 dereference failure: pointer outside object bounds in buffer.data[var_19]: FAILURE
-VERIFICATION FAILED
+This is because our error is really an off-by-one problem, we loop one too many times, so let's add one more:</p>
+<pre><code># kani src/lib.rs --unwind 12 | grep Failed
+Failed Checks: index out of bounds: the length is less than or equal to the given index
+Failed Checks: dereference failure: pointer outside object bounds
 </code></pre>
-<p>Kani is now sure we've unwound the loop enough to verify our proof harness, and now we're seeing just the bound checking failures from the off by one error.</p>
+<p>Kani is now sure we've unwound the loop enough to verify our proof harness, and now we're seeing just the bound checking failures from the off-by-one error.</p>
 <ol>
 <li>Exercise: Fix the off-by-one bounds error and get Kani to verify successfully.</li>
 <li>Exercise: After fixing the error, <code>--unwind 11</code> works. Why?</li>
-</ol>
-<h2 id="customizing-individual-loop-bounds"><a class="header" href="#customizing-individual-loop-bounds">Customizing individual loop bounds</a></h2>
-<p>Setting <code>--unwind</code> globally affects every loop.
-Once you know which loop is the culprit, it can sometimes be helpful to provide specific bounds on specific loops.</p>
-<p>In the general case, specifying just the highest bound globally for all loops shouldn't cause any problems, except that the solver may take more time because <em>all</em> loops will be unwound to the specified bound.</p>
-<ol>
-<li>Exercise: Try increasing the unwind bound on the code from the previous section and then time how long solving takes.
-For example, we see 0.5s at unwinding 12, and 3s at unwinding 100.</li>
-</ol>
-<blockquote>
-<p><strong>NOTE:</strong> Kani does not yet support annotating code with unwinding bounds.
-What follows is a hacky way to make things happen, if you need it.</p>
-</blockquote>
-<p>In situations where you need to optimize solving time better, specific bounds for specific loops can be provided on the command line.</p>
-<pre><code># kani src/lib.rs --cbmc-args --show-loops
-[...]
-Loop _RNvCs6JP7pnlEvdt_3lib17initialize_prefix.0:
-  file ./src/lib.rs line 11 column 5 function initialize_prefix
-
-Loop _RNvMs8_NtNtCswN0xKFrR8r_4core3ops5rangeINtB5_14RangeInclusivejE8is_emptyCs6JP7pnlEvdt_3lib.0:
-  file $RUST/library/core/src/ops/range.rs line 540 column 9 function std::ops::RangeInclusive::&lt;Idx&gt;::is_empty
-
-Loop gen-repeat&lt;[u8; 10]::16806744624734428132&gt;.0:
-</code></pre>
-<p>This command shows us the mangled names of the loops involved.
-Then we can specify the bound for specific loops by name, from the command line:</p>
-<pre><code>kani src/lib.rs --cbmc-args --unwindset _RNvCs6JP7pnlEvdt_3lib17initialize_prefix.0:12
-</code></pre>
-<p>The general format of the <code>--unwindset</code> option is: <code>label_1:bound_1,label_2:bound_2,...</code>.
-The label is revealed by the output of <code>--show-loops</code> as we saw above.</p>
-<h2 id="summary-2"><a class="header" href="#summary-2">Summary</a></h2>
-<p>In this section:</p>
-<ol>
-<li>We saw Kani fail to terminate.</li>
-<li>We saw how <code>--unwind 1</code> can &quot;sledgehammer&quot; Kani into terminating, possibly with additional and/or missing failures.</li>
-<li>We saw how &quot;unwinding assertions&quot; can warn us that we've set the unwinding limit too low.</li>
-<li>We saw how to put a practical bound on problem size in our proof harness.</li>
-<li>We saw how to pick an unwinding size large enough to successfully verify that bounded proof.</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="nondeterministic-variables"><a class="header" href="#nondeterministic-variables">Nondeterministic variables</a></h1>
 <p>Kani is able to reason about programs and their execution paths by allowing users to assign nondeterministic (i.e., symbolic) values to  certain variables.
 Since Kani is a bit-level model checker, this means that Kani considers that an unconstrained nondeterministic value represents all the possible bit-value combinations assigned to the variable's memory contents.</p>
 <p>As a Rust developer, this sounds a lot like the <code>mem::transmute</code> operation, which is highly <code>unsafe</code>.
 And that's correct.</p>
-<p>In this tutorial, we will show how to safely use nondeterministic assignments to generate valid symbolic variables that respect Rust's type invariants, as well as show how you can specify invariants for types that you define enabling creation of safe nondeterministic variables for those types.</p>
+<p>In this tutorial, we will show how to:</p>
+<ol>
+<li>Safely use nondeterministic assignments to generate valid symbolic variables that respect Rust's type invariants.</li>
+<li>Unsafely use nondeterministic assignments to generate unconstrained symbolic variables that do not respect Rust's type invariants.</li>
+<li>Specify invariants for types that you define, enabling the creation of safe nondeterministic variables for those types.</li>
+</ol>
 <h2 id="safe-nondeterministic-variables"><a class="header" href="#safe-nondeterministic-variables">Safe nondeterministic variables</a></h2>
-<p>Let's say you are developing an inventory management tool, and you would like to verify that your API to manage items is correct.
+<p>Let's say you're developing an inventory management tool, and you would like to verify that your API to manage items is correct.
 Here is a simple implementation of this API:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>use std::num::NonZeroU32;
+<pre><code class="language-rust noplaypen">use std::num::NonZeroU32;
 use vector_map::VecMap;
 
 type ProductId = u32;
@@ -971,13 +916,9 @@ impl Inventory {
         self.inner.get(id).cloned()
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
-<p>Now we would like to verify that no matter which combination of <code>id</code> and <code>quantity</code>, that a call to <code>Inventory::update()</code> followed by a call to <code>Inventory::get()</code> using the same id returns some value that is equal to the one we inserted:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    #[kani::proof]
+</code></pre>
+<p>Now we would like to verify that, no matter which combination of <code>id</code> and <code>quantity</code>, a call to <code>Inventory::update()</code> followed by a call to <code>Inventory::get()</code> using the same <code>id</code> returns some value that's equal to the one we inserted:</p>
+<pre><code class="language-rust noplaypen">    #[kani::proof]
     pub fn safe_update() {
         // Create inventory variable.
         let mut inventory = Inventory { inner: VecMap::new() };
@@ -991,24 +932,20 @@ impl Inventory {
         inventory.update(id.clone(), quantity);
         assert!(inventory.get(&amp;id).unwrap() == quantity);
     }
-<span class="boring">}
-</span></code></pre></pre>
-<p>In this harness, we use<code>kani::any()</code> to generate <code>ProductId</code> and the new quantity.
+</code></pre>
+<p>In this harness, we use <code>kani::any()</code> to generate the new <code>id</code> and <code>quantity</code>.
 <code>kani::any()</code> is a <strong>safe</strong> API function, and it represents only valid values.</p>
 <p>If we run this example, Kani verification will succeed, including the assertion that shows that the underlying <code>u32</code> variable  used to represent <code>NonZeroU32</code> cannot be zero, per its type invariant:</p>
 <p>You can try it out by running the example under
-<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
-<pre><code>cargo kani --function safe_update
+<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/"><code>arbitrary-variables</code></a>:</p>
+<pre><code>cargo kani --harness safe_update
 </code></pre>
 <h2 id="unsafe-nondeterministic-variables"><a class="header" href="#unsafe-nondeterministic-variables">Unsafe nondeterministic variables</a></h2>
 <p>Kani also includes an <strong>unsafe</strong> method to generate unconstrained nondeterministic variables which do not take type invariants into consideration.
-As any unsafe method in rust, users must be careful when using unsafe methods and ensure the right guardrails are put in place to avoid undesirable behavior.</p>
+As with any unsafe method in Rust, users have to make sure the right guardrails are put in place to avoid undesirable behavior.</p>
 <p>That said, there may be cases where you want to verify your code taking into consideration that some inputs may contain invalid data.</p>
 <p>Let's see what happens if we modify our verification harness to use the unsafe method <code>kani::any_raw()</code> to generate the updated value.</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    #[kani::proof]
+<pre><code class="language-rust noplaypen">    #[kani::proof]
     pub fn unsafe_update() {
         // Create inventory variable.
         let mut inventory = Inventory { inner: VecMap::new() };
@@ -1024,22 +961,18 @@ As any unsafe method in rust, users must be careful when using unsafe methods an
         inventory.update(id.clone(), quantity);
         assert!(inventory.get(&amp;id).unwrap() == quantity); // This unwrap will panic.
     }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>We commented out the assertion that the underlying <code>u32</code> variable cannot be <code>0</code>, since this no longer holds.
-The Kani verification will now fail showing that <code>inventory.get(&amp;id).unwrap()</code> method call can panic.</p>
+The verification will now fail showing that the <code>inventory.get(&amp;id).unwrap()</code> method call can panic.</p>
 <p>This is an interesting issue that emerges from how <code>rustc</code> optimizes the memory layout of <code>Option&lt;NonZeroU32&gt;</code>.
 The compiler is able to represent <code>Option&lt;NonZeroU32&gt;</code> using <code>32</code> bits by using the value <code>0</code> to represent <code>None</code>.</p>
-<p>You can try it out by running the example under <a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
-<pre><code>cargo kani --function unsafe_update
+<p>You can try it out by running the example under <a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/"><code>arbitrary-variables</code></a>:</p>
+<pre><code>cargo kani --harness unsafe_update
 </code></pre>
 <h2 id="safe-nondeterministic-variables-for-custom-types"><a class="header" href="#safe-nondeterministic-variables-for-custom-types">Safe nondeterministic variables for custom types</a></h2>
 <p>Now you would like to add a new structure to your library that allow users to represent a review rating, which can go from 0 to 5 stars.
 Let's say you add the following implementation:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>#[derive(Copy, Clone)]
+<pre><code class="language-rust noplaypen">#[derive(Copy, Clone)]
 pub struct Rating {
     value: u8,
 }
@@ -1054,47 +987,76 @@ impl Rating {
     }
 }
 
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>The easiest way to allow users to create nondeterministic variables of the Rating type which represents values from 0-5 stars is by implementing the <code>kani::Invariant</code> trait.</p>
 <p>The implementation only requires you to define a check to your structure that returns whether its current value is valid or not.
 In our case, we have the following implementation:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    unsafe impl kani::Invariant for Rating {
+<pre><code class="language-rust noplaypen">    unsafe impl kani::Invariant for Rating {
         fn is_valid(&amp;self) -&gt; bool {
             self.value &lt;= 5
         }
     }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>Now you can use <code>kani::any()</code> to create valid nondeterministic variables of the Rating type as shown in this harness:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    #[kani::proof]
+<pre><code class="language-rust noplaypen">    #[kani::proof]
     pub fn check_rating() {
         let rating = kani::any::&lt;Rating&gt;();
         assert!(rating.get() &lt;= 5);
         assert!(Rating::from(rating.get()).is_some());
     }
-<span class="boring">}
-</span></code></pre></pre>
-<p>You can try it out by running the example under
-<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/"><code>docs/src/tutorial/arbitrary-variables</code></a>:</p>
-<pre><code>cargo kani --function check_rating
 </code></pre>
+<p>You can try it out by running the example under
+<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/"><code>arbitrary-variables</code></a>:</p>
+<pre><code>cargo kani --harness check_rating
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="application"><a class="header" href="#application">Application</a></h1>
+<p>You may be interested in applying Kani if you're in this situation:</p>
+<ol>
+<li>You're working on a moderately important project in Rust.</li>
+<li>You've already invested heavily in testing to ensure correctness.</li>
+<li>You want to invest further, to gain a much higher degree of assurance.</li>
+</ol>
+<blockquote>
+<p>If you haven't already, we recommend techniques like property testing (e.g. with <a href="https://github.com/AltSysrq/proptest"><code>proptest</code></a>) before attempting model checking.
+These yield good results, are very cheap to apply, and are often easier to adopt and debug.
+Kani is a next step: a tool that can be applied once cheaper tactics are no longer yielding results, or once the easier to detect issues have already been dealt with.</p>
+</blockquote>
+<p>In this section, we explain <a href="./tool-comparison.html">how Kani compares with other tools</a>
+and suggest <a href="./tutorial-real-code.html">where to start applying Kani in real code</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="comparison-with-other-tools"><a class="header" href="#comparison-with-other-tools">Comparison with other tools</a></h1>
+<p><strong>Fuzzing</strong> (for example, with <a href="https://github.com/rust-fuzz/cargo-fuzz"><code>cargo-fuzz</code></a>) is a unguided approach to random testing.
+A fuzzer generally provides an input of random bytes, and then examines fairly generic properties (such as &quot;doesn't crash&quot; or &quot;commit undefined behavior&quot;) about the resulting program.</p>
+<p>Fuzzers generally get their power through a kind of evolutionary algorithm that rewards new mutant inputs that &quot;discover&quot; new branches of the program under test.
+Fuzzers are excellent for testing security boundaries, precisely because they make no validity assumptions (hence, they are &quot;unguided&quot;) when generating the input.</p>
+<p><strong>Property testing</strong> (for example, with <a href="https://github.com/AltSysrq/proptest">Proptest</a>) is a guided approach to random testing.
+&quot;Guided&quot; in the sense that the test generally provides a strategy for generating random values that constrains their range.
+The purpose of this strategy is to either focus on interesting values, or avoid failing assertions that only hold for a constrained set of inputs.
+Tests in this style do actually state properties: <em>For all inputs (of some constrained kind), this condition should hold</em>.</p>
+<p>Property testing is often quite effective, but the engine can't fully prove the property: It can only sample randomly a few of those values to test (though property testing libraries frequently give interesting &quot;edge cases&quot; a higher probability, making them more effective at bug-finding).</p>
+<p><strong>Model checking</strong> is similar to these techniques in how you use them, but it's non-random and exhaustive (though often only up to some bound on input or problem size).
+Thus, properties checked with a model checker are effectively proofs.
+Instead of naively trying all possible <em>concrete</em> inputs (which could be infeasible and blow up exponentially), model checkers like Kani will cleverly encode program traces as <em>symbolic</em> &quot;<a href="https://en.wikipedia.org/wiki/Boolean_satisfiability_problem">SAT</a>/<a href="https://en.wikipedia.org/wiki/Satisfiability_modulo_theories">SMT</a>&quot; problems, and hand them off to SAT/SMT solvers.
+Again, SAT/SMT solving is an <a href="https://en.wikipedia.org/wiki/NP-completeness">NP-complete</a> problem, but most practical programs can be model- checked within milliseconds to seconds (with notable exceptions: you can easily try to reverse a cryptographic hash with a model checker, but good luck getting it to terminate!)</p>
+<p>Model checking allows you to prove non-trivial properties about programs, and check those proofs in roughly the same amount of time as a traditional test suite would take to run.
+The downside is many types of properties can quickly become &quot;too large&quot; to practically model-check, and so writing &quot;proof harnesses&quot; (very similar to property tests and fuzzer harnesses) requires some skill to understand why the solver is not terminating and fix the structure of the problem you're giving it so that it does.
+This process basically boils down to &quot;debugging&quot; the proof.</p>
+<h2 id="looking-for-concurrency"><a class="header" href="#looking-for-concurrency">Looking for concurrency?</a></h2>
+<p>At present, Kani <a href="./rust-feature-support.html">does not support verifying concurrent code</a>.
+Two tools of immediate interest are <a href="https://github.com/tokio-rs/loom">Loom</a> and <a href="https://github.com/awslabs/shuttle">Shuttle</a>.
+Loom attempts to check all possible interleavings, while Shuttle chooses interleavings randomly.
+The former is sound (like Kani), but the latter is more scalable to large problem spaces (like property testing).</p>
+<h2 id="other-tools"><a class="header" href="#other-tools">Other tools</a></h2>
+<p>The Rust Formal Methods Interest Group maintains <a href="https://rust-formal-methods.github.io/tools.html">a list of interesting Rust verification tools</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="where-to-start-on-real-code"><a class="header" href="#where-to-start-on-real-code">Where to start on real code</a></h1>
 <p>It can be daunting to find the right place to start writing proofs for a real-world project.
 This section will try to help you get over that hurdle.</p>
 <p>In general, you're trying to do three things:</p>
 <ol>
-<li>Find a place it'd be valuable to have a proof.</li>
-<li>Find a place it won't be too difficult to prove something, just to start.</li>
+<li>Find a place where it'd be valuable to have a proof.</li>
+<li>Find a place where it won't be too difficult to prove something, just to start.</li>
 <li>Figure out what a feasible longer-term goal might be.</li>
 </ol>
-<p><strong>By far the best strategy is to follow your testing.</strong>
+<p><strong>By far, the best strategy is to follow your testing.</strong>
 Places where proof will be valuable are often places where you've written a lot of tests, because they're valuable there for the same reasons.
 Likewise, code structure changes to make functions more unit-testable will also make functions more amenable to proof.
 Often, by examining existing unit tests (and especially property tests), you can easily find a relatively self-contained function that's a good place to start.</p>
@@ -1103,7 +1065,7 @@ Often, by examining existing unit tests (and especially property tests), you can
 <li>
 <p>Where complicated things happen with untrusted user input.
 These are often the critical &quot;entry points&quot; into the code.
-These are also places where you probably want to try fuzz testing.</p>
+These are also places where you probably want to try other techniques (e.g., fuzz testing).</p>
 </li>
 <li>
 <p>Where <code>unsafe</code> is used extensively.
@@ -1127,7 +1089,7 @@ This can usually be handled, but requires a lot more investment to make it happe
 </li>
 <li>
 <p>Don't forget to consider starting with your dependencies.
-Sometimes the best place to start won't be your code, but in code you depend on.
+Sometimes the best place to start won't be your code, but the code that you depend on.
 If it's used by more projects that just yours, it will be valuable to more people, too!</p>
 </li>
 <li>
@@ -1142,15 +1104,14 @@ Code structure changes to make code more unit-testable will make it more provabl
 As we saw in the last section, right now we often need to put upper bounds on these to make more limited claims.</p>
 </li>
 <li>
-<p>&quot;Inductive data structures.&quot;
-These are data of unbounded size.
-(For example, linked lists and trees.)
-Much like needing to put bounds on loops, these can be hard to model since you needs to put bounds on their size, too.</p>
+<p>Inductive data structures.
+These are data structures with unbounded size (e.g., linked lists or trees.)
+These can be hard to model since you need to set bounds on their size, similar to what happens with loops.</p>
 </li>
 <li>
-<p>I/O code.
-Kani doesn't model I/O, so if you're depending on behavior like reading/writing to a file, you won't be able to prove anything.
-This is one obvious area where testability helps provability: often we separate I/O and &quot;pure&quot; computation into different functions, so we can unit test the latter.</p>
+<p>Input/Output code.
+Kani doesn't model I/O, so if your code depends on behavior like reading/writing to a file, you won't be able to prove anything.
+This is one obvious area where testability helps provability: often we separate I/O and &quot;pure&quot; computation into different functions, so we can unit-test the latter.</p>
 </li>
 <li>
 <p>Deeper call graphs.
@@ -1165,7 +1126,7 @@ Rust tends to discourage this, but it still exists in some forms.</p>
 <h2 id="your-first-proof"><a class="header" href="#your-first-proof">Your first proof</a></h2>
 <p>A first proof will likely start in the following form:</p>
 <ol>
-<li>Nondeterministically initialize variables that will correspond to function inputs, with as few constraints as possible</li>
+<li>Nondeterministically initialize variables that will correspond to function inputs, with as few constraints as possible.</li>
 <li>Call the function in question with these inputs.</li>
 <li>Don't (yet) assert any post-conditions.</li>
 </ol>
@@ -1178,55 +1139,146 @@ Rust tends to discourage this, but it still exists in some forms.</p>
 (If the problem is initially intractable, try <code>--unwind 1</code> and see if you can follow the techniques in the previous section to put a bound on the problem.)</li>
 </ol>
 <p>Once you've got something working, the next step is to prove more interesting properties than what Kani covers by default.
-You accomplish this by adding new assertions.
-These are not necessarily assertions just in your proof harness: consider also adding new assertions to the code being run.
-These count too!
+You accomplish this by adding new assertions (not just in your harness, but also to the code being run).
 Even if a proof harness has no post-conditions being asserted directly, the assertions encountered along the way can be meaningful proof results by themselves.</p>
-<h2 id="summary-3"><a class="header" href="#summary-3">Summary</a></h2>
-<p>In this section:</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="developer-documentation"><a class="header" href="#developer-documentation">Developer documentation</a></h1>
+<p>Kani is an open source project open to external contributions.</p>
+<p>The easiest way to contribute is to <a href="https://github.com/model-checking/kani/issues/new/choose">report any
+issue</a> you encounter
+while using the tool. If you want to contribute to its development,
+we recommend looking into <a href="https://github.com/model-checking/kani/contribute">these issues</a>.</p>
+<p>In this chapter, we provide documentation that might be helpful for Kani
+developers (including external contributors):</p>
 <ol>
-<li>We got some advice on how to choose a higher-value starting point for a first proof.</li>
-<li>We got some advice on how to choose an easier starting point for a first proof.</li>
-<li>We got some advice on how to structure our first proof, at least initially.</li>
+<li><a href="./workarounds.html">Suggested workarounds</a>.</li>
+<li><a href="./cheat-sheets.html">Useful command-line instructions for Kani/CBMC/Git</a>.</li>
+<li><a href="./rustc-hacks.html">Development setup recommendations for working with <code>rustc</code></a>.</li>
+<li><a href="./testing.html">Guide for testing in Kani</a>.</li>
 </ol>
 <blockquote>
-<p>TODO: This section is incomplete. We should probably add an example session of finding a proof to write for, perhaps, Firecracker.</p>
+<p><strong>NOTE</strong>: The developer documentation is intended for Kani developers and not
+users. At present, the project is under heavy development and some items
+discussed in this documentation may stop working without notice (e.g., commands
+or configurations). Therefore, we recommend users to not rely on them.</p>
 </blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="kani-developer-documentation"><a class="header" href="#kani-developer-documentation">Kani developer documentation</a></h1>
-<h2 id="build-command-cheat-sheet"><a class="header" href="#build-command-cheat-sheet">Build command cheat sheet</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="workarounds"><a class="header" href="#workarounds">Workarounds</a></h1>
+<p>This section describes a few workarounds that may help overcome tooling
+issues in the Kani project.</p>
+<h2 id="cbmc-arguments"><a class="header" href="#cbmc-arguments">CBMC arguments</a></h2>
+<p>Kani is able to handle common CBMC arguments as if they were its own (e.g.,
+<code>--unwind &lt;n&gt;</code>), but sometimes it may be necessary to use CBMC arguments which
+are not handled by Kani.</p>
+<p>To pass additional arguments for CBMC, you pass <code>--cbmc-args</code> to Kani. Note that
+this &quot;switches modes&quot; from Kani arguments to CBMC arguments: Any arguments that
+appear after <code>--cbmc-args</code> are considered to be CBMC arguments, so all Kani
+arguments must be placed before it.</p>
+<p>Thus, the command line format to invoke <code>cargo kani</code> with CBMC arguments is:</p>
+<pre><code class="language-bash">cargo kani [&lt;kani-args&gt;]* --cbmc-args [&lt;cbmc-args&gt;]*
+</code></pre>
+<blockquote>
+<p><strong>NOTE</strong>: In cases where CBMC is not expected to emit a verification output,
+you have to use Kani's argument <code>--output-format old</code> to turn off the
+post-processing of output from CBMC.</p>
+</blockquote>
+<h3 id="individual-loop-bounds"><a class="header" href="#individual-loop-bounds">Individual loop bounds</a></h3>
+<p>Setting <code>--unwind &lt;n&gt;</code> affects every loop in a harness.
+Once you know a particular loop is causing trouble, sometimes it can be helpful to provide a specific bound for it.</p>
+<p>In the general case, specifying just the highest bound globally for all loops
+shouldn't cause any problems, except that the solver may take more time because
+<em>all</em> loops will be unwound to the specified bound.</p>
+<p>In situations where you need to optimize for the solver, individual bounds for
+each loop can be provided on the command line. To do so, we first need to know
+the labels assigned to each loop with the CBMC argument <code>--show-loops</code>:</p>
+<pre><code># kani src/lib.rs --output-format old --cbmc-args --show-loops
+[...]
+Loop _RNvCs6JP7pnlEvdt_3lib17initialize_prefix.0:
+  file ./src/lib.rs line 11 column 5 function initialize_prefix
+
+Loop _RNvMs8_NtNtCswN0xKFrR8r_4core3ops5rangeINtB5_14RangeInclusivejE8is_emptyCs6JP7pnlEvdt_3lib.0:
+  file $RUST/library/core/src/ops/range.rs line 540 column 9 function std::ops::RangeInclusive::&lt;Idx&gt;::is_empty
+
+Loop gen-repeat&lt;[u8; 10]::16806744624734428132&gt;.0:
+</code></pre>
+<p>This command shows us the labels of the loops involved. Note that, as mentioned
+in <a href="workarounds.html#cbmc-arguments">CBMC arguments</a>, we need to use <code>--output-format old</code> to
+avoid post-processing the output from CBMC.</p>
+<blockquote>
+<p><strong>NOTE</strong>: At the moment, these labels are constructed using the mangled name
+of the function and an index. Mangled names are likely to change across
+different versions, so this method is highly unstable.</p>
+</blockquote>
+<p>Then, we can use the CBMC argument <code>--unwindset label_1:bound_1,label_2:bound_2,...</code> to specify an individual bound for each
+loop as follows:</p>
+<pre><code class="language-bash">kani src/lib.rs --cbmc-args --unwindset _RNvCs6JP7pnlEvdt_3lib17initialize_prefix.0:12
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="command-cheat-sheets"><a class="header" href="#command-cheat-sheets">Command cheat sheets</a></h1>
+<p>Development work in the Kani project depends on multiple tools. Regardless of
+your familiriaty with the project, the commands below may be useful for
+development purposes.</p>
+<h2 id="kani"><a class="header" href="#kani">Kani</a></h2>
+<h3 id="build"><a class="header" href="#build">Build</a></h3>
 <pre><code class="language-bash"># Build all packages in the repository
 cargo build
 </code></pre>
+<pre><code class="language-bash"># Error &quot;'rustc' panicked at 'failed to lookup `SourceFile` in new context'&quot;
+# or similar error?
+# Clean `kani-compiler` and re-build:
+cargo clean -p kani-compiler
+cargo build -p kani-compiler
+</code></pre>
+<h3 id="test"><a class="header" href="#test">Test</a></h3>
 <pre><code class="language-bash"># Full regression suite (does not run bookrunner)
 ./scripts/kani-regression.sh
 </code></pre>
-<pre><code class="language-bash"># Delete regression test caches
-# Use build/x86_64-apple-darwin/tests for MacOs
+<pre><code class="language-bash"># Delete regression test caches (Linux)
 rm -r build/x86_64-unknown-linux-gnu/tests/
+</code></pre>
+<pre><code class="language-bash"># Delete regression test caches (macOS)
+rm -r build/x86_64-apple-darwin/tests/
 </code></pre>
 <pre><code class="language-bash"># Test suite run (we can only run one at a time)
 # cargo run -p compiletest -- --suite ${suite} --mode ${mode}
 cargo run -p compiletest -- --suite kani --mode kani
 </code></pre>
-<pre><code class="language-bash"># Book runner run
+<pre><code class="language-bash"># Run bookrunner
 ./scripts/setup/install_bookrunner_deps.sh
 cargo run -p bookrunner
 </code></pre>
-<pre><code class="language-bash"># Documentation build
+<pre><code class="language-bash"># Build documentation
 cd docs
 ./build-docs.sh
 </code></pre>
-<h3 id="resolving-development-issues"><a class="header" href="#resolving-development-issues">Resolving development issues</a></h3>
-<pre><code class="language-bash"># Error &quot;'rustc' panicked at 'failed to lookup `SourceFile` in new context'&quot;
-# or similar error? Clean kani-compiler build:
-cargo clean -p kani-compiler
-cargo build -p kani-compiler
+<h3 id="debug"><a class="header" href="#debug">Debug</a></h3>
+<p>These can help understand what Kani is generating or encountering on an example or test file:</p>
+<pre><code class="language-bash"># Enable `debug!` macro logging output when running Kani:
+kani --debug file.rs
 </code></pre>
-<h2 id="git-command-cheat-sheet"><a class="header" href="#git-command-cheat-sheet">Git command cheat sheet</a></h2>
-<p>Kani follows the &quot;squash and merge pull request&quot; pattern.
-As a result, the &quot;main commit message&quot; will be the title of your pull request.
-The individual commit message bodies you commit during development will by default be a bulleted list in the squashed commit message body, but these are editable at merge time.
-So you don't have to worry about a series of &quot;oops typo fix&quot; messages while fixing up your pull request, these can be edited out of the final message when you click merge.</p>
+<pre><code class="language-bash"># Keep CBMC Symbol Table and Goto-C output (.json and .goto)
+kani --keep-temps file.rs
+</code></pre>
+<pre><code class="language-bash"># Generate &quot;C code&quot; from CBMC IR (.c)
+kani --gen-c file.rs
+</code></pre>
+<h2 id="cbmc"><a class="header" href="#cbmc">CBMC</a></h2>
+<pre><code class="language-bash"># See CBMC IR from a C file:
+goto-cc file.c -o file.out
+goto-instrument --print-internal-representation file.out
+# or (for json symbol table)
+cbmc --show-symbol-table --json-ui file.out
+# or (an alternative concise format)
+cbmc --show-goto-functions file.out
+</code></pre>
+<pre><code class="language-bash"># Recover C from goto-c binary
+goto-instrument --dump-c file.out &gt; file.gen.c
+</code></pre>
+<h2 id="git"><a class="header" href="#git">Git</a></h2>
+<p>The Kani project follows the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-pull-request-commits">squash and merge option</a> for pull request merges.
+As a result:</p>
+<ol>
+<li>The title of your pull request will become the main commit message.</li>
+<li>The messages from commits in your pull request will appear by default as a bulleted list in the main commit message body.</li>
+</ol>
+<p>But the main commit message body is editable at merge time, so you don't have to worry about &quot;typo fix&quot; messages because these can be removed before merging.</p>
 <pre><code class="language-bash"># Set up your git fork
 git remote add fork git@github.com:${USER}/kani.git
 </code></pre>
@@ -1261,29 +1313,6 @@ git log --graph --oneline origin/upstream-rustc..origin/main
 <pre><code class="language-bash"># See all files modified by Kani (compared to upstream Rust)
 git diff --stat origin/upstream-rustc..origin/main
 </code></pre>
-<h2 id="kani-command-cheat-sheet"><a class="header" href="#kani-command-cheat-sheet">Kani command cheat sheet</a></h2>
-<p>These can help understand what Kani is generating or encountering on an example or test file:</p>
-<pre><code class="language-bash"># Enable `debug!` macro logging output when running Kani:
-kani --debug file.rs
-</code></pre>
-<pre><code class="language-bash"># Keep CBMC Symbol Table and Goto-C output (.json and .goto)
-kani --keep-temps file.rs
-</code></pre>
-<pre><code class="language-bash"># Generate &quot;C code&quot; from CBMC IR (.c)
-kani --gen-c file.rs
-</code></pre>
-<h2 id="cbmc-command-cheat-sheet"><a class="header" href="#cbmc-command-cheat-sheet">CBMC command cheat sheet</a></h2>
-<pre><code class="language-bash"># See CBMC IR from a C file:
-goto-cc file.c -o file.out
-goto-instrument --print-internal-representation file.out
-# or (for json symbol table)
-cbmc --show-symbol-table --json-ui file.out
-# or (an alternative concise format)
-cbmc --show-goto-functions file.out
-</code></pre>
-<pre><code class="language-bash"># Recover C from goto-c binary
-goto-instrument --dump-c file.out &gt; file.gen.c
-</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="working-with-rustc"><a class="header" href="#working-with-rustc">Working with <code>rustc</code></a></h1>
 <p>Kani is developed on the top of the rust compiler, which is not distributed on crates.io and it depends on
 bootstrapping mechanisms to properly build its components.
@@ -1309,7 +1338,7 @@ rustc_private=true
 <h3 id="clion--intellij"><a class="header" href="#clion--intellij">CLion / IntelliJ</a></h3>
 <p>This is not a great solution, but it works for now (see <a href="https://github.com/intellij-rust/intellij-rust/issues/1618">https://github.com/intellij-rust/intellij-rust/issues/1618</a>
 for more details).
-Edit the <code>Cargo.toml</code> of the package that you are working on and add artificial dependencies on the <code>rustc</code> packages that you would like to explore.</p>
+Edit the <code>Cargo.toml</code> of the package that you're working on and add artificial dependencies on the <code>rustc</code> packages that you would like to explore.</p>
 <pre><code class="language-toml"># This configuration doesn't exist so it shouldn't affect your build.
 [target.'cfg(KANI_DEV)'.dependencies]
 # Adjust the path here to point to a local copy of the rust compiler.
@@ -1327,7 +1356,7 @@ rustc_interface = { path = &quot;~/.rustup/toolchains/&lt;toolchain&gt;/lib/rust
 <li>Test changes to <code>rustc</code>.</li>
 </ul>
 <p>We will assume that you already have a Kani setup and that the variable <code>KANI_WORKSPACE</code> contains the path to your Kani workspace.</p>
-<p><strong>It is highly recommended that you start from the commit that corresponds to the current <code>rustc</code> version from your workspace.</strong>
+<p><strong>It's highly recommended that you start from the commit that corresponds to the current <code>rustc</code> version from your workspace.</strong>
 To get that information, run the following command:</p>
 <pre><code class="language-bash">cd ${KANI_WORKSPACE} # Go to your Kani workspace.
 rustc --version # This will print the commit id. Something like:
@@ -1358,7 +1387,7 @@ cargo build
 </code></pre>
 <h1 id="enable-rustc-logs"><a class="header" href="#enable-rustc-logs">Enable <code>rustc</code> logs</a></h1>
 <p>In order to enable logs, you can just define the <code>RUSTC_LOG</code> variable, as documented here: <a href="https://rustc-dev-guide.rust-lang.org/tracing.html">https://rustc-dev-guide.rust-lang.org/tracing.html</a>.</p>
-<p>Note that depending on the level of logs you would like to enable, you will need to build your own version of <code>rustc</code> as described above.</p>
+<p>Note that depending on the level of logs you would like to enable, you'll need to build your own version of <code>rustc</code> as described above.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="testing"><a class="header" href="#testing">Testing</a></h1>
 <p>Testing in Kani is carried out in multiple ways. There are at least
 two very good reasons to do it:</p>
@@ -1377,36 +1406,36 @@ characteristics which are quantitative and countable. Metrics are
 particularly valuable for project management purposes.</p>
 </li>
 </ol>
-<p>We recommend reading our section on <a href="kani-testing.html#regression-testing">Regression Testing</a>
-if you are interested in Kani development. At present, we obtain metrics based
+<p>We recommend reading our section on <a href="./regression-testing.html">Regression Testing</a>
+if you're interested in Kani development. At present, we obtain metrics based
 on the <a href="./bookrunner.html">book runner</a>.</p>
-<h1 id="regression-testing"><a class="header" href="#regression-testing">Regression testing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="regression-testing"><a class="header" href="#regression-testing">Regression testing</a></h1>
 <p>Kani relies on a quite extensive range of tests to perform regression testing.
 Regression testing can be executed by running the command:</p>
-<pre><code>./scripts/kani-regression.sh
+<pre><code class="language-bash">./scripts/kani-regression.sh
 </code></pre>
 <p>The <code>kani-regression.sh</code> script executes different testing commands, which we classify into:</p>
 <ul>
-<li><a href="kani-testing.html#kani-testing-suites">Kani testing suites</a></li>
-<li><a href="kani-testing.html#rust-unit-tests">Rust unit tests</a></li>
-<li><a href="kani-testing.html#script-based-tests">Script-based tests</a></li>
+<li><a href="regression-testing.html#kani-testing-suites">Kani testing suites</a></li>
+<li><a href="regression-testing.html#rust-unit-tests">Rust unit tests</a></li>
+<li><a href="regression-testing.html#python-unit-tests">Python unit tests</a></li>
+<li><a href="regression-testing.html#script-based-tests">Script-based tests</a></li>
 </ul>
 <p>See below for a description of each one.</p>
 <p>Note that regression testing is run whenever a Pull Request is opened, updated or merged
-into the main branch. Therefore, it is a good idea to run regression testing locally before
+into the main branch. Therefore, it's a good idea to run regression testing locally before
 submitting a Pull Request for Kani.</p>
 <h2 id="kani-testing-suites"><a class="header" href="#kani-testing-suites">Kani testing suites</a></h2>
 <p>The Kani testing suites are the main testing resource for Kani. In most cases, the
 tests contained in the Kani testing suites are single Rust files that are run
 using the following command:</p>
-<pre><code>kani file.rs &lt;options&gt;
+<pre><code class="language-bash">kani file.rs &lt;options&gt;
 </code></pre>
-<p>Command-line options <code>&lt;options&gt;</code> can be passed to the test by adding a special
-comment to the file.
-Read more about it in the <a href="kani-testing.html#testing-options">Testingoptions</a> section.</p>
+<p>Command-line options can be passed to the test by adding a special
+comment to the file. See <a href="regression-testing.html#testing-options">testing options</a> for more details.</p>
 <p>In particular, the Kani testing suites are composed of:</p>
 <ul>
-<li><code>kani</code>: The main testing suite for Kani. The test is a single Rust file that is
+<li><code>kani</code>: The main testing suite for Kani. The test is a single Rust file that's
 run through Kani. In general, the test passes if verification with Kani
 is successful, otherwise it fails.</li>
 <li><code>firecracker</code>: Works like <code>kani</code> but contains tests inspired by
@@ -1418,17 +1447,19 @@ is successful, otherwise it fails.</li>
 <li><code>kani-fixme</code>: Similar to <code>kani</code>, but runs ignored tests from the <code>kani</code> testing
 suite (i.e., tests with <code>fixme</code> or <code>ignore</code> in their name).
 Allows us to detect when a previously not supported test becomes
-supported. More details in <a href="kani-testing.html#%22fixme%22-tests">&quot;Fixme&quot; tests</a>.</li>
+supported. More details in <a href="regression-testing.html#fixme-tests">&quot;Fixme&quot; tests</a>.</li>
 <li><code>expected</code>: Similar to <code>kani</code> but with an additional check which ensures that
 lines appearing in <code>*.expected</code> files appear in the output
 generated by <code>kani</code>.</li>
+<li><code>ui</code>: Works like <code>expected</code>, but focuses on the user interface (e.g.,
+warnings) instead of the verification output.</li>
 <li><code>cargo-kani</code>: This suite is designed to test the <code>cargo-kani</code> command. As such,
 this suite works with packages instead of single Rust files.
-Flags can be specified in the <code>Cargo.toml</code> configuration file.
+Arguments can be specified in the <code>Cargo.toml</code> configuration file.
 Similar to the <code>expected</code> suite, we look for <code>*.expected</code> files
-for each function under test.</li>
+for each harness in the package.</li>
 </ul>
-<p>We have extended
+<p>We've extended
 <a href="https://rustc-dev-guide.rust-lang.org/tests/intro.html"><code>compiletest</code></a> (the
 Rust compiler testing framework) to work with these suites. That way, we take
 advantage of all <code>compiletest</code> features (e.g., parallel execution).</p>
@@ -1444,14 +1475,10 @@ GotoC code.</li>
 <p>If a test fails, the error message will include the stage where it failed:</p>
 <pre><code>error: test failed: expected check success, got failure
 </code></pre>
-<p>When working on a test that is expected to fail, there are two options to
+<p>When working on a test that's expected to fail, there are two options to
 indicate an expected failure. The first one is to add a comment</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>// kani-&lt;stage&gt;-fail
-<span class="boring">}
-</span></code></pre></pre>
+<pre><code class="language-rust noplaypen">// kani-&lt;stage&gt;-fail
+</code></pre>
 <p>at the top of the test file, where <code>&lt;stage&gt;</code> is the stage where the test is
 expected to fail.</p>
 <p>The other option is to use the predicate <code>kani::expect_fail(cond, message)</code>
@@ -1460,32 +1487,22 @@ that you expect not to hold during verification. The testing framework expects
 one <code>EXPECTED FAIL</code> message in the verification output for each use of the
 predicate.</p>
 <blockquote>
-<p><strong>Warning:</strong> Note that <code>kani::expect_fail</code> is only useful to indicate
-failure in the <code>verify</code> stage, errors in other stages will be considered
-testing failures.</p>
+<p><strong>NOTE</strong>: <code>kani::expect_fail</code> is only useful to indicate failure in the
+<code>verify</code> stage, errors in other stages will be considered testing failures.</p>
 </blockquote>
 <h3 id="testing-options"><a class="header" href="#testing-options">Testing options</a></h3>
 <p>Many tests will require passing command-line options to Kani. These options can
 be specified in single Rust files by adding a comment at the top of the file:</p>
-<pre><code>// kani-flags: &lt;options&gt;
+<pre><code class="language-rust noplaypen">// kani-flags: &lt;options&gt;
 </code></pre>
-<p>For example, to increase the unwinding value to 4 in a test, we can write:</p>
-<pre><code>// kani-flags: --cbmc-args --unwind 4
+<p>For example, to use an unwinding value of 4 in a test, we can write:</p>
+<pre><code class="language-rust noplaypen">// kani-flags: --unwind 4
 </code></pre>
-<p>Alternatively, CBMC flags can also be passed using <code>cbmc-flags</code>:</p>
-<pre><code>// cbmc-flags: --unwind 4
-</code></pre>
-<blockquote>
-<p><strong>Warning:</strong> <code>cbmc-flags</code> is likely to be deprecated in the near future. We
-recommend using <code>kani-flags</code> with <code>--cbmc-args</code> for now.</p>
-</blockquote>
 <p>For <code>cargo-kani</code> tests, the preferred way to pass command-line options is adding
-them to <code>Cargo.toml</code> below the <code>[kani.flags]</code> marker.</p>
+them to <code>Cargo.toml</code>. See <a href="./cargo-kani.html"><code>Usage - On a package</code></a> for more details.</p>
 <h3 id="fixme-tests"><a class="header" href="#fixme-tests">&quot;Fixme&quot; tests</a></h3>
 <p>Any test containing <code>fixme</code> or <code>ignore</code> in its name is considered a test not
-supported for some reason. Generally, these tests are not run because they will
-either return a wrong result (since they are not supported) or take a long time
-to finish.</p>
+supported for some reason (i.e., they return an unexpected verification result).</p>
 <p>However, &quot;fixme&quot; tests included in the <code>kani</code> folder are run via the <code>kani-fixme</code>
 testing suite. <code>kani-fixme</code> works on test files from <code>kani</code> but:</p>
 <ol>
@@ -1509,10 +1526,15 @@ supported, you only need to rename it so the name does not contain <code>fixme</
 <p>These tests follow the
 <a href="https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html">Rust unit testing</a>
 style.</p>
-<p>At present, Kani only uses unit tests in the
-<a href="https://github.com/model-checking/kani/tree/main/compiler/cbmc">cbmc crate</a>
-to test the
-<a href="https://github.com/model-checking/kani/blob/main/compiler/cbmc/src/goto_program/symtab_transformer/identity_transformer.rs">identity symbol table transformer</a>.</p>
+<p>At present, Kani runs unit tests from the following packages:</p>
+<ul>
+<li><code>cprover_bindings</code></li>
+<li><code>kani-compiler</code></li>
+<li><code>cargo-kani</code></li>
+</ul>
+<h2 id="python-unit-tests"><a class="header" href="#python-unit-tests">Python unit tests</a></h2>
+<p>We use the Python <a href="https://docs.python.org/3/library/unittest.html">unit testing framework</a> to
+test the CBMC JSON parser.</p>
 <h2 id="script-based-tests"><a class="header" href="#script-based-tests">Script-based tests</a></h2>
 <p>These are tests which are run using scripts. Scripting gives us the ability to
 perform ad-hoc checks that cannot be done otherwise. They are currently used
@@ -1521,16 +1543,11 @@ for:</p>
 <li>Standard library codegen</li>
 <li>Firecracker virtio codegen</li>
 <li>Diamond dependency</li>
-<li>Type mismatch</li>
 </ul>
 <p>In fact, most of them are equivalent to running <code>cargo kani</code> and performing
 checks on the output. The downside to scripting is that these tests will always
 be run, even if there have not been any changes since the last time the
 regression was run.</p>
-<blockquote>
-<p><strong>Warning:</strong> <code>cargo kani</code> is under heavy development at the moment. Because of
-that, this section may become outdated soon.</p>
-</blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="book-runner"><a class="header" href="#book-runner">Book runner</a></h1>
 <p>The <a href="./bookrunner/index.html">book runner</a> is a testing tool based on <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
 <p>The purpose of the book runner is to get data about feature coverage in Kani.
@@ -1552,69 +1569,79 @@ For instance, some of them are only included to show what is valid Rust code (or
 <p>Note that these are incremental: A <code>verification</code> job depends on a previous <code>codegen</code> job.
 Similary, a <code>codegen</code> job depends on a <code>check</code> job.</p>
 <blockquote>
-<p><strong>Warning:</strong> <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does
-not support hierarchical views at the moment. For this reason, we are
-publishing a <a href="./bookrunner/bookrunner.txt">text version of the book runner
-report</a> which displays the same results in a
-hierarchical way while we work on adding more features to
-<a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
+<p><strong>NOTE</strong>: <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does not
+support hierarchical views at the moment. For this reason, we are publishing a
+<a href="./bookrunner/bookrunner.txt">text version of the book runner report</a> which
+displays the same results in a hierarchical way while we work on <a href="https://github.com/model-checking/kani/issues/699">improvements
+for the visualization and navigation of book runner
+results</a>.</p>
 </blockquote>
 <p>Before running the above mentioned jobs, we pre-process the examples to:</p>
 <ol>
 <li>Set the expected output according to flags present in the code snippet.</li>
-<li>Add any required compiler/Kani flags (e.g., CBMC unwinding flags).</li>
+<li>Add any required compiler/Kani flags (e.g., unwinding).</li>
 </ol>
 <p>Finally, we run all jobs, collect their outputs and compare them against the expected outputs.
 The results are summarized as follows: If the obtained and expected outputs differ,
 the color of the stage bar will be red. Otherwise, it will be blue.
-If an example shows one red bar, it is considered a failed example that cannot be handled by Kani.</p>
+If an example shows one red bar, it's considered a failed example that cannot be handled by Kani.</p>
 <p>The <a href="./bookrunner/index.html">book runner report</a> and <a href="./bookrunner/bookrunner.txt">its text version</a> are
 automatically updated whenever a PR gets merged into Kani.</p>
 <h2 id="the-book-running-procedure"><a class="header" href="#the-book-running-procedure">The book running procedure</a></h2>
 <p>This section describes how the book runner operates at a high level.</p>
-<p>To kick off the book runner process use</p>
-<pre><code>./x.py run -i --stage 1 bookrunner
+<p>To kick off the book runner process use:</p>
+<pre><code class="language-bash">cargo run -p bookrunner
 </code></pre>
-<p>The main function of the bookrunner is <code>generate_run()</code> in
-<a href="https://github.com/model-checking/kani/blob/main/src/tools/bookrunner/src/books.rs"><code>src/tools/bookrunner/src/books.rs</code></a>,
+<p>The main function of the bookrunner is <code>generate_run()</code> (code available
+<a href="https://github.com/model-checking/kani/blob/main/tools/bookrunner/src/books.rs">here</a>)
 which follows these steps:</p>
+<ol>
+<li>Sets up all the books, including data about their summaries.</li>
+<li>Then, for each book:</li>
+</ol>
 <ul>
-<li>
-<p>First, it calls the different <code>parse_..._hierarchy()</code> functions which parse
-the summary files for each book.</p>
-</li>
-<li>
-<p>The <code>extract_examples(...)</code> function uses <code>rustdoc</code> to extract all examples
-from the books.</p>
-</li>
-<li>
-<p>Then for each example it will check if there is a corresponding <code>.props</code> file
-in <code>src/tools/bookrunner/configs/</code>. The contents of these files (e.g.,
-command-line options) are prepended to the example.</p>
-</li>
-<li>
-<p>All examples are written in the <code>src/test/bookrunner/books/</code> folder.</p>
-<p>In general, the path to a given example is
-<code>src/test/bookrunner/books/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;/&lt;subsection&gt;/&lt;line&gt;.rs</code>
-where <code>&lt;line&gt;</code> is the line number where the example appears in the
-documentation. The <code>.props</code> files mentioned above follow the same naming
-scheme in order to match them and detect conflicts.</p>
-</li>
-<li>
-<p>Then all examples are run using
-<a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
-</li>
-<li>
-<p>Finally, the Litani log is used to generate the <a href="./bookrunner/bookrunner.txt">text version of the
-bookrunner</a>.</p>
-</li>
+<li>Calls the <code>parse_hierarchy()</code> method to parse its summary
+files.</li>
+<li>Calls the <code>extract_examples()</code> method to extract all
+examples from the book. Note that <code>extract_examples()</code> uses <code>rustdoc</code>
+functions to ensure the extracted examples are runnable.</li>
+<li>Checks if there is a corresponding <code>.props</code> file
+in <code>src/tools/bookrunner/configs/</code>. If there is, prepends the contents of these files
+(<a href="./regression-testing.html#testing-options">testing options</a>) to the example.</li>
+<li>The resulting examples are written to the <code>src/test/bookrunner/books/</code> folder.</li>
 </ul>
 <blockquote>
-<p><strong>Warning:</strong> Note that any changes done to the examples in
-<code>src/test/bookrunner/books/</code> may be gone if the bookrunner is executed.</p>
+<p>In general, the path to a given example is
+<code>src/test/bookrunner/books/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;/&lt;subsection&gt;/&lt;line&gt;.rs</code>
+where <code>&lt;line&gt;</code> is the line number where the example appears in the markdown
+file where it's written. The <code>.props</code> files mentioned above follow the same
+naming scheme in order to match them and detect conflicts.</p>
+</blockquote>
+<ol start="3">
+<li>Runs all examples using
+<a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> with the
+<code>litani_run_tests()</code> function.</li>
+<li>Parses the Litani log file with <code>parse_litani_output(...)</code>.</li>
+<li>Generates the <a href="./bookrunner/bookrunner.txt">text version of the bookrunner</a>
+with <code>generate_text_bookrunner(...)</code>.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE</strong>: Any changes done to the examples in <code>src/test/bookrunner/books/</code> may
+be overwritten if the bookrunner is executed.</p>
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="limitations"><a class="header" href="#limitations">Limitations</a></h1>
-<h2 id="rust-feature-support"><a class="header" href="#rust-feature-support">Rust feature support</a></h2>
+<p>Like other tools, Kani comes with some limitations. In some cases, these
+limitations are inherent because of the techniques it's based on. In other
+cases, it's just a matter of time and effort to remove these limitations (e.g.,
+specific unsupported Rust language features).</p>
+<p>In this chapter, we do the following to document these limitations:</p>
+<ul>
+<li>Discuss what guarantees Kani provides and its trusted computing base.</li>
+<li>Summarize the <a href="./rust-feature-support.html">current support for Rust features</a>.</li>
+<li>Explain the need for <a href="./overrides.html">overrides</a> and list all overriden
+symbols.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rust-feature-support"><a class="header" href="#rust-feature-support">Rust feature support</a></h1>
 <p>The table below tries to summarize the current support in Kani for
 the Rust language features according to the <a href="https://doc.rust-lang.org/stable/reference/">Rust Reference</a>.
 We use the following values to indicate the level of support:</p>
@@ -1665,7 +1692,7 @@ would greatly appreciate that you <a href="https://github.com/model-checking/kan
 <tr><td>8.2.15</td><td>If and if let expressions</td><td>Yes</td><td></td></tr>
 <tr><td>8.2.16</td><td>Match expressions</td><td>Yes</td><td></td></tr>
 <tr><td>8.2.17</td><td>Return expressions</td><td>Yes</td><td></td></tr>
-<tr><td>8.2.18</td><td>Await expressions</td><td>No</td><td>See <a href="limitations.html#concurrency">Notes - Concurrency</a></td></tr>
+<tr><td>8.2.18</td><td>Await expressions</td><td>No</td><td>See <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a></td></tr>
 <tr><td>9</td><td>Patterns</td><td>Partial</td><td>Needs more testing</td></tr>
 <tr><td>10.1.1</td><td>Boolean type</td><td>Yes</td><td></td></tr>
 <tr><td>10.1.2</td><td>Numeric types</td><td>Yes</td><td></td></tr>
@@ -1678,19 +1705,19 @@ would greatly appreciate that you <a href="https://github.com/model-checking/kan
 <tr><td>10.1.9</td><td>Enumerated types</td><td>Yes</td><td></td></tr>
 <tr><td>10.1.10</td><td>Union types</td><td>Yes</td><td></td></tr>
 <tr><td>10.1.11</td><td>Function item types</td><td>Yes</td><td></td></tr>
-<tr><td>10.1.12</td><td>Closure types</td><td>Partial</td><td>See <a href="limitations.html#advanced-features">Notes - Advanced features</a></td></tr>
-<tr><td>10.1.13</td><td>Pointer types</td><td>Partial</td><td>See <a href="limitations.html#advanced-features">Notes - Advanced features</a></td></tr>
-<tr><td>10.1.14</td><td>Function pointer types</td><td>Partial</td><td>See <a href="limitations.html#advanced-features">Notes - Advanced features</a></td></tr>
-<tr><td>10.1.15</td><td>Trait object types</td><td>Partial</td><td>See <a href="limitations.html#advanced-features">Notes - Advanced features</a></td></tr>
-<tr><td>10.1.16</td><td>Impl trait type</td><td>Partial</td><td>See <a href="limitations.html#advanced-features">Notes - Advanced features</a></td></tr>
-<tr><td>10.1.17</td><td>Type parameters</td><td>Partial</td><td>See <a href="limitations.html#advanced-features">Notes - Advanced features</a></td></tr>
-<tr><td>10.1.18</td><td>Inferred type</td><td>Partial</td><td>See <a href="limitations.html#advanced-features">Notes - Advanced features</a></td></tr>
-<tr><td>10.2</td><td>Dynamically Sized Types</td><td>Partial</td><td>See <a href="limitations.html#advanced-features">Notes - Advanced features</a></td></tr>
+<tr><td>10.1.12</td><td>Closure types</td><td>Partial</td><td>See <a href="rust-feature-support.html#advanced-features">Notes - Advanced features</a></td></tr>
+<tr><td>10.1.13</td><td>Pointer types</td><td>Partial</td><td>See <a href="rust-feature-support.html#advanced-features">Notes - Advanced features</a></td></tr>
+<tr><td>10.1.14</td><td>Function pointer types</td><td>Partial</td><td>See <a href="rust-feature-support.html#advanced-features">Notes - Advanced features</a></td></tr>
+<tr><td>10.1.15</td><td>Trait object types</td><td>Partial</td><td>See <a href="rust-feature-support.html#advanced-features">Notes - Advanced features</a></td></tr>
+<tr><td>10.1.16</td><td>Impl trait type</td><td>Partial</td><td>See <a href="rust-feature-support.html#advanced-features">Notes - Advanced features</a></td></tr>
+<tr><td>10.1.17</td><td>Type parameters</td><td>Partial</td><td>See <a href="rust-feature-support.html#advanced-features">Notes - Advanced features</a></td></tr>
+<tr><td>10.1.18</td><td>Inferred type</td><td>Partial</td><td>See <a href="rust-feature-support.html#advanced-features">Notes - Advanced features</a></td></tr>
+<tr><td>10.2</td><td>Dynamically Sized Types</td><td>Partial</td><td>See <a href="rust-feature-support.html#advanced-features">Notes - Advanced features</a></td></tr>
 <tr><td>10.3</td><td>Type layout</td><td>Yes</td><td></td></tr>
 <tr><td>10.4</td><td>Interior mutability</td><td>Yes</td><td></td></tr>
 <tr><td>10.5</td><td>Subtyping and Variance</td><td>Yes</td><td></td></tr>
 <tr><td>10.6</td><td>Trait and lifetime bounds</td><td>Yes</td><td></td></tr>
-<tr><td>10.7</td><td>Type coercions</td><td>Partial</td><td>See <a href="limitations.html#advanced-features">Notes - Advanced features</a></td></tr>
+<tr><td>10.7</td><td>Type coercions</td><td>Partial</td><td>See <a href="rust-feature-support.html#advanced-features">Notes - Advanced features</a></td></tr>
 <tr><td>10.8</td><td>Destructors</td><td>Partial</td><td></td></tr>
 <tr><td>10.9</td><td>Lifetime elision</td><td>Yes</td><td></td></tr>
 <tr><td>11</td><td>Special types and traits</td><td>Partial</td><td></td></tr>
@@ -1699,7 +1726,7 @@ would greatly appreciate that you <a href="https://github.com/model-checking/kan
 <tr><td></td><td><code>Arc&lt;T&gt;</code></td><td>Yes</td><td></td></tr>
 <tr><td></td><td><code>Pin&lt;T&gt;</code></td><td>Yes</td><td></td></tr>
 <tr><td></td><td><code>UnsafeCell&lt;T&gt;</code></td><td>Partial</td><td></td></tr>
-<tr><td></td><td><code>PhantomData&lt;T&gt;</code></td><td>Partial</td><td><em>Review this</em></td></tr>
+<tr><td></td><td><code>PhantomData&lt;T&gt;</code></td><td>Partial</td><td></td></tr>
 <tr><td></td><td>Operator Traits</td><td>Partial</td><td></td></tr>
 <tr><td></td><td><code>Deref</code> and <code>DerefMut</code></td><td>Yes</td><td></td></tr>
 <tr><td></td><td><code>Drop</code></td><td>Partial</td><td></td></tr>
@@ -1709,12 +1736,12 @@ would greatly appreciate that you <a href="https://github.com/model-checking/kan
 <tr><td>15.1</td><td>Unsafe functions</td><td>Yes</td><td></td></tr>
 <tr><td>15.2</td><td>Unsafe blocks</td><td>Yes</td><td></td></tr>
 <tr><td>15.3</td><td>Behavior considered undefined</td><td>Partial</td><td></td></tr>
-<tr><td></td><td>Data races</td><td>No</td><td>See <a href="limitations.html#concurrency">Notes - Concurrency</a></td></tr>
+<tr><td></td><td>Data races</td><td>No</td><td>See <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a></td></tr>
 <tr><td></td><td>Dereferencing dangling raw pointers</td><td>Yes</td><td></td></tr>
 <tr><td></td><td>Dereferencing unaligned raw pointers</td><td>No</td><td></td></tr>
 <tr><td></td><td>Breaking pointer aliasing rules</td><td>No</td><td></td></tr>
 <tr><td></td><td>Mutating immutable data</td><td>No</td><td></td></tr>
-<tr><td></td><td>Invoking undefined behavior via compiler intrinsics</td><td>Partial</td><td>See <a href="limitations.html#intrinsics">Notes - Intrinsics</a></td></tr>
+<tr><td></td><td>Invoking undefined behavior via compiler intrinsics</td><td>Partial</td><td>See <a href="rust-feature-support.html#intrinsics">Notes - Intrinsics</a></td></tr>
 <tr><td></td><td>Executing code compiled with platform features that the current platform does not support</td><td>No</td><td></td></tr>
 <tr><td></td><td>Producing an invalid value, even in private fields and locals</td><td>No</td><td></td></tr>
 </tbody></table>
@@ -1747,15 +1774,17 @@ compiles as if it was sequential code.</p>
 <h3 id="standard-library-functions"><a class="header" href="#standard-library-functions">Standard library functions</a></h3>
 <p>At present, Kani is able to link in functions from the standard library but the
 generated code will not contain them unless they are generic, intrinsics,
-inlined or macros. Missing functions are treated in a similar way to unsupported
-features (i.e., replacing the function body with an <code>assert(false)</code> statement).
-This results in verification failures if the code under verification, for
-example, includes a reachable <code>println!</code> statement.</p>
-<p>We have done some experiments to embed the standard library into the generated
+inlined or macros. Missing functions are treated in a similar way to <a href="rust-feature-support.html#code-generation-for-unsupported-features">unsupported
+features</a>.
+This results in verification failures if a call to one of these missing functions
+is reachable.</p>
+<p>We've done some experiments to embed the standard library into the generated
 code, but this causes verification times to increase significantly. As of now,
-we have not been able to find a simple solution for <a href="https://github.com/model-checking/kani/issues/581">this
-issue</a>, but we have some ideas
-for future work in this direction.</p>
+we've not been able to find a simple solution for <a href="https://github.com/model-checking/kani/issues/581">this
+issue</a>, but we have some
+ideas for future work in this direction. At present, Kani
+<a href="./overrides.html">overrides</a> a few common functions (e.g., print macros) as
+a workaround.</p>
 <h3 id="advanced-features"><a class="header" href="#advanced-features">Advanced features</a></h3>
 <p>The semantics around some advanced features (traits, types, etc.) from Rust are
 not formally defined which makes it harder to ensure that we can properly model
@@ -1776,7 +1805,7 @@ in projections type in
 <p>We are particularly interested in bug reports concerning
 these features, so please <a href="https://github.com/model-checking/kani/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md">file a bug
 report</a>
-if you are aware of one.</p>
+if you're aware of one.</p>
 <h3 id="panic-strategies"><a class="header" href="#panic-strategies">Panic strategies</a></h3>
 <p>Rust has two different strategies when a panic occurs:</p>
 <ol>
@@ -1791,116 +1820,117 @@ ensure there is no resource leak or persistent data inconsistency. Check out
 stack unwinding support.</p>
 <h3 id="destructors"><a class="header" href="#destructors">Destructors</a></h3>
 <p>At present, we are aware of some issues with destructors, in particular those
-related to <a href="limitations.html#advanced-features">advanced features</a>.</p>
+related to <a href="rust-feature-support.html#advanced-features">advanced features</a>.</p>
 <h3 id="intrinsics"><a class="header" href="#intrinsics">Intrinsics</a></h3>
 <p>The table below tries to summarize the current support in Kani for Rust
 intrinsics.</p>
 <p>In general, code generation for unsupported intrinsics follows the rule
-described in <a href="limitations.html#code-generation-for-unsupported-features">Code generation for unsupported
+described in <a href="rust-feature-support.html#code-generation-for-unsupported-features">Code generation for unsupported
 features</a>.</p>
 <table><thead><tr><th>Name</th><th>Support</th><th>Notes</th></tr></thead><tbody>
 <tr><td>abort</td><td>Yes</td><td></td></tr>
 <tr><td>add_with_overflow</td><td>Yes</td><td></td></tr>
 <tr><td>arith_offset</td><td>Yes</td><td></td></tr>
-<tr><td>assert_inhabited</td><td>Yes</td><td></td></tr>
-<tr><td>assert_uninit_valid</td><td>Partial</td><td>Generates <code>SKIP</code> statement</td></tr>
-<tr><td>assert_zero_valid</td><td>Partial</td><td>Generates <code>SKIP</code> statement</td></tr>
+<tr><td>assert_inhabited</td><td>Partial</td><td><a href="https://github.com/model-checking/kani/issues/751">#751</a></td></tr>
+<tr><td>assert_uninit_valid</td><td>Yes</td><td></td></tr>
+<tr><td>assert_zero_valid</td><td>Yes</td><td></td></tr>
 <tr><td>assume</td><td>Yes</td><td></td></tr>
-<tr><td>atomic_and</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_and_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_and_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_and_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_and_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchg</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchg_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchg_acq_failrelaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchg_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchg_acqrel_failrelaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchg_failacq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchg_failrelaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchg_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchg_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchgweak</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchgweak_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchgweak_acq_failrelaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchgweak_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchgweak_acqrel_failrelaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchgweak_failacq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchgweak_failrelaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchgweak_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_cxchgweak_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_fence</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_fence_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_fence_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_fence_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_load</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_load_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_load_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_load_unordered</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_max</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_max_acq</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_max_acqrel</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_max_rel</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_max_relaxed</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_min</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_min_acq</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_min_acqrel</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_min_rel</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_min_relaxed</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_nand</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_nand_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_nand_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_nand_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_nand_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_or</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_or_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_or_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_or_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_or_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_singlethreadfence</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_singlethreadfence_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_singlethreadfence_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_singlethreadfence_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_store</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_store_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_store_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_store_unordered</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umax</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umax_acq</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umax_acqrel</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umax_rel</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umax_relaxed</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umin</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umin_acq</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umin_acqrel</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umin_rel</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_umin_relaxed</td><td>No</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xadd</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xadd_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xadd_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xadd_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xadd_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xchg</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xchg_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xchg_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xchg_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xchg_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xor</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xor_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xor_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xor_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xor_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xsub</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xsub_acq</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xsub_acqrel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xsub_rel</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>atomic_xsub_relaxed</td><td>Partial</td><td>See <a href="limitations.html#atomics">Atomics</a></td></tr>
-<tr><td>bitreverse</td><td>No</td><td></td></tr>
+<tr><td>atomic_and</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_and_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_and_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_and_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_and_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchg</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchg_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchg_acq_failrelaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchg_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchg_acqrel_failrelaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchg_failacq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchg_failrelaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchg_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchg_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchgweak</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchgweak_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchgweak_acq_failrelaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchgweak_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchgweak_acqrel_failrelaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchgweak_failacq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchgweak_failrelaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchgweak_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_cxchgweak_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_fence</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_fence_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_fence_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_fence_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_load</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_load_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_load_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_load_unordered</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_max</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_max_acq</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_max_acqrel</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_max_rel</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_max_relaxed</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_min</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_min_acq</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_min_acqrel</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_min_rel</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_min_relaxed</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_nand</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_nand_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_nand_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_nand_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_nand_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_or</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_or_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_or_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_or_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_or_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_singlethreadfence</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_singlethreadfence_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_singlethreadfence_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_singlethreadfence_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_store</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_store_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_store_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_store_unordered</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umax</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umax_acq</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umax_acqrel</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umax_rel</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umax_relaxed</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umin</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umin_acq</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umin_acqrel</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umin_rel</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_umin_relaxed</td><td>No</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xadd</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xadd_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xadd_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xadd_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xadd_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xchg</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xchg_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xchg_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xchg_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xchg_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xor</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xor_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xor_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xor_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xor_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xsub</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xsub_acq</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xsub_acqrel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xsub_rel</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>atomic_xsub_relaxed</td><td>Partial</td><td>See <a href="rust-feature-support.html#atomics">Atomics</a></td></tr>
+<tr><td>blackbox</td><td>Yes</td><td></td></tr>
+<tr><td>bitreverse</td><td>Yes</td><td></td></tr>
 <tr><td>breakpoint</td><td>Yes</td><td></td></tr>
 <tr><td>bswap</td><td>Yes</td><td></td></tr>
 <tr><td>caller_location</td><td>No</td><td></td></tr>
-<tr><td>ceilf32</td><td>Yes</td><td></td></tr>
-<tr><td>ceilf64</td><td>Yes</td><td></td></tr>
+<tr><td>ceilf32</td><td>No</td><td></td></tr>
+<tr><td>ceilf64</td><td>No</td><td></td></tr>
 <tr><td>copy_nonoverlapping</td><td>Yes</td><td></td></tr>
 <tr><td>copysignf32</td><td>Yes</td><td></td></tr>
 <tr><td>copysignf64</td><td>Yes</td><td></td></tr>
@@ -1920,17 +1950,17 @@ features</a>.</p>
 <tr><td>expf64</td><td>Yes</td><td></td></tr>
 <tr><td>fabsf32</td><td>Yes</td><td></td></tr>
 <tr><td>fabsf64</td><td>Yes</td><td></td></tr>
-<tr><td>fadd_fast</td><td>No</td><td></td></tr>
-<tr><td>fdiv_fast</td><td>No</td><td></td></tr>
+<tr><td>fadd_fast</td><td>Yes</td><td></td></tr>
+<tr><td>fdiv_fast</td><td>Partial</td><td><a href="https://github.com/model-checking/kani/issues/809">#809</a></td></tr>
 <tr><td>float_to_int_unchecked</td><td>No</td><td></td></tr>
-<tr><td>floorf32</td><td>Yes</td><td></td></tr>
-<tr><td>floorf64</td><td>Yes</td><td></td></tr>
+<tr><td>floorf32</td><td>No</td><td></td></tr>
+<tr><td>floorf64</td><td>No</td><td></td></tr>
 <tr><td>fmaf32</td><td>Yes</td><td></td></tr>
 <tr><td>fmaf64</td><td>Yes</td><td></td></tr>
-<tr><td>fmul_fast</td><td>No</td><td></td></tr>
+<tr><td>fmul_fast</td><td>Partial</td><td><a href="https://github.com/model-checking/kani/issues/809">#809</a></td></tr>
 <tr><td>forget</td><td>Partial</td><td>Generates <code>SKIP</code> statement</td></tr>
 <tr><td>frem_fast</td><td>No</td><td></td></tr>
-<tr><td>fsub_fast</td><td>No</td><td></td></tr>
+<tr><td>fsub_fast</td><td>Yes</td><td></td></tr>
 <tr><td>likely</td><td>Yes</td><td></td></tr>
 <tr><td>log2f32</td><td>Yes</td><td></td></tr>
 <tr><td>log2f64</td><td>Yes</td><td></td></tr>
@@ -1946,8 +1976,8 @@ features</a>.</p>
 <tr><td>minnumf64</td><td>Yes</td><td></td></tr>
 <tr><td>move_val_init</td><td>No</td><td></td></tr>
 <tr><td>mul_with_overflow</td><td>Yes</td><td></td></tr>
-<tr><td>nearbyintf32</td><td>Yes</td><td></td></tr>
-<tr><td>nearbyintf64</td><td>Yes</td><td></td></tr>
+<tr><td>nearbyintf32</td><td>No</td><td></td></tr>
+<tr><td>nearbyintf64</td><td>No</td><td></td></tr>
 <tr><td>needs_drop</td><td>Yes</td><td></td></tr>
 <tr><td>nontemporal_store</td><td>No</td><td></td></tr>
 <tr><td>offset</td><td>Partial</td><td>Missing undefined behavior checks</td></tr>
@@ -1964,12 +1994,12 @@ features</a>.</p>
 <tr><td>ptr_guaranteed_ne</td><td>Partial</td><td></td></tr>
 <tr><td>ptr_offset_from</td><td>Partial</td><td>Missing undefined behavior checks</td></tr>
 <tr><td>raw_eq</td><td>Partial</td><td>Missing undefined behavior checks</td></tr>
-<tr><td>rintf32</td><td>Yes</td><td></td></tr>
-<tr><td>rintf64</td><td>Yes</td><td></td></tr>
+<tr><td>rintf32</td><td>No</td><td></td></tr>
+<tr><td>rintf64</td><td>No</td><td></td></tr>
 <tr><td>rotate_left</td><td>Yes</td><td></td></tr>
 <tr><td>rotate_right</td><td>Yes</td><td></td></tr>
-<tr><td>roundf32</td><td>Yes</td><td></td></tr>
-<tr><td>roundf64</td><td>Yes</td><td></td></tr>
+<tr><td>roundf32</td><td>No</td><td></td></tr>
+<tr><td>roundf64</td><td>No</td><td></td></tr>
 <tr><td>rustc_peek</td><td>No</td><td></td></tr>
 <tr><td>saturating_add</td><td>Yes</td><td></td></tr>
 <tr><td>saturating_sub</td><td>Yes</td><td></td></tr>
@@ -1981,13 +2011,13 @@ features</a>.</p>
 <tr><td>sqrtf64</td><td>Yes</td><td></td></tr>
 <tr><td>sub_with_overflow</td><td>Yes</td><td></td></tr>
 <tr><td>transmute</td><td>Yes</td><td></td></tr>
-<tr><td>truncf32</td><td>Yes</td><td></td></tr>
-<tr><td>truncf64</td><td>Yes</td><td></td></tr>
-<tr><td>try</td><td>No</td><td></td></tr>
+<tr><td>truncf32</td><td>No</td><td></td></tr>
+<tr><td>truncf64</td><td>No</td><td></td></tr>
+<tr><td>try</td><td>No</td><td><a href="https://github.com/model-checking/kani/issues/267">#267</a></td></tr>
 <tr><td>type_id</td><td>Yes</td><td></td></tr>
 <tr><td>type_name</td><td>Yes</td><td></td></tr>
-<tr><td>unaligned_volatile_load</td><td>Partial</td><td>See <a href="limitations.html#concurrency">Notes - Concurrency</a></td></tr>
-<tr><td>unaligned_volatile_store</td><td>No</td><td>See <a href="limitations.html#concurrency">Notes - Concurrency</a></td></tr>
+<tr><td>unaligned_volatile_load</td><td>Partial</td><td>See <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a></td></tr>
+<tr><td>unaligned_volatile_store</td><td>No</td><td>See <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a></td></tr>
 <tr><td>unchecked_add</td><td>Yes</td><td></td></tr>
 <tr><td>unchecked_div</td><td>Yes</td><td></td></tr>
 <tr><td>unchecked_mul</td><td>Yes</td><td></td></tr>
@@ -1998,11 +2028,11 @@ features</a>.</p>
 <tr><td>unlikely</td><td>Yes</td><td></td></tr>
 <tr><td>unreachable</td><td>Yes</td><td></td></tr>
 <tr><td>variant_count</td><td>No</td><td></td></tr>
-<tr><td>volatile_copy_memory</td><td>Partial</td><td>See <a href="limitations.html#concurrency">Notes - Concurrency</a></td></tr>
-<tr><td>volatile_copy_nonoverlapping_memory</td><td>Partial</td><td>See <a href="limitations.html#concurrency">Notes - Concurrency</a></td></tr>
-<tr><td>volatile_load</td><td>Partial</td><td>See <a href="limitations.html#concurrency">Notes - Concurrency</a></td></tr>
-<tr><td>volatile_set_memory</td><td>No</td><td>See <a href="limitations.html#concurrency">Notes - Concurrency</a></td></tr>
-<tr><td>volatile_store</td><td>No</td><td>See <a href="limitations.html#concurrency">Notes - Concurrency</a></td></tr>
+<tr><td>volatile_copy_memory</td><td>Partial</td><td>See <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a></td></tr>
+<tr><td>volatile_copy_nonoverlapping_memory</td><td>Partial</td><td>See <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a></td></tr>
+<tr><td>volatile_load</td><td>Partial</td><td>See <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a></td></tr>
+<tr><td>volatile_set_memory</td><td>No</td><td>See <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a></td></tr>
+<tr><td>volatile_store</td><td>No</td><td>See <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a></td></tr>
 <tr><td>wrapping_add</td><td>Yes</td><td></td></tr>
 <tr><td>wrapping_mul</td><td>Yes</td><td></td></tr>
 <tr><td>wrapping_sub</td><td>Yes</td><td></td></tr>
@@ -2010,7 +2040,7 @@ features</a>.</p>
 </tbody></table>
 <h4 id="atomics"><a class="header" href="#atomics">Atomics</a></h4>
 <p>All atomic intrinsics are compiled as an atomic block where the operation is
-performed. But as noted in <a href="limitations.html#concurrency">Notes - Concurrency</a>, Kani support for
+performed. But as noted in <a href="rust-feature-support.html#concurrency">Notes - Concurrency</a>, Kani support for
 concurrent verification is limited and not used by default. Verification on code
 containing atomic intrinsics should not be trusted given that Kani assumes the
 code to be sequential.</p>
@@ -2018,7 +2048,7 @@ code to be sequential.</p>
 <p>While Kani is capable of generating code for SIMD instructions, unfortunately, it
 does not provide support for the verification of some operations like vector
 comparison (e.g., <code>simd_eq</code>).</p>
-<h2 id="overrides"><a class="header" href="#overrides">Overrides</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="overrides"><a class="header" href="#overrides">Overrides</a></h1>
 <p>As explained in <a href="./tool-comparison.html#comparison-with-other-tools">Comparison with other
 tools</a>, Kani is based on a
 technique called model checking, which verifies a program without actually
@@ -2027,11 +2057,13 @@ version. The encoding process often requires &quot;modeling&quot; some of the li
 functions to make them suitable for analysis. Typical examples of functionality
 that requires modeling are system calls and I/O operations. In some cases, Kani
 performs such encoding through overriding some of the definitions in the Rust
-standard library. The following table lists some of the symbols that Kani
+standard library.</p>
+<p>The following table lists some of the symbols that Kani
 overrides and a description of their behavior compared to the <code>std</code> versions:</p>
 <table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody>
-<tr><td><code>print</code>, <code>eprint</code>, <code>println</code>, and <code>eprintln</code> macros</td><td>Kani's version of these macros skips functionality that is not relevant for verification, e.g., string formatting and I/O operations</td></tr>
-<tr><td><code>assert</code>, <code>assert_eq</code>, and <code>assert_ne</code> macros</td><td>Kani overrides these macros in order to skip string formatting code, control the message that is displayed in the verification report for those asserts, and perform some instrumentation.</td></tr>
+<tr><td><code>assert</code>, <code>assert_eq</code>, and <code>assert_ne</code> macros</td><td>Skips string formatting code, generates a more informative message and performs some instrumentation</td></tr>
+<tr><td><code>debug_assert</code>, <code>debug_assert_eq</code>, and <code>debug_assert_ne</code> macros</td><td>Rewrites as equivalent <code>assert*</code> macro</td></tr>
+<tr><td><code>print</code>, <code>eprint</code>, <code>println</code>, and <code>eprintln</code> macros</td><td>Skips string formatting and I/O operations</td></tr>
 </tbody></table>
 
                     </main>

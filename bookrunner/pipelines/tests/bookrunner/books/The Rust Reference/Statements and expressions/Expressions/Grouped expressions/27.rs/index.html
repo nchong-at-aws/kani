@@ -180,6 +180,14 @@ p {
   text-shadow: 0 0 2px #82ada944;
   font-weight: bold;
 }
+.literal-stdout {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 .output-box {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -511,8 +519,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2022-02-24T16:13:15Z</li>
-      <li>1a641c21-d9e7-47fb-96f7-8f6903dbb89a</li>
+      <li>2022-04-12T20:15:29Z</li>
+      <li>639e69b9-13e2-4ace-8e8f-4f5cbde80ce4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -540,7 +548,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-b77f0683-b0d4-479b-9caa-d94041cf5af6">
+              <a href="#job-bf530429-8554-4ae0-a52a-3642ff20eaf7">
               
               Is this valid Rust code?
               
@@ -568,7 +576,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-ddbbfc28-0e4e-4c08-9dd9-4956106bb8c5">
+              <a href="#job-4f3a4eca-8835-499d-9f78-03ae50f7a7d7">
               
               Does Kani support all the Rust features used in it?
               
@@ -598,7 +606,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-96272421-9746-430d-b541-52dffa6c1095">
+              <a href="#job-214aefde-3451-4a1e-a4b3-37ad2d6b99af">
               
               Ca Kani reason about it?
               
@@ -626,7 +634,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-b77f0683-b0d4-479b-9caa-d94041cf5af6">
+    <div class="command-table" id="job-bf530429-8554-4ae0-a52a-3642ff20eaf7">
       
       <div class="success">
       
@@ -634,7 +642,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-b77f0683-b0d4-479b-9caa-d94041cf5af6">#</a>
+                <a href="#job-bf530429-8554-4ae0-a52a-3642ff20eaf7">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -647,7 +655,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2021" "-Z" "no-codegen" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.rs"
+            "kani-compiler" "--edition" "2021" "-Z" "no-codegen" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -689,7 +697,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:16:13Z
+                2022-04-12T20:28:15Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -697,7 +705,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:16:13Z
+                2022-04-12T20:28:15Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -736,7 +744,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-ddbbfc28-0e4e-4c08-9dd9-4956106bb8c5">
+    <div class="command-table" id="job-4f3a4eca-8835-499d-9f78-03ae50f7a7d7">
       
       <div class="success">
       
@@ -744,7 +752,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-ddbbfc28-0e4e-4c08-9dd9-4956106bb8c5">#</a>
+                <a href="#job-4f3a4eca-8835-499d-9f78-03ae50f7a7d7">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -757,7 +765,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2021" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.rs"
+            "kani-compiler" "--edition" "2021" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -799,15 +807,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:27:42Z
+                2022-04-12T20:28:15Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:27:42Z
+                2022-04-12T20:28:16Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -846,7 +854,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-96272421-9746-430d-b541-52dffa6c1095">
+    <div class="command-table" id="job-214aefde-3451-4a1e-a4b3-37ad2d6b99af">
       
       <div class="fail">
       
@@ -854,7 +862,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-96272421-9746-430d-b541-52dffa6c1095">#</a>
+                <a href="#job-214aefde-3451-4a1e-a4b3-37ad2d6b99af">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -867,7 +875,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2021" "kani" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.rs"
+            RUSTFLAGS="--edition 2021" "kani" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.rs" "--function" "main"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -909,7 +917,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:27:43Z
+                2022-04-12T20:28:16Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -917,7 +925,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:27:44Z
+                2022-04-12T20:28:17Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -939,11 +947,37 @@ a:visited:active {
 
 
           
-          <div class="output-box"><xmp>stdout:
             
-CBMC 5.50.0 (cbmc-5.50.0)
-CBMC version 5.50.0 (cbmc-5.50.0) 64-bit x86_64 linux
-Reading GOTO program from file tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.goto
+            <div class="output-box"><xmp>stdout:
+              
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RINvNtCsfBSZGGNiBQi_4core3mem11size_of_valShECs264XCNlyg3h_2_27::1::var_1::val" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvMNtCsfBSZGGNiBQi_4core5sliceSh6as_ptrCs264XCNlyg3h_2_27::1::var_1::self" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs3_NtNtCsfBSZGGNiBQi_4core5slice3cmpShINtB5_14SlicePartialEqhE5equalCs264XCNlyg3h_2_27::1::var_5" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs3_NtNtCsfBSZGGNiBQi_4core5slice3cmpShINtB5_14SlicePartialEqhE5equalCs264XCNlyg3h_2_27::1::var_7" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+Checking harness main...
+CBMC 5.54.0 (cbmc-5.54.0)
+CBMC version 5.54.0 (cbmc-5.54.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.out.for-main
 Generating GOTO Program
 Adding CPROVER library (x86_64)
 Removal of function pointers and virtual functions
@@ -952,319 +986,381 @@ Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
 aborting path on assume(false) at  thread 0
 aborting path on assume(false) at  thread 0
-Runtime Symex: 0.00685698s
+Runtime Symex: 0.00948743s
 size of program expression: 324 steps
 simple slicing removed 3 assignments
 Generated 3 VCC(s), 1 remaining after simplification
-Runtime Postprocess Equation: 5.9204e-05s
+Runtime Postprocess Equation: 4.33e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.000955967s
+Runtime Convert SSA: 0.000847111s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 3.6602e-05s
+Runtime Post-process: 3e-05s
 Solving with MiniSAT 2.2.1 with simplifier
 1509 variables, 33 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.000282019s
-Runtime decision procedure: 0.00133189s
+Runtime Solver: 0.000225703s
+Runtime decision procedure: 0.00113291s
 
 RESULTS:
-Check 1: assertion.1
-- Status: [31mFAILURE[0m
+Check 1: 1
+- Status: UNDETERMINED
+- Description: "assertion"
+
+Check 2: assertion.1
+- Status: FAILURE
 - Description: "PointerCast::ClosureFnPointer is not currently supported by Kani. Please post your example at https://github.com/model-checking/kani/issues/274"
 
-Check 2: main.assertion.1
-- Status: [33mUNDETERMINED[0m
+Check 3: main.assertion.1
+- Status: UNDETERMINED
 - Description: "assertion failed: a.f() == "The method f""
+- Location: tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.rs:14:1 in function main
 
-Check 3: main.assertion.2
-- Status: [33mUNDETERMINED[0m
+Check 4: main.assertion.2
+- Status: UNDETERMINED
 - Description: "assertion failed: (a.f)() == "The field f""
+- Location: tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Grouped expressions/27.rs:15:1 in function main
 
-Check 4: memcmp.precondition.1
-- Status: [33mUNDETERMINED[0m
+Check 5: memcmp.precondition.1
+- Status: UNDETERMINED
 - Description: "memcmp region 1 readable"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
-Check 5: memcmp.precondition.2
-- Status: [33mUNDETERMINED[0m
+Check 6: memcmp.precondition.2
+- Status: UNDETERMINED
 - Description: "memcpy region 2 readable"
-
-Check 6: assertion.2
-- Status: [33mUNDETERMINED[0m
-- Description: "Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13892494147292364991") (MIR type Closure(DefId(2:9427 ~ std[3d6e]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/kani/issues/new?template=bug_report.md"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
 Check 7: pointer_dereference.1
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer NULL in var_14"
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer NULL"
 
 Check 8: pointer_dereference.2
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer invalid in var_14"
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer invalid"
 
 Check 9: pointer_dereference.3
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: deallocated dynamic object in var_14"
+- Status: UNDETERMINED
+- Description: "dereference failure: deallocated dynamic object"
 
 Check 10: pointer_dereference.4
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: dead object in var_14"
+- Status: UNDETERMINED
+- Description: "dereference failure: dead object"
 
 Check 11: pointer_dereference.5
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer outside object bounds in var_14"
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer outside object bounds"
 
 Check 12: pointer_dereference.6
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: invalid integer address in var_14"
+- Status: UNDETERMINED
+- Description: "dereference failure: invalid integer address"
 
-Check 13: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.1
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer NULL in *self"
+Check 13: memcmp.pointer_primitives.1
+- Status: UNDETERMINED
+- Description: "pointer invalid"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
-Check 14: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.2
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer invalid in *self"
+Check 14: memcmp.pointer_primitives.2
+- Status: UNDETERMINED
+- Description: "pointer to deallocated dynamic object"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
-Check 15: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.3
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
+Check 15: memcmp.pointer_primitives.3
+- Status: UNDETERMINED
+- Description: "pointer to dead object"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
-Check 16: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.4
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: dead object in *self"
+Check 16: memcmp.pointer_primitives.4
+- Status: UNDETERMINED
+- Description: "pointer outside object bounds"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
-Check 17: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.5
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
+Check 17: memcmp.overflow.1
+- Status: UNDETERMINED
+- Description: "arithmetic overflow on signed to unsigned type conversion"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
-Check 18: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.6
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: invalid integer address in *self"
+Check 18: memcmp.pointer_primitives.5
+- Status: UNDETERMINED
+- Description: "pointer invalid"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
-Check 19: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.7
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer NULL in *other"
+Check 19: memcmp.pointer_primitives.6
+- Status: UNDETERMINED
+- Description: "pointer to deallocated dynamic object"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
-Check 20: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.8
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer invalid in *other"
+Check 20: memcmp.pointer_primitives.7
+- Status: UNDETERMINED
+- Description: "pointer to dead object"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
-Check 21: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.9
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: deallocated dynamic object in *other"
+Check 21: memcmp.pointer_primitives.8
+- Status: UNDETERMINED
+- Description: "pointer outside object bounds"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
-Check 22: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.10
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: dead object in *other"
+Check 22: memcmp.overflow.2
+- Status: UNDETERMINED
+- Description: "arithmetic overflow on signed to unsigned type conversion"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
-Check 23: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.11
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer outside object bounds in *other"
+Check 23: memcmp.pointer_arithmetic.1
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: pointer NULL"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 24: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.12
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: invalid integer address in *other"
+Check 24: memcmp.pointer_arithmetic.2
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: pointer invalid"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 25: memcmp.pointer_primitives.1
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer invalid in OBJECT_SIZE(s1)"
+Check 25: memcmp.pointer_arithmetic.3
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: deallocated dynamic object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 26: memcmp.pointer_primitives.2
-- Status: [33mUNDETERMINED[0m
-- Description: "deallocated dynamic object in OBJECT_SIZE(s1)"
+Check 26: memcmp.pointer_arithmetic.4
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: dead object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 27: memcmp.pointer_primitives.3
-- Status: [33mUNDETERMINED[0m
-- Description: "dead object in OBJECT_SIZE(s1)"
+Check 27: memcmp.pointer_arithmetic.5
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: pointer outside object bounds"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 28: memcmp.pointer_primitives.4
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer outside object bounds in OBJECT_SIZE(s1)"
+Check 28: memcmp.pointer_arithmetic.6
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: invalid integer address"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 29: memcmp.overflow.1
-- Status: [33mUNDETERMINED[0m
-- Description: "arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(s1)"
+Check 29: memcmp.pointer_arithmetic.7
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: pointer NULL"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 30: memcmp.pointer_primitives.5
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer invalid in OBJECT_SIZE(s2)"
+Check 30: memcmp.pointer_arithmetic.8
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: pointer invalid"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 31: memcmp.pointer_primitives.6
-- Status: [33mUNDETERMINED[0m
-- Description: "deallocated dynamic object in OBJECT_SIZE(s2)"
+Check 31: memcmp.pointer_arithmetic.9
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: deallocated dynamic object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 32: memcmp.pointer_primitives.7
-- Status: [33mUNDETERMINED[0m
-- Description: "dead object in OBJECT_SIZE(s2)"
+Check 32: memcmp.pointer_arithmetic.10
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: dead object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 33: memcmp.pointer_primitives.8
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer outside object bounds in OBJECT_SIZE(s2)"
+Check 33: memcmp.pointer_arithmetic.11
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: pointer outside object bounds"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 34: memcmp.overflow.2
-- Status: [33mUNDETERMINED[0m
-- Description: "arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(s2)"
+Check 34: memcmp.pointer_arithmetic.12
+- Status: UNDETERMINED
+- Description: "pointer arithmetic: invalid integer address"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 35: memcmp.pointer_arithmetic.1
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: pointer NULL in sc1 + 1l"
+Check 35: memcmp.pointer_dereference.1
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer NULL"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 36: memcmp.pointer_arithmetic.2
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: pointer invalid in sc1 + 1l"
+Check 36: memcmp.pointer_dereference.2
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer invalid"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 37: memcmp.pointer_arithmetic.3
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: deallocated dynamic object in sc1 + 1l"
+Check 37: memcmp.pointer_dereference.3
+- Status: UNDETERMINED
+- Description: "dereference failure: deallocated dynamic object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 38: memcmp.pointer_arithmetic.4
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: dead object in sc1 + 1l"
+Check 38: memcmp.pointer_dereference.4
+- Status: UNDETERMINED
+- Description: "dereference failure: dead object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 39: memcmp.pointer_arithmetic.5
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: pointer outside object bounds in sc1 + 1l"
+Check 39: memcmp.pointer_dereference.5
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer outside object bounds"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 40: memcmp.pointer_arithmetic.6
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: invalid integer address in sc1 + 1l"
+Check 40: memcmp.pointer_dereference.6
+- Status: UNDETERMINED
+- Description: "dereference failure: invalid integer address"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 41: memcmp.pointer_arithmetic.7
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: pointer NULL in sc2 + 1l"
+Check 41: memcmp.pointer_dereference.7
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer NULL"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 42: memcmp.pointer_arithmetic.8
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: pointer invalid in sc2 + 1l"
+Check 42: memcmp.pointer_dereference.8
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer invalid"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 43: memcmp.pointer_arithmetic.9
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: deallocated dynamic object in sc2 + 1l"
+Check 43: memcmp.pointer_dereference.9
+- Status: UNDETERMINED
+- Description: "dereference failure: deallocated dynamic object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 44: memcmp.pointer_arithmetic.10
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: dead object in sc2 + 1l"
+Check 44: memcmp.pointer_dereference.10
+- Status: UNDETERMINED
+- Description: "dereference failure: dead object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 45: memcmp.pointer_arithmetic.11
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: pointer outside object bounds in sc2 + 1l"
+Check 45: memcmp.pointer_dereference.11
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer outside object bounds"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 46: memcmp.pointer_arithmetic.12
-- Status: [33mUNDETERMINED[0m
-- Description: "pointer arithmetic: invalid integer address in sc2 + 1l"
+Check 46: memcmp.pointer_dereference.12
+- Status: UNDETERMINED
+- Description: "dereference failure: invalid integer address"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
-Check 47: memcmp.pointer_dereference.1
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer NULL in *tmp_post"
+Check 47: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.1
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 48: memcmp.pointer_dereference.2
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer invalid in *tmp_post"
+Check 48: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.2
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 49: memcmp.pointer_dereference.3
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: deallocated dynamic object in *tmp_post"
+Check 49: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.3
+- Status: UNDETERMINED
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 50: memcmp.pointer_dereference.4
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: dead object in *tmp_post"
+Check 50: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.4
+- Status: UNDETERMINED
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 51: memcmp.pointer_dereference.5
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer outside object bounds in *tmp_post"
+Check 51: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.5
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 52: memcmp.pointer_dereference.6
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: invalid integer address in *tmp_post"
+Check 52: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.6
+- Status: UNDETERMINED
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 53: memcmp.pointer_dereference.7
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer NULL in *tmp_post$0"
+Check 53: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.7
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 54: memcmp.pointer_dereference.8
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer invalid in *tmp_post$0"
+Check 54: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.8
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 55: memcmp.pointer_dereference.9
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: deallocated dynamic object in *tmp_post$0"
+Check 55: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.9
+- Status: UNDETERMINED
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 56: memcmp.pointer_dereference.10
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: dead object in *tmp_post$0"
+Check 56: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.10
+- Status: UNDETERMINED
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 57: memcmp.pointer_dereference.11
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer outside object bounds in *tmp_post$0"
+Check 57: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.11
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 58: memcmp.pointer_dereference.12
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: invalid integer address in *tmp_post$0"
+Check 58: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.12
+- Status: UNDETERMINED
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 59: pointer_primitives.1
-- Status: [33mUNDETERMINED[0m
-- Description: "dead object in OBJECT_SIZE(&temp_0)"
+Check 59: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.13
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 60: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.13
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer NULL in *self"
+Check 60: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.14
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 61: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.14
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer invalid in *self"
+Check 61: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.15
+- Status: UNDETERMINED
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 62: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.15
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
+Check 62: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.16
+- Status: UNDETERMINED
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 63: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.16
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: dead object in *self"
+Check 63: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.17
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 64: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.17
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
+Check 64: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.18
+- Status: UNDETERMINED
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:27 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 65: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.18
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: invalid integer address in *self"
+Check 65: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.19
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 66: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.19
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer NULL in *other"
+Check 66: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.20
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 67: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.20
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer invalid in *other"
+Check 67: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.21
+- Status: UNDETERMINED
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 68: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.21
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: deallocated dynamic object in *other"
+Check 68: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.22
+- Status: UNDETERMINED
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 69: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.22
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: dead object in *other"
+Check 69: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.23
+- Status: UNDETERMINED
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 70: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.23
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: pointer outside object bounds in *other"
+Check 70: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.24
+- Status: UNDETERMINED
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1479:34 in function std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq
 
-Check 71: std::cmp::impls::<impl std::cmp::PartialEq<&B> for &A>::eq.pointer_dereference.24
-- Status: [33mUNDETERMINED[0m
-- Description: "dereference failure: invalid integer address in *other"
+Check 71: pointer_primitives.1
+- Status: UNDETERMINED
+- Description: "pointer to dead object"
 
 
 SUMMARY:
 ** 1 of 71 failed (70 undetermined)
 Failed Checks: PointerCast::ClosureFnPointer is not currently supported by Kani. Please post your example at https://github.com/model-checking/kani/issues/274
 
-VERIFICATION:- [31mFAILED[0m
+VERIFICATION:- FAILED
 
 ** WARNING: A Rust construct that is not currently supported by Kani was found to be reachable. Check the results for more details.
-            </xmp>
-          </div><!-- class="output-box" -->
+              </xmp>
+            </div><!-- class="output-box" -->
+            
           
 
           

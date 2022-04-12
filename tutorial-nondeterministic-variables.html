@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Creating non-deterministic variables - The Kani Rust Verifier</title>
+        <title>Nondeterministic variables - The Kani Rust Verifier</title>
                 
 
         <!-- Custom HTML head -->
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with Kani</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.3.</strong> Kani on a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.4.</strong> Kani on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Kani tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with Kani</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html" class="active"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> Kani developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rustc-hacks.html"><strong aria-hidden="true">3.1.</strong> Working with RUSTC</a></li><li class="chapter-item expanded "><a href="kani-testing.html"><strong aria-hidden="true">3.2.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">3.3.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="usage.html"><strong aria-hidden="true">1.2.</strong> Usage</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.2.1.</strong> On a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.2.2.</strong> On a package</a></li></ol></li><li class="chapter-item expanded "><a href="verification-results.html"><strong aria-hidden="true">1.3.</strong> Verification results</a></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loop-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loop unwinding</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html" class="active"><strong aria-hidden="true">2.4.</strong> Nondeterministic variables</a></li></ol></li><li class="chapter-item expanded "><a href="application.html"><strong aria-hidden="true">3.</strong> Application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">3.1.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">3.2.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">4.</strong> Developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="workarounds.html"><strong aria-hidden="true">4.1.</strong> Workarounds</a></li><li class="chapter-item expanded "><a href="cheat-sheets.html"><strong aria-hidden="true">4.2.</strong> Command cheat sheets</a></li><li class="chapter-item expanded "><a href="rustc-hacks.html"><strong aria-hidden="true">4.3.</strong> Working with rustc</a></li><li class="chapter-item expanded "><a href="testing.html"><strong aria-hidden="true">4.4.</strong> Testing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="regression-testing.html"><strong aria-hidden="true">4.4.1.</strong> Regression testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html"><strong aria-hidden="true">4.4.2.</strong> Book runner</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">5.</strong> Limitations</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> Guarantees</div></li><li class="chapter-item expanded "><a href="rust-feature-support.html"><strong aria-hidden="true">5.2.</strong> Rust feature support</a></li><li class="chapter-item expanded "><a href="overrides.html"><strong aria-hidden="true">5.3.</strong> Overrides</a></li></ol></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -154,14 +154,16 @@
 Since Kani is a bit-level model checker, this means that Kani considers that an unconstrained nondeterministic value represents all the possible bit-value combinations assigned to the variable's memory contents.</p>
 <p>As a Rust developer, this sounds a lot like the <code>mem::transmute</code> operation, which is highly <code>unsafe</code>.
 And that's correct.</p>
-<p>In this tutorial, we will show how to safely use nondeterministic assignments to generate valid symbolic variables that respect Rust's type invariants, as well as show how you can specify invariants for types that you define enabling creation of safe nondeterministic variables for those types.</p>
+<p>In this tutorial, we will show how to:</p>
+<ol>
+<li>Safely use nondeterministic assignments to generate valid symbolic variables that respect Rust's type invariants.</li>
+<li>Unsafely use nondeterministic assignments to generate unconstrained symbolic variables that do not respect Rust's type invariants.</li>
+<li>Specify invariants for types that you define, enabling the creation of safe nondeterministic variables for those types.</li>
+</ol>
 <h2 id="safe-nondeterministic-variables"><a class="header" href="#safe-nondeterministic-variables">Safe nondeterministic variables</a></h2>
-<p>Let's say you are developing an inventory management tool, and you would like to verify that your API to manage items is correct.
+<p>Let's say you're developing an inventory management tool, and you would like to verify that your API to manage items is correct.
 Here is a simple implementation of this API:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>use std::num::NonZeroU32;
+<pre><code class="language-rust noplaypen">use std::num::NonZeroU32;
 use vector_map::VecMap;
 
 type ProductId = u32;
@@ -179,13 +181,9 @@ impl Inventory {
         self.inner.get(id).cloned()
     }
 }
-<span class="boring">}
-</span></code></pre></pre>
-<p>Now we would like to verify that no matter which combination of <code>id</code> and <code>quantity</code>, that a call to <code>Inventory::update()</code> followed by a call to <code>Inventory::get()</code> using the same id returns some value that is equal to the one we inserted:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    #[kani::proof]
+</code></pre>
+<p>Now we would like to verify that, no matter which combination of <code>id</code> and <code>quantity</code>, a call to <code>Inventory::update()</code> followed by a call to <code>Inventory::get()</code> using the same <code>id</code> returns some value that's equal to the one we inserted:</p>
+<pre><code class="language-rust noplaypen">    #[kani::proof]
     pub fn safe_update() {
         // Create inventory variable.
         let mut inventory = Inventory { inner: VecMap::new() };
@@ -199,24 +197,20 @@ impl Inventory {
         inventory.update(id.clone(), quantity);
         assert!(inventory.get(&amp;id).unwrap() == quantity);
     }
-<span class="boring">}
-</span></code></pre></pre>
-<p>In this harness, we use<code>kani::any()</code> to generate <code>ProductId</code> and the new quantity.
+</code></pre>
+<p>In this harness, we use <code>kani::any()</code> to generate the new <code>id</code> and <code>quantity</code>.
 <code>kani::any()</code> is a <strong>safe</strong> API function, and it represents only valid values.</p>
 <p>If we run this example, Kani verification will succeed, including the assertion that shows that the underlying <code>u32</code> variable  used to represent <code>NonZeroU32</code> cannot be zero, per its type invariant:</p>
 <p>You can try it out by running the example under
-<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
-<pre><code>cargo kani --function safe_update
+<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/"><code>arbitrary-variables</code></a>:</p>
+<pre><code>cargo kani --harness safe_update
 </code></pre>
 <h2 id="unsafe-nondeterministic-variables"><a class="header" href="#unsafe-nondeterministic-variables">Unsafe nondeterministic variables</a></h2>
 <p>Kani also includes an <strong>unsafe</strong> method to generate unconstrained nondeterministic variables which do not take type invariants into consideration.
-As any unsafe method in rust, users must be careful when using unsafe methods and ensure the right guardrails are put in place to avoid undesirable behavior.</p>
+As with any unsafe method in Rust, users have to make sure the right guardrails are put in place to avoid undesirable behavior.</p>
 <p>That said, there may be cases where you want to verify your code taking into consideration that some inputs may contain invalid data.</p>
 <p>Let's see what happens if we modify our verification harness to use the unsafe method <code>kani::any_raw()</code> to generate the updated value.</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    #[kani::proof]
+<pre><code class="language-rust noplaypen">    #[kani::proof]
     pub fn unsafe_update() {
         // Create inventory variable.
         let mut inventory = Inventory { inner: VecMap::new() };
@@ -232,22 +226,18 @@ As any unsafe method in rust, users must be careful when using unsafe methods an
         inventory.update(id.clone(), quantity);
         assert!(inventory.get(&amp;id).unwrap() == quantity); // This unwrap will panic.
     }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>We commented out the assertion that the underlying <code>u32</code> variable cannot be <code>0</code>, since this no longer holds.
-The Kani verification will now fail showing that <code>inventory.get(&amp;id).unwrap()</code> method call can panic.</p>
+The verification will now fail showing that the <code>inventory.get(&amp;id).unwrap()</code> method call can panic.</p>
 <p>This is an interesting issue that emerges from how <code>rustc</code> optimizes the memory layout of <code>Option&lt;NonZeroU32&gt;</code>.
 The compiler is able to represent <code>Option&lt;NonZeroU32&gt;</code> using <code>32</code> bits by using the value <code>0</code> to represent <code>None</code>.</p>
-<p>You can try it out by running the example under <a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/">arbitrary-variables directory</a>:</p>
-<pre><code>cargo kani --function unsafe_update
+<p>You can try it out by running the example under <a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/"><code>arbitrary-variables</code></a>:</p>
+<pre><code>cargo kani --harness unsafe_update
 </code></pre>
 <h2 id="safe-nondeterministic-variables-for-custom-types"><a class="header" href="#safe-nondeterministic-variables-for-custom-types">Safe nondeterministic variables for custom types</a></h2>
 <p>Now you would like to add a new structure to your library that allow users to represent a review rating, which can go from 0 to 5 stars.
 Let's say you add the following implementation:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>#[derive(Copy, Clone)]
+<pre><code class="language-rust noplaypen">#[derive(Copy, Clone)]
 pub struct Rating {
     value: u8,
 }
@@ -262,47 +252,38 @@ impl Rating {
     }
 }
 
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>The easiest way to allow users to create nondeterministic variables of the Rating type which represents values from 0-5 stars is by implementing the <code>kani::Invariant</code> trait.</p>
 <p>The implementation only requires you to define a check to your structure that returns whether its current value is valid or not.
 In our case, we have the following implementation:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    unsafe impl kani::Invariant for Rating {
+<pre><code class="language-rust noplaypen">    unsafe impl kani::Invariant for Rating {
         fn is_valid(&amp;self) -&gt; bool {
             self.value &lt;= 5
         }
     }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>Now you can use <code>kani::any()</code> to create valid nondeterministic variables of the Rating type as shown in this harness:</p>
-<pre><pre class="playground"><code class="language-rust">
-<span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>    #[kani::proof]
+<pre><code class="language-rust noplaypen">    #[kani::proof]
     pub fn check_rating() {
         let rating = kani::any::&lt;Rating&gt;();
         assert!(rating.get() &lt;= 5);
         assert!(Rating::from(rating.get()).is_some());
     }
-<span class="boring">}
-</span></code></pre></pre>
+</code></pre>
 <p>You can try it out by running the example under
-<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/"><code>docs/src/tutorial/arbitrary-variables</code></a>:</p>
-<pre><code>cargo kani --function check_rating
+<a href="https://github.com/model-checking/kani/tree/main/docs/src/tutorial/arbitrary-variables/"><code>arbitrary-variables</code></a>:</p>
+<pre><code>cargo kani --harness check_rating
 </code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="tutorial-loops-unwinding.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="tutorial-loop-unwinding.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-                                                    <a rel="next" href="tutorial-real-code.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="application.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -312,11 +293,11 @@ In our case, we have the following implementation:</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="tutorial-loops-unwinding.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="tutorial-loop-unwinding.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-                                    <a rel="next" href="tutorial-real-code.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="application.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>

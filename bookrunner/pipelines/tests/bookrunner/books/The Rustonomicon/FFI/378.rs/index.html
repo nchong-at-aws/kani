@@ -180,6 +180,14 @@ p {
   text-shadow: 0 0 2px #82ada944;
   font-weight: bold;
 }
+.literal-stdout {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 .output-box {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -511,8 +519,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2022-02-24T16:13:15Z</li>
-      <li>1a641c21-d9e7-47fb-96f7-8f6903dbb89a</li>
+      <li>2022-04-12T20:15:29Z</li>
+      <li>639e69b9-13e2-4ace-8e8f-4f5cbde80ce4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -540,7 +548,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-8a137b7e-a580-4950-8186-46ec5076d4f5">
+              <a href="#job-accba3ed-0d2f-45ac-8c99-ca26056c9ed8">
               
               Is this valid Rust code?
               
@@ -570,7 +578,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-d9b06a31-258e-4eba-a097-1f1cfcf7115f">
+              <a href="#job-e8a421d1-277c-4079-84c7-6205ff2d46d9">
               
               Does Kani support all the Rust features used in it?
               
@@ -596,7 +604,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-3f18925b-fdb8-4208-8dc9-428ef60632c1">
+              <a href="#job-1333b6cd-6ae4-4e79-81d1-400d1f44f5f8">
               
               Ca Kani reason about it?
               
@@ -624,7 +632,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-8a137b7e-a580-4950-8186-46ec5076d4f5">
+    <div class="command-table" id="job-accba3ed-0d2f-45ac-8c99-ca26056c9ed8">
       
       <div class="success">
       
@@ -632,7 +640,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-8a137b7e-a580-4950-8186-46ec5076d4f5">#</a>
+                <a href="#job-accba3ed-0d2f-45ac-8c99-ca26056c9ed8">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -645,7 +653,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2018" "-Z" "no-codegen" "tests/bookrunner/books/The Rustonomicon/FFI/378.rs"
+            "kani-compiler" "--edition" "2018" "-Z" "no-codegen" "tests/bookrunner/books/The Rustonomicon/FFI/378.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -687,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:18:55Z
+                2022-04-12T20:24:49Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -695,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:18:55Z
+                2022-04-12T20:24:49Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -776,7 +784,7 @@ warning: 2 warnings emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-d9b06a31-258e-4eba-a097-1f1cfcf7115f">
+    <div class="command-table" id="job-e8a421d1-277c-4079-84c7-6205ff2d46d9">
       
       <div class="fail">
       
@@ -784,7 +792,7 @@ warning: 2 warnings emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-d9b06a31-258e-4eba-a097-1f1cfcf7115f">#</a>
+                <a href="#job-e8a421d1-277c-4079-84c7-6205ff2d46d9">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -797,7 +805,7 @@ warning: 2 warnings emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2018" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rustonomicon/FFI/378.rs"
+            "kani-compiler" "--edition" "2018" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rustonomicon/FFI/378.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -839,15 +847,15 @@ warning: 2 warnings emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:18:55Z
+                2022-04-12T20:24:49Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:18:56Z
+                2022-04-12T20:24:49Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -910,7 +918,7 @@ note: the type is defined here
 
 error: linking with `cc` failed: exit status: 1
 |
-= note: "cc" "-m64" "build/tmp/378.378.8f757985-cgu.0.rcgu.o" "build/tmp/378.378.8f757985-cgu.1.rcgu.o" "build/tmp/378.378.8f757985-cgu.10.rcgu.o" "build/tmp/378.378.8f757985-cgu.11.rcgu.o" "build/tmp/378.378.8f757985-cgu.12.rcgu.o" "build/tmp/378.378.8f757985-cgu.13.rcgu.o" "build/tmp/378.378.8f757985-cgu.14.rcgu.o" "build/tmp/378.378.8f757985-cgu.15.rcgu.o" "build/tmp/378.378.8f757985-cgu.2.rcgu.o" "build/tmp/378.378.8f757985-cgu.3.rcgu.o" "build/tmp/378.378.8f757985-cgu.4.rcgu.o" "build/tmp/378.378.8f757985-cgu.5.rcgu.o" "build/tmp/378.378.8f757985-cgu.6.rcgu.o" "build/tmp/378.378.8f757985-cgu.7.rcgu.o" "build/tmp/378.378.8f757985-cgu.8.rcgu.o" "build/tmp/378.378.8f757985-cgu.9.rcgu.o" "build/tmp/378.1f93ig51ow57c8d0.rcgu.o" "-Wl,--as-needed" "-L" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-lextlib" "-Wl,--start-group" "-Wl,-Bstatic" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-15eca284732d16a5.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libpanic_unwind-2dea7b7b5d7d34da.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libminiz_oxide-e59f5bd4cb2cfaf0.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libadler-7668ff0023878c7d.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libobject-458744404e1def67.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libmemchr-4efcda9b1cf322d9.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libaddr2line-37d6b06fd67de855.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgimli-b86752c62a2c4219.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_demangle-18fdb65d66742a3a.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd_detect-7052aa9425c606b1.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libhashbrown-dcaf899f38c80f9e.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_alloc-29a7296fb6c88181.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libunwind-2c9f98aff68910ce.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcfg_if-109657cf0c701d74.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-e869a247063ed69a.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-013f8207d93adfc9.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_core-2a6a2797f7a73818.rlib" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-0e3656b1fda5fd7b.rlib" "-Wl,--end-group" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-eb99f4fc7650a33a.rlib" "-Wl,-Bdynamic" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc" "-Wl,--eh-frame-hdr" "-Wl,-znoexecstack" "-L" "/home/runner/.rustup/toolchains/nightly-2022-02-09-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-o" "build/tmp/378" "-Wl,--gc-sections" "-pie" "-Wl,-zrelro,-znow" "-nodefaultlibs"
+= note: "cc" "-m64" "build/tmp/378.378.bb974ed6-cgu.0.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.1.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.10.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.11.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.12.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.13.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.14.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.15.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.2.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.3.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.4.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.5.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.6.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.7.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.8.rcgu.o" "build/tmp/378.378.bb974ed6-cgu.9.rcgu.o" "build/tmp/378.1239lzesqq6lhw1s.rcgu.o" "-Wl,--as-needed" "-L" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-lextlib" "-Wl,--start-group" "-Wl,-Bstatic" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-1b64d5fe7a3c3d7f.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libpanic_unwind-e7f86684b9679284.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libobject-10a87791239bd676.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libmemchr-0e6cad6dd623d38e.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libaddr2line-9d05dd05a4d51b33.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgimli-a60ff138fe1adfad.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_demangle-0e9344458c09713e.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd_detect-ef3b808d96f639bf.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libhashbrown-e3ce420901586b53.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libminiz_oxide-546bece8dd1bea42.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libadler-9b358af16d7d7aa1.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_alloc-554cd499fe1a3b52.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libunwind-d105877dbe329cd1.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcfg_if-8fec8a74c706e4b4.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-e869a247063ed69a.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-4896c4057dc9553a.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_core-2a6a2797f7a73818.rlib" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-0e3656b1fda5fd7b.rlib" "-Wl,--end-group" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-1f103368fa522bc0.rlib" "-Wl,-Bdynamic" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc" "-Wl,--eh-frame-hdr" "-Wl,-znoexecstack" "-L" "/home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-o" "build/tmp/378" "-Wl,--gc-sections" "-pie" "-Wl,-zrelro,-znow" "-nodefaultlibs"
 = note: /usr/bin/ld: cannot find -lextlib
 collect2: error: ld returned 1 exit status
 
@@ -935,7 +943,7 @@ error: aborting due to previous error; 2 warnings emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-3f18925b-fdb8-4208-8dc9-428ef60632c1">
+    <div class="command-table" id="job-1333b6cd-6ae4-4e79-81d1-400d1f44f5f8">
       
       <div class="not-started">
       
@@ -943,7 +951,7 @@ error: aborting due to previous error; 2 warnings emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-3f18925b-fdb8-4208-8dc9-428ef60632c1">#</a>
+                <a href="#job-1333b6cd-6ae4-4e79-81d1-400d1f44f5f8">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -956,7 +964,7 @@ error: aborting due to previous error; 2 warnings emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2018" "kani" "tests/bookrunner/books/The Rustonomicon/FFI/378.rs"
+            RUSTFLAGS="--edition 2018" "kani" "tests/bookrunner/books/The Rustonomicon/FFI/378.rs" "--function" "main"
             </p>
           </div><!-- class="command-invocation" -->
 

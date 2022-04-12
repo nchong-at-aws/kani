@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started with Kani</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">1.2.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.3.</strong> Kani on a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.4.</strong> Kani on a package</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> Debugging failures</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> Debugging non-termination</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> Debugging coverage</div></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Kani tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps with Kani</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loops-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loops, unwinding, and bounds</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Creating non-deterministic variables</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">2.5.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">3.</strong> Kani developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="rustc-hacks.html"><strong aria-hidden="true">3.1.</strong> Working with RUSTC</a></li><li class="chapter-item expanded "><a href="kani-testing.html"><strong aria-hidden="true">3.2.</strong> Testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html" class="active"><strong aria-hidden="true">3.3.</strong> Book runner</a></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">4.</strong> Limitations</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="getting-started.html"><strong aria-hidden="true">1.</strong> Getting started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install-guide.html"><strong aria-hidden="true">1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="usage.html"><strong aria-hidden="true">1.2.</strong> Usage</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="kani-single-file.html"><strong aria-hidden="true">1.2.1.</strong> On a single file</a></li><li class="chapter-item expanded "><a href="cargo-kani.html"><strong aria-hidden="true">1.2.2.</strong> On a package</a></li></ol></li><li class="chapter-item expanded "><a href="verification-results.html"><strong aria-hidden="true">1.3.</strong> Verification results</a></li></ol></li><li class="chapter-item expanded "><a href="kani-tutorial.html"><strong aria-hidden="true">2.</strong> Tutorial</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tutorial-first-steps.html"><strong aria-hidden="true">2.1.</strong> First steps</a></li><li class="chapter-item expanded "><a href="tutorial-kinds-of-failure.html"><strong aria-hidden="true">2.2.</strong> Failures that Kani can spot</a></li><li class="chapter-item expanded "><a href="tutorial-loop-unwinding.html"><strong aria-hidden="true">2.3.</strong> Loop unwinding</a></li><li class="chapter-item expanded "><a href="tutorial-nondeterministic-variables.html"><strong aria-hidden="true">2.4.</strong> Nondeterministic variables</a></li></ol></li><li class="chapter-item expanded "><a href="application.html"><strong aria-hidden="true">3.</strong> Application</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tool-comparison.html"><strong aria-hidden="true">3.1.</strong> Comparison with other tools</a></li><li class="chapter-item expanded "><a href="tutorial-real-code.html"><strong aria-hidden="true">3.2.</strong> Where to start on real code</a></li></ol></li><li class="chapter-item expanded "><a href="dev-documentation.html"><strong aria-hidden="true">4.</strong> Developer documentation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="workarounds.html"><strong aria-hidden="true">4.1.</strong> Workarounds</a></li><li class="chapter-item expanded "><a href="cheat-sheets.html"><strong aria-hidden="true">4.2.</strong> Command cheat sheets</a></li><li class="chapter-item expanded "><a href="rustc-hacks.html"><strong aria-hidden="true">4.3.</strong> Working with rustc</a></li><li class="chapter-item expanded "><a href="testing.html"><strong aria-hidden="true">4.4.</strong> Testing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="regression-testing.html"><strong aria-hidden="true">4.4.1.</strong> Regression testing</a></li><li class="chapter-item expanded "><a href="bookrunner.html" class="active"><strong aria-hidden="true">4.4.2.</strong> Book runner</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="limitations.html"><strong aria-hidden="true">5.</strong> Limitations</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">5.1.</strong> Guarantees</div></li><li class="chapter-item expanded "><a href="rust-feature-support.html"><strong aria-hidden="true">5.2.</strong> Rust feature support</a></li><li class="chapter-item expanded "><a href="overrides.html"><strong aria-hidden="true">5.3.</strong> Overrides</a></li></ol></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -170,73 +170,72 @@ For instance, some of them are only included to show what is valid Rust code (or
 <p>Note that these are incremental: A <code>verification</code> job depends on a previous <code>codegen</code> job.
 Similary, a <code>codegen</code> job depends on a <code>check</code> job.</p>
 <blockquote>
-<p><strong>Warning:</strong> <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does
-not support hierarchical views at the moment. For this reason, we are
-publishing a <a href="./bookrunner/bookrunner.txt">text version of the book runner
-report</a> which displays the same results in a
-hierarchical way while we work on adding more features to
-<a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
+<p><strong>NOTE</strong>: <a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> does not
+support hierarchical views at the moment. For this reason, we are publishing a
+<a href="./bookrunner/bookrunner.txt">text version of the book runner report</a> which
+displays the same results in a hierarchical way while we work on <a href="https://github.com/model-checking/kani/issues/699">improvements
+for the visualization and navigation of book runner
+results</a>.</p>
 </blockquote>
 <p>Before running the above mentioned jobs, we pre-process the examples to:</p>
 <ol>
 <li>Set the expected output according to flags present in the code snippet.</li>
-<li>Add any required compiler/Kani flags (e.g., CBMC unwinding flags).</li>
+<li>Add any required compiler/Kani flags (e.g., unwinding).</li>
 </ol>
 <p>Finally, we run all jobs, collect their outputs and compare them against the expected outputs.
 The results are summarized as follows: If the obtained and expected outputs differ,
 the color of the stage bar will be red. Otherwise, it will be blue.
-If an example shows one red bar, it is considered a failed example that cannot be handled by Kani.</p>
+If an example shows one red bar, it's considered a failed example that cannot be handled by Kani.</p>
 <p>The <a href="./bookrunner/index.html">book runner report</a> and <a href="./bookrunner/bookrunner.txt">its text version</a> are
 automatically updated whenever a PR gets merged into Kani.</p>
 <h2 id="the-book-running-procedure"><a class="header" href="#the-book-running-procedure">The book running procedure</a></h2>
 <p>This section describes how the book runner operates at a high level.</p>
-<p>To kick off the book runner process use</p>
-<pre><code>./x.py run -i --stage 1 bookrunner
+<p>To kick off the book runner process use:</p>
+<pre><code class="language-bash">cargo run -p bookrunner
 </code></pre>
-<p>The main function of the bookrunner is <code>generate_run()</code> in
-<a href="https://github.com/model-checking/kani/blob/main/src/tools/bookrunner/src/books.rs"><code>src/tools/bookrunner/src/books.rs</code></a>,
+<p>The main function of the bookrunner is <code>generate_run()</code> (code available
+<a href="https://github.com/model-checking/kani/blob/main/tools/bookrunner/src/books.rs">here</a>)
 which follows these steps:</p>
+<ol>
+<li>Sets up all the books, including data about their summaries.</li>
+<li>Then, for each book:</li>
+</ol>
 <ul>
-<li>
-<p>First, it calls the different <code>parse_..._hierarchy()</code> functions which parse
-the summary files for each book.</p>
-</li>
-<li>
-<p>The <code>extract_examples(...)</code> function uses <code>rustdoc</code> to extract all examples
-from the books.</p>
-</li>
-<li>
-<p>Then for each example it will check if there is a corresponding <code>.props</code> file
-in <code>src/tools/bookrunner/configs/</code>. The contents of these files (e.g.,
-command-line options) are prepended to the example.</p>
-</li>
-<li>
-<p>All examples are written in the <code>src/test/bookrunner/books/</code> folder.</p>
-<p>In general, the path to a given example is
-<code>src/test/bookrunner/books/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;/&lt;subsection&gt;/&lt;line&gt;.rs</code>
-where <code>&lt;line&gt;</code> is the line number where the example appears in the
-documentation. The <code>.props</code> files mentioned above follow the same naming
-scheme in order to match them and detect conflicts.</p>
-</li>
-<li>
-<p>Then all examples are run using
-<a href="https://github.com/awslabs/aws-build-accumulator">Litani</a>.</p>
-</li>
-<li>
-<p>Finally, the Litani log is used to generate the <a href="./bookrunner/bookrunner.txt">text version of the
-bookrunner</a>.</p>
-</li>
+<li>Calls the <code>parse_hierarchy()</code> method to parse its summary
+files.</li>
+<li>Calls the <code>extract_examples()</code> method to extract all
+examples from the book. Note that <code>extract_examples()</code> uses <code>rustdoc</code>
+functions to ensure the extracted examples are runnable.</li>
+<li>Checks if there is a corresponding <code>.props</code> file
+in <code>src/tools/bookrunner/configs/</code>. If there is, prepends the contents of these files
+(<a href="./regression-testing.html#testing-options">testing options</a>) to the example.</li>
+<li>The resulting examples are written to the <code>src/test/bookrunner/books/</code> folder.</li>
 </ul>
 <blockquote>
-<p><strong>Warning:</strong> Note that any changes done to the examples in
-<code>src/test/bookrunner/books/</code> may be gone if the bookrunner is executed.</p>
+<p>In general, the path to a given example is
+<code>src/test/bookrunner/books/&lt;book&gt;/&lt;chapter&gt;/&lt;section&gt;/&lt;subsection&gt;/&lt;line&gt;.rs</code>
+where <code>&lt;line&gt;</code> is the line number where the example appears in the markdown
+file where it's written. The <code>.props</code> files mentioned above follow the same
+naming scheme in order to match them and detect conflicts.</p>
+</blockquote>
+<ol start="3">
+<li>Runs all examples using
+<a href="https://github.com/awslabs/aws-build-accumulator">Litani</a> with the
+<code>litani_run_tests()</code> function.</li>
+<li>Parses the Litani log file with <code>parse_litani_output(...)</code>.</li>
+<li>Generates the <a href="./bookrunner/bookrunner.txt">text version of the bookrunner</a>
+with <code>generate_text_bookrunner(...)</code>.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE</strong>: Any changes done to the examples in <code>src/test/bookrunner/books/</code> may
+be overwritten if the bookrunner is executed.</p>
 </blockquote>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="kani-testing.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="regression-testing.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
@@ -250,7 +249,7 @@ bookrunner</a>.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="kani-testing.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="regression-testing.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 

@@ -180,6 +180,14 @@ p {
   text-shadow: 0 0 2px #82ada944;
   font-weight: bold;
 }
+.literal-stdout {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 .output-box {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -511,8 +519,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2022-02-24T16:13:15Z</li>
-      <li>1a641c21-d9e7-47fb-96f7-8f6903dbb89a</li>
+      <li>2022-04-12T20:15:29Z</li>
+      <li>639e69b9-13e2-4ace-8e8f-4f5cbde80ce4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -540,7 +548,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-26bc39e5-e7f9-45d2-b07a-9fc7451c0d0d">
+              <a href="#job-447bcda0-f042-421d-89e2-82d2c863afa2">
               
               Is this valid Rust code?
               
@@ -568,7 +576,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-c6d5a6ce-d235-4b90-9373-ba35dc11e9e3">
+              <a href="#job-85bee045-11ab-43a5-b74e-76a18fc7062e">
               
               Does Kani support all the Rust features used in it?
               
@@ -596,7 +604,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-e31834a4-dc4d-4057-8cb2-6c21d2e8d0b1">
+              <a href="#job-82e6e223-b9ae-43ec-abc3-869543104d8a">
               
               Ca Kani reason about it?
               
@@ -624,7 +632,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-26bc39e5-e7f9-45d2-b07a-9fc7451c0d0d">
+    <div class="command-table" id="job-447bcda0-f042-421d-89e2-82d2c863afa2">
       
       <div class="success">
       
@@ -632,7 +640,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-26bc39e5-e7f9-45d2-b07a-9fc7451c0d0d">#</a>
+                <a href="#job-447bcda0-f042-421d-89e2-82d2c863afa2">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -645,7 +653,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2015" "-Z" "no-codegen" "tests/bookrunner/books/The Unstable Book/Library Features/trace_macros/13.rs"
+            "kani-compiler" "--edition" "2015" "-Z" "no-codegen" "tests/bookrunner/books/The Unstable Book/Library Features/trace_macros/13.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -687,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:21:29Z
+                2022-04-12T20:18:41Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -695,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:21:29Z
+                2022-04-12T20:18:41Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -728,7 +736,7 @@ note: trace_macro
 |     ^^^^^^^^^^^^^^^^^^^^^^^^
 |
 = note: expanding `println! { "Hello, Rust!" }`
-= note: to `{ $crate :: io :: _print($crate :: format_args_nl! ("Hello, Rust!")) ; }`
+= note: to `$crate :: io :: _print($crate :: format_args_nl! ("Hello, Rust!"))`
 
             </xmp>
           </div><!-- class="output-box" -->
@@ -748,7 +756,7 @@ note: trace_macro
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-c6d5a6ce-d235-4b90-9373-ba35dc11e9e3">
+    <div class="command-table" id="job-85bee045-11ab-43a5-b74e-76a18fc7062e">
       
       <div class="success">
       
@@ -756,7 +764,7 @@ note: trace_macro
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-c6d5a6ce-d235-4b90-9373-ba35dc11e9e3">#</a>
+                <a href="#job-85bee045-11ab-43a5-b74e-76a18fc7062e">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -769,7 +777,7 @@ note: trace_macro
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2015" "--out-dir" "build/tmp" "tests/bookrunner/books/The Unstable Book/Library Features/trace_macros/13.rs"
+            "kani-compiler" "--edition" "2015" "--out-dir" "build/tmp" "tests/bookrunner/books/The Unstable Book/Library Features/trace_macros/13.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -811,7 +819,7 @@ note: trace_macro
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:21:30Z
+                2022-04-12T20:20:15Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -819,7 +827,7 @@ note: trace_macro
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:21:30Z
+                2022-04-12T20:20:15Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -852,7 +860,7 @@ note: trace_macro
 |     ^^^^^^^^^^^^^^^^^^^^^^^^
 |
 = note: expanding `println! { "Hello, Rust!" }`
-= note: to `{ $crate :: io :: _print($crate :: format_args_nl! ("Hello, Rust!")) ; }`
+= note: to `$crate :: io :: _print($crate :: format_args_nl! ("Hello, Rust!"))`
 
             </xmp>
           </div><!-- class="output-box" -->
@@ -872,7 +880,7 @@ note: trace_macro
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-e31834a4-dc4d-4057-8cb2-6c21d2e8d0b1">
+    <div class="command-table" id="job-82e6e223-b9ae-43ec-abc3-869543104d8a">
       
       <div class="success">
       
@@ -880,7 +888,7 @@ note: trace_macro
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-e31834a4-dc4d-4057-8cb2-6c21d2e8d0b1">#</a>
+                <a href="#job-82e6e223-b9ae-43ec-abc3-869543104d8a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -893,7 +901,7 @@ note: trace_macro
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2015" "kani" "tests/bookrunner/books/The Unstable Book/Library Features/trace_macros/13.rs"
+            RUSTFLAGS="--edition 2015" "kani" "tests/bookrunner/books/The Unstable Book/Library Features/trace_macros/13.rs" "--function" "main"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -935,15 +943,15 @@ note: trace_macro
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:21:30Z
+                2022-04-12T20:20:16Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:21:31Z
+                2022-04-12T20:20:16Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -965,45 +973,63 @@ note: trace_macro
 
 
           
-          <div class="output-box"><xmp>stdout:
             
-CBMC 5.50.0 (cbmc-5.50.0)
-CBMC version 5.50.0 (cbmc-5.50.0) 64-bit x86_64 linux
-Reading GOTO program from file tests/bookrunner/books/The Unstable Book/Library Features/trace_macros/13.goto
+            <div class="output-box"><xmp>stdout:
+              
+Checking harness main...
+CBMC 5.54.0 (cbmc-5.54.0)
+CBMC version 5.54.0 (cbmc-5.54.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/The Unstable Book/Library Features/trace_macros/13.out.for-main
 Generating GOTO Program
 Adding CPROVER library (x86_64)
 Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
-Runtime Symex: 0.00124189s
+Runtime Symex: 0.00106032s
 size of program expression: 69 steps
 simple slicing removed 0 assignments
 Generated 2 VCC(s), 0 remaining after simplification
-Runtime Postprocess Equation: 2.0902e-05s
+Runtime Postprocess Equation: 2.6101e-05s
 VERIFICATION SUCCESSFUL
 
 RESULTS:
-Check 1: assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13892494147292364991") (MIR type Closure(DefId(2:9427 ~ std[3d6e]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/kani/issues/new?template=bug_report.md"
+Check 1: 1
+- Status: SUCCESS
+- Description: "assertion"
 
 Check 2: pointer_primitives.1
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE(&temp_0)"
+- Status: SUCCESS
+- Description: "pointer to dead object"
 
 
 SUMMARY:
 ** 0 of 2 failed
 
-VERIFICATION:- [32mSUCCESSFUL[0m
+VERIFICATION:- SUCCESSFUL
 
+
+              </xmp>
+            </div><!-- class="output-box" -->
+            
+          
+
+          
+          <div class="output-box"><xmp>stderr:
+            
+note: trace_macro
+--> 13.rs:7:5
+|
+7 |     println!("Hello, Rust!");
+|     ^^^^^^^^^^^^^^^^^^^^^^^^
+|
+= note: expanding `println! { "Hello, Rust!" }`
+= note: to `evaluate_print_args! ("Hello, Rust!") ;`
+= note: expanding `evaluate_print_args! { "Hello, Rust!" }`
+= note: to `{}`
 
             </xmp>
           </div><!-- class="output-box" -->
-          
-
           
 
         </div><!-- class="command-content" -->

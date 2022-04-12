@@ -180,6 +180,14 @@ p {
   text-shadow: 0 0 2px #82ada944;
   font-weight: bold;
 }
+.literal-stdout {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 .output-box {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -511,8 +519,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2022-02-24T16:13:15Z</li>
-      <li>1a641c21-d9e7-47fb-96f7-8f6903dbb89a</li>
+      <li>2022-04-12T20:15:29Z</li>
+      <li>639e69b9-13e2-4ace-8e8f-4f5cbde80ce4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -540,7 +548,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-4c8c8fb7-c4ec-40e9-9f24-eefb63fea537">
+              <a href="#job-10a16891-17cb-48af-a935-7232107d5d81">
               
               Is this valid Rust code?
               
@@ -568,7 +576,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-7838b565-1bf8-4075-9eb0-6ec3d9241265">
+              <a href="#job-d18604ef-5aa3-46d4-9c89-4497f7d4b252">
               
               Does Kani support all the Rust features used in it?
               
@@ -596,7 +604,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-d7d66cad-a3be-4181-999c-087a1fce8071">
+              <a href="#job-a86e3d6c-222e-40b5-a35f-2873cb372b74">
               
               Ca Kani reason about it?
               
@@ -624,7 +632,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-4c8c8fb7-c4ec-40e9-9f24-eefb63fea537">
+    <div class="command-table" id="job-10a16891-17cb-48af-a935-7232107d5d81">
       
       <div class="success">
       
@@ -632,7 +640,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-4c8c8fb7-c4ec-40e9-9f24-eefb63fea537">#</a>
+                <a href="#job-10a16891-17cb-48af-a935-7232107d5d81">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -645,7 +653,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2021" "-Z" "no-codegen" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Loop expressions/219.rs"
+            "kani-compiler" "--edition" "2021" "-Z" "no-codegen" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Loop expressions/219.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -687,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:23:27Z
+                2022-04-12T20:20:16Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -695,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:23:27Z
+                2022-04-12T20:20:16Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -749,7 +757,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-7838b565-1bf8-4075-9eb0-6ec3d9241265">
+    <div class="command-table" id="job-d18604ef-5aa3-46d4-9c89-4497f7d4b252">
       
       <div class="success">
       
@@ -757,7 +765,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-7838b565-1bf8-4075-9eb0-6ec3d9241265">#</a>
+                <a href="#job-d18604ef-5aa3-46d4-9c89-4497f7d4b252">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -770,7 +778,7 @@ warning: 1 warning emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2021" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Loop expressions/219.rs"
+            "kani-compiler" "--edition" "2021" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Loop expressions/219.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -812,15 +820,15 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:23:27Z
+                2022-04-12T20:20:17Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:23:28Z
+                2022-04-12T20:20:17Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -874,7 +882,7 @@ warning: 1 warning emitted
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-d7d66cad-a3be-4181-999c-087a1fce8071">
+    <div class="command-table" id="job-a86e3d6c-222e-40b5-a35f-2873cb372b74">
       
       <div class="success">
       
@@ -882,7 +890,7 @@ warning: 1 warning emitted
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-d7d66cad-a3be-4181-999c-087a1fce8071">#</a>
+                <a href="#job-a86e3d6c-222e-40b5-a35f-2873cb372b74">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -895,7 +903,7 @@ warning: 1 warning emitted
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2021" "kani" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Loop expressions/219.rs"
+            RUSTFLAGS="--edition 2021" "kani" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Loop expressions/219.rs" "--function" "main"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -937,7 +945,7 @@ warning: 1 warning emitted
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:23:28Z
+                2022-04-12T20:20:17Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -945,7 +953,7 @@ warning: 1 warning emitted
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:23:29Z
+                2022-04-12T20:20:18Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -967,45 +975,62 @@ warning: 1 warning emitted
 
 
           
-          <div class="output-box"><xmp>stdout:
             
-CBMC 5.50.0 (cbmc-5.50.0)
-CBMC version 5.50.0 (cbmc-5.50.0) 64-bit x86_64 linux
-Reading GOTO program from file tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Loop expressions/219.goto
+            <div class="output-box"><xmp>stdout:
+              
+Checking harness main...
+CBMC 5.54.0 (cbmc-5.54.0)
+CBMC version 5.54.0 (cbmc-5.54.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Loop expressions/219.out.for-main
 Generating GOTO Program
 Adding CPROVER library (x86_64)
 Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
-Runtime Symex: 0.00123259s
+Runtime Symex: 0.00111822s
 size of program expression: 69 steps
 simple slicing removed 0 assignments
 Generated 2 VCC(s), 0 remaining after simplification
-Runtime Postprocess Equation: 4.8204e-05s
+Runtime Postprocess Equation: 2.54e-05s
 VERIFICATION SUCCESSFUL
 
 RESULTS:
-Check 1: assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13892494147292364991") (MIR type Closure(DefId(2:9427 ~ std[3d6e]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/kani/issues/new?template=bug_report.md"
+Check 1: 1
+- Status: SUCCESS
+- Description: "assertion"
 
 Check 2: pointer_primitives.1
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE(&temp_0)"
+- Status: SUCCESS
+- Description: "pointer to dead object"
 
 
 SUMMARY:
 ** 0 of 2 failed
 
-VERIFICATION:- [32mSUCCESSFUL[0m
+VERIFICATION:- SUCCESSFUL
 
+
+              </xmp>
+            </div><!-- class="output-box" -->
+            
+          
+
+          
+          <div class="output-box"><xmp>stderr:
+            
+warning: denote infinite loops with `loop { ... }`
+--> 219.rs:5:5
+|
+5 |     while true {
+|     ^^^^^^^^^^ help: use `loop`
+|
+= note: `#[warn(while_true)]` on by default
+
+warning: 1 warning emitted
 
             </xmp>
           </div><!-- class="output-box" -->
-          
-
           
 
         </div><!-- class="command-content" -->

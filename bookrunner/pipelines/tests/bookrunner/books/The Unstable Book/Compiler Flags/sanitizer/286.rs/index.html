@@ -180,6 +180,14 @@ p {
   text-shadow: 0 0 2px #82ada944;
   font-weight: bold;
 }
+.literal-stdout {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 .output-box {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -511,8 +519,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: success</li>
-      <li>2022-02-24T16:13:15Z</li>
-      <li>1a641c21-d9e7-47fb-96f7-8f6903dbb89a</li>
+      <li>2022-04-12T20:15:29Z</li>
+      <li>639e69b9-13e2-4ace-8e8f-4f5cbde80ce4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -540,7 +548,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-b46a2844-6c93-4e59-81cb-9327a10dc6cb">
+              <a href="#job-eeefbd0d-4fb5-47f1-b973-9014c134128c">
               
               Is this valid Rust code?
               
@@ -568,7 +576,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-3cc77fbc-4c39-46a5-9d7c-d06d10d3de8f">
+              <a href="#job-df4e6ea8-17fc-4a7f-8ede-8d93b35c404c">
               
               Does Kani support all the Rust features used in it?
               
@@ -596,7 +604,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-d2fd4f66-162f-42e1-b1b1-14bebb818860">
+              <a href="#job-aba18e86-ac88-46c9-9dbe-6c577ccff586">
               
               Ca Kani reason about it?
               
@@ -624,7 +632,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-b46a2844-6c93-4e59-81cb-9327a10dc6cb">
+    <div class="command-table" id="job-eeefbd0d-4fb5-47f1-b973-9014c134128c">
       
       <div class="success">
       
@@ -632,7 +640,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-b46a2844-6c93-4e59-81cb-9327a10dc6cb">#</a>
+                <a href="#job-eeefbd0d-4fb5-47f1-b973-9014c134128c">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -645,7 +653,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2015" "-Z" "no-codegen" "tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.rs"
+            "kani-compiler" "--edition" "2015" "-Z" "no-codegen" "tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -687,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:19:43Z
+                2022-04-12T20:18:50Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -695,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:19:43Z
+                2022-04-12T20:18:50Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -734,7 +742,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-3cc77fbc-4c39-46a5-9d7c-d06d10d3de8f">
+    <div class="command-table" id="job-df4e6ea8-17fc-4a7f-8ede-8d93b35c404c">
       
       <div class="success">
       
@@ -742,7 +750,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-3cc77fbc-4c39-46a5-9d7c-d06d10d3de8f">#</a>
+                <a href="#job-df4e6ea8-17fc-4a7f-8ede-8d93b35c404c">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -755,7 +763,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2015" "--out-dir" "build/tmp" "tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.rs"
+            "kani-compiler" "--edition" "2015" "--out-dir" "build/tmp" "tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -797,15 +805,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:24:00Z
+                2022-04-12T20:26:01Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:24:00Z
+                2022-04-12T20:26:02Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -844,7 +852,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-d2fd4f66-162f-42e1-b1b1-14bebb818860">
+    <div class="command-table" id="job-aba18e86-ac88-46c9-9dbe-6c577ccff586">
       
       <div class="success">
       
@@ -852,7 +860,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-d2fd4f66-162f-42e1-b1b1-14bebb818860">#</a>
+                <a href="#job-aba18e86-ac88-46c9-9dbe-6c577ccff586">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -865,7 +873,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2015" "kani" "tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.rs"
+            RUSTFLAGS="--edition 2015" "kani" "tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.rs" "--function" "main"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -907,15 +915,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:24:01Z
+                2022-04-12T20:26:02Z
               </span></p>
               <p>Duration:
               <span class="value">
-                00s
+                01s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:24:01Z
+                2022-04-12T20:26:03Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -937,11 +945,13 @@ a:visited:active {
 
 
           
-          <div class="output-box"><xmp>stdout:
             
-CBMC 5.50.0 (cbmc-5.50.0)
-CBMC version 5.50.0 (cbmc-5.50.0) 64-bit x86_64 linux
-Reading GOTO program from file tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.goto
+            <div class="output-box"><xmp>stdout:
+              
+Checking harness main...
+CBMC 5.54.0 (cbmc-5.54.0)
+CBMC version 5.54.0 (cbmc-5.54.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.out.for-main
 Generating GOTO Program
 Adding CPROVER library (x86_64)
 Removal of function pointers and virtual functions
@@ -950,199 +960,219 @@ Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
 aborting path on assume(false) at  thread 0
 aborting path on assume(false) at  thread 0
-Runtime Symex: 0.0184579s
-size of program expression: 162 steps
+Runtime Symex: 0.00380825s
+size of program expression: 163 steps
 simple slicing removed 7 assignments
-Generated 20 VCC(s), 3 remaining after simplification
-Runtime Postprocess Equation: 0.00193784s
+Generated 23 VCC(s), 6 remaining after simplification
+Runtime Postprocess Equation: 2.59e-05s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.000872061s
+Runtime Convert SSA: 0.00073411s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 2.6502e-05s
+Runtime Post-process: 2.6701e-05s
 Solving with MiniSAT 2.2.1 with simplifier
-1636 variables, 130 clauses
-SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime Solver: 7.6605e-05s
-Runtime decision procedure: 0.00104477s
-VERIFICATION SUCCESSFUL
+1636 variables, 163 clauses
+SAT checker: instance is SATISFIABLE
+Runtime Solver: 0.000262904s
+Runtime decision procedure: 0.00106111s
 
 RESULTS:
-Check 1: add_one.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "attempt to compute `move _2 + const 1_i32`, which would overflow"
+Check 1: 1
+- Status: SUCCESS
+- Description: "assertion"
 
-Check 2: assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13892494147292364991") (MIR type Closure(DefId(2:9427 ~ std[3d6e]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/kani/issues/new?template=bug_report.md"
+Check 2: do_twice.assertion.1
+- Status: SUCCESS
+- Description: "attempt to add with overflow"
+- Location: tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.rs:14:5 in function do_twice
 
 Check 3: std::sys_common::backtrace::__rust_begin_short_backtrace.assertion.1
-- Status: [32mSUCCESS[0m
+- Status: SUCCESS
 - Description: "resume instruction"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/sys_common/backtrace.rs:118:1 in function std::sys_common::backtrace::__rust_begin_short_backtrace
 
-Check 4: do_twice.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "attempt to compute `move _3 + move _6`, which would overflow"
+Check 4: add_one.assertion.1
+- Status: SUCCESS
+- Description: "attempt to add with overflow"
+- Location: tests/bookrunner/books/The Unstable Book/Compiler Flags/sanitizer/286.rs:6:5 in function add_one
 
-Check 5: pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_1"
+Check 5: std::rt::lang_start::{closure#0}.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/rt.rs:145:77 in function std::rt::lang_start::{closure#0}
 
-Check 6: pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_1"
+Check 6: std::rt::lang_start::{closure#0}.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/rt.rs:145:77 in function std::rt::lang_start::{closure#0}
 
-Check 7: pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_1"
+Check 7: std::rt::lang_start::{closure#0}.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/rt.rs:145:77 in function std::rt::lang_start::{closure#0}
 
-Check 8: pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_1"
+Check 8: std::rt::lang_start::{closure#0}.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/rt.rs:145:77 in function std::rt::lang_start::{closure#0}
 
-Check 9: pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_1"
+Check 9: std::rt::lang_start::{closure#0}.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/rt.rs:145:77 in function std::rt::lang_start::{closure#0}
 
-Check 10: pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_1"
+Check 10: std::rt::lang_start::{closure#0}.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/rt.rs:145:77 in function std::rt::lang_start::{closure#0}
 
 Check 11: pointer_primitives.1
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE(&temp_0)"
+- Status: SUCCESS
+- Description: "pointer to dead object"
 
-Check 12: std::rt::lang_start::{closure#0}.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_1->0"
+Check 12: std::ops::FnOnce::call_once.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ops/function.rs:227:5 in function std::ops::FnOnce::call_once
 
-Check 13: std::rt::lang_start::{closure#0}.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_1->0"
+Check 13: std::ops::FnOnce::call_once.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ops/function.rs:227:5 in function std::ops::FnOnce::call_once
 
-Check 14: std::rt::lang_start::{closure#0}.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_1->0"
+Check 14: std::ops::FnOnce::call_once.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ops/function.rs:227:5 in function std::ops::FnOnce::call_once
 
-Check 15: std::rt::lang_start::{closure#0}.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_1->0"
+Check 15: std::ops::FnOnce::call_once.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ops/function.rs:227:5 in function std::ops::FnOnce::call_once
 
-Check 16: std::rt::lang_start::{closure#0}.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_1->0"
+Check 16: std::ops::FnOnce::call_once.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ops/function.rs:227:5 in function std::ops::FnOnce::call_once
 
-Check 17: std::rt::lang_start::{closure#0}.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_1->0"
+Check 17: std::ops::FnOnce::call_once.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ops/function.rs:227:5 in function std::ops::FnOnce::call_once
 
-Check 18: std::ops::FnOnce::call_once.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_1"
+Check 18: pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
 
-Check 19: std::ops::FnOnce::call_once.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_1"
+Check 19: pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
 
-Check 20: std::ops::FnOnce::call_once.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_1"
+Check 20: pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
 
-Check 21: std::ops::FnOnce::call_once.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_1"
+Check 21: pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
 
-Check 22: std::ops::FnOnce::call_once.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_1"
+Check 22: pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
 
-Check 23: std::ops::FnOnce::call_once.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_1"
+Check 23: pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
 
-Check 24: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in self->0"
+Check 24: pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
 
-Check 25: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in self->0"
+Check 25: pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
 
-Check 26: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in self->0"
+Check 26: pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
 
-Check 27: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in self->0"
+Check 27: pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
 
-Check 28: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in self->0"
+Check 28: pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
 
-Check 29: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in self->0"
+Check 29: pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
 
-Check 30: pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_4"
+Check 30: pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
 
-Check 31: pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_4"
+Check 31: pointer_dereference.14
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
 
-Check 32: pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_4"
+Check 32: pointer_dereference.15
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
 
-Check 33: pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_4"
+Check 33: pointer_dereference.16
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
 
-Check 34: pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_4"
+Check 34: pointer_dereference.17
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
 
-Check 35: pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_4"
+Check 35: pointer_dereference.18
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
 
-Check 36: pointer_dereference.13
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in var_7"
+Check 36: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/sys/unix/process/process_common.rs:485:9 in function std::sys::unix::process::process_common::ExitCode::as_i32
 
-Check 37: pointer_dereference.14
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in var_7"
+Check 37: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/sys/unix/process/process_common.rs:485:9 in function std::sys::unix::process::process_common::ExitCode::as_i32
 
-Check 38: pointer_dereference.15
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in var_7"
+Check 38: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/sys/unix/process/process_common.rs:485:9 in function std::sys::unix::process::process_common::ExitCode::as_i32
 
-Check 39: pointer_dereference.16
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in var_7"
+Check 39: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/sys/unix/process/process_common.rs:485:9 in function std::sys::unix::process::process_common::ExitCode::as_i32
 
-Check 40: pointer_dereference.17
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in var_7"
+Check 40: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/sys/unix/process/process_common.rs:485:9 in function std::sys::unix::process::process_common::ExitCode::as_i32
 
-Check 41: pointer_dereference.18
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in var_7"
+Check 41: std::sys::unix::process::process_common::ExitCode::as_i32.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/sys/unix/process/process_common.rs:485:9 in function std::sys::unix::process::process_common::ExitCode::as_i32
 
 
 SUMMARY:
 ** 0 of 41 failed
 
-VERIFICATION:- [32mSUCCESSFUL[0m
+VERIFICATION:- SUCCESSFUL
 
 
-            </xmp>
-          </div><!-- class="output-box" -->
+              </xmp>
+            </div><!-- class="output-box" -->
+            
           
 
           

@@ -180,6 +180,14 @@ p {
   text-shadow: 0 0 2px #82ada944;
   font-weight: bold;
 }
+.literal-stdout {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 .output-box {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -511,8 +519,8 @@ a:visited:active {
   <div class=run-info>
     <ul>
       <li>Pipeline status: fail</li>
-      <li>2022-02-24T16:13:15Z</li>
-      <li>1a641c21-d9e7-47fb-96f7-8f6903dbb89a</li>
+      <li>2022-04-12T20:15:29Z</li>
+      <li>639e69b9-13e2-4ace-8e8f-4f5cbde80ce4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -540,7 +548,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-e2aa7260-46d5-4c0e-9cdb-4b537a561014">
+              <a href="#job-696975c3-3e3a-4fe9-95dd-f288e11a9b35">
               
               Is this valid Rust code?
               
@@ -568,7 +576,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-7282ebbd-4f33-429a-83f6-db268f669fe5">
+              <a href="#job-049e8586-43b9-4892-a23d-f605383e66ee">
               
               Does Kani support all the Rust features used in it?
               
@@ -598,7 +606,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-32ab12f1-0813-4332-a373-814439c56c33">
+              <a href="#job-d7fc55d7-2817-4f5b-ad56-06153e163f49">
               
               Ca Kani reason about it?
               
@@ -626,7 +634,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-e2aa7260-46d5-4c0e-9cdb-4b537a561014">
+    <div class="command-table" id="job-696975c3-3e3a-4fe9-95dd-f288e11a9b35">
       
       <div class="success">
       
@@ -634,7 +642,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-e2aa7260-46d5-4c0e-9cdb-4b537a561014">#</a>
+                <a href="#job-696975c3-3e3a-4fe9-95dd-f288e11a9b35">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -647,7 +655,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2015" "-Z" "no-codegen" "tests/bookrunner/books/The Unstable Book/Compiler Flags/emit_stack_sizes/17.rs"
+            "kani-compiler" "--edition" "2015" "-Z" "no-codegen" "tests/bookrunner/books/The Unstable Book/Compiler Flags/emit_stack_sizes/17.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -689,7 +697,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:18:47Z
+                2022-04-12T20:23:20Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -697,7 +705,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:18:47Z
+                2022-04-12T20:23:20Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -736,7 +744,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-7282ebbd-4f33-429a-83f6-db268f669fe5">
+    <div class="command-table" id="job-049e8586-43b9-4892-a23d-f605383e66ee">
       
       <div class="success">
       
@@ -744,7 +752,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-7282ebbd-4f33-429a-83f6-db268f669fe5">#</a>
+                <a href="#job-049e8586-43b9-4892-a23d-f605383e66ee">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -757,7 +765,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2015" "--out-dir" "build/tmp" "tests/bookrunner/books/The Unstable Book/Compiler Flags/emit_stack_sizes/17.rs"
+            "kani-compiler" "--edition" "2015" "--out-dir" "build/tmp" "tests/bookrunner/books/The Unstable Book/Compiler Flags/emit_stack_sizes/17.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -799,15 +807,15 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:20:42Z
+                2022-04-12T20:23:21Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                00s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:20:43Z
+                2022-04-12T20:23:21Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -846,7 +854,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-32ab12f1-0813-4332-a373-814439c56c33">
+    <div class="command-table" id="job-d7fc55d7-2817-4f5b-ad56-06153e163f49">
       
       <div class="fail">
       
@@ -854,7 +862,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-32ab12f1-0813-4332-a373-814439c56c33">#</a>
+                <a href="#job-d7fc55d7-2817-4f5b-ad56-06153e163f49">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -867,7 +875,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2015" "kani" "tests/bookrunner/books/The Unstable Book/Compiler Flags/emit_stack_sizes/17.rs"
+            RUSTFLAGS="--edition 2015" "kani" "tests/bookrunner/books/The Unstable Book/Compiler Flags/emit_stack_sizes/17.rs" "--function" "main"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -909,7 +917,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:21:17Z
+                2022-04-12T20:23:21Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -917,7 +925,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:21:18Z
+                2022-04-12T20:23:22Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -939,25 +947,19 @@ a:visited:active {
 
 
           
-          <div class="output-box"><xmp>stdout:
             
+            <div class="output-box"><xmp>stdout:
+              
 main symbol 'main' not found
-
-            </xmp>
-          </div><!-- class="output-box" -->
+              </xmp>
+            </div><!-- class="output-box" -->
+            
           
 
           
           <div class="output-box"><xmp>stderr:
             
-Traceback (most recent call last):
-File "/home/runner/work/kani/kani/scripts/kani", line 201, in <module>
-sys.exit(main())
-File "/home/runner/work/kani/kani/scripts/kani", line 75, in main
-kani.link_c_lib(out_files, goto_filename, args.c_lib, args.verbose, args.quiet, args.function, args.dry_run,
-File "/home/runner/work/kani/kani/scripts/kani.py", line 328, in link_c_lib
-raise Exception("Failed to run command: {}".format(" ".join(cmd)))
-Exception: Failed to run command: goto-cc --function main tests/bookrunner/books/The Unstable Book/Compiler Flags/emit_stack_sizes/17.symtab.json.out /home/runner/work/kani/kani/library/kani/kani_lib.c -o tests/bookrunner/books/The Unstable Book/Compiler Flags/emit_stack_sizes/17.goto
+Error: goto-cc exited with status exit status: 1
             </xmp>
           </div><!-- class="output-box" -->
           

@@ -180,6 +180,14 @@ p {
   text-shadow: 0 0 2px #82ada944;
   font-weight: bold;
 }
+.literal-stdout {
+  margin-top: 0.4em;
+  margin-bottom: 0.2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 .output-box {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
@@ -510,9 +518,9 @@ a:visited:active {
 
   <div class=run-info>
     <ul>
-      <li>Pipeline status: fail</li>
-      <li>2022-02-24T16:13:15Z</li>
-      <li>1a641c21-d9e7-47fb-96f7-8f6903dbb89a</li>
+      <li>Pipeline status: success</li>
+      <li>2022-04-12T20:15:29Z</li>
+      <li>639e69b9-13e2-4ace-8e8f-4f5cbde80ce4</li>
     </ul>
   </div><!-- class=run-info -->
 
@@ -540,7 +548,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-812b8f1d-6f1d-414b-81b1-cd6e92e3c2eb">
+              <a href="#job-a9e27a25-e86f-42e2-ad91-51c9938806ad">
               
               Is this valid Rust code?
               
@@ -568,7 +576,7 @@ a:visited:active {
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-0f7c2fcc-8971-487c-a009-bf4a3b8720f3">
+              <a href="#job-4039da69-ca98-48d3-ad90-c7443bda034e">
               
               Does Kani support all the Rust features used in it?
               
@@ -588,17 +596,15 @@ a:visited:active {
 
             <div class="toc-row-icon">
               
-                <svg height="16px" width="16px" class="status-icon-cross">
-                  <polygon points="
-                      1,3 7,8 1,13 3,15 8,9 13,15 15,13 9,8 15,3 13,1 8,7 3,1">
-                  </polygon>
+                <svg height="16px" width="16px" class="status-icon-tick">
+                  <polygon points="1,11 6,15 15,3 13,1 6,12 3,8"></polygon>
                 </svg>
               
             </div><!-- class="toc-row-icon" -->
 
             <div class="toc-row-job-name">
               <p>
-              <a href="#job-0b0bb74c-cbbb-4207-8000-907654ade983">
+              <a href="#job-cf0b8ffb-b913-48ab-a83b-6ea18670801a">
               
               Ca Kani reason about it?
               
@@ -626,7 +632,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-812b8f1d-6f1d-414b-81b1-cd6e92e3c2eb">
+    <div class="command-table" id="job-a9e27a25-e86f-42e2-ad91-51c9938806ad">
       
       <div class="success">
       
@@ -634,7 +640,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-812b8f1d-6f1d-414b-81b1-cd6e92e3c2eb">#</a>
+                <a href="#job-a9e27a25-e86f-42e2-ad91-51c9938806ad">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -647,7 +653,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2021" "-Z" "no-codegen" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs"
+            "kani-compiler" "--edition" "2021" "-Z" "no-codegen" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -689,7 +695,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:18:21Z
+                2022-04-12T20:19:55Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -697,7 +703,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:18:21Z
+                2022-04-12T20:19:55Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -736,7 +742,7 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-0f7c2fcc-8971-487c-a009-bf4a3b8720f3">
+    <div class="command-table" id="job-4039da69-ca98-48d3-ad90-c7443bda034e">
       
       <div class="success">
       
@@ -744,7 +750,7 @@ a:visited:active {
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-0f7c2fcc-8971-487c-a009-bf4a3b8720f3">#</a>
+                <a href="#job-4039da69-ca98-48d3-ad90-c7443bda034e">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -757,7 +763,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            "kani-rustc" "--edition" "2021" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs"
+            "kani-compiler" "--edition" "2021" "--out-dir" "build/tmp" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -799,7 +805,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:18:27Z
+                2022-04-12T20:22:01Z
               </span></p>
               <p>Duration:
               <span class="value">
@@ -807,7 +813,7 @@ a:visited:active {
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:18:27Z
+                2022-04-12T20:22:01Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
@@ -846,15 +852,15 @@ a:visited:active {
     </div><!-- class="stage-name" -->
 
     
-    <div class="command-table" id="job-0b0bb74c-cbbb-4207-8000-907654ade983">
+    <div class="command-table" id="job-cf0b8ffb-b913-48ab-a83b-6ea18670801a">
       
-      <div class="fail">
+      <div class="success">
       
         <div class="command-content">
           <div class="command-header">
             <div class="command-id-link">
               <p>
-                <a href="#job-0b0bb74c-cbbb-4207-8000-907654ade983">#</a>
+                <a href="#job-cf0b8ffb-b913-48ab-a83b-6ea18670801a">#</a>
               </p>
             </div><!-- class="command-id-link" -->
             <div class="command-description">
@@ -867,7 +873,7 @@ a:visited:active {
           </div><!-- class="command-header" -->
           <div class="command-invocation">
             <p>
-            RUSTFLAGS="--edition 2021" "kani" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs"
+            RUSTFLAGS="--edition 2021" "kani" "tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs" "--function" "main"
             </p>
           </div><!-- class="command-invocation" -->
 
@@ -877,7 +883,7 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Command return code:
               <span class="value">
-                1
+                0
               </span></p>
               <p>OK returns:
               <span class="value">
@@ -909,22 +915,22 @@ a:visited:active {
             <div class="command-stats-row">
               <p>Start time:
               <span class="value">
-                2022-02-24T16:18:28Z
+                2022-04-12T20:22:02Z
               </span></p>
               <p>Duration:
               <span class="value">
-                01s
+                02s
               </span></p>
               <p>End time:
               <span class="value">
-                2022-02-24T16:18:29Z
+                2022-04-12T20:22:04Z
               </span></p>
             </div><!-- class="command-stats-row" -->
             <div class="command-stats-row">
               <p>Command successful:
               <span class="value">
               
-              no
+              yes
               
               </span></p>
             </div><!-- class="command-stats-row" -->
@@ -939,752 +945,1176 @@ a:visited:active {
 
 
           
-          <div class="output-box"><xmp>stdout:
             
-CBMC 5.50.0 (cbmc-5.50.0)
-CBMC version 5.50.0 (cbmc-5.50.0) 64-bit x86_64 linux
-Reading GOTO program from file tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.goto
+            <div class="output-box"><xmp>stdout:
+              
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs6_NtNtCsfBSZGGNiBQi_4core5slice3cmplNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_5" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs6_NtNtCsfBSZGGNiBQi_4core5slice3cmplNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_7" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs6_NtNtCsfBSZGGNiBQi_4core5slice3cmplNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_8::lhs" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs6_NtNtCsfBSZGGNiBQi_4core5slice3cmplNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_41" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs6_NtNtCsfBSZGGNiBQi_4core5slice3cmplNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_45" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs6_NtNtCsfBSZGGNiBQi_4core5slice3cmplNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_8::lhs" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs6_NtNtCsfBSZGGNiBQi_4core5slice3cmplNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_13::rhs" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs6_NtNtCsfBSZGGNiBQi_4core5slice3cmplNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_13::rhs" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs7_NtNtCsfBSZGGNiBQi_4core5slice3cmphNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_6" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs7_NtNtCsfBSZGGNiBQi_4core5slice3cmphNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_9" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs7_NtNtCsfBSZGGNiBQi_4core5slice3cmphNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_13" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs7_NtNtCsfBSZGGNiBQi_4core5slice3cmphNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_15" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs7_NtNtCsfBSZGGNiBQi_4core5slice3cmphNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_16" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs7_NtNtCsfBSZGGNiBQi_4core5slice3cmphNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263::1::var_17" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs1_NtNtCsfBSZGGNiBQi_4core5slice5indexINtNtNtB9_3ops5range5RangejEINtB5_10SliceIndexSlE5indexCsaMVmFic6qaS_3_263::1::var_11" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs1_NtNtCsfBSZGGNiBQi_4core5slice5indexINtNtNtB9_3ops5range5RangejEINtB5_10SliceIndexSlE5indexCsaMVmFic6qaS_3_263::1::var_14" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs1_NtNtCsfBSZGGNiBQi_4core5slice5indexINtNtNtB9_3ops5range5RangejEINtB5_10SliceIndexSlE5indexCsaMVmFic6qaS_3_263::1::var_2::slice" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvXs1_NtNtCsfBSZGGNiBQi_4core5slice5indexINtNtNtB9_3ops5range5RangejEINtB5_10SliceIndexSlE5indexCsaMVmFic6qaS_3_263::1::var_15" }, typ: StructTag("tag-_15815649844604950026"), location: None }, field: "data" }, typ: Pointer { typ: Signedbv { width: 32 } }, location: None }
+Expr type
+Pointer { typ: Signedbv { width: 32 } }
+Type from MIR
+FlexibleArray { typ: Signedbv { width: 32 } }
+WARN kani_compiler::codegen_cprover_gotoc::codegen::place Unexpected type mismatch in projection:
+Expr { value: Member { lhs: Expr { value: Symbol { identifier: "_RNvMNtCsfBSZGGNiBQi_4core5sliceSh6as_ptrCsaMVmFic6qaS_3_263::1::var_1::self" }, typ: StructTag("tag-_17530144020178589568"), location: None }, field: "data" }, typ: Pointer { typ: Unsignedbv { width: 8 } }, location: None }
+Expr type
+Pointer { typ: Unsignedbv { width: 8 } }
+Type from MIR
+FlexibleArray { typ: Unsignedbv { width: 8 } }
+Checking harness main...
+CBMC 5.54.0 (cbmc-5.54.0)
+CBMC version 5.54.0 (cbmc-5.54.0) 64-bit x86_64 linux
+Reading GOTO program from file tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.out.for-main
 Generating GOTO Program
 Adding CPROVER library (x86_64)
 Removal of function pointers and virtual functions
 Generic Property Instrumentation
 Running with 16 object bits, 48 offset bits (user-specified)
 Starting Bounded Model Checking
-Unwinding loop _RINvNtCskAW7cNmttvW_4core3cmp6min_byjNvYjNtB2_3Ord3cmpECs1pgkuoRv1OF_3_263.0 iteration 1  thread 0
-Unwinding loop _RNvXs6_NtNtCskAW7cNmttvW_4core5slice3cmplNtB5_8SliceOrd7compareCs1pgkuoRv1OF_3_263.0 iteration 1 file /rustc/0c292c9667f1b202a9150d58bdd2e89e3e803996/library/core/src/slice/cmp.rs line 176 column 9 function <A as core::slice::cmp::SliceOrd>::compare thread 0
-Unwinding loop _RINvNtCskAW7cNmttvW_4core3cmp6min_byjNvYjNtB2_3Ord3cmpECs1pgkuoRv1OF_3_263.0 iteration 1  thread 0
-Runtime Symex: 0.0763496s
-size of program expression: 1832 steps
-simple slicing removed 24 assignments
-Generated 250 VCC(s), 44 remaining after simplification
-Runtime Postprocess Equation: 0.000273519s
+Unwinding loop _RINvNtCsfBSZGGNiBQi_4core3cmp6min_byjNvYjNtB2_3Ord3cmpECsaMVmFic6qaS_3_263.0 iteration 1  thread 0
+Unwinding loop _RNvXs6_NtNtCsfBSZGGNiBQi_4core5slice3cmplNtB5_8SliceOrd7compareCsaMVmFic6qaS_3_263.0 iteration 1 file /home/runner/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs line 175 column 9 function <A as core::slice::cmp::SliceOrd>::compare thread 0
+Runtime Symex: 0.1222s
+size of program expression: 1838 steps
+simple slicing removed 6 assignments
+Generated 270 VCC(s), 56 remaining after simplification
+Runtime Postprocess Equation: 0.000229003s
 Passing problem to propositional reduction
 converting SSA
-Runtime Convert SSA: 0.0134001s
+Runtime Convert SSA: 0.0246876s
 Running propositional reduction
 Post-processing
-Runtime Post-process: 3.7203e-05s
+Runtime Post-process: 4.02e-05s
 Solving with MiniSAT 2.2.1 with simplifier
-33509 variables, 8075 clauses
+33275 variables, 7945 clauses
 SAT checker: instance is SATISFIABLE
-Runtime Solver: 0.0070703s
-Runtime decision procedure: 0.0207542s
+Runtime Solver: 0.0188108s
+Runtime decision procedure: 0.0438243s
 
 RESULTS:
-Check 1: main.assertion.1
-- Status: [32mSUCCESS[0m
+Check 1: 1
+- Status: SUCCESS
+- Description: "assertion"
+
+Check 2: main.assertion.1
+- Status: SUCCESS
 - Description: "assertion failed: 123 == 123"
+- Location: tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs:4:1 in function main
 
-Check 2: main.assertion.2
-- Status: [32mSUCCESS[0m
+Check 3: main.assertion.2
+- Status: SUCCESS
 - Description: "assertion failed: 23 != -12"
+- Location: tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs:5:1 in function main
 
-Check 3: main.assertion.3
-- Status: [32mSUCCESS[0m
+Check 4: main.assertion.3
+- Status: SUCCESS
 - Description: "assertion failed: 12.5 > 12.2"
+- Location: tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs:6:1 in function main
 
-Check 4: main.assertion.4
-- Status: [32mSUCCESS[0m
+Check 5: main.assertion.4
+- Status: SUCCESS
 - Description: "assertion failed: [1, 2, 3] < [1, 3, 4]"
+- Location: tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs:7:1 in function main
 
-Check 5: main.assertion.5
-- Status: [32mSUCCESS[0m
+Check 6: main.assertion.5
+- Status: SUCCESS
 - Description: "assertion failed: 'A' <= 'B'"
+- Location: tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs:8:1 in function main
 
-Check 6: main.assertion.6
-- Status: [32mSUCCESS[0m
+Check 7: main.assertion.6
+- Status: SUCCESS
 - Description: "assertion failed: "World" >= "Hello""
+- Location: tests/bookrunner/books/The Rust Reference/Statements and expressions/Expressions/Operator expressions/263.rs:9:1 in function main
 
-Check 7: memcmp.precondition.1
-- Status: [32mSUCCESS[0m
-- Description: "memcmp region 1 readable"
+Check 8: <A as core::slice::cmp::SliceOrd>::compare.assertion.1
+- Status: SUCCESS
+- Description: "index out of bounds: the length is less than or equal to the given index"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:19 in function <A as core::slice::cmp::SliceOrd>::compare
 
-Check 8: memcmp.precondition.2
-- Status: [32mSUCCESS[0m
-- Description: "memcpy region 2 readable"
-
-Check 9: std::cmp::min_by.assertion.1
-- Status: [32mSUCCESS[0m
+Check 9: <A as core::slice::cmp::SliceOrd>::compare.assertion.2
+- Status: SUCCESS
 - Description: "unreachable code"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:175:18 in function <A as core::slice::cmp::SliceOrd>::compare
 
-Check 10: std::cmp::min_by.assertion.2
-- Status: [32mSUCCESS[0m
-- Description: "resume instruction"
+Check 10: <A as core::slice::cmp::SliceOrd>::compare.assertion.3
+- Status: SUCCESS
+- Description: "index out of bounds: the length is less than or equal to the given index"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:31 in function <A as core::slice::cmp::SliceOrd>::compare
 
-Check 11: <A as core::slice::cmp::SliceOrd>::compare.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "index out of bounds: the length is move _30 but the index is _29"
-
-Check 12: <A as core::slice::cmp::SliceOrd>::compare.assertion.2
-- Status: [32mSUCCESS[0m
-- Description: "unreachable code"
-
-Check 13: <A as core::slice::cmp::SliceOrd>::compare.assertion.3
-- Status: [32mSUCCESS[0m
-- Description: "index out of bounds: the length is move _35 but the index is _34"
-
-Check 14: assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "Code generation sanity check: Correct CBMC vtable size for StructTag("tag-_13892494147292364991") (MIR type Closure(DefId(2:9427 ~ std[3d6e]::rt::lang_start::{closure#0}), [(), i8, extern "rust-call" fn(()) -> i32, (fn(),)])). Please report failures:
-https://github.com/model-checking/kani/issues/new?template=bug_report.md"
-
-Check 15: <std::ops::Range<usize> as std::slice::SliceIndex<[T]>>::index.assertion.1
-- Status: [32mSUCCESS[0m
-- Description: "a panicking function core::slice::index::slice_index_order_fail is invoked"
-
-Check 16: <std::ops::Range<usize> as std::slice::SliceIndex<[T]>>::index.assertion.2
-- Status: [32mSUCCESS[0m
-- Description: "a panicking function core::slice::index::slice_end_index_len_fail is invoked"
-
-Check 17: std::ptr::const_ptr::<impl *const T>::offset.assertion.1
-- Status: [32mSUCCESS[0m
+Check 11: std::ptr::const_ptr::<impl *const T>::offset.arithmetic_overflow.1
+- Status: SUCCESS
 - Description: "attempt to compute offset which would overflow"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/const_ptr.rs:295:18 in function std::ptr::const_ptr::<impl *const T>::offset
 
-Check 18: core::num::<impl usize>::unchecked_add.assertion.1
-- Status: [32mSUCCESS[0m
+Check 12: core::num::<impl usize>::unchecked_add.arithmetic_overflow.1
+- Status: SUCCESS
 - Description: "attempt to compute unchecked_add which would overflow"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/uint_macros.rs:464:22 in function core::num::<impl usize>::unchecked_add
+
+Check 13: std::cmp::min_by.assertion.1
+- Status: SUCCESS
+- Description: "unreachable code"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1214:11 in function std::cmp::min_by
+
+Check 14: std::cmp::min_by.assertion.2
+- Status: SUCCESS
+- Description: "resume instruction"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1213:1 in function std::cmp::min_by
+
+Check 15: memcmp.precondition.1
+- Status: SUCCESS
+- Description: "memcmp region 1 readable"
+- Location: <builtin-library-memcmp>:19 in function memcmp
+
+Check 16: memcmp.precondition.2
+- Status: SUCCESS
+- Description: "memcpy region 2 readable"
+- Location: <builtin-library-memcmp>:21 in function memcmp
+
+Check 17: <std::ops::Range<usize> as std::slice::SliceIndex<[T]>>::index.assertion.1
+- Status: SUCCESS
+- Description: "a panicking function core::slice::index::slice_index_order_fail is invoked"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/index.rs:289:13 in function <std::ops::Range<usize> as std::slice::SliceIndex<[T]>>::index
+
+Check 18: <std::ops::Range<usize> as std::slice::SliceIndex<[T]>>::index.assertion.2
+- Status: SUCCESS
+- Description: "a panicking function core::slice::index::slice_end_index_len_fail is invoked"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/index.rs:291:13 in function <std::ops::Range<usize> as std::slice::SliceIndex<[T]>>::index
 
 Check 19: memcmp.pointer_primitives.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer invalid in OBJECT_SIZE(s1)"
+- Status: SUCCESS
+- Description: "pointer invalid"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
 Check 20: memcmp.pointer_primitives.2
-- Status: [32mSUCCESS[0m
-- Description: "deallocated dynamic object in OBJECT_SIZE(s1)"
+- Status: SUCCESS
+- Description: "pointer to deallocated dynamic object"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
 Check 21: memcmp.pointer_primitives.3
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE(s1)"
+- Status: SUCCESS
+- Description: "pointer to dead object"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
 Check 22: memcmp.pointer_primitives.4
-- Status: [32mSUCCESS[0m
-- Description: "pointer outside object bounds in OBJECT_SIZE(s1)"
+- Status: SUCCESS
+- Description: "pointer outside object bounds"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
 Check 23: memcmp.overflow.1
-- Status: [32mSUCCESS[0m
-- Description: "arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(s1)"
+- Status: SUCCESS
+- Description: "arithmetic overflow on signed to unsigned type conversion"
+- Location: <builtin-library-memcmp>:19 in function memcmp
 
 Check 24: memcmp.pointer_primitives.5
-- Status: [32mSUCCESS[0m
-- Description: "pointer invalid in OBJECT_SIZE(s2)"
+- Status: SUCCESS
+- Description: "pointer invalid"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
 Check 25: memcmp.pointer_primitives.6
-- Status: [32mSUCCESS[0m
-- Description: "deallocated dynamic object in OBJECT_SIZE(s2)"
+- Status: SUCCESS
+- Description: "pointer to deallocated dynamic object"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
 Check 26: memcmp.pointer_primitives.7
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE(s2)"
+- Status: SUCCESS
+- Description: "pointer to dead object"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
 Check 27: memcmp.pointer_primitives.8
-- Status: [32mSUCCESS[0m
-- Description: "pointer outside object bounds in OBJECT_SIZE(s2)"
+- Status: SUCCESS
+- Description: "pointer outside object bounds"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
 Check 28: memcmp.overflow.2
-- Status: [32mSUCCESS[0m
-- Description: "arithmetic overflow on signed to unsigned type conversion in (size_t)POINTER_OFFSET(s2)"
+- Status: SUCCESS
+- Description: "arithmetic overflow on signed to unsigned type conversion"
+- Location: <builtin-library-memcmp>:21 in function memcmp
 
 Check 29: memcmp.pointer_arithmetic.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer NULL in sc1 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer NULL"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 30: memcmp.pointer_arithmetic.2
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer invalid in sc1 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer invalid"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 31: memcmp.pointer_arithmetic.3
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: deallocated dynamic object in sc1 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: deallocated dynamic object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 32: memcmp.pointer_arithmetic.4
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in sc1 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 33: memcmp.pointer_arithmetic.5
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer outside object bounds in sc1 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer outside object bounds"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 34: memcmp.pointer_arithmetic.6
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: invalid integer address in sc1 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: invalid integer address"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 35: memcmp.pointer_arithmetic.7
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer NULL in sc2 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer NULL"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 36: memcmp.pointer_arithmetic.8
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer invalid in sc2 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer invalid"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 37: memcmp.pointer_arithmetic.9
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: deallocated dynamic object in sc2 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: deallocated dynamic object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 38: memcmp.pointer_arithmetic.10
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in sc2 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 39: memcmp.pointer_arithmetic.11
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer outside object bounds in sc2 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer outside object bounds"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 40: memcmp.pointer_arithmetic.12
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: invalid integer address in sc2 + 1l"
+- Status: SUCCESS
+- Description: "pointer arithmetic: invalid integer address"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 41: memcmp.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *tmp_post"
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 42: memcmp.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *tmp_post"
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 43: memcmp.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *tmp_post"
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 44: memcmp.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *tmp_post"
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 45: memcmp.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *tmp_post"
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 46: memcmp.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *tmp_post"
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 47: memcmp.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *tmp_post$0"
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 48: memcmp.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *tmp_post$0"
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 49: memcmp.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *tmp_post$0"
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 50: memcmp.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *tmp_post$0"
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 51: memcmp.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *tmp_post$0"
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: <builtin-library-memcmp>:27 in function memcmp
 
 Check 52: memcmp.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *tmp_post$0"
-
-Check 53: std::ptr::const_ptr::<impl *const T>::add.overflow.1
-- Status: [32mSUCCESS[0m
-- Description: "arithmetic overflow on unsigned to signed type conversion in (long int)var_5"
-
-Check 54: std::cmp::PartialOrd::lt.pointer_arithmetic.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in (unsigned char *)&var_3 + 0"
-
-Check 55: std::cmp::PartialOrd::lt.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *((signed char *)((unsigned char *)&var_3 + 0))"
-
-Check 56: std::cmp::PartialOrd::lt.overflow.1
-- Status: [31mFAILURE[0m
-- Description: "arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(*((signed char *)((unsigned char *)&var_3 + 0)) - 2)"
-
-Check 57: std::cmp::PartialOrd::ge.pointer_arithmetic.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in (unsigned char *)&var_3 + 0"
-
-Check 58: std::cmp::PartialOrd::ge.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *((signed char *)((unsigned char *)&var_3 + 0))"
-
-Check 59: std::cmp::PartialOrd::ge.overflow.1
-- Status: [31mFAILURE[0m
-- Description: "arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(*((signed char *)((unsigned char *)&var_3 + 0)) - 2)"
-
-Check 60: pointer_arithmetic.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer NULL in var_3 + var_4"
-
-Check 61: pointer_arithmetic.2
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer invalid in var_3 + var_4"
-
-Check 62: pointer_arithmetic.3
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: deallocated dynamic object in var_3 + var_4"
-
-Check 63: pointer_arithmetic.4
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in var_3 + var_4"
-
-Check 64: pointer_arithmetic.5
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer outside object bounds in var_3 + var_4"
-
-Check 65: pointer_arithmetic.6
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: invalid integer address in var_3 + var_4"
-
-Check 66: pointer_primitives.1
-- Status: [32mSUCCESS[0m
-- Description: "dead object in OBJECT_SIZE(&temp_0)"
-
-Check 67: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 68: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 69: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 70: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 71: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 72: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
-
-Check 73: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *other"
-
-Check 74: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *other"
-
-Check 75: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *other"
-
-Check 76: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *other"
-
-Check 77: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *other"
-
-Check 78: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *other"
-
-Check 79: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.13
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 80: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.14
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 81: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.15
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 82: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.16
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 83: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.17
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 84: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.18
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
-
-Check 85: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.19
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *other"
-
-Check 86: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.20
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *other"
-
-Check 87: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.21
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *other"
-
-Check 88: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.22
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *other"
-
-Check 89: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.23
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *other"
-
-Check 90: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.24
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *other"
-
-Check 91: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 92: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 93: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 94: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 95: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 96: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
-
-Check 97: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *other"
-
-Check 98: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *other"
-
-Check 99: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *other"
-
-Check 100: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *other"
-
-Check 101: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *other"
-
-Check 102: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *other"
-
-Check 103: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.13
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 104: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.14
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 105: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.15
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 106: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.16
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 107: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.17
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 108: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.18
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
-
-Check 109: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.19
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *other"
-
-Check 110: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.20
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *other"
-
-Check 111: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.21
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *other"
-
-Check 112: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.22
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *other"
-
-Check 113: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.23
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *other"
-
-Check 114: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.24
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *other"
-
-Check 115: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 116: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 117: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 118: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 119: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 120: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
-
-Check 121: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *other"
-
-Check 122: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *other"
-
-Check 123: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *other"
-
-Check 124: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *other"
-
-Check 125: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *other"
-
-Check 126: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *other"
-
-Check 127: <A as core::slice::cmp::SliceOrd>::compare.overflow.1
-- Status: [32mSUCCESS[0m
-- Description: "arithmetic overflow on unsigned to signed type conversion in (long int)var_22.case"
-
-Check 128: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.1
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer NULL in lhs.data + var_29"
-
-Check 129: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.2
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer invalid in lhs.data + var_29"
-
-Check 130: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.3
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: deallocated dynamic object in lhs.data + var_29"
-
-Check 131: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.4
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in lhs.data + var_29"
-
-Check 132: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.5
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer outside object bounds in lhs.data + var_29"
-
-Check 133: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.6
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: invalid integer address in lhs.data + var_29"
-
-Check 134: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.7
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer NULL in rhs.data + var_34"
-
-Check 135: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.8
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer invalid in rhs.data + var_34"
-
-Check 136: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.9
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: deallocated dynamic object in rhs.data + var_34"
-
-Check 137: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.10
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: dead object in rhs.data + var_34"
-
-Check 138: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.11
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: pointer outside object bounds in rhs.data + var_34"
-
-Check 139: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.12
-- Status: [32mSUCCESS[0m
-- Description: "pointer arithmetic: invalid integer address in rhs.data + var_34"
-
-Check 140: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 141: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 142: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 143: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 144: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 145: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
-
-Check 146: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *other"
-
-Check 147: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *other"
-
-Check 148: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *other"
-
-Check 149: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *other"
-
-Check 150: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *other"
-
-Check 151: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *other"
-
-Check 152: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *var_9"
-
-Check 153: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *var_9"
-
-Check 154: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *var_9"
-
-Check 155: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *var_9"
-
-Check 156: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *var_9"
-
-Check 157: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *var_9"
-
-Check 158: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 159: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 160: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 161: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 162: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 163: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
-
-Check 164: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.7
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *other"
-
-Check 165: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.8
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *other"
-
-Check 166: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.9
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *other"
-
-Check 167: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.10
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *other"
-
-Check 168: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.11
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *other"
-
-Check 169: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.12
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *other"
-
-Check 170: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.1
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer NULL in *self"
-
-Check 171: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.2
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer invalid in *self"
-
-Check 172: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.3
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: deallocated dynamic object in *self"
-
-Check 173: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.4
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: dead object in *self"
-
-Check 174: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.5
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: pointer outside object bounds in *self"
-
-Check 175: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.6
-- Status: [32mSUCCESS[0m
-- Description: "dereference failure: invalid integer address in *self"
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: <builtin-library-memcmp>:27 in function memcmp
+
+Check 53: pointer_arithmetic.1
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+
+Check 54: pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+
+Check 55: pointer_arithmetic.2
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+
+Check 56: pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+
+Check 57: pointer_arithmetic.3
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+
+Check 58: pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+
+Check 59: pointer_arithmetic.4
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+
+Check 60: pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+
+Check 61: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:52 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 62: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:52 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 63: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:52 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 64: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:52 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 65: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:52 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 66: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:52 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 67: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:62 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 68: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:62 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 69: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:62 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 70: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:62 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 71: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:62 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 72: std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1396:62 in function std::cmp::impls::<impl std::cmp::PartialOrd for usize>::lt
+
+Check 73: std::ptr::const_ptr::<impl *const T>::add.overflow.1
+- Status: SUCCESS
+- Description: "arithmetic overflow on unsigned to signed type conversion"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/ptr/const_ptr.rs:576:30 in function std::ptr::const_ptr::<impl *const T>::add
+
+Check 74: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 75: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 76: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 77: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 78: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 79: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 80: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 81: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 82: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 83: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 84: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 85: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1497:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::lt
+
+Check 86: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 87: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 88: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 89: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 90: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 91: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 92: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 93: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 94: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 95: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 96: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 97: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 98: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 99: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.14
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 100: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.15
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 101: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.16
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 102: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.17
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 103: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.18
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 104: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.19
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 105: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.20
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 106: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.21
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 107: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.22
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 108: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.23
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 109: std::cmp::impls::<impl std::cmp::Ord for isize>::cmp.pointer_dereference.24
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for isize>::cmp
+
+Check 110: <A as core::slice::cmp::SliceOrd>::compare.overflow.1
+- Status: SUCCESS
+- Description: "arithmetic overflow on unsigned to signed type conversion"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:175:18 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 111: <A as core::slice::cmp::SliceOrd>::compare.overflow.2
+- Status: SUCCESS
+- Description: "arithmetic overflow on unsigned multiplication"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:19 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 112: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.1
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:19 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 113: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.2
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:19 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 114: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.3
+- Status: SUCCESS
+- Description: "pointer arithmetic: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:19 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 115: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.4
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:19 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 116: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.5
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:19 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 117: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.6
+- Status: SUCCESS
+- Description: "pointer arithmetic: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:19 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 118: <A as core::slice::cmp::SliceOrd>::compare.overflow.3
+- Status: SUCCESS
+- Description: "arithmetic overflow on unsigned multiplication"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:30 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 119: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.7
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:30 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 120: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.8
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:30 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 121: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.9
+- Status: SUCCESS
+- Description: "pointer arithmetic: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:30 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 122: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.10
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:30 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 123: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.11
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:30 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 124: <A as core::slice::cmp::SliceOrd>::compare.pointer_arithmetic.12
+- Status: SUCCESS
+- Description: "pointer arithmetic: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:176:30 in function <A as core::slice::cmp::SliceOrd>::compare
+
+Check 125: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 126: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 127: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 128: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 129: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 130: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:28 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 131: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 132: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 133: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 134: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 135: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 136: std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1509:35 in function std::cmp::impls::<impl std::cmp::PartialOrd<&B> for &A>::ge
+
+Check 137: overflow.1
+- Status: SUCCESS
+- Description: "arithmetic overflow on signed multiplication"
+
+Check 138: pointer_arithmetic.5
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer NULL"
+
+Check 139: pointer_arithmetic.6
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer invalid"
+
+Check 140: pointer_arithmetic.7
+- Status: SUCCESS
+- Description: "pointer arithmetic: deallocated dynamic object"
+
+Check 141: pointer_arithmetic.8
+- Status: SUCCESS
+- Description: "pointer arithmetic: dead object"
+
+Check 142: pointer_arithmetic.9
+- Status: SUCCESS
+- Description: "pointer arithmetic: pointer outside object bounds"
+
+Check 143: pointer_arithmetic.10
+- Status: SUCCESS
+- Description: "pointer arithmetic: invalid integer address"
+
+Check 144: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 145: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 146: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 147: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 148: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 149: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 150: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 151: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 152: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 153: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 154: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 155: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 156: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 157: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.14
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 158: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.15
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 159: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.16
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 160: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.17
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 161: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.18
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 162: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.19
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 163: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.20
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 164: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.21
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 165: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.22
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 166: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.23
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 167: std::cmp::impls::<impl std::cmp::Ord for i32>::cmp.pointer_dereference.24
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for i32>::cmp
+
+Check 168: <u8 as core::slice::cmp::SliceOrd>::compare.overflow.1
+- Status: SUCCESS
+- Description: "arithmetic overflow on unsigned to signed type conversion"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:192:20 in function <u8 as core::slice::cmp::SliceOrd>::compare
+
+Check 169: <u8 as core::slice::cmp::SliceOrd>::compare.overflow.2
+- Status: SUCCESS
+- Description: "arithmetic overflow on unsigned to signed type conversion"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/slice/cmp.rs:192:42 in function <u8 as core::slice::cmp::SliceOrd>::compare
+
+Check 170: pointer_primitives.1
+- Status: SUCCESS
+- Description: "pointer to dead object"
+
+Check 171: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 172: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 173: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 174: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 175: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 176: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:24 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 177: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.7
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 178: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.8
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 179: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.9
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 180: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.10
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 181: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.11
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 182: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.12
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1411:32 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 183: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.13
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 184: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.14
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 185: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.15
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 186: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.16
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 187: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.17
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 188: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.18
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:29 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 189: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.19
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 190: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.20
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 191: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.21
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 192: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.22
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 193: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.23
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 194: std::cmp::impls::<impl std::cmp::Ord for usize>::cmp.pointer_dereference.24
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/cmp.rs:1412:38 in function std::cmp::impls::<impl std::cmp::Ord for usize>::cmp
+
+Check 195: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/clone.rs:189:25 in function std::clone::impls::<impl std::clone::Clone for usize>::clone
+
+Check 196: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/clone.rs:189:25 in function std::clone::impls::<impl std::clone::Clone for usize>::clone
+
+Check 197: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/clone.rs:189:25 in function std::clone::impls::<impl std::clone::Clone for usize>::clone
+
+Check 198: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/clone.rs:189:25 in function std::clone::impls::<impl std::clone::Clone for usize>::clone
+
+Check 199: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/clone.rs:189:25 in function std::clone::impls::<impl std::clone::Clone for usize>::clone
+
+Check 200: std::clone::impls::<impl std::clone::Clone for usize>::clone.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/clone.rs:189:25 in function std::clone::impls::<impl std::clone::Clone for usize>::clone
+
+Check 201: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.1
+- Status: SUCCESS
+- Description: "dereference failure: pointer NULL"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/iter/range.rs:624:18 in function <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next
+
+Check 202: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.2
+- Status: SUCCESS
+- Description: "dereference failure: pointer invalid"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/iter/range.rs:624:18 in function <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next
+
+Check 203: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.3
+- Status: SUCCESS
+- Description: "dereference failure: deallocated dynamic object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/iter/range.rs:624:18 in function <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next
+
+Check 204: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.4
+- Status: SUCCESS
+- Description: "dereference failure: dead object"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/iter/range.rs:624:18 in function <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next
+
+Check 205: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.5
+- Status: SUCCESS
+- Description: "dereference failure: pointer outside object bounds"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/iter/range.rs:624:18 in function <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next
+
+Check 206: <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next.pointer_dereference.6
+- Status: SUCCESS
+- Description: "dereference failure: invalid integer address"
+- Location: ~/.rustup/toolchains/nightly-2022-03-23-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/iter/range.rs:624:18 in function <std::ops::Range<T> as std::iter::range::RangeIteratorImpl>::spec_next
 
 
 SUMMARY:
-** 2 of 175 failed
-Failed Checks: arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(*((signed char *)((unsigned char *)&var_3 + 0)) - 2)
-File: "/rustc/0c292c9667f1b202a9150d58bdd2e89e3e803996/library/core/src/cmp.rs", line 1105, in std::cmp::PartialOrd::lt
-Failed Checks: arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(*((signed char *)((unsigned char *)&var_3 + 0)) - 2)
-File: "/rustc/0c292c9667f1b202a9150d58bdd2e89e3e803996/library/core/src/cmp.rs", line 1168, in std::cmp::PartialOrd::ge
+** 0 of 206 failed
 
-VERIFICATION:- [31mFAILED[0m
+VERIFICATION:- SUCCESSFUL
 
 
-            </xmp>
-          </div><!-- class="output-box" -->
+              </xmp>
+            </div><!-- class="output-box" -->
+            
           
 
           
